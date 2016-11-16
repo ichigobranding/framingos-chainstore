@@ -55,6 +55,11 @@ a {
     background-color: #e84331;
     color: #000;
 }
+button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .added_to_cart.alt, .widget-area .widget a.button.alt, .added_to_cart, .pagination .page-numbers li .page-numbers.current, .woocommerce-pagination .page-numbers li .page-numbers.current, .widget a.button.checkout {
+    background-color: #e84331;
+    border-color: #2c2d33;
+    color: #ffffff;
+}
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
    Branding サブ１css
