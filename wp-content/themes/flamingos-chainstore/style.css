@@ -1,0 +1,98 @@
+@charset "UTF-8";/*!
+Template:   	Storefront
+Theme Name: flamingos-chainstore
+Author: Ichigo Branding 株式会社
+Author URI: hichigo-branding.com
+*/
+/* Base css */
+/* Branding メインcss */
+/* Branding サブ１css */
+/* Branding サブ２css */
+/* 個別 css */
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   Base css
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.site-header {
+    background-color: #fff;
+}
+.main-navigation ul li a, .site-title a, ul.menu li a, .site-branding h1 a, .site-footer .storefront-handheld-footer-bar a:not(.button), button.menu-toggle, button.menu-toggle:hover {
+    color: #fff;
+}/* 背景ありのリンク文字 */
+
+.storefront-handheld-footer-bar ul li.cart .count, button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:before {
+    background-color: #fff;
+}/* 背景ありの中デザイン */
+
+a {
+    color: #0000ff;
+}
+.widget-area .widget a, .hentry .entry-header .posted-on a, .hentry .entry-header .byline a {
+    color: #0000ff;
+}
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   Branding メインcss 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+.site-branding h1 a, .site-title a{
+    color: #e84331;
+}
+.storefront-primary-navigation {
+    background: #e84331 !important;
+}
+.site-footer {
+    background-color: #e84331;
+    color: #000;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   Branding サブ１css
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.secondary-navigation ul ul, .main-navigation ul.menu > li.menu-item-has-children:after, .secondary-navigation ul.menu ul, .storefront-handheld-footer-bar, .storefront-handheld-footer-bar ul li > a, .storefront-handheld-footer-bar ul li.search .site-search, button.menu-toggle, button.menu-toggle:hover {
+    background-color: #eb6553;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .added_to_cart:hover, .widget a.button:hover, .site-header-cart .widget_shopping_cart a.button:hover {
+    background-color: #eb6553;
+    border-color: #eb6553;
+    color: #ffffff;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/* Branding サブ２css 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.site-branding h1 a:hover,.site-title a:hover{
+    color: #f9948a;
+}
+.menu{
+    color: #f9948a;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .added_to_cart, .widget a.button, .site-header-cart .widget_shopping_cart a.button {
+    background-color: #f9948a;
+    border-color: #f9948a;
+    color: #ffffff;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+個別 css
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
