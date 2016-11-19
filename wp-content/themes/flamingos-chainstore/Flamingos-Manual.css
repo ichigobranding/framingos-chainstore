@@ -1,0 +1,386 @@
+
+
+#############################　フラミンゴス　設定マニュアル　目次　###############################
+
+マークダウンテキスト
+
+#見出し
+・
+　+
+* リスト項目1
++ リスト項目2
+- リスト項目3
+(空行)
+
+(空行)
+1. リスト項目1
+2. リスト項目2
+3. リスト項目3
+
+- リスト1
+  - ネスト リスト1_1
+     - ネスト リスト1_1_1
+     - ネスト リスト1_1_2
+  - ネスト リスト1_2
+- リスト2
+- リスト3
+
+(空行)
+|:---|:---:|--:|
+>引用
+
+##################################################################################################
+
+
+#　フラミンゴス　設定マニュアル　目次
+
+
+## Github
+
+## テストサーバーから本番へ
+
+
+##　wpXサーバー
+###　FTP パスワード設定
+
+
+##　追加プログラム
+###　パワーパック　デザインシステム
+
+
+##　Woo設定
+###　WooCommerceガイド付きツアービデオ
+###　フラミンゴス CSS 
+###　チェックアウト
+###　Amazonpay エラー
+###　未設定プラグイン＆仕組み
+###　本番環境に切り替え
+
+
+##　新規ホームページ作成
+###　ローカルからローカルへ
+
+
+##　Woo  セキュリティーと契約
+###　人的リスク
+###　SSL　ハッキング
+
+
+##　トラブル解決
+###　カートは空です。
+
+
+##　その他
+### アクションフック説明
+### ブラグイン関連まとめ
+
+
+
+--------------------------------------------------------------------------------------------
+
+## Github　
+
+--------------------------------------------------------------------------------------------
+
+
+　* アップしないものをignoreするの
+ 　　http://tech.basicinc.jp/Wordpress/2013/05/05/wordpress_gitignore/
+
+
+--------------------------------------------------------------------------------------------
+
+## テストサーバーから本番へ
+
+--------------------------------------------------------------------------------------------
+
+
+　*　データベースを丸ごと移行する方法 
+
+　　+ 参考ページ 
+　　　+ ローカルから書き出す方法（わかりやすい）
+　　　　　http://agn.jp/blog/?p=1118
+　　　+ ドメインを書き換える方法
+　　　　　http://webcre-archive.com/2012/10/04/wordpress-db-url-replace/　　山本 龍二郎
+　　　　　http://www.slideshare.net/ryujiroyamamoto/wordbenchchiba20130518　slideshare
+
+　　+ アドレス変更
+　　　https://interconnectit.com/products/search-and-replace-for-wordpress-databases/
+　　　+ searchreplacedb2.phpを削除する
+
+
+
+　*　実践手順
+　　　→ 本番にワードプレスを入れる
+　　　→ 本番のwp-config.phpをダウンロード
+　　　→ ローカル環境のデータベースをエクスポート
+　　　　参照：http://agn.jp/blog/?p=1118
+　　　→ 本番環境にデータをインポート
+　　　　サーバのコントロールパネルからphpMyAdminにアクセスして「インポート」
+　　　→ データベース管理からphpMyAdminへ入る
+　　　　　https://secure.wpx.ne.jp/server/?action_user_wp_index=true&aid=53336
+　　　→ 入れるサーバーを選んでアップロード
+　　　→ サイトデータをサーバにアップ
+　　　　　+ サーバーにアップの際は、フォルダーは統合で入れる
+　　　→ 本番のwp-config.phpを再度入れる
+　　　→ searchreplacedb2.phpをWPのフォルダにアップロードしてアクセスします。（開発倉庫にある）
+        https://interconnectit.com/products/search-and-replace-for-wordpress-databases/
+        URLはhttp://ドメイン/searchreplacedb2.php　　注意）サイトは記載ミス。これが正しい
+
+　　　************************************
+　　　 重要 → searchreplacedb2.php 削除する
+     ************************************
+
+
+--------------------------------------------------------------------------------------------
+
+##　wpXサーバー
+
+--------------------------------------------------------------------------------------------
+
+
+###　FTP パスワード設定
+
+　→ インストール済みWordPress一覧
+　→ 設定
+　→ FTPアカウント設定
+　→ メニューの設定変更
+　→ FTP接続先フォルダ変更オプション
+　→ 全てのファイル・フォルダにアクセスする
+
+
+--------------------------------------------------------------------------------------------
+
+##　追加プログラム
+
+--------------------------------------------------------------------------------------------
+
+
+###　パワーパック　デザインシステム
+　　+ https://woocommerce.com/products/storefront-powerpack/?_ga=1.45929700.1732116532.1479347882
+
+
+--------------------------------------------------------------------------------------------
+
+##　Woo設定　
+
+--------------------------------------------------------------------------------------------
+
+
+###　WooCommerceガイド付きツアービデオ
+
+　　+ https://docs.woocommerce.com/document/woocommerce-guided-tour-videos/
+
+###　フラミンゴス CSS 
+
+　* コンセプトカラー
+　　+ #e84331 メインカラー
+　　+ #eb6553　サブカラー　　薄い
+　　+ #f9948a　サブカラー２　もっと薄い
+　　+ #0000ff　リンク　青
+
+###　チェックアウト
+
+　* 精算手続き
+　　+ 未登録ユーザーの購入許可
+　　+ 強制SSL (HTTPS)支払い処理
+
+　* 決済方法表示順
+
+　  + アマゾンpay プラグイン
+　　　　ログイン：https://sellercentral.amazon.co.jp/gp/homepage.html
+　　　　 + 設定方法　参考サイト
+		　http://www.future-shop.jp/manual/build/page/amazon_id.html
+　　　　 + 出品者ID：A2B6C2SK71TFWR
+　　　　 + App ID: amzn1.application.f0fd9e235be540cd8d228f3a50a33da8
+　　　　 + クライアントID：  amzn1.application-oa2-client.9e336ab8e3d94e26bcf1aa7efb14f325
+　　　　 + クライアントシークレット： 4b78c94d5ace684027de5b54ac960b30dc392a593ff195d0f73a6b919a39d419
+　　　　 + セラー ID：
+　　　 　+ MWS アクセスキー：
+　　　　 + MWS シークレットキー：
+
+
+　　 + 次の出品用アカウントの認証情報： Ichigo Branding
+　　　　 + 出品者ID:	A2B6C2SK71TFWR
+　　　　 + マーケットプレイスID:	A31YDYE76E6TCP (Amazon Payments Sandbox JP)
+　　　　 + A75P1MG8VMU51 (Amazon Payments JP)
+　　　　 + AYN85FCV0RXPU (IBA)
+　　　　 + 開発者アカウント ID および証明書
+　　　　 + 開発者アカウントID:	4465-1814-5285
+        + MWSアカウント情報
+　　　　    + MWS/AWSアクセスキーID： AKIAIZYCXSRWQF7FN4ZA
+　　　　    + MWS/秘密キー/シークレットキー：	b8luBV7cua0m8MBeJffb0A9szEM8TUPVCDUCiwz6
+
+　　 + Sandbox（テスト環境）でご利用いただける購入者テストアカウント
+		田中 太郎
+		ichigo.pbi@gmail.com
+		tanatarotana
+		ログイン設定
+		名前:
+		田中 太郎
+		編集
+		Eメールアドレス:
+		ichigo.pbi@gmail.com
+		編集
+		パスワード:
+		***************
+		編集
+		お支払方法 詳細情報
+		Visa****4545
+		AMEX****0005
+		JCB****0000
+		Visa****2323
+		Visa****1111
+		Visa****3434
+		Visa****5656
+		MasterCard****4444
+		説明 (Optional)
+
+		お届け先住所情報
+		JP APA test test1
+		1-17-25 Shinkamata
+		Ota-ku, Tokyo 144-8588
+		Japan
+		電話番号： 09056412829
+
+
+
+
+　　   > ファイル名を woocommerce-gateway-amazon-payments-advanced-ja.mo とした上で
+　　     wp-content/languages/plugins/　というディレクトリに配置頂ければ利用することが可能となります。
+　　
+　     > AUTOMATTIC社提供モジュールプラグイン：
+    　　　https://woocommerce.com/products/pay-with-amazon/
+ 
+　　      +  翻訳ファイル　
+　　　        https://cloudup.com/cBGL8PgonbK
+
+　  + Amazonペイメントマークとボタン
+　　　　https://payments.amazon.co.jp/merchant/tools
+
+　  + Amazonペイメント書類
+　  　　+ 動作確認・プレスリリース・送金サイクル変更について
+	　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/LoginAndPayWithAmazon_pre_release_verification_of_info_N.pdf
+ 
+　  　　+ 販売事業者様向けマーケティングガイド
+　　　　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/LoginAndPayWithAmazon_MarketingGuideForSellers.pdf
+ 
+　　　  + Amazon商標ガイドライン
+　　　　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/JP_Trademark_Guidelines_for_External_Use_Japanese.pdf
+　　　  + 開発についてお困りの点がございましたら、下記にご連絡ください。
+　　　　　　eps-jp-dev-support@amazon.com
+ 
+　　　  + セラーセントラルの設定・運用等につきましてお困りの点がございましたら、こちらにご連絡ください。
+　　　　　　lpa-jpcontactsales@amazon.co.jp
+ 
+　　　  + 【技術仕様書】PW:0511
+　　　　　  + インテグレーションガイド
+　　　　　　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/LoginAndPayWithAmazonIntegrationGuide_JP.pdf
+　　　  　　+ APIリファレンス
+　　　  　　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/20150604_MWSOffAmazonPaymentsApiReference_JP.pdf
+　　　  　　+ UX
+　　　　　　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/LoginAndPayWithAmazonUx_JP.pdf
+　　　  　　+ インテグレーションFAQ
+　　　　　　　　https://images-na.ssl-images-amazon.com/images/G/09/AmazonPayments/LoginAndPayWithAmazonSystemIntegrationFAQ.pdf
+　　　  　　+ 【実装例】
+　　　　　　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/LoginAndPayWithAmazonUseCase_JP.pdf
+　　　　　  + 【運用FAQ】
+　　　　　　　　http://g-ec2.images-amazon.com/images/G/09/AmazonPayments/LoginAndPayWithAmazonOperationFAQ.pdf
+
+###　Amazonpay エラー
+　　　+ 解決方法　参考サイト
+　	　　http://www.future-shop.jp/manual/build/page/amazon_id.html
+
+　　　+ 問題
+　　　　　申し訳ありません。リクエストの処理中に問題が発生しました。現在問題を調査しておりますので、
+　　　　　解決するまでもう少々お待ちください。
+　　　　　→　App クライアント IDに、クライアントIDを入れる。 App ID ではない。
+
+
+###　未設定プラグイン＆仕組み
+　* 決済後に商品紹介
+　　+ 田村 啓さん推奨　フラクインフォルダ参照
+
+
+###　本番環境に切り替え
+　* ヘッダーの「アカウント設定」のメニューより、銀行口座情報、通知設定、ユーザー権限設定、インテグレーション設定を確認ください。
+　* 本番環境用のソースでは、テスト環境用に記述されたパラメータやコードを削除してください。
+　* 本番環境用のソースであることを確認して、公開してください。
+　* 本番環境にて、Amazonペイメントのボタンや、住所情報ウィジェット、ウォレットウィジェットの表示を確認ください。
+　* また可能な場合、本番環境で実際の取引を行っていただき、正常に注文が完了できることを確認していただくことをお勧めいたします。
+
+--------------------------------------------------------------------------------------------
+
+##　新規ホームページ作成
+
+--------------------------------------------------------------------------------------------
+
+
+###　ローカルからローカルへ
+
+
+--------------------------------------------------------------------------------------------
+
+##　Woo  セキュリティーと契約
+
+--------------------------------------------------------------------------------------------
+
+
+###　人的リスク
+　　　
+　* 法人にして代表者責任を有限にする、契約をきっちりする 、サポートをきっちりする。納品時に顧客を教育する。はやっておかないと色々リスクがあります。
+
+　* 技術的なセキュリティより、簡単すぎるパスワード、アカウントの共有による退職した職員による不正などの方がセキュリティリスクとしては大きいです。
+
+　* WordPress , Plugin のバージョンを最新に、ID,Passを共有しない、Passは16文字以上小文字大文字英数字記号を含む、Passをメモに書いてはらない、
+　　聞かれても答えない。人がやめたらID,Passを変更or削除
+
+　これをやっていて漏れたケースはごく少ないはずです。
+
+###　SSL　ハッキング
+
+
+
+--------------------------------------------------------------------------------------------
+
+##　トラブル解決
+
+--------------------------------------------------------------------------------------------
+
+
+###　カートは空です。
+　* 参考
+　　http://blog.tadashiyoshida.com/2015/12/wpxwoocommerce.html
+　　wpXのリバースプロキシーキャッシュ（Varnish）に関するトラブルなのではないかと思いついた。
+　　そこで、WooCommerceで問題になるカート（/cart）、マイアカウント
+　　（/my-account）、チェックアウト（/checkout）の3つのURLをwpXの「キャッシュ設定」画面で
+　　キャッシュの対象外とするように設定した。
+
+　* wpx キャッシュ設定
+　　　https://www.wpx.ne.jp/server/manual/wordpress_setting_cache.php
+　　　  + 実際ページ
+     　　　https://secure.wpx.ne.jp/server/?action_user_wp_cache_index=true&aid=53336
+		　　　/wp-login.php
+		　　　/cart
+		　　　/my-account
+		　　　/checkout
+
+
+--------------------------------------------------------------------------------------------
+
+##　その他
+
+--------------------------------------------------------------------------------------------
+
+
+### アクションフック説明
+　　http://webdesignrecipes.com/wordpress-action-hook-and-filter-hook/
+
+　　参考書
+　　　https://www.amazon.co.jp/%E8%A9%B3%E8%A7%A3-WordPress-%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%83%BB%E3%82%B9%E3%83%88%E3%83%A9%E3%83%86%E3%82%B8%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/dp/4873116783/ref=sr_1_1?ie=UTF8&qid=1479345441&sr=8-1&keywords=%E8%A9%B3%E8%A7%A3%E3%80%80WordPress
+
+### ブラグイン関連まとめ
+http://ict.minna.company/woocommerce%E9%96%A2%E9%80%A3%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%BE%E3%81%A8%E3%82%81/
+
+
+--------------------------------------------------------------------------------------------
+
