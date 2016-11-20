@@ -76,6 +76,10 @@
 ### ブラグイン関連まとめ
 
 
+##　ヘルプ
+### WooCommerce日本語マニュアル（非公認）
+
+
 --------------------------------------------------------------------------------------------
 
 ## 月額プラン
@@ -161,12 +165,14 @@
 ###　カートが動かない場合は、キャッシュを除外する
 　https://docs.artws.info/document/wpx/
 　https://www.wpx.ne.jp/server/manual/wordpress_setting_cache.php
-　→ woocommerce_cart_hash
-　→ woocommerce_items_in_cart
-　→ wp_woocommerce_session_
 
-どっち？
-/wp-login.php
+　* Cookie
+woocommerce_cart_hash
+woocommerce_items_in_cart
+wp_woocommerce_session_
+
+　* ファイルパス
+/wp-login.php　※外した
 /cart
 /my-account
 /checkout
@@ -430,4 +436,13 @@ http://ict.minna.company/woocommerce%E9%96%A2%E9%80%A3%E3%83%97%E3%83%A9%E3%82%B
 
 
 --------------------------------------------------------------------------------------------
+
+##　ヘルプ
+
+--------------------------------------------------------------------------------------------
+
+### WooCommerce日本語マニュアル（非公認）
+　　　https://docs.artws.info/
+
+
 
