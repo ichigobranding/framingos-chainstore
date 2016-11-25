@@ -23,8 +23,22 @@
 					</div><!-- .entry-content -->
 					<?php edit_post_link( __( 'Edit', 'unite' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
 				</article><!-- #post-## -->
-
-					<div class="home-widget-area row">
+	<!-- #IB-main## -->
+				<div class="row">
+						<div class="col-md-6 col-md-push-3">
+							 <?php get_template_part( 'messageborad' ); ?>
+							 <?php get_template_part( 'semi-indexparts-dw' ); ?>
+							 <?php get_template_part( 'blogul' ); ?>
+						</div>
+							<div class="col-md-3 col-md-pull-6">
+								<?php get_template_part( 'left-sidebar' ); ?>
+							</div>
+					<div class="col-md-3">
+						<?php get_sidebar(); ?>
+					</div><!-- side -->
+				</div><!-- row -->
+		<!-- #IB-main## -->
+					<!--<div class="home-widget-area row">
 
 						<div class="col-sm-6 col-md-4 home-widget">
 							<?php if( is_active_sidebar('home1') ) dynamic_sidebar( 'home1' ); ?>
@@ -38,7 +52,7 @@
 							<?php if( is_active_sidebar('home3') ) dynamic_sidebar( 'home3' ); ?>
 						</div>
 
-					</div>
+					</div> -->
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template

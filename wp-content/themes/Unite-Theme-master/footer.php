@@ -17,11 +17,17 @@
 					<?php unite_footer_links(); ?>
 				</nav>
 
-				<div class="copyright col-md-6">
-					<?php do_action( 'unite_credits' ); ?>
-					<?php echo of_get_option( 'custom_footer_text', 'unite' ); ?>
-					<?php do_action( 'unite_footer' ); ?>
-				</div>
+				<?php
+		            wp_nav_menu( array(
+		                'theme_location'    => 'primary',
+		                'depth'             => 2,
+		                'container'         => 'div',
+		                'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+		                'menu_class'        => 'nav navbar-nav',
+		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+		                'walker'            => new wp_bootstrap_navwalker())
+		            );
+		        ?>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
