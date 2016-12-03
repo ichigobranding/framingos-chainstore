@@ -1,22 +1,14 @@
 <div class="leftsidebara">
-<!--フリースペース-->
-<?php if ( ! dynamic_sidebar( 'left-sidebar' ) ) : ?>
-<?php endif; // end sidebar widget area ?>
-<!--フリースペース-->
-                        <div class="freespaceArea subModulef">
-                              <!--メルマガ--><div style="padding:10px; border: 2px dashed #c41840;">【７４３名受講 起業に向けて何から始めればいいの？】<br>
-                              <strong><a href="<?php echo esc_url( home_url( '/' ) ); ?>seminar-mail">起業や独立開業に向けたファーストステップ講座１０日間無料メールセミナー</a></strong></div><br>
-                              <div style="padding:10px; border: 2px dashed #c41840;">【２３１２名が受講 そもそも起業って何？】<br>
-                              <strong><a href="http://ameblo.jp/dearwoman-smaps/entry-12059113071.html" target="_blank">起業のいろはが学べる女性起業セミナー２２日間無料メールセミナー</a></strong></div><br>
-                              
+    <!--フリースペース-->
+      <?php if ( ! dynamic_sidebar( 'freespase' ) ) : ?>
+      <?php endif; // end sidebar widget area ?>
+    <!--フリースペース-->
 
 <!--プロフィール全体-->
-
 <div class="ibMenu">
             <div class="ibMenuHeader">
                 <span class="ibMenuTitle">プロフィール</span>
             </div>
-
             <div class="ibMenuBody">
                   <!--プロフィール写真-->
                           <div class="ibProfileImageArea">
@@ -44,9 +36,7 @@
                   <!--プロフィール　簡易-->
             </div>
 </div>                  
-
 <!--プロフィール全体-->
-
 
  <!--最新の記事-->
  <div class="ibMenu">
@@ -99,7 +89,6 @@
   </div>       
         <!-- ameblo -->
 
-
   <div class="ibMenu">
       <div class="ibMenu2">
                 <div class="ibMenuHeader">
@@ -107,7 +96,6 @@
                 </div>
 
                <div class="ibMenuBody ibskinSubList">
-
 
                <!--カスタムト投稿のテーマ-->  
                   <?php
@@ -205,70 +193,18 @@
       </div>
   </div>
  <!--テーマ-->
-
-
-
  <!--ブックマーク-->
       <div class="ibMenu">
               <div class="ibMenuHeader">
                   <span class="ibMenuTitle">ブックマーク</span>
               </div>
-
               <div class="ibMenuBody">
                   <ul class="ibskinSubList">
-                      <li><a href="http://smaps-co.jp" target="_blank" rel="nofollow">株式会社スマップス</a></li>
-                      <li><a href="http://ameblo.jp/kabutobirkin/entry-12003543663.html" target="_blank" rel="nofollow">辻朋子の人生経営道</a></li>
+                      <li><a href="※" target="_blank" rel="nofollow">リンクテキスト</a></li>
+                      <li><a href="※" target="_blank" rel="nofollow">リンクテキスト</a></li>
                   </ul>
               </div>
       </div>
  <!--ブックマーク-->
-
  
- <!--DVD下-->
-
-
-                                    <div style="padding:6px 0 0 0;">
-                                           <center>                             
-                                          <!--DVD1--><a href="<?php echo esc_url( home_url( '/' ) ); ?>dvd-6step"><img src="<?php bloginfo('template_directory');?>_dw_responsive/images/dvd1.png" alt="起業までの全体的な流れとは？" width="180px"/><br>
-                                          <b>起業準備キットですぐに起業の準備がスタートできる！</a></b><br><br><br>
-                                          <!--DVD2--><a href="<?php echo esc_url( home_url( '/' ) ); ?>category/seminar-idea"><img src="<?php bloginfo('template_directory');?>_dw_responsive/images/dvd2.png" alt="起業ネタってどうやって探せばいいの？" border="0" width="180px"/><br>
-                                          <b>起業ネタの悩みを解決して起業実現に向けてステップアップできる！</a></b><br><br><br>
-                                          <!--DVD3--><a href="<?php echo esc_url( home_url( '/' ) ); ?>dvd-sales"><img src="<?php bloginfo('template_directory');?>_dw_responsive/images/dvd3.png" alt="売上 商品 価格 集客戦略　女性の起業" border="0" width="180" /><br>
-                                          <b>売上を意識した商品のつくり方と価格の決め方がわかります！</a></b><br><br><br>
-                                          <!--DVD4--><a href="<?php echo esc_url( home_url( '/' ) ); ?>dvd-merumaga"><img src="<?php bloginfo('template_directory');?>_dw_responsive/images/dvd4.png" alt="メルマガのいろはがわかるので、すぐにはじめられます。" width="180"/><br><b>メルマガのいろはがわかるので、すぐにはじめられます。</a></b><br><br><br>
-                                          <!--セミナー--><div style="padding:10px; border:1px solid #c41840;"><a href="http://ameblo.jp/dearwoman-smaps/entry-12132722417.html" target="_blank"><img src="<?php bloginfo('template_directory');?>_dw_responsive/images/ph1.png" alt="セミナー" width="157px" border="0" /><br>
-                                          あなたの「起業したい！」が実現できます。</a></div><br>
-                                          <!--個別相談--><div style="padding:10px; border:1px solid #c41840;"><a href="http://ameblo.jp/dearwoman-smaps/entry-12005541090.html" target="_blank"><img src="<?php bloginfo('template_directory');?>_dw_responsive/images/ph2.png" alt="個別相談" width="157px" border="0" /><br>
-                                          起業、独立、開業の疑問、経営の悩みを解決します！</a></div><br>
-                                          <!--バナー1--><div align="center"><a href="http://ameblo.jp/dearwoman-smaps/entry-12038407874.html" target="_blank"><img border="0" src="<?php bloginfo('template_directory');?>_dw_responsive/images/ph3.png" alt="" width="180px"></a></div><br>
-                                          <div style="padding:10px; border:1px solid #c41840;"><a href="http://ameblo.jp/dearwoman-smaps/entry-12078353912.html" target="_blank"><img src="<?php bloginfo('template_directory');?>_dw_responsive/images/ph4.jpg"  alt="鹿児島市ビジネススキル 南日本新聞" border="0" width="157px"/><br>鹿児島で「女性のための起業・経営講座」の講師を務めました。(2015.9.26)</a></div><br>
-                                          </center>
-                                    </div>
-                              <!--囲みメニュー--><div style="padding:10px; border:1px dashed #c41840;"><strong>女性起業を支援します！<br>
-                              DearWOMAN 女性起業家コンサルタント辻朋子</strong><br>
-                              <br>
-                              株式会社スマップス<br>
-                              東京都中央区銀座２－１２－１２深山ビル５Ｆ<br>
-                              電話番号　<a href="tel:0362641886">０３－６２６４－１８８６</a><br>
-                              ファックス番号　０３－６２６４－１８８７<br>
-                              営業時間　平日９時～１６時(起業セミナー・個別相談は土日も開催しています)<br>
-                              <br>
-                              ・<a href="http://ameblo.jp/dearwoman-smaps/entry-12005515493.html" target="_blank">起業や独立開業に向けたファーストステップメールセミナー</a><br>
-                              ・<a href="http://ameblo.jp/dearwoman-smaps/entry-12059113071.html" target="_blank">起業のいろはがわかる無料メール講座</a><br>
-                              ・<a href="http://dearwoman-smaps.com/seminar-ol" >起業情報満載！無料動画セミナー</a><br>
-                              ・<a href="http://ameblo.jp/dearwoman-smaps/entry-12005508929.html" target="_blank">あなたの女性起業家度を診断！</a> <br>
-                              ・<a href="http://ameblo.jp/dearwoman-smaps/entry-12044115164.html" target="_blank">起業で自分のスタイルをつくって自由な生き方を手に入れる方法</a><br>
-                              ・<a href="http://ameblo.jp/dearwoman-smaps/entry-12005541090.html" target="_blank">個別相談</a><br>
-                              ・<a href="http://dearwoman-smaps.com/" >ホームページ</a><br>
-                              ・<a href="http://dearwoman-smaps.com/access" >アクセス</a><br>
-                              ・<a href="http://dearwoman-smaps.com/contact">お問い合わせ</a><br>
-                              </font></div>　　<br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br><!--//.menu_frame-->
-                        </div><!--//#freespace-->
-
 </div>

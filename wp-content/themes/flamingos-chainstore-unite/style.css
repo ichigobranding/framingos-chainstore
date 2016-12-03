@@ -119,6 +119,14 @@ ul.ibskinSubList {
     background-position: 4px 50%;
     border-bottom: 2px solid #e84331;
 }
+h2.widget-title{
+    font-weight: bold;
+    padding: 5px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #e84331;
+    font-size: 14px;
+}
 #colophon {
     background-color: #e84331;
     padding: 10px 0;
