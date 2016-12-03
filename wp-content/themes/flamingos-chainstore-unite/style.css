@@ -2,8 +2,8 @@
 Theme Name: flamingos-chainstore-unite
 Template: unite
 Theme URI: http://colorlib.com/wp/unite
-Author: 
-Author URI: 
+Author: Ichigo Branding 株式会社
+Author URI: hichigo-branding.com
 Version: 2.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,5 +15,90 @@ This theme, like WordPress, is licensed under the GPL.
 Unite is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
 */
+
+/******************************************  
+
+目次
+
+・ChainStore Base css 
+・ChainStore system Base css 
+・Branding  Base css 
+・etc....
+
+*******************************************/
+
+
+
+
+/******************************************   
+
+	ChainStore Base css 
+
+*******************************************/
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #663333;
+    font-weight: 800;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    border-right: 1px solid #e86a57;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
+}
+.ibMenuBody {
+    margin: 5px;
+    padding: 5px;
+    background: #ffffff;
+}
+
+
+/******************************************  
+
+ 	ChainStore system Base css 
+
+*******************************************/
+
+
+
+/******************************************  
+
+	Branding  Base css 
+
+*******************************************/
+
+/* Branding  concept color 1 *******/
+.navbar.navbar-default {
+    background-color: #e84331;
+}
+.ibMenuHeader {
+    font-weight: bold;
+    padding: 5px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #e84331;
+}
+
+
+/* Branding  concept color 2 *******/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #e86a57;
+}
+
+
+/* Branding  concept color 3 *******/
+
+
+
+/******************************************  
+
+	etc....
+
+*******************************************/
+
+
+
 
 
