@@ -57,6 +57,7 @@
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
+		                <span class="bar-menu">メニュー</span>
 		            </button>
 
 		        </div>

@@ -21,11 +21,10 @@
 							) );
 						?>
 					</div><!-- .entry-content -->
-					<?php edit_post_link( __( 'Edit', 'unite' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
 				</article><!-- #post-## -->
 			            <div class="tbanana">
 			                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/seminar-mail">
-			                    <img src="<?php bloginfo('template_directory');?>uniteuniteflamingos-chainstore-unite/images/top-bana.png"  alt="※"/>
+			                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
 			                </a>
 		            	</div>
 	<!-- #IB-main## -->
@@ -67,7 +66,7 @@
 				?>
 
 			<?php endwhile; // end of the loop. ?>
-
+<?php edit_post_link( __( 'Edit', 'unite' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
