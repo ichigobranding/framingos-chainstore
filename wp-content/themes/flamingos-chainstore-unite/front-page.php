@@ -8,7 +8,13 @@
 
 	<div id="primary" class="content-area col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
-
+			<!-- topbana -->
+			            <div class="tbanana">
+			                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/seminar-mail">
+			                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
+			                </a>
+		            	</div>
+		    <!-- topbana -->
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,11 +28,7 @@
 						?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
-			            <div class="tbanana">
-			                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/seminar-mail">
-			                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
-			                </a>
-		            	</div>
+
 	<!-- #IB-main## -->
 				<div class="row">
 						<div class="col-md-6 col-md-push-3">
