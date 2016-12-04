@@ -13,9 +13,15 @@
 
 <div id="sideba">
 
-              <div class="imgbtn">
-                      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/seminar-mail">
+               <div class="imgbtn imgbtnpad-top">
+                      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">
                           <img src="<?php echo get_stylesheet_directory_uri() ?>/images/side-bana.png" alt="※"/>
+                      </a>
+               </div>
+
+              <div class="imgbtn imgbtnpad">
+                      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/images/side-bana-long.png" alt="※"/>
                       </a>
                </div>
 
