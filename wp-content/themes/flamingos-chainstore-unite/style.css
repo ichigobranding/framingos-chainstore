@@ -91,6 +91,15 @@ a:hover, a:focus, a:hover {
   -ms-filter: "alpha(opacity=70)";
   transition: 0.6s ;
 }
+.imgbtnpad-top{
+    margin: 0px 0 13px 0;
+}
+.imgbtnpad{
+    margin: 13px 0;
+}
+.widget_search {
+    width:90%;
+}
 
 /* side bar *******/
 .ibMenuBody {
@@ -195,6 +204,7 @@ h3.widgettitle {
     border-bottom: 2px solid #e84331;
     font-size: 14px;
 }
+
 #colophon {
     background-color: #e84331;
     padding: 10px 0;
