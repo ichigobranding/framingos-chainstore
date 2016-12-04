@@ -210,8 +210,24 @@ h3.widgettitle {
     padding: 10px 0;
     margin-top: 20px;
 }
-
-
+div.container.wf h2.widget-title{
+    color:#fff;
+    background-color: #e84331;
+    border-bottom:1px solid #fff;
+    padding: 
+}
+div.textwidget {
+    color:#fff;
+    font-weight: 100;
+    padding: 0 10px;
+}
+.credits-copyright{
+    color:#fff;
+}
+.credits-copyright a{
+    color:#fff;
+    font-weight: 100;
+}
 /* Branding  concept color 2 *******/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
