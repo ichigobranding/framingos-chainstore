@@ -9,8 +9,8 @@
 	<div id="primary" class="content-area col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
 			<!-- topbana -->
-			            <div class="tbanana">
-			                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/seminar-mail">
+			            <div class="tbanana imgbtn">
+			                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">
 			                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
 			                </a>
 		            	</div>

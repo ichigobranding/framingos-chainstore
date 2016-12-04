@@ -11,13 +11,14 @@
 		
 
 
-<div id="sidebar">
- 
- <center>
+<div id="sideba">
 
-  <a href="http://dearwoman-smaps.com/dvd"><img src="http://dearwoman-smaps.com/wp-content/themes/smaps_201412/images/sidebnr-dvdlp.png" /></a><br><br>
+              <div class="imgbtn">
+                      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/seminar-mail">
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/images/side-bana.png" alt="※"/>
+                      </a>
+               </div>
 
- </center>
               <?php if( is_active_sidebar('home1') ) dynamic_sidebar( 'home1' ); ?><br>
               <?php if( is_active_sidebar('home2') ) dynamic_sidebar( 'home2' ); ?><br>
               <?php if( is_active_sidebar('home3') ) dynamic_sidebar( 'home3' ); ?><br>
