@@ -43,7 +43,17 @@ a {
 a:hover, a:focus, a:hover {
     color: #ff3366;
 }
+div.site-branding{
+    margin: 10px 0;
+}
+/* ヘッダー *******/
 
+.bname-top {
+    margin: 0 0 5px 0;
+}
+h4.site-description{
+    font-size: 12px;
+}
 /* menu bar *******/
 .navbar-default .navbar-nav>li>a {
     color: #fff;
@@ -60,6 +70,7 @@ a:hover, a:focus, a:hover {
 .navbar {
     margin-bottom: 10px;
 }
+
 /* menu bar　モバイル *******/
 .bar-menu{
 	color: #fff;
@@ -130,6 +141,19 @@ ul.ibskinSubList {
 .iblistLink {
     padding: 0px 0 15px 0;
     text-align: right;
+}
+/* footer *******/
+div.textwidget {
+    color:#fff;
+    font-weight: 100;
+    padding: 0 10px;
+}
+.credits-copyright{
+    color:#fff;
+}
+.credits-copyright a{
+    color:#fff;
+    font-weight: 100;
 }
 
 /******************************************  
@@ -216,18 +240,7 @@ div.container.wf h2.widget-title{
     border-bottom:1px solid #fff;
     padding: 
 }
-div.textwidget {
-    color:#fff;
-    font-weight: 100;
-    padding: 0 10px;
-}
-.credits-copyright{
-    color:#fff;
-}
-.credits-copyright a{
-    color:#fff;
-    font-weight: 100;
-}
+
 /* Branding  concept color 2 *******/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;

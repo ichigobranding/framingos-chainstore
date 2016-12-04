@@ -26,6 +26,9 @@
 		<header id="masthead" class="site-header col-sm-12" role="banner">
 
 				<div class="site-branding col-md-6">
+					<div class="bname-top">
+						<?php bloginfo( 'name' ); ?>
+					</div>
 					<?php if( get_header_image() != '' ) : ?>
 
 						<div id="logo">
