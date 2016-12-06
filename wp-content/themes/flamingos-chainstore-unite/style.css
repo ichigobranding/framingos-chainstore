@@ -55,6 +55,10 @@ div.site-branding{
 h4.site-description{
     font-size: 10px;
 }
+#masthead{
+  margin: 0px;
+  padding: 0px;
+}
 /* menu bar *******/
 .navbar-default .navbar-nav>li>a {
     color: #fff;
@@ -73,6 +77,23 @@ h4.site-description{
 }
 .star-rating{
     background-color: fff;
+}
+
+.tellwaku {
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    padding: 5px 20px;
+    background-color: #fff;
+}
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
 
 /* menu bar　モバイル *******/
@@ -185,7 +206,122 @@ div.textwidget {
 
 /******************************************  
 
- 	ChainStore system Base css 
+	Branding  Base css 
+
+*******************************************/
+
+/* Branding  concept color 1 *******/
+.navbar.navbar-default {
+    background-color: #e84331;
+}
+.ibMenuHeader {
+    font-weight: bold;
+    padding: 5px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #e84331;
+}
+h2.widget-title {
+    font-weight: bold;
+    padding: 5px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #e84331;
+    font-size: 14px;
+}
+h3.widgettitle {
+    font-weight: bold;
+    padding: 5px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #e84331;
+    font-size: 14px;
+}
+
+div.container.wf h2.widget-title{
+    color:#333;
+    background-color: #f9e5e4;
+    border-bottom:1px solid #e84331;
+    padding: 
+}
+.after-footer{
+    padding: 20px 0;
+    background-color: #e84331;
+}
+.freespace-waku {
+    border: 2px solid #e84331;
+    padding: 10px;
+    margin: 0px 0 15px 0;
+}
+/* セミナー募集 *******/
+.re1511-ttl {
+    margin: 10px 13px !important;
+    font-size: 17px !important;
+    line-height: 90% !important;
+    color: #333;
+    padding: 0px 0px 10px 5px;
+    border-bottom: 1px dotted #e84331;
+    font-weight: 600;
+}
+.ibskinArticle33 {
+    padding: 5px 0;
+    border: 1px dotted #e84331;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.skinMessageBoard3-s {
+    border: 1px dotted #d7d7d7;/* 変更しない　外枠の線 *******/
+    margin: 10px 0 5px 0;
+    padding: 0px 10px 10px 7px;
+    font-size: 12px;
+    height: 115px;
+    overflow: auto;
+}
+#topnewsBox-new {
+    padding: 0 12px;
+}
+.hissudesu {
+    margin: 4px 0;
+    background-color: #e84331;
+    color: #fff;
+    width: 24px;
+    font-size: 10px;
+    padding: 1px;
+    font-weight: 600;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.telcon{
+    margin: 0 5px 0 0;
+    color:#e84331;
+}
+
+/* Branding  concept color 2 *******/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #e86a57;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #e86a57;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Branding  concept color 3 *******/
+#colophon {
+    background-color: #f9e5e4;
+    padding: 10px 0 0px 0;
+    margin-top: 20px;
+}
+
+
+/******************************************  
+
+    ChainStore system Base css 
 
 *******************************************/
 /* 新着　メッセージボード *******/
@@ -276,116 +412,6 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .bizfom{margin: 10px 0 0 0;}
 .bizfom2{margin: 10px 0 13px 0;}
 .bizfom3{color: #fff;font-size: 14px;padding: 10px 5px;}
-
-/******************************************  
-
-	Branding  Base css 
-
-*******************************************/
-
-/* Branding  concept color 1 *******/
-.navbar.navbar-default {
-    background-color: #e84331;
-}
-.ibMenuHeader {
-    font-weight: bold;
-    padding: 5px 10px 5px 7px;
-    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
-    background-position: 4px 50%;
-    border-bottom: 2px solid #e84331;
-}
-h2.widget-title {
-    font-weight: bold;
-    padding: 5px 10px 5px 7px;
-    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
-    background-position: 4px 50%;
-    border-bottom: 2px solid #e84331;
-    font-size: 14px;
-}
-h3.widgettitle {
-    font-weight: bold;
-    padding: 5px 10px 5px 7px;
-    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
-    background-position: 4px 50%;
-    border-bottom: 2px solid #e84331;
-    font-size: 14px;
-}
-
-div.container.wf h2.widget-title{
-    color:#333;
-    background-color: #f9e5e4;
-    border-bottom:1px solid #e84331;
-    padding: 
-}
-.after-footer{
-    padding: 20px 0;
-    background-color: #e84331;
-}
-.freespace-waku {
-    border: 2px solid #e84331;
-    padding: 10px;
-    margin: 0px 0 15px 0;
-}
-/* セミナー募集 *******/
-.re1511-ttl {
-    margin: 10px 13px !important;
-    font-size: 17px !important;
-    line-height: 90% !important;
-    color: #333;
-    padding: 0px 0px 10px 5px;
-    border-bottom: 1px dotted #e84331;
-    font-weight: 600;
-}
-.ibskinArticle33 {
-    padding: 5px 0;
-    border: 1px dotted #e84331;
-    background: #ffffff;
-    margin-bottom: 15px;
-}
-.skinMessageBoard3-s {
-    border: 1px dotted #d7d7d7;/* 変更しない　外枠の線 *******/
-    margin: 10px 0 5px 0;
-    padding: 0px 10px 10px 7px;
-    font-size: 12px;
-    height: 115px;
-    overflow: auto;
-}
-#topnewsBox-new {
-    padding: 0 12px;
-}
-.hissudesu {
-    margin: 4px 0;
-    background-color: #e84331;
-    color: #fff;
-    width: 24px;
-    font-size: 10px;
-    padding: 1px;
-    font-weight: 600;
-    text-align: center;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-}
-
-/* Branding  concept color 2 *******/
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #e86a57;
-}
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-    background-color: #e86a57;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-}
-
-
-
-/* Branding  concept color 3 *******/
-#colophon {
-    background-color: #f9e5e4;
-    padding: 10px 0 0px 0;
-    margin-top: 20px;
-}
 
 
 /******************************************  
