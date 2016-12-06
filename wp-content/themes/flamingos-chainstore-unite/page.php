@@ -11,25 +11,28 @@
  */
 
 get_header(); ?>
+<div class="container conbg">
+      <div id="main-grid2" class="row"><!-- .row -->
+      	<div id="primary" class="content-area">
+      		<main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area col-sm-12 col-md-8 <?php echo of_get_option( 'site_layout' ); ?>">
-		<main id="main" class="site-main" role="main">
+				<div class="row">
+						<div class="col-md-6 col-md-push-3">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+								<?php get_template_part( 'page-kiji-temp' ); ?>
 
-				<?php get_template_part( 'content', 'page' ); ?>
+						</div>
+							<div class="col-md-3 col-md-pull-6">
+								<?php get_template_part( 'left-sidebar' ); ?>
+							</div>
+					<div class="col-md-3">
+						<?php get_sidebar(); ?>
+					</div>
+				</div>
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
+      		</main><!-- #main -->
+      	</div><!-- #primary -->
+      </div><!-- .row -->
+</div><!-- .container -->
 
-			<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
