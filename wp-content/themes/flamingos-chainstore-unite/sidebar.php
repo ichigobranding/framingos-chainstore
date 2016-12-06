@@ -12,6 +12,11 @@
 
 
 <div id="sideba">
+               <div class="imgbtn imgbtnpad-top">
+                      <a href="<?php echo esc_url( home_url( '/' ) ); ?>/member">
+                          <img src="<?php echo get_stylesheet_directory_uri() ?>/images/member-bana.png" alt="※"/>
+                      </a>
+               </div>
 
                <div class="imgbtn imgbtnpad-top">
                       <a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">

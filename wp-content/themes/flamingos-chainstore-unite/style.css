@@ -50,9 +50,10 @@ div.site-branding{
 
 .bname-top {
     margin: 0 0 5px 0;
+    font-size:3px;
 }
 h4.site-description{
-    font-size: 12px;
+    font-size: 10px;
 }
 /* menu bar *******/
 .navbar-default .navbar-nav>li>a {
