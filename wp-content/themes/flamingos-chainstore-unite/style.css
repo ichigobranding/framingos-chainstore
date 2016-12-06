@@ -146,6 +146,21 @@ ul.ibskinSubList {
     padding: 0px 0 15px 0;
     text-align: right;
 }
+ul.ibskinSubList-pro {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.ibprofileDetailArea {
+    clear: both;
+    padding: 1px 0;
+    font-size: .94em;
+}
+.ibProfileImageArea {
+    float: left;
+    width: 94px;
+    height: 94px;
+}
 /* page-kiji-temp *******/
 .ibskinArticleHeader h1, .skinDescriptionArea, .skinTitleArea {
     margin: 0;
@@ -154,13 +169,11 @@ ul.ibskinSubList {
     font-weight: 400;
 }
 
-
-
 /* footer *******/
 div.textwidget {
     color:#333;
     font-weight: 100;
-    padding: 0 10px;
+    margin: 0px;
 }
 .credits-copyright{
     color:#fff;
@@ -208,7 +221,38 @@ div.textwidget {
     height:115px; /* åˆæœŸ250 */
     overflow:auto;
 }
-
+.magawaku {
+    list-style-type: none;
+    margin: 0px 0 0 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px dotted #b3b3b3;
+    font-size: 12px;
+}
+.daymaga {
+    width: 75px;
+    padding: 3px;
+    font-size: 10px;
+}
+.daymaga2 {
+    padding: 3px;
+    font-size: 14px;
+}
+.meru {
+    background-color: #ff9933;/* 新着メルマガ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.nnnew {
+    background-color: #00a497;/* 新着お知らせ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
 /******************************************  
 
 	Branding  Base css 
@@ -252,6 +296,38 @@ div.container.wf h2.widget-title{
 .after-footer{
     padding: 20px 0;
     background-color: #e84331;
+}
+.freespace-waku {
+    border: 2px solid #e84331;
+    padding: 10px;
+    margin: 0px 0 15px 0;
+}
+/* セミナー募集 *******/
+.re1511-ttl {
+    margin: 10px 13px !important;
+    font-size: 17px !important;
+    line-height: 90% !important;
+    color: #333;
+    padding: 0px 0px 10px 5px;
+    border-bottom: 1px dotted #e84331;
+    font-weight: 600;
+}
+.ibskinArticle33 {
+    padding: 5px 0;
+    border: 1px dotted #e84331;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.skinMessageBoard3-s {
+    border: 1px dotted #d7d7d7;/* 変更しない　外枠の線 *******/
+    margin: 10px 0 5px 0;
+    padding: 0px 10px 10px 7px;
+    font-size: 12px;
+    height: 115px;
+    overflow: auto;
+}
+#topnewsBox-new {
+    padding: 0 12px;
 }
 
 /* Branding  concept color 2 *******/
