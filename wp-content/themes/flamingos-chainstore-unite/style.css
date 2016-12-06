@@ -73,7 +73,7 @@ h4.site-description{
     box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
 }
 .navbar {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .star-rating{
     background-color: fff;
@@ -81,14 +81,9 @@ h4.site-description{
 
 .tellwaku {
     font-size: 12px;
-    margin: 10px 0 10px 0;
     padding: 5px 20px;
     background-color: #fff;
-}
-.well {
-    min-height: 20px;
-    padding: 19px;
-    margin-bottom: 20px;
+    margin: 20px 0 10px 0;
     background-color: #f5f5f5;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
@@ -211,6 +206,13 @@ div.textwidget {
 *******************************************/
 
 /* Branding  concept color 1 *******/
+
+/* ヘッダー右の連絡のアイコン *******/
+.telcon{
+    margin: 0 5px 0 0;
+    color:#e84331;
+}
+/* 記事内のブランディングカラー *******/
 .navbar.navbar-default {
     background-color: #e84331;
 }
@@ -253,33 +255,47 @@ div.container.wf h2.widget-title{
     padding: 10px;
     margin: 0px 0 15px 0;
 }
-/* セミナー募集 *******/
-.re1511-ttl {
-    margin: 10px 13px !important;
-    font-size: 17px !important;
-    line-height: 90% !important;
-    color: #333;
-    padding: 0px 0px 10px 5px;
-    border-bottom: 1px dotted #e84331;
+/* 記事枠 *******/
+.ibskinArticle {
+    padding: 5px 0;
+    border: 1px solid #e84331;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+.ibskinArticle2, .ibskinArticle3 {
+    margin-bottom: 15px;
+    overflow: visible!important;
+    zoom: 1;
+}
+.ibskinArticleBody2 {
+    margin: 15px 15px;
+}
+.hensyuu {
+    margin: 50px 0px;
+}
+.kiji-page {
+    margin: 0px 0 50px 0;
+}
+.ibskinArticleHeader {
+    margin: 0 12px;
+    padding: 8px 0px;
+    background: url(※) no-repeat;
+    background-position: 0 50%;
+    border: none;
+    border-bottom: 1px solid #e84331;
+    overflow: hidden;
+    zoom: 1;
+}
+.fontW6 {
+    border-left: 8px solid #e84331;
+    font-size: 25px;
+    padding-left: 12px;
+    line-height: 1.3;
+    margin: 0 0 30px;
     font-weight: 600;
 }
-.ibskinArticle33 {
-    padding: 5px 0;
-    border: 1px dotted #e84331;
-    background: #ffffff;
-    margin-bottom: 15px;
-}
-.skinMessageBoard3-s {
-    border: 1px dotted #d7d7d7;/* 変更しない　外枠の線 *******/
-    margin: 10px 0 5px 0;
-    padding: 0px 10px 10px 7px;
-    font-size: 12px;
-    height: 115px;
-    overflow: auto;
-}
-#topnewsBox-new {
-    padding: 0 12px;
-}
+
+/* お問い合わせフォーム　必須マーク *******/
 .hissudesu {
     margin: 4px 0;
     background-color: #e84331;
@@ -293,10 +309,7 @@ div.container.wf h2.widget-title{
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
-.telcon{
-    margin: 0 5px 0 0;
-    color:#e84331;
-}
+
 
 /* Branding  concept color 2 *******/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -390,6 +403,33 @@ div.container.wf h2.widget-title{
     margin: 0 7px 0 0;
 }
 
+/* セミナー募集＆コンサル募集 *******/
+.re1511-ttl {
+    margin: 10px 13px !important;
+    font-size: 17px !important;
+    line-height: 90% !important;
+    color: #333;
+    padding: 0px 0px 10px 5px;
+    border-bottom: 1px dotted #e84331;
+    font-weight: 600;
+}
+.ibskinArticle33 {
+    padding: 5px 0;
+    border: 1px dotted #e84331;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.skinMessageBoard3-s {
+    border: 1px dotted #d7d7d7;/* 変更しない　外枠の線 *******/
+    margin: 10px 0 5px 0;
+    padding: 0px 10px 10px 7px;
+    font-size: 12px;
+    height: 115px;
+    overflow: auto;
+}
+#topnewsBox-new {
+    padding: 0 12px;
+}
 
 /* フッター　メルマガ登録 *******/
 input[type="submit"] {
