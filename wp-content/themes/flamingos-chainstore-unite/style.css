@@ -253,6 +253,30 @@ div.textwidget {
     padding: 3px;
     margin: 0 7px 0 0;
 }
+
+
+/* フッター　メルマガ登録 *******/
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    width: 50%;
+    background-color: #e84331;/* concept color****/
+    color: #fff;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-weight: 600;
+    border-style: none;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"] {
+    padding: 10px;
+    width: 90%;
+}
+.OM_table{width:100%;border-collapse:collapse;border:1px solid #e84331;background-color:#e84331;}/* concept color****/
+.OM_table tr td{text-align:center;}
+.bizfom{margin: 10px 0 0 0;}
+.bizfom2{margin: 10px 0 13px 0;}
+.bizfom3{color: #fff;font-size: 14px;padding: 10px 5px;}
+
 /******************************************  
 
 	Branding  Base css 
@@ -328,6 +352,19 @@ div.container.wf h2.widget-title{
 }
 #topnewsBox-new {
     padding: 0 12px;
+}
+.hissudesu {
+    margin: 4px 0;
+    background-color: #e84331;
+    color: #fff;
+    width: 24px;
+    font-size: 10px;
+    padding: 1px;
+    font-weight: 600;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
 }
 
 /* Branding  concept color 2 *******/
