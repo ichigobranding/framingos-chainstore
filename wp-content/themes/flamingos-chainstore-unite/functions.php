@@ -81,5 +81,7 @@ function xsbf_widgets_init() {
 		'after_widget' 	=> '</div><!-- container --></div>',
 	) );
 
+
+
 } //end function
 endif; // end ! function_exists
