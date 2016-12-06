@@ -309,19 +309,14 @@ div.container.wf h2.widget-title{
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
-
+/* page-fullwidth *******/
+.entry-title {
+    font-size: 32px;
+    font-weight: 100;
+    color: #e84331;
+}
 
 /* Branding  concept color 2 *******/
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #e86a57;
-}
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-    background-color: #e86a57;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-}
-
 
 
 /* Branding  concept color 3 *******/
@@ -453,6 +448,40 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .bizfom2{margin: 10px 0 13px 0;}
 .bizfom3{color: #fff;font-size: 14px;padding: 10px 5px;}
 
+
+/* woocommerce *******/
+.woocommerce .star-rating{
+color: #e2c242;/* 星のマーク*******/
+margin: 0 0 3px 0;
+}
+.woocommerce-info {
+    border-top-color: #e84331;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #e86a57;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #e86a57;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+.woocommerce ul.cart_list, .woocommerce ul.product_list_widget {
+    padding: 0 10px;
+}
+.woocommerce ul.products li.product .price {
+    color: #e84331;
+    display: block;
+    font-weight: 400;
+    margin-bottom: .5em;
+    font-size: 17px;
+}
+.woocommerce ul.products li.product h3 {
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1.5em;
+}
 
 /******************************************  
 

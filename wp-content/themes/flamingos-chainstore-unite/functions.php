@@ -81,7 +81,36 @@ function xsbf_widgets_init() {
 		'after_widget' 	=> '</div><!-- container --></div>',
 	) );
 
+//パスワードロック設定　　「保護中：」のテキストを消す
+add_filter('protected_title_format', 'remove_protected');
+  function remove_protected($title) {
+  return '%s';
+}
 
+//パスワードロック設定　　注意書きを変更する
+function my_password_form() {
+  return
+    '<img src="http://localhost:8888/flamingos-chainstore/wp-content/uploads/2016/12/member-login.png">
+     <br><br>
+     <p>サポートプランのメンバー限定ページです。 <p>
+     <p>メンバーの方は、パスワードをご入力の上、ログインしてください。<p>
+    <form class="post_password" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
+      <input name="post_password" type="password" size="24" class="dwpass">
+      <input type="submit" name="Submit" value="' . esc_attr__("ログイン") . '">
+    </form>';
+}
+add_filter('the_password_form', 'my_password_form');
+
+
+//パスワードロック設定　　１時間
+function custom_postpass_time() {
+    require_once ABSPATH . 'wp-includes/class-phpass.php';
+    $hasher = new PasswordHash( 8, true );
+    setcookie( 'wp-postpass_' . COOKIEHASH, $hasher->HashPassword( wp_unslash( $_POST['post_password'] ) ), time() + HOUR_IN_SECONDS, COOKIEPATH );
+    wp_safe_redirect( wp_get_referer() );
+    exit();
+}
+add_action( 'login_form_postpass', 'custom_postpass_time' );
 
 } //end function
 endif; // end ! function_exists
