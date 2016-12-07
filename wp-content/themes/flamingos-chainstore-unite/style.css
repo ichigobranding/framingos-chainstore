@@ -43,6 +43,9 @@ a {
 a:hover, a:focus, a:hover {
     color: #ff3366;
 }
+p {
+    margin: 1px 0 1px;
+}
 div.site-branding{
     margin: 10px 0;
 }
@@ -177,6 +180,15 @@ ul.ibskinSubList-pro {
     width: 94px;
     height: 94px;
 }
+.ibarticleDetailArea {
+    padding: 0px 0 10px 0;
+    font-size: 13px;
+}
+/* page.php タイトル *******/
+.ibskinArticleBody2 .page-header{
+    margin: 0px 0 10px;
+    border-bottom: 0px solid #eee;
+}
 /* page-kiji-temp *******/
 .ibskinArticleHeader h1, .skinDescriptionArea, .skinTitleArea {
     margin: 0;
@@ -268,7 +280,8 @@ div.container.wf h2.widget-title{
     zoom: 1;
 }
 .ibskinArticleBody2 {
-    margin: 15px 15px;
+    margin: 5px 0px 15px 0;
+    padding: 0 15px;
 }
 .hensyuu {
     margin: 50px 0px;
@@ -315,7 +328,20 @@ div.container.wf h2.widget-title{
     font-weight: 100;
     color: #e84331;
 }
-
+/* page.php *******/
+.ibskinArticleBody2 h1.entry-title{
+    margin: 0 0px;
+    padding: 4px 0px 8px 0;
+    background: url(※) no-repeat;
+    background-position: 0 50%;
+    border: none;
+    border-bottom: 1px solid #e84331;
+    overflow: hidden;
+    zoom: 1;
+    font-size: 15px;
+    color: #333;
+    font-weight: 800;
+}
 /* Branding  concept color 2 *******/
 
 
@@ -372,6 +398,11 @@ div.container.wf h2.widget-title{
     border-bottom: 1px dotted #b3b3b3;
     font-size: 12px;
 }
+.magawaku2 {
+    margin-bottom: 3px;
+    padding: 3px;
+    font-size: 12px;
+}
 .daymaga {
     width: 75px;
     padding: 3px;
@@ -389,6 +420,9 @@ div.container.wf h2.widget-title{
     padding: 3px;
     margin: 0 7px 0 0;
 }
+.meru a {
+    color: #fff;
+}
 .nnnew {
     background-color: #00a497;/* 新着お知らせ */
     color: #fff;
@@ -397,6 +431,21 @@ div.container.wf h2.widget-title{
     padding: 3px;
     margin: 0 7px 0 0;
 }
+.nnnew a {
+    color: #fff;
+}
+table {
+    word-break: break-all;
+}
+.new-icon {
+    color: #e84331;
+    font-size: 12px;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-weight: 300;
+}
+
+
 
 /* セミナー募集＆コンサル募集 *******/
 .re1511-ttl {

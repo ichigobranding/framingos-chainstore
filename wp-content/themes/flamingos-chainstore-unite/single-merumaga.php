@@ -27,7 +27,7 @@ get_header(); ?>
                                                       <div class="ibskinArticleHeader">
                                                           <div class="ibskinArticleTitle">
                                                                 <h1>
-                                                                  <b>「女性が起業で、自分のスタイルをつくって自由な生き方を手に入れる方法」配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
+                                                                  <b>「メルマガのタイトルを記入します」配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
                                                                 </h1>
                                                           </div>
                                                       </div>
@@ -49,10 +49,10 @@ get_header(); ?>
 																				</span>
 																			</strong><br><br>
 
-																			メルマガにご登録されている方はぜひ読んで、起業家マインドを身につけて、ブラッシュアップしてくださいね。<br><br>
+																			メルマガを読んでこうなってくださいね。テキストテキストテキスト<br><br>
 
 																			<a href="<?php echo esc_url( home_url( '/' ) ); ?>mailmag">
-																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">メルマガの登録がまだお済みでないあなたはこちらです！</span></span></strong></a>
+																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">まだメルマガにご登録いただいていない方はこちらです。</span></span></strong></a>
 
 
 																		<?php endwhile; // end of the loop. ?>

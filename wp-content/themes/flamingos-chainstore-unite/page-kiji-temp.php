@@ -3,17 +3,8 @@
                                     
                                             <div class="ibskinArticle">
                                               <div class="ibskinArticle2">
-                                                <div class="ibskinArticle3">
-                                                      <div class="ibskinArticleHeader">
-                                                          <div class="ibskinArticleTitle">
-                                                                <h1>
-                                                                  <b><?php the_title(); ?></b>
-                                                                </h1>
-                                                          </div>
-                                                      </div>
-                                                      
+                                                <div class="ibskinArticle3">  
                                                             <div class="ibskinArticleBody2">
-
                                                                       <!--記事　中身-->
                                                                       
                                                                           <?php while ( have_posts() ) : the_post(); ?>
@@ -30,6 +21,5 @@
                                                 </div>
                                               </div>
                                             </div>
-                                 
       <!--記事全体-->
 </div>
