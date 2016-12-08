@@ -59,7 +59,7 @@
                                 //以下3行の項目を任意に変更
                                   $display_posts_count = 10; //実際に表示したい記事件数
                                   $get_posts_count = 15; //取得する記事件数（PR記事を含むので$display_posts_countより少し多めに設定）
-                                  $feed = fetch_feed('http://feedblog.ameba.jp/rss/ameblo/dearwoman-smaps/rss20.xml'); //取得したいRSS
+                                  $feed = fetch_feed('http://rssblog.ameba.jp/woman-pc/rss20.xml'); //取得したいRSS
                                 //
                                   $counter = 0; //ループ回数カウンター
                                   include_once(ABSPATH . WPINC . '/feed.php');
