@@ -207,6 +207,9 @@ ul.ibskinSubList-pro {
     font-weight: 200;
     font-size: 12px;
 }
+ul.sidetema {
+    margin-bottom: 0px;
+}
 /* page.php タイトル *******/
 .ibskinArticleBody2 .page-header{
     margin: 0px 0 10px;
@@ -406,14 +409,6 @@ div.container.wf h2.widget-title{
     height:200px; /* åˆæœŸ250 */
     overflow:auto;
 }
-.skinMessageBoard3-s {
-    border: 1px dotted #d7d7d7;
-    margin: 10px 0 5px 0;
-    padding: 0px 10px 10px 7px;
-    font-size: 12px;
-    height:115px; /* åˆæœŸ250 */
-    overflow:auto;
-}
 .magawaku {
     list-style-type: none;
     margin: 0px 0 0 0;
@@ -468,7 +463,10 @@ table {
     font-weight: 300;
 }
 
-
+ul {
+    margin: 0;
+padding: 0;
+}
 
 /* セミナー募集＆コンサル募集 *******/
 .re1511-ttl {
@@ -502,7 +500,29 @@ table {
     text-align: right;
     font-size: 12px;
 }
-
+.daymaga-new {
+    width: 27%;
+    padding: 10px 3px;
+    font-size: 12px;
+}
+.daymaga2-new{
+    padding: 3px;
+    font-size: 14px;
+}
+.magatable {
+    padding: 0;
+    margin: :0;
+}
+#topnewsBox-new ul li {
+    list-style: none;
+    padding-left: 0;
+    border-bottom: dashed 1px #ccc;
+    vertical-align: bottom;
+}
+td, th {
+    padding: 3px;
+    font-size: 14px;
+}
 /* フッター　メルマガ登録 *******/
 input[type="submit"] {
     -webkit-appearance: button;
