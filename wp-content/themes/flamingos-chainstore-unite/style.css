@@ -35,6 +35,13 @@ Unite is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, 
 	ChainStore Base css 
 
 *******************************************/
+body {
+    font-family: "Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS PGothic";
+    color: #333333;
+    font-size: 15px;
+   /* background:url(images/bg.png);*/
+   background: #fff;
+}
 a {
     color: #0000ff;
     text-decoration: none;
@@ -50,7 +57,6 @@ div.site-branding{
     margin: 10px 0;
 }
 /* ヘッダー *******/
-
 .bname-top {
     margin: 0 0 5px 0;
     font-size:3px;
@@ -93,7 +99,9 @@ h4.site-description{
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
 }
-
+.iblistLink a {
+    font-weight: 200;
+}
 /* menu bar　モバイル *******/
 .bar-menu{
 	color: #fff;
@@ -155,6 +163,9 @@ ul.ibskinSubList {
     padding: 0;
     margin: 0;
 }
+.widget ul  a{
+    font-weight: 200;
+}
 .widget > ul > li, li.recentcomments {
     padding: 0px 0px;
     border-bottom: 1px dotted #b3b3b3;
@@ -183,6 +194,18 @@ ul.ibskinSubList-pro {
 .ibarticleDetailArea {
     padding: 0px 0 10px 0;
     font-size: 13px;
+}
+.leftsidebara {
+    font-size: 13px;
+    margin: 11px 0;
+}
+.skinSubHr, .ibskinSubList li a {
+    font-weight: 200;
+    font-size: 12px;
+}
+.widget > ul > li, li.recentcomments {
+    font-weight: 200;
+    font-size: 12px;
 }
 /* page.php タイトル *******/
 .ibskinArticleBody2 .page-header{
@@ -413,7 +436,7 @@ div.container.wf h2.widget-title{
     font-size: 14px;
 }
 .meru {
-    background-color: #ff9933;/* 新着メルマガ */
+    background-color: #ff6b33;/* 新着メルマガ */
     color: #fff;
     font-weight: 900;
     font-size: 11px;
@@ -424,7 +447,7 @@ div.container.wf h2.widget-title{
     color: #fff;
 }
 .nnnew {
-    background-color: #00a497;/* 新着お知らせ */
+    background-color: #288402;/* 新着お知らせ */
     color: #fff;
     font-weight: 900;
     font-size: 11px;
@@ -473,6 +496,11 @@ table {
 }
 #topnewsBox-new {
     padding: 0 12px;
+}
+.iblistLink2 {
+    padding: 6px 10px 2px 0;
+    text-align: right;
+    font-size: 12px;
 }
 
 /* フッター　メルマガ登録 *******/
