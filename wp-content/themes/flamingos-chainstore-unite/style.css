@@ -409,6 +409,16 @@ div.container.wf h2.widget-title{
     height:200px; /* åˆæœŸ250 */
     overflow:auto;
 }
+.skinMessageBoard-widgetcss {
+    border: 1px dotted #e84331;
+    margin: 5px 0 15px 0;
+    padding: 20px 15px;
+    font-size: 12px;
+}
+.skinMessageBoard3-widgetcss {
+    font-size: 12px;
+    overflow:auto;
+}
 .magawaku {
     list-style-type: none;
     margin: 0px 0 0 0;

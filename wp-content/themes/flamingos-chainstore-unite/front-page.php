@@ -33,6 +33,7 @@
 				<div class="row">
 						<div class="col-md-6 col-md-push-3">
 							 <?php get_template_part( 'messageborad' ); ?>
+							 <?php get_template_part( 'messageborad-widget' ); ?>
 							 <?php get_template_part( 'semi-indexparts-main' ); ?>
 							 <?php get_template_part( 'consul-indexparts-dw' ); ?>
 							 <?php get_template_part( 'blogul' ); ?>
