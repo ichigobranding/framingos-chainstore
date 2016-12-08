@@ -8,8 +8,6 @@
  */
 
 get_header(); ?>
-
-
 <!-- アドバンス　google map スクリプト -->
 <style type="text/css">
 .acf-map {
@@ -181,94 +179,26 @@ $(document).ready(function(){
 })(jQuery);
 </script>
 <!-- アドバンス　google map スクリプト -->
-<div class="container">
-<div id="main-grid" class="row">
-            <!-- パンクズ -->
-                <div class="breadcrumbs">
-                         <?php if(function_exists('bcn_display'))
-                        {
-                        bcn_display();
-                        }?>
-                  </div>
-            <!-- パンクズ -->
-    <div id="primary" class="content-area col-md-8">
-        <main id="main" class="site-main" role="main">
 
-        <?php while ( have_posts() ) : the_post(); ?>   
+<div class="container conbg">
+      <div id="main-grid2" class="row"><!-- .row -->
+        <div id="primary" class="content-area">
+          <main id="main" class="site-main" role="main">
+                    <div class="row">
+                        <div class="col-md-10 col-md-push-1">
+                          <div class="kiji-page">
+                               <!--記事全体-->
+                                            <div class="ibskinArticle">
+                                              <div class="ibskinArticle2">
+                                                <div class="ibskinArticle3">                                                      
+                                                      <div class="ibskinArticleBody2">
+                                                                <!--記事　中身-->
+                                                                     <?php while ( have_posts() ) : the_post(); ?>   
             <?php endwhile; // end of the loop. ?>
                 <div class="titleichiran3">
-                             <!-- 満席 -->
-                              <?php
-                                     if( get_field('noform') )
-                                    {
-                                    echo '<button type="button" class="btn btn-danger semiformbtn">満席になりました</button><br>';
-                                    }
-                                    else
-                                    {
-                                    }
-                              ?>
-                              <!-- 満席 -->
-                        <!-- 満席 → 終了 -->
-                                        <?php
-                                        if( get_field('manend') )
-                                        {
-                                        echo '<button type="button" class="btn btn-dangertop">満席</button>';
-                                            }
-                                            else
-                                            {
-                                            }
-                                            ?>
-                        <!-- 満席 → 終了 -->    
-                              <!-- 残りわずか -->
-                              <?php
-                                     if( get_field('noform_before') )
-                                    {
-                                    echo '<button type="button" class="btn btn-wazuka semiformbtn">残りわずか</button><br>';
-                                    }
-                                    else
-                                    {
-                                    }
-                              ?>
-                              <!-- 残りわずか -->
-                              <!-- 終了 -->
-                              <?php
-                                     if( get_field('semiend') )
-                                    {
-                                    echo '<button type="button" class="btn btn-wazuka semiformbtn">終了</button><br>';
-                                    }
-                                    else
-                                    {
-                                    }
-                              ?>
-                              <!-- 終了 -->
-
-                    <?php the_title(); ?>
+                    <h2 class="fontW6"><?php the_title(); ?></h2>
                 </div>
-                  <div class="left">
-                    開催日時：<?php the_field('semidaytop'); ?><?php the_field('semitime'); ?><br>
-            </div>
-                                    
-                                    <h3 class="p1">セミナー概要</h3>
-                                    <?php the_field('semishort'); ?>
-                                    <?php the_field('semibun'); ?>
-                                    <?php the_field('semibun2'); ?>
-                                    <?php the_field('semibun3'); ?>
-                                <!-- お客様の声 -->
-                              <?php
-                                     if( get_field('voice-ok') )
-                                    {
-                                           echo '<div class="voice"><h2 class="customerss">お客様の声</h2>';
-                                           echo the_field("semivoice");
-                                           echo '</div>';
-
-                                    }
-                                    else
-                                    {
-                                    }
-                              ?>
-                               <!-- お客様の声 -->
-            <?php the_field('semikaiketu'); ?><br>
-<table class="table">
+      <table class="table">
             <tr class="tabeletitlebg"><th colspan="2">セミナー概要</th></tr>
             <tr>
             <td class="td_nowrap tabletitle" scope="row">セミナー名</td>
@@ -362,41 +292,55 @@ $(document).ready(function(){
             <td>以下のフォームに入力後、送信をお願いいたし ます。</td>
             <tr class="tabeletitlebg"><th colspan="2"></th></tr>
             </table>
-                  <div class="formcss">
+                 <!-- <div class="formcss">
                         <div class="naiyou2"><span class="glyphicon glyphicon-pencil icontopp"></span>このセミナーの予約お申込みはこちらからお願いいたします。</div>
-                  </div> 
-                                                                                          <!-- 残りわずか -->
-                                                                                          <?php
-                                                                                                 if( get_field('noform_before') )
-                                                                                                {
-                                                                                                echo '<button type="button" class="btn btn-wazuka semiformbtn">残りわずか</button><br>';
-                                                                                                }
-                                                                                                else
-                                                                                                {
-                                                                                                }
-                                                                                          ?>
-                                                                                          <!-- 残りわずか -->  
-                        <!-- 満席 -->
+                  </div>-->
+
+                        <!-- 募集終了 -->
                             <?php
                             if( get_field('noform') )
                             {
-                                echo '<div class="manseki"> 満席になりました。</div>';
+                                echo '<div class="manseki">募集終了</div>
+                              <br>
+                              募集を終了いたしました。<br><br>
+                              募集は、メルマガにて優先的にご案内しております。<br><br>
+                              <b><a href="get_stylesheet_directory_uri()/mailmag">メルマガのご登録はこちらです。</a></b><br><br><br>';
                             }
-                              if( get_field('semiend') )
+                            if( get_field('semiend') )
                             {
-                                echo '<div class="manseki">終了</div>';
+                                echo '<div class="manseki">満席のため締め切りました</div>
+                              <br>
+                              募集を終了いたしました。<br><br>
+                              募集は、メルマガにて優先的にご案内しております。<br><br>
+                              <b><a href="get_stylesheet_directory_uri()/mailmag">メルマガのご登録はこちらです。</a></b><br><br><br>';
                             }
+
                             else
                             {
-                                the_field('semiform22'); the_field('semiurl');
+                                the_field('cunsulform'); 
                             }
                             ?>
-                        <!-- 満席 -->
+                         <!-- 募集終了 -->
+
+
         <!-- <div class="right">
                  <a href="<?php bloginfo(); ?>/semi"><button type="button" class="btn bottom-shousai">セミナー・講演一覧に戻る</button></a>
         </div>--> 
-        </main><!-- #main -->
-    </div><!-- #primary -->
-</div><!-- .row -->
+            
+                                                                <!--記事　中身-->
+                                                            <div class="hensyuu">
+                                                            <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                               <!--記事全体-->
+                        </div><!--kiji page-->
+                   </div><!--col-md-8 col-md-push-2-->
+                </div> <!--row-->
+          </main><!-- #main -->
+        </div><!-- #primary -->
+      </div><!-- .row -->
 </div><!-- .container -->
 <?php get_footer(); ?>

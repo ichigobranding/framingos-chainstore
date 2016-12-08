@@ -523,6 +523,14 @@ td, th {
     padding: 3px;
     font-size: 14px;
 }
+.manseki{
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
 /* フッター　メルマガ登録 *******/
 input[type="submit"] {
     -webkit-appearance: button;
