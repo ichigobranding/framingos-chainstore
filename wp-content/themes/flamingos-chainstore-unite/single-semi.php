@@ -26,12 +26,13 @@ get_header(); ?>
                                                 <div class="ibskinArticle3">                                                      
                                                       <div class="ibskinArticleBody2">
                                                                 <!--記事　中身-->
-                                                                     <?php while ( have_posts() ) : the_post(); ?>   
+        <?php while ( have_posts() ) : the_post(); ?>   
             <?php endwhile; // end of the loop. ?>
                 <div class="titleichiran3">
                     <h2 class="fontW6"><?php the_title(); ?></h2>
                 </div>
-      <table class="table">
+                <?php the_field('semibun'); ?>
+      <table class="table-bosyuu">
             <tr class="tabeletitlebg"><th colspan="2">募集概要</th></tr>
             <tr>
             <td class="td_nowrap tabletitle" scope="row">募集名</td>
@@ -111,6 +112,7 @@ get_header(); ?>
                               募集は、メルマガにて優先的にご案内しております。<br><br>
                               <b><a href="get_stylesheet_directory_uri()/mailmag">メルマガのご登録はこちらです。</a></b><br><br><br>';
                             }
+                            else
                             if( get_field('semiend') )
                             {
                                 echo '<div class="manseki">満席のため締め切りました</div>
@@ -119,14 +121,12 @@ get_header(); ?>
                               募集は、メルマガにて優先的にご案内しております。<br><br>
                               <b><a href="get_stylesheet_directory_uri()/mailmag">メルマガのご登録はこちらです。</a></b><br><br><br>';
                             }
-
                             else
                             {
-                                the_field('cunsulform'); 
+                                the_field('semiform22'); 
                             }
                             ?>
                          <!-- 募集終了 -->
-
 
         <!-- <div class="right">
                  <a href="<?php bloginfo(); ?>/semi"><button type="button" class="btn bottom-shousai">セミナー・講演一覧に戻る</button></a>
