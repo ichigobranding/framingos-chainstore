@@ -197,7 +197,7 @@ ul.ibskinSubList-pro {
 }
 .leftsidebara {
     font-size: 13px;
-    margin: 11px 0;
+    margin: 0px 0;
 }
 .skinSubHr, .ibskinSubList li a {
     font-weight: 200;
@@ -412,13 +412,31 @@ div.container.wf h2.widget-title{
 .skinMessageBoard-widgetcss {
     border: 1px dotted #e84331;
     margin: 5px 0 15px 0;
-    padding: 20px 15px;
+    padding: 0px 15px;
     font-size: 12px;
+
 }
 .skinMessageBoard3-widgetcss {
-    font-size: 12px;
+    font-size: 15px;
     overflow:auto;
 }
+
+.skinMessageBoard3-widgetcss .textwidget{
+    padding: 0 10px;
+}
+.skinMessageBoard3-widgetcss h2.widget-title{
+    margin:  5px 0;
+    padding: 0 0 10px 10px;
+    font-size: 15px;
+}
+
+.skinMessageBoard3-widgetcss .widget{
+    margin:  10px 0 15px 0;
+}
+.skinMessageBoard3-widgetcss .textwidget{
+    padding: 5px 13px 0px 13px
+}
+
 .magawaku {
     list-style-type: none;
     margin: 0px 0 0 0;

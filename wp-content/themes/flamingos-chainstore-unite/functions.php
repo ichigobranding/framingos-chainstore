@@ -18,7 +18,7 @@ function xsbf_widgets_init() {
 	// Put sidebar first as this is standard in almost all WordPress themes
 		// 左
 	register_sidebar( array(
-		'name'          => __( 'freespase' ),
+		'name'          => __( 'Freespase' ),
 		'id'            => 'sidebar-6',
 		'description' 	=> __( 'Main sidebar (right or left)' ),
 		'before_widget' => '<div id="%1$s" class="widget clearfix %2$s">',
@@ -26,6 +26,19 @@ function xsbf_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+		// Page Top (After Header) Widget Area. Single column.
+	register_sidebar( array(
+		'name' 			=> __( 'Messageboard-Widget' ),
+		'id' 			=> 'sidebar-3',
+		'description' 	=> __( 'Optional section after the header. This is a single column area that spans the full width of the page.', 'flat-bootstrap' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s clearfix">',
+		'before_title' 	=> '<h2 class="widget-title">',
+		'after_title' 	=> '</h2>',
+		'after_widget' 	=> '</div><!-- container -->',
+	) );
+
+
 	register_sidebar( array(
 		'name'          => __( 'Sidebar' ),
 		'id'            => 'sidebar-1',
@@ -45,17 +58,6 @@ function xsbf_widgets_init() {
 		'after_widget' 	=> "</div>",
 		'before_title' 	=> '<h2 class="widget-title">',
 		'after_title' 	=> '</h2>',
-	) );
-
-	// Page Top (After Header) Widget Area. Single column.
-	register_sidebar( array(
-		'name' 			=> __( 'Page Top' ),
-		'id' 			=> 'sidebar-3',
-		'description' 	=> __( 'Optional section after the header. This is a single column area that spans the full width of the page.', 'flat-bootstrap' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s clearfix"><div class="container">',
-		'before_title' 	=> '<h2 class="widget-title">',
-		'after_title' 	=> '</h2>',
-		'after_widget' 	=> '</div><!-- container --></div>',
 	) );
 
 	// Page Bottom (Before Footer) Widget Area. Single Column.
