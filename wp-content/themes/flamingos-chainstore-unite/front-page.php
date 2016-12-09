@@ -35,7 +35,7 @@
 							 <?php get_template_part( 'messageborad' ); ?>
 							 <?php get_template_part( 'messageborad-widget' ); ?>
 							 <?php get_template_part( 'semi-indexparts-main' ); ?>
-							 <?php get_template_part( 'consul-indexparts-dw' ); ?>
+							 <?php get_template_part( 'consul-indexparts-main' ); ?>
 							 <?php get_template_part( 'blogul' ); ?>
 							 <?php get_template_part( 'index-widget' ); ?>
 						</div>

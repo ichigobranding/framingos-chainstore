@@ -38,6 +38,16 @@ function xsbf_widgets_init() {
 		'after_widget' 	=> '</div><!-- container -->',
 	) );
 
+	// Page Bottom (Before Footer) Widget Area. Single Column.
+	register_sidebar( array(
+		'name' 			=> __( 'Index-Widget' ),
+		'id' 			=> 'sidebar-4',
+		'description' 	=> __( 'Optional section before the footer. This is a single column area that spans the full width of the page.', 'flat-bootstrap' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s clearfix">',
+		'before_title' 	=> '<h2 class="widget-title">',
+		'after_title' 	=> '</h2>',
+		'after_widget' 	=> '</div><!-- container -->',
+	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Sidebar' ),
@@ -58,17 +68,6 @@ function xsbf_widgets_init() {
 		'after_widget' 	=> "</div>",
 		'before_title' 	=> '<h2 class="widget-title">',
 		'after_title' 	=> '</h2>',
-	) );
-
-	// Page Bottom (Before Footer) Widget Area. Single Column.
-	register_sidebar( array(
-		'name' 			=> __( 'Index-Widget' ),
-		'id' 			=> 'sidebar-4',
-		'description' 	=> __( 'Optional section before the footer. This is a single column area that spans the full width of the page.', 'flat-bootstrap' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s clearfix">',
-		'before_title' 	=> '<h2 class="widget-title">',
-		'after_title' 	=> '</h2>',
-		'after_widget' 	=> '</div><!-- container -->',
 	) );
 
 	// Home Page (Only) Widget Area. Single Column.
