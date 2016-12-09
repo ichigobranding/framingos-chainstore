@@ -37,6 +37,7 @@
 							 <?php get_template_part( 'semi-indexparts-main' ); ?>
 							 <?php get_template_part( 'consul-indexparts-dw' ); ?>
 							 <?php get_template_part( 'blogul' ); ?>
+							 <?php get_template_part( 'index-widget' ); ?>
 						</div>
 							<div class="col-md-3 col-md-pull-6">
 								<?php get_template_part( 'left-sidebar' ); ?>
