@@ -36,7 +36,7 @@
 							 <?php get_template_part( 'messageborad-widget' ); ?>
 							 <?php get_template_part( 'semi-indexparts-main' ); ?>
 							 <?php get_template_part( 'consul-indexparts-main' ); ?>
-		
+						
 							 <?php get_template_part( 'index-widget' ); ?>
 						</div>
 							<div class="col-md-3 col-md-pull-6">
