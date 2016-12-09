@@ -29,14 +29,14 @@
                                            <span class="topnewsTab <?= $nclass; ?>">
                                                           <!-- 満席 -->
                                                             <?php
-                                                                   if( get_field('semiend') )
-                                                                  {
-                                                                  echo '【満席】</span>';
-                                                                  }
-                                                                 else
-                                                                  if( get_field('noform') )
+                                                                   if( get_field('noform') )
                                                                   {
                                                                   echo '【募集終了】';
+                                                                  }
+                                                                 else
+                                                                  if( get_field('semiend') )
+                                                                  {
+                                                                  echo '【満席】';
                                                                   }
                                                                   else
                                                                   {
@@ -56,7 +56,7 @@
                      <?php endwhile; endif; ?>
                   </ul>
                   <div class="iblistLink2">
-                    <a href="<?php echo esc_url(); ?>category/seminar">開催セミナー一覧を見る</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/semi">開催一覧を見る</a>
                   </div>
                  </div>
                 </div>

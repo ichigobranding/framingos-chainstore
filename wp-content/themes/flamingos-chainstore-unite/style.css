@@ -42,6 +42,10 @@ body {
    /* background:url(images/bg.png);*/
    background: #fff;
 }
+.right {
+    text-align: right;
+    margin: 0 0 20px 0;
+}
 a {
     color: #0000ff;
     text-decoration: none;
@@ -55,6 +59,9 @@ p {
 }
 div.site-branding{
     margin: 10px 0;
+}
+.btn {
+margin: 0px 0 10px 0;
 }
 /* ヘッダー *******/
 .bname-top {
@@ -300,6 +307,12 @@ div.container.wf h2.widget-title{
     background: #ffffff;
     margin-bottom: 30px;
 }
+.ibskinArticle-all {
+    padding: 5px 0;
+    border: 0px solid #e84331;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
 .ibskinArticle2, .ibskinArticle3 {
     margin-bottom: 15px;
     overflow: visible!important;
@@ -493,7 +506,7 @@ table {
 
 ul {
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 
 /* セミナー募集＆コンサル募集 *******/
@@ -559,6 +572,65 @@ td, th {
     font-weight: 700;
     margin: 0 0 10px 0;
 }
+.semiwaku2 {
+    margin: 0px 0px 0 0;
+}
+.sumawaku {
+    margin: 0 0px 30px 0px;
+}
+.semiwaku3 {
+    border: 1px solid: #288fcf;
+    margin: 0 0 30px 0;
+    padding: 20px 20px 5px 20px;
+    list-style-type: none;
+    background-color: #f9e5e4;/* concept color 3****/
+    font-size: 14px;
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+.titleichiran5 {
+    color: #00A1E7;
+    font-size: 17px;
+    border-bottom: 1px solid #e84331;/* concept color****/
+    padding: 0px 0 10px 5px;
+    margin: 0px 0 10px 0;
+}
+.semipa{
+    padding: 10px;
+    font-size: 15px;
+}
+.bottom-shousai a {
+    color: #fff;
+}
+.bottom-shousai {
+    margin: 6px 0px 0 0;
+    padding: 6px 6px;
+    background-color: #e84331;/* concept color****/
+    font-weight: 600;
+}
+.tabeletitlebg {
+    background-color: #e84331;/* concept color****/
+    color: #fff;
+    font-size: 18px;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    word-break: break-all;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    border: 1px solid #ddd;
+    word-break: break-word;
+    word-wrap: break-all;
+}
+.tabletitle {
+    width: 30%;
+}
+
 /* フッター　メルマガ登録 *******/
 input[type="submit"] {
     -webkit-appearance: button;
