@@ -13,7 +13,7 @@
 									<?php
 									    $wp_query = new WP_Query();
 									    $param = array(
-									        'posts_per_page' => '7', //表示件数。-1なら全件表示
+									        'posts_per_page' => '1', //表示件数。-1なら全件表示
 									        'post_type' => 'consul', //カスタム投稿タイプの名称を入れる
 									        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
 									        'order' => 'ASC'
@@ -70,7 +70,7 @@
 								<div class="ichiranright">
 											<a href="<?php the_permalink(); ?>/consul">
 												<div class="btn bottom-shousai">
-													個別指導の一覧へ
+													募集一覧へ
 												</div>
 											</a>
 								</div>

@@ -48,7 +48,7 @@
 
                   </ul>
                   <div class="iblistLink2">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/spot-consulting">個別相談の日程一覧を見る</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/spot-consulting">募集日程一覧を見る</a>
                   </div>
                  </div>
                 </div>
