@@ -4,7 +4,7 @@
 
      <div class="skinMessageBoard3-widgetcss" >
     <!--フリースペース-->
-      <?php if ( ! dynamic_sidebar( 'messageboard-widget' ) ) : ?>
+      <?php if ( ! dynamic_sidebar( 'messageboard-w' ) ) : ?>
       <?php endif; // end sidebar widget area ?>
     <!--フリースペース-->
     </div>

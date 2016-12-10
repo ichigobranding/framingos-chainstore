@@ -18,7 +18,7 @@ function xsbf_widgets_init() {
 	// Put sidebar first as this is standard in almost all WordPress themes
 		// 左
 	register_sidebar( array(
-		'name'          => __( 'Freespase' ),
+		'name'          => __( 'freespase' ),
 		'id'            => 'sidebar-6',
 		'description' 	=> __( 'Main sidebar (right or left)' ),
 		'before_widget' => '<div id="%1$s" class="widget clearfix %2$s">',
@@ -29,7 +29,7 @@ function xsbf_widgets_init() {
 
 		// Page Top (After Header) Widget Area. Single column.
 	register_sidebar( array(
-		'name' 			=> __( 'Messageboard-Widget' ),
+		'name' 			=> __( 'messageboard-W' ),
 		'id' 			=> 'sidebar-3',
 		'description' 	=> __( 'Optional section after the header. This is a single column area that spans the full width of the page.', 'flat-bootstrap' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s clearfix">',
@@ -40,7 +40,7 @@ function xsbf_widgets_init() {
 
 	// Page Bottom (Before Footer) Widget Area. Single Column.
 	register_sidebar( array(
-		'name' 			=> __( 'Index-Widget' ),
+		'name' 			=> __( 'index-W' ),
 		'id' 			=> 'sidebar-4',
 		'description' 	=> __( 'Optional section before the footer. This is a single column area that spans the full width of the page.', 'flat-bootstrap' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s clearfix">',
