@@ -13,14 +13,14 @@
                   <!--プロフィール写真-->
                           <div class="ibProfileImageArea">
                             <div class="ibuserProfileImage">
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>tsujitomoko">
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>※">
                                 <?php echo get_avatar( $id_or_email, 82, $default, $alt, $args ); ?>
                                 </a>
                             </div>
                           </div>
                   <!--プロフィール写真-->
                   <!--プロフィール　ニックネーム-->
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>tsujitomoko"><?php the_author_meta( 'nickname' ); ?>
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>※"><?php the_author_meta( 'nickname' ); ?>
                                  <br>プロフィール</a>
                               
                   <!--プロフィール　ニックネーム-->
@@ -29,7 +29,7 @@
                               <ul class="ibskinSubList-pro">
                                   <li>
                                   自己紹介：<?php the_author_meta( 'description' ); ?>
-                                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>tsujitomoko">続きを見る</a>
+                                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>※">続きを見る</a>
                                   </li>
                               </ul>
                         </div>

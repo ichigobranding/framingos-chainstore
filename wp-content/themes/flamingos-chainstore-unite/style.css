@@ -51,6 +51,9 @@ a {
     text-decoration: none;
     font-weight: 600;
 }
+.content-area{
+    margin: 0 7px
+}
 a:hover, a:focus, a:hover {
     color: #ff3366;
 }
@@ -109,6 +112,9 @@ h4.site-description{
 }
 .iblistLink a {
     font-weight: 200;
+}
+.notfound{
+    margin: 70px 20px;
 }
 /* menu bar　モバイル *******/
 .bar-menu{
