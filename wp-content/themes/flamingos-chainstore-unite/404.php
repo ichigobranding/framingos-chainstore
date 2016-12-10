@@ -16,7 +16,7 @@ get_header(); ?>
             <div class="col-md-6 col-md-push-3">
                 <div class="kiji-page">
 
-<h1>お探しのページは見つかりません。</h1>
+<h2 class="notfound">お探しのページは見つかりません。</h2>
 
 <!-- 新着情報 -->
 <?php get_template_part( 'messageborad' ); ?>
