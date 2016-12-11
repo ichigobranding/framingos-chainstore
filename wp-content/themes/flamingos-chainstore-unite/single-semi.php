@@ -36,7 +36,7 @@ get_header(); ?>
             <tr class="tabeletitlebg"><th colspan="2">募集概要</th></tr>
             <tr>
             <td class="td_nowrap tabletitle" scope="row">募集名</td>
-            <td><?php the_field('seminame'); ?></td>
+            <td><?php the_title(); ?><!--<?//php the_field('seminame'); ?>--></td>
             </tr>
             <!--<tr>
             <td class="td_nowrap" scope="row">講師</td>

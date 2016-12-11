@@ -156,7 +156,11 @@ h4.site-description{
 .widget_search {
     width:90%;
 }
-
+.syuryo-icon{
+    background-color: red;
+    color: #fff;
+    padding: 5px 5px;
+}
 /* side bar *******/
 .ibMenuBody {
     margin: 5px;
@@ -742,6 +746,7 @@ ul {
     /*height: 115px;
     overflow: auto;*/
 }
+
 #topnewsBox-new {
     padding: 0 12px;
 }

@@ -32,7 +32,7 @@
                                                             <?php
                                                                    if( get_field('noform') )
                                                                   {
-                                                                  echo '【募集終了】';
+                                                                  echo '<span class="syuryo-icon">募集終了</span>';
                                                                   }
                                                                   else
                                                                   {
