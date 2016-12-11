@@ -55,9 +55,9 @@
                       </li>
                      <?php endwhile; endif; ?>
                   </ul>
-                  <div class="iblistLink2">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>/semi">開催一覧を見る</a>
-                  </div>
+                  <!-- <div class="iblistLink2">
+                    <a href="<?//php echo esc_url( home_url( '/' ) ); ?>/semi">開催一覧を見る</a>
+                  </div>-->
                  </div>
                 </div>
                 <!-- セミナー -->
