@@ -548,6 +548,31 @@ div.container.wf h2.widget-title{
     margin: 0 0 30px;
     font-weight: 600;
 }
+.ibskinArticlelist {
+    padding: 5px 0;
+    border: 1px solid #e84331;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.ibskinArticleHeaderall {
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    font-size: 16px;
+    zoom: 1;
+    margin: 0px 8px 10px;
+    padding: 8px 0px;
+    background: url(※) 0px 50% no-repeat;
+    background-position: 0px 50%;
+    border-style: none none solid;
+    border-image: initial;
+    border-bottom: 1px solid #e84331;
+    overflow: hidden;
+}
+
 
 /* お問い合わせフォーム　必須マーク *******/
 .hissudesu {
