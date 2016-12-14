@@ -10,6 +10,7 @@
                                                                           <?php while ( have_posts() ) : the_post(); ?>
 
                                                                           <?php get_template_part( 'content', 'page' ); ?>
+                                                                          <?php the_field('blog-nakami'); ?>
 
                                                                           <?php endwhile; // end of the loop. ?>
                                                                       
