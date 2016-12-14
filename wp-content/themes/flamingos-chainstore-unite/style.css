@@ -66,7 +66,9 @@ div.site-branding{
 .btn {
 margin: 0px 0 10px 0;
 }
-
+.tbanana{
+    margin: 0 0 25px 0;
+}
 /* ヘッダー *******/
 .bname-top {
     margin: 0 0 5px 0;
@@ -115,6 +117,18 @@ h4.site-description{
 }
 .notfound{
     margin: 70px 20px;
+}
+/* ログイン画面　シャドウなくす *******/
+.wp-core-ui .button-primary{
+        text-shadow: 0 0px 0px #006799,0px 0 0px #006799,0 0px 0px #006798,0px 0 0px #006799!important;
+}
+#login #nav, #login #backtoblog {
+    text-shadow: 0 0px 0px #ffffff;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #fff;
+    background-image: none;
+    color: rgb(0, 0, 0);
 }
 /* menu bar　モバイル *******/
 .bar-menu{

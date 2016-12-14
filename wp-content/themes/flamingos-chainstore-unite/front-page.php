@@ -15,20 +15,6 @@
 			                </a>
 		            	</div>
 		    <!-- topbana -->
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php
-							wp_link_pages( array(
-								'before' => '<div class="page-links">' . __( 'Pages:', 'unite' ),
-								'after'  => '</div>',
-							) );
-						?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-## -->
-
 	<!-- #IB-main## -->
 				<div class="row">
 						<div class="col-md-6 col-md-push-3">
@@ -37,10 +23,10 @@
 							<?php get_template_part( 'semi-indexparts-main' ); ?>
 							<?php get_template_part( 'consul-indexparts-main' ); ?>
 							<?php get_template_part( 'index-w' ); ?>
-							<!-- <?//php get_template_part( 'blogul' ); ?>-->
+							<?php get_template_part( 'blogul' ); ?>
 						</div>
 							<div class="col-md-3 col-md-pull-6">
-								<?php get_template_part( 'left-sidebar' ); ?>
+								 <?php get_template_part( 'left-sidebar' ); ?>
 							</div>
 					<div class="col-md-3">
 						<?php get_sidebar(); ?>
@@ -63,15 +49,6 @@
 
 					</div> -->
 
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-<?php edit_post_link( __( 'Edit', 'unite' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

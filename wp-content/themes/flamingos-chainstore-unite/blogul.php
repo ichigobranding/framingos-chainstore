@@ -3,7 +3,7 @@
                         $wp_query = new WP_Query();
                         $param = array(
                             'posts_per_page' => '3', //表示件数。-1なら全件表示
-                            'post_type' => array('blog'), //カスタム投稿タイプの名称を入れる
+                            'post_type' => array('blog-fl'), //カスタム投稿タイプの名称を入れる
                             'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
                             'order' => 'DESC'
                         );
@@ -26,7 +26,6 @@
                                                           </div>
                                                       </div>
 
-                                                      
                                                       <div class="ibskinArticleBody2">
 
                                                           <!--記事info-->
@@ -38,15 +37,13 @@
                                                           <!--記事info-->
 
                                                                 <!--記事　中身-->
-                                                                <?php the_field('blog'); ?>
+                                                                <?php the_field('blog-nakami'); ?>
 
-                                                                
                                                                 <!--記事　中身-->
                                                             <br><br><br><br>
                                                             <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
 
                                                       </div>
-                                              
 
                                                 </div>
                                               </div>

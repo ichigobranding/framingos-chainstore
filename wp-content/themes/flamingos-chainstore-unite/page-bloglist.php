@@ -30,7 +30,7 @@ get_header(); ?>
 													$paged = get_query_var('paged') ? get_query_var('paged') : 1;
 													$param = array(
 														'posts_per_page' => '20', //表示件数。-1なら全件表示
-														'post_type' =>array('blog'),  //カスタム投稿タイプの名称を入れる
+														'post_type' =>array('blog-fl'),  //カスタム投稿タイプの名称を入れる
 														'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
 														'order' => 'DESC',
 														'paged' => $paged
@@ -55,9 +55,9 @@ get_header(); ?>
 										                                    </tbody>
 										                                  </table>
 										                    </li>
-
-													<?php endwhile; endif; ?>
+										        <?php endwhile; endif; ?>
 											</ul>
+											
 										</div>
 									</div>
 						<!-- ブログ一覧 -->
