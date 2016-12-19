@@ -36,15 +36,15 @@
 					<!--<div class="home-widget-area row">
 
 						<div class="col-sm-6 col-md-4 home-widget">
-							<?php if( is_active_sidebar('home1') ) dynamic_sidebar( 'home1' ); ?>
+							<?//php if( is_active_sidebar('home1') ) dynamic_sidebar( 'home1' ); ?>
 						</div>
 
 						<div class="col-sm-6 col-md-4 home-widget">
-							<?php if( is_active_sidebar('home2') ) dynamic_sidebar( 'home2' ); ?>
+							<?//php if( is_active_sidebar('home2') ) dynamic_sidebar( 'home2' ); ?>
 						</div>
 
 						<div class="col-sm-6 col-md-4 home-widget">
-							<?php if( is_active_sidebar('home3') ) dynamic_sidebar( 'home3' ); ?>
+							<?//php if( is_active_sidebar('home3') ) dynamic_sidebar( 'home3' ); ?>
 						</div>
 
 					</div> -->

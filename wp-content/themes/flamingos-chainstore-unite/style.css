@@ -19,7 +19,7 @@ Unite is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, 
 /******************************************  
 
 目次
-
+sideba
 ・ChainStore Base css 
 ・ChainStore system Base css 
 ・Branding  Base css 
@@ -42,6 +42,9 @@ body {
    /* background:url(images/bg.png);*/
    background: #fff;
 }
+#wrapper {
+    overflow: hidden;
+}
 .right {
     text-align: right;
     margin: 0 0 20px 0;
@@ -52,7 +55,7 @@ a {
     font-weight: 600;
 }
 .content-area{
-    margin: 0 7px
+    margin: 0;
 }
 a:hover, a:focus, a:hover {
     color: #ff3366;
@@ -72,10 +75,10 @@ margin: 0px 0 10px 0;
 /* ヘッダー *******/
 .bname-top {
     margin: 0 0 5px 0;
-    font-size:3px;
+    font-size:14px;
 }
 h4.site-description{
-    font-size: 10px;
+    font-size: 12px;
 }
 #masthead{
   margin: 0px;
@@ -130,6 +133,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-image: none;
     color: rgb(0, 0, 0);
 }
+.site-title{
+    margin:0px;
+}
 /* menu bar　モバイル *******/
 .bar-menu{
 	color: #fff;
@@ -167,6 +173,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .imgbtnpad{
     margin: 13px 0;
 }
+.imgbtn{
+ text-align: center;
+}
 .widget_search {
     width:90%;
 }
@@ -194,6 +203,7 @@ ul.ibskinSubList {
 .widget ul  {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 .widget ul  a{
     font-weight: 200;
@@ -229,7 +239,11 @@ ul.ibskinSubList-pro {
 }
 .leftsidebara {
     font-size: 13px;
-    margin: 0px 0;
+    margin: 0px 0 60px 0;
+}
+#sideba{
+    margin: 0px 0 60px 0;
+    padding:0 10px;
 }
 .skinSubHr, .ibskinSubList li a {
     font-weight: 200;
@@ -241,6 +255,9 @@ ul.ibskinSubList-pro {
 }
 ul.sidetema {
     margin-bottom: 0px;
+}
+ul.children{
+    list-style: none;
 }
 /* page.php タイトル *******/
 .ibskinArticleBody2 .page-header{

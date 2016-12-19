@@ -15,13 +15,7 @@
 </td>
 </tr>
 </table>
-<table width="520">
-<tr>
-<td align="center"></td>
-</tr>
-</table>
 <center><input type="submit" name="sbm" value="登録"></center>
 </form>
-
   </div>
 </div>
