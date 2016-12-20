@@ -42,6 +42,42 @@ body {
    /* background:url(images/bg.png);*/
    background: #fff;
 }
+#primary{
+    margin:0px;
+    padding:0px;
+}
+/* div#content.site-content.container {
+    padding: 0px;
+    margin: 0px; 
+}*/
+div.container.conbg{
+    padding: 0px;
+    margin: 0px; 
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+div.col-md-6.col-md-push-3{
+    margin:0;
+    padding:0;
+}
+div.col-md-3.col-md-pull-6{
+    margin:0;
+    padding:0;
+}
+div.col-md-8.col-md-push-2{
+    margin:0;
+    padding:0;
+}
+div.col-md-3{
+    margin:0;
+    padding:0;
+}
+div#sideba{
+    margin:0 0 60px 0;
+    padding:0;
+}
 #wrapper {
     overflow: hidden;
 }
@@ -121,6 +157,10 @@ h4.site-description{
 .notfound{
     margin: 70px 20px;
 }
+span.wpcf7-list-item {
+    display: block;
+    font-size: 16px;
+}
 /* ログイン画面　シャドウなくす *******/
 .wp-core-ui .button-primary{
         text-shadow: 0 0px 0px #006799,0px 0 0px #006799,0 0px 0px #006798,0px 0 0px #006799!important;
@@ -142,6 +182,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	font-size: 10px;
 	padding: 0px;
 	margin: 0px;
+    font-weight:900;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
@@ -217,6 +258,7 @@ ul.ibskinSubList {
 .iblistLink {
     padding: 0px 0 15px 0;
     text-align: right;
+    margin-bottom:50px;
 }
 ul.ibskinSubList-pro {
     padding: 0;
@@ -313,30 +355,6 @@ div.textwidget {
    select {width: 15%;}
 }
 
-@media screen and (max-width: 767px) {
-   table#subdata2 { width: 100%; }
-   input[type="text"], input[type="email"], input[type="url"], input[type="password"] {width: 100%;}
-  .wpcf7-form textarea{ width: 100%; }
-  .namehaba{width: 70% !important;}
-  .yubin{width: 40% !important;}
-  .yubin2{width: 40% !important;}
-  #submitBtn3 {
-    background-color: #ec3a76;
-    box-shadow: 0 6px #e2165b;
-    width: 100% !important;
-    height: 50px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    color: #fff;
-    margin: 13px auto 31px;
-    border: 0;
-    font-size: 20px !important;
-    cursor: pointer;
-}
-}
-
-
 .wpcf7-form input, .wpcf7-form textarea{
     margin: 10px 0;
     padding: 3px;
@@ -371,20 +389,6 @@ select{
     font-size:18px;
     margin:50px 0 30px 0;
 }
-#submitBtn3{
-    background-color: #ec3a76;
-    box-shadow: 0 6px #e2165b;
-    width: 80% !important;
-    height: 50px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    color: #fff;
-    margin: 13px auto 31px;
-    border: 0;
-    font-size: 20px !important;
-    cursor: pointer;
-}
 
 table#subdata2{
     /*width: 660px;*/
@@ -407,11 +411,7 @@ table#subdata2 td {
     border: 1px #c2b69a dotted;
     border-width: 0 0 1px 1px;
 }
-table#subdata2 .td_ttl{
-    background-color:#f5f1e9;
-    font-weight:bold;
-    width:130px;
-}
+
 table#subdata2 .font-nomal{
  
 }
@@ -647,12 +647,48 @@ h1.site-title a{
 
 /* フォームの枠 *******/
 .formwaku {
-    border: 1px solid #e84331;
+    /* border: 1px solid #e84331;
     margin: 40px 0 20px 0;
-    padding: 20px 10px 10px 20px;
+    padding: 20px 10px 10px 20px;*/
     margin: 15px auto 0 auto;
 }
-
+/* フォーム 送信ボタン *******/
+@media screen and (max-width: 767px) {
+   table#subdata2 { width: 100%; }
+   input[type="text"], input[type="email"], input[type="url"], input[type="password"] {width: 100%;}
+  .wpcf7-form textarea{ width: 100%; }
+  .namehaba{width: 70% !important;}
+  .yubin{width: 40% !important;}
+  .yubin2{width: 40% !important;}
+  #submitBtn3 {
+    background-color: #e84331;/* Branding  concept color 1  *******/
+    box-shadow: 0 6px #EF9086;/* Branding  concept color 2  *******/
+    width: 100% !important;
+    height: 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color: #fff;
+    margin: 13px auto 31px;
+    border: 0;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+}
+#submitBtn3{
+    background-color:  #e84331 /* Branding  concept color 1  *******/
+    box-shadow: 0 6px #EF9086; /* Branding  concept color 2  *******/
+    width: 80% !important;
+    height: 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color: #fff;
+    margin: 13px auto 31px;
+    border: 0;
+    font-size: 20px !important;
+    cursor: pointer;
+}
 /* Branding  concept color 2 オレンジ薄い　#EF9086 *******/
 
 
@@ -665,6 +701,11 @@ h1.site-title a{
 }
 h1.site-title a:hover{
     color: #f9e5e4;
+}
+table#subdata2 .td_ttl{
+    background-color:#f9e5e4;
+    font-weight:bold;
+    width: 20%;
 }
 /******************************************  
 

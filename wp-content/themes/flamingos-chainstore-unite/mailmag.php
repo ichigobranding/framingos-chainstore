@@ -1,5 +1,5 @@
 <div class="row mailmagpadding">
-  <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
 
 <form action="https://24auto.biz/ichigo-branding/planmail.php" method="post" enctype="multipart/form-data">
 <input type="hidden" name="mcode" value="UTF-8">
