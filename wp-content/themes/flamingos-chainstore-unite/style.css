@@ -134,7 +134,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     color: rgb(0, 0, 0);
 }
 .site-title{
-    margin:0px;
+    margin:7px 0 0 0;
 }
 /* menu bar　モバイル *******/
 .bar-menu{
@@ -589,6 +589,10 @@ div.container.wf h2.widget-title{
     border-bottom: 1px solid #e84331;
     overflow: hidden;
 }
+/* サイトタイトル *******/
+h1.site-title a{
+    color:#e84331;
+}
 
 
 /* お問い合わせフォーム　必須マーク *******/
@@ -649,17 +653,19 @@ div.container.wf h2.widget-title{
     margin: 15px auto 0 auto;
 }
 
-/* Branding  concept color 2 *******/
+/* Branding  concept color 2 オレンジ薄い　#EF9086 *******/
 
 
-/* Branding  concept color 3 *******/
+
+/* Branding  concept color 3 薄いピンク *******/
 #colophon {
     background-color: #f9e5e4;
     padding: 10px 0 0px 0;
     margin-top: 20px;
 }
-
-
+h1.site-title a:hover{
+    color: #f9e5e4;
+}
 /******************************************  
 
     ChainStore system Base css 
