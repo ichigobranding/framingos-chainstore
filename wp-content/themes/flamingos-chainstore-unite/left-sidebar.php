@@ -5,7 +5,7 @@
     <!--フリースペース-->
 
 <!--プロフィール全体-->
-<div class="ibMenu">
+<div class="ibMenu profdiv">
             <div class="ibMenuHeader">
                 <span class="ibMenuTitle">プロフィール</span>
             </div>
@@ -82,7 +82,6 @@
                                           <?php $counter++;
                                                 endif;
                                                 endforeach; ?>
-                                                <br>
                                               <div class="iblistLink">
                                                <a href="http://ameblo.jp/dearwoman-smaps/entrylist.html" target="blank">一覧を見る</a>
                                               </div>
