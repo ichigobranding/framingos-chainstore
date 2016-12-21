@@ -28,7 +28,7 @@
 							<div class="col-md-3 col-md-pull-6">
 								 <?php get_template_part( 'left-sidebar' ); ?>
 							</div>
-					<div class="col-md-3">
+					<div class="col-md-3 sidebarpadd">
 						<?php get_sidebar(); ?>
 					</div><!-- side -->
 				</div><!-- row -->
