@@ -22,7 +22,7 @@
                                     <tbody>
                                       <tr>
                                         <td class="daymaga-new">
-                                         <span><?php the_field('semidaytop'); ?> <span>開催</span>
+                                         <span><?php the_field('semiday'); ?> <span>開催</span>
                                         </td>
                                         <td class="daymaga2-new">
                                           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
