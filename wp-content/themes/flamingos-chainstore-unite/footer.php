@@ -13,6 +13,8 @@
 
 <?php get_template_part('mailmag'); ?>
 
+
+
 	<?php // Start the footer area ?>
 	<div id="colophon" class="site-footer" role="contentinfo">
 		
@@ -83,7 +85,9 @@
 	<div class="after-footer">
 		<div class="container">
 
-			<?php // Footer nav menu
+<div class="row">
+  <div class="col-md-8">
+  	  				<?php // Footer nav menu
 			if ( $nav_menu ) : ?>
 				<div class="footer-nav-menu pull-left">
 					<div id="footer-navigation" class="secondary-navigation" role="navigation">
@@ -103,6 +107,12 @@
 				<?php echo $site_credits; ?>
 				</div><!-- .site-credits -->
 			<?php endif; ?>
+		
+  </div>
+  <div class="col-md-4">
+  	<?php get_template_part( 'tellmail' ); ?>
+  </div>
+</div>
 
 		</div><!-- .container -->
 	</div><!-- .after-footer -->

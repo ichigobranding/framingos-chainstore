@@ -109,6 +109,9 @@ margin: 0px 0 10px 0;
 .tbanana{
     margin: 0 0 25px 0;
 }
+.centerc{
+    margin: 0 0 30px 0;
+}
 /* ヘッダー *******/
 .bname-top {
     margin: 0 0 5px 0;
@@ -129,11 +132,7 @@ h4.site-description{
     color: #663333;
     font-weight: 800;
 }
-.navbar-default .navbar-nav > li > a {
-    color: #fff;
-    border-right: 1px solid #e86a57;
-    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
-}
+
 .navbar {
     margin-bottom: 20px;
 }
@@ -240,6 +239,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .widget_search {
     width:90%;
 }
+.widget {
+    margin: 0px 0 20px;
+}
 .syuryo-icon{
     background-color: red;
     color: #fff;
@@ -277,14 +279,18 @@ ul.ibskinSubList {
     margin: 8px;
 }
 .iblistLink {
-    padding: 0px 0 15px 0;
+    padding: 5px 0 5px 0;
     text-align: right;
-    margin-bottom:10px;
+    margin-bottom:5px;
+    font-size:12px;
 }
 ul.ibskinSubList-pro {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+.profdiv{
+    margin: 0 0 30px 0;
 }
 .ibprofileDetailArea {
     clear: both;
@@ -324,6 +330,9 @@ ul.sidetema {
 }
 ul.children{
     list-style: none;
+}
+.sidewii{
+    margin: 40px 0 0 0;
 }
 /* page.php タイトル *******/
 .ibskinArticleBody2 .page-header{
@@ -521,13 +530,15 @@ h2.widget-title {
 }
 h3.widgettitle {
     font-weight: bold;
-    padding: 5px 10px 5px 7px;
+    padding: 0px 10px 5px 7px;
     background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
     background-position: 4px 50%;
     border-bottom: 2px solid #e84331;
     font-size: 14px;
 }
-
+h3 {
+    margin-top: 0px;
+}
 div.container.wf h2.widget-title{
     color:#333;
     background-color: #f9e5e4;
@@ -548,7 +559,7 @@ div.container.wf h2.widget-title{
     padding: 5px 0;
     border: 1px solid #e84331;
     background: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .ibskinArticle-all {
     padding: 5px 0;
@@ -613,6 +624,7 @@ div.container.wf h2.widget-title{
     border-bottom: 1px solid #e84331;
     overflow: hidden;
 }
+
 /* サイトタイトル *******/
 h1.site-title a{
     color:#e84331;
@@ -713,6 +725,21 @@ h1.site-title a{
     font-size: 20px !important;
     cursor: pointer;
 }
+/* MessageBoard *******/
+.skinMessageBoard-widgetcss {
+    border: 1px dotted #e84331;/* Branding  concept color 1 color 2*/
+    margin: 5px 0 15px 0;
+    padding: 0px 15px;
+    font-size: 12px;
+
+}
+.skinMessageBoard {
+    border: 1px dotted #e84331;/* Branding  concept color 1 color 2*/
+    margin: 0px 0 20px 0;
+    padding: 20px 10px 10px 7px;
+    font-size: 12px;
+    background:url(images/info.png) no-repeat left top;
+}
 /* Branding  concept color 2 オレンジ薄い　#EF9086 *******/
 
 
@@ -731,20 +758,17 @@ table#subdata2 .td_ttl{
     font-weight:bold;
     width: 20%;
 }
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    border-right: 1px solid #e86a57;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
+}
 /******************************************  
 
     ChainStore system Base css 
 
 *******************************************/
 /* 新着　メッセージボード *******/
-
-.skinMessageBoard {
-    border: 1px dotted #e84331;
-    margin: 0px 0 20px 0;
-    padding: 20px 10px 10px 7px;
-    font-size: 12px;
-    background:url(images/info.png) no-repeat left top;
-}
 .skinMessageBoard2 {
     border: 1px dotted #c41840;
     margin: 10px 0 20px 0;
@@ -761,13 +785,7 @@ table#subdata2 .td_ttl{
     height:200px; /* åˆæœŸ250 */
     overflow:auto;
 }
-.skinMessageBoard-widgetcss {
-    border: 1px dotted #e84331;
-    margin: 5px 0 15px 0;
-    padding: 0px 15px;
-    font-size: 12px;
 
-}
 .skinMessageBoard3-widgetcss {
     font-size: 15px;
     overflow:auto;
@@ -996,7 +1014,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .bizfom{margin: 10px 0 0 0;}
 .bizfom2{margin: 10px 0 13px 0;}
 .bizfom3{color: #fff;font-size: 14px;padding: 10px 5px;}
-
+.mailmagpadding{
+    margin:50px 0 0 0;
+}
 
 /* woocommerce *******/
 .woocommerce .star-rating{
