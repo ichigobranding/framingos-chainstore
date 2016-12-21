@@ -58,10 +58,7 @@ div.container.conbg{
     margin-right: 0px;
     margin-left: 0px;
 }
-div.col-md-6.col-md-push-3{
-    margin:0;
-    padding:0;
-}
+
 div.col-md-3.col-md-pull-6{
     margin:0;
     padding:0;
@@ -70,12 +67,16 @@ div.col-md-8.col-md-push-2{
     margin:0;
     padding:0;
 }
-div.col-md-3{
+div.col-md-3.sidebarpadd{
     margin:0;
     padding:0;
 }
 div#sideba{
     margin:0 0 60px 0;
+    padding:0;
+}
+.sidebarpadd{
+      margin:0 0 60px 0;
     padding:0;
 }
 #wrapper {
@@ -176,6 +177,25 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .site-title{
     margin:7px 0 0 0;
 }
+/*スマホの場合の中央カラム *******/
+@media only screen and (max-width: 979px) {
+     
+ div.col-md-6.col-md-push-3{margin:0px; padding:0;}
+ 
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+     
+   div.col-md-6.col-md-push-3{margin:0px; padding:0;}
+ 
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) {
+     
+  div.col-md-6.col-md-push-3{margin:0px; padding:0;}
+} /* デバイスの横幅が320px以下の場合 */
+
+
 /* menu bar　モバイル *******/
 .bar-menu{
 	color: #fff;
@@ -224,6 +244,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-color: red;
     color: #fff;
     padding: 5px 5px;
+    font-size: 11px;
 }
 /* side bar *******/
 .ibMenuBody {
@@ -258,7 +279,7 @@ ul.ibskinSubList {
 .iblistLink {
     padding: 0px 0 15px 0;
     text-align: right;
-    margin-bottom:50px;
+    margin-bottom:10px;
 }
 ul.ibskinSubList-pro {
     padding: 0;
@@ -274,6 +295,9 @@ ul.ibskinSubList-pro {
     float: left;
     width: 94px;
     height: 94px;
+}
+.ibProfileImageArea-nickname{
+     margin: 0 0 8px 0;
 }
 .ibarticleDetailArea {
     padding: 0px 0 10px 0;
@@ -949,6 +973,7 @@ td, th {
 }
 .table-bosyuu {
     margin: 40px 0 60px 0!important;
+    width:100%;
 }
 /* フッター　メルマガ登録 *******/
 input[type="submit"] {

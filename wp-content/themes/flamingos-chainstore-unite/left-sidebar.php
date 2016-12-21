@@ -20,24 +20,26 @@
                           </div>
                   <!--プロフィール写真-->
                   <!--プロフィール　ニックネーム-->
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile"><?php the_author_meta( 'nickname' ); ?>
-                                 <br>プロフィール</a>
-                              
+                            <div class="ibProfileImageArea-nickname">
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile"><?php the_author_meta( 'nickname' ); ?></a>
+                            </div>
+                                自己紹介：<?php the_author_meta( 'description' ); ?>
+                                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">続きを見る</a>
                   <!--プロフィール　ニックネーム-->
                   <!--プロフィール　簡易-->
-                        <div class="ibprofileDetailArea">
+                        <!--<div class="ibprofileDetailArea">
                               <ul class="ibskinSubList-pro">
                                   <li>
-                                  自己紹介：<?php the_author_meta( 'description' ); ?>
-                                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">続きを見る</a>
+                                  自己紹介：<?//php the_author_meta( 'description' ); ?>
+                                  <a href="<?//php echo esc_url( home_url( '/' ) ); ?>profile">続きを見る</a>
                                   </li>
                               </ul>
-                        </div>
+                        </div>-->
                   <!--プロフィール　簡易-->
             </div>
 </div>                  
 <!--プロフィール全体-->
-
+<div class="clear"></div>
  <!--最新の記事-->
  <div class="ibMenu">
       <div class="ibMenuHeader">
