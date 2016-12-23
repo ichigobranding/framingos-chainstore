@@ -40,9 +40,9 @@
                                                                 <?php the_field('blog-nakami'); ?>
 
                                                                 <!--記事　中身-->
-                                                            <br><br><br><br>
+                                                            <div class="hensyuulink">
                                                             <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
-
+                                                            </div>
                                                       </div>
 
                                                 </div>
@@ -56,7 +56,7 @@
                     <?php endwhile; endif; ?>
                   </ul>
 
-                                 <div class="iblistLink">
+                                <div class="iblistLink">
                                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>bloglist">
                                               ブログ一覧へ
                                         </a>
