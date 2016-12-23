@@ -89,7 +89,7 @@
   <div class="col-md-8">
   	  				<?php // Footer nav menu
 			if ( $nav_menu ) : ?>
-				<div class="footer-nav-menu pull-left">
+				<div class="footer-nav-menu">
 					<div id="footer-navigation" class="secondary-navigation" role="navigation">
 						<h1 class="menu-toggle sr-only"><?php _e( 'Footer Menu', 'flat-bootstrap' ); ?></h1>
 						<?php echo $nav_menu; ?>
@@ -103,14 +103,14 @@
 				<?php echo $site_credits; ?>
 				</div><!-- .site-credits -->
 			<?php elseif ( $site_credits ) : ?>
-				<div id="site-credits" class="site-credits pull-left">
+				<div id="site-credits" class="site-credits">
 				<?php echo $site_credits; ?>
 				</div><!-- .site-credits -->
 			<?php endif; ?>
 		
   </div>
   <div class="col-md-4">
-  	<?php get_template_part( 'tellmail' ); ?>
+  	<?php get_template_part( 'tellmail-footer' ); ?>
   </div>
 </div>
 
