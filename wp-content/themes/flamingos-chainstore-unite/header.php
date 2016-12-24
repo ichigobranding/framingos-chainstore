@@ -67,11 +67,11 @@
 
 				<?php
 		            wp_nav_menu( array(
-		                'theme_location'    => 'primary',
+		                //'theme_location'    => 'primary',
 		                'depth'             => 2,
 		                'container'         => 'div',
 		                'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-		                'menu_class'        => 'nav navbar-nav',
+		                'menu_class' => 'nav nav-justified cenmenu', //<ul> class 中央寄せ
 		                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 		                'walker'            => new wp_bootstrap_navwalker())
 		            );
