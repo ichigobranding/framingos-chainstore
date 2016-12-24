@@ -10,7 +10,13 @@
                                                                           <?php while ( have_posts() ) : the_post(); ?>
 
                                                                           <?php get_template_part( 'content', 'page' ); ?>
-
+                                                          <!--記事info-->
+                                                                  <div class="ibarticleDetailArea">
+                                                                      <time datetime="2016-08-12" pubdate="pubdate"><?php echo get_the_date(); ?></time><?php get_template_part( 'new' ); ?>
+                                                                      <br />
+                                                                        テーマ：<?php echo get_the_term_list( $id,tema, $before, $sep, $after ); ?>
+                                                                  </div>
+                                                          <!--記事info-->
                                                                           <?php the_field('blog-nakami'); ?>
 
                                                                           <?php endwhile; // end of the loop. ?>
