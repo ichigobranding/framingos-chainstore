@@ -19,7 +19,7 @@ get_header(); ?>
 				<div class="row">
 						<div class="col-md-6 col-md-push-3">
 
-								<?php get_template_part( 'page-kiji-temp' ); ?>
+								<?php get_template_part( 'page-kiji-temp-blog' ); ?>
 
 						</div>
 							<div class="col-md-3 col-md-pull-6">
