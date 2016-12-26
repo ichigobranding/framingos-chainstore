@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-11-09 09:44:09+0000\n"
+"PO-Revision-Date: 2016-12-22 14:45:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,23 @@ msgstr ""
 "X-Generator: GlotPress/2.3.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: includes/api/class-wc-rest-products-controller.php:769
+msgid "#%s is an invalid image ID."
+msgstr "#%s は無効な画像IDです。"
+
+#: includes/admin/class-wc-admin-menus.php:105
+msgid "Extensions"
+msgstr "拡張機能"
+
+#: includes/admin/class-wc-admin-menus.php:105
+#: includes/admin/views/html-admin-page-addons.php:16
+msgid "WooCommerce Extensions"
+msgstr "WooCommerce 拡張機能"
+
+#: includes/admin/class-wc-admin-addons.php:350
+msgid "Installed"
+msgstr "インストール済み"
 
 #. Author URI of the plugin/theme
 msgid "https://woocommerce.com"
@@ -39,9 +56,9 @@ msgstr "MaxMind GeoIP データベースが存在しません - ジオロケー�
 msgid "https://woocommerce.com/"
 msgstr "https://woocommerce.com/"
 
-#: includes/api/class-wc-rest-products-controller.php:2420
+#: includes/api/class-wc-rest-products-controller.php:2444
 msgid "If the variation is visible."
-msgstr "もし色んなバリエーションを表示させたいなら"
+msgstr "バリエーションが表示されている場合。"
 
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:41
 msgid "Click \"Add shipping method\" to get started."
@@ -150,7 +167,7 @@ msgstr "まだ利用できるダウンロードファイルはありません。
 
 #: templates/myaccount/downloads.php:98 templates/myaccount/orders.php:119
 msgid "Go Shop"
-msgstr "お店へ"
+msgstr "ショップへ"
 
 #: templates/myaccount/downloads.php:59
 msgid "&infin;"
@@ -185,7 +202,7 @@ msgid "%s product"
 msgid_plural "%s products"
 msgstr[0] "%s 商品"
 
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:97
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:164
 #: includes/widgets/class-wc-widget-rating-filter.php:177
 #: includes/widgets/class-wc-widget-rating-filter.php:178
 msgid "Rated %s and above"
@@ -193,7 +210,7 @@ msgstr "評価 %s 以上"
 
 #: includes/wc-template-functions.php:31
 msgid "Checkout is not available whilst your cart is empty."
-msgstr "カートが空なので、支払は出来ません。"
+msgstr "カートに商品がないので、支払が出来ません。"
 
 #: includes/wc-rest-functions.php:192
 msgid "%1$s is not of type %2$s"
@@ -713,27 +730,27 @@ msgstr "アルバニア レク"
 msgid "Afghan afghani"
 msgstr "アフガン アフガニ"
 
-#: includes/wc-account-functions.php:264
+#: includes/wc-account-functions.php:265
 msgid "Make Default"
 msgstr "基本支払い方法を作る"
 
-#: includes/wc-account-functions.php:224 includes/wc-account-functions.php:290
+#: includes/wc-account-functions.php:225 includes/wc-account-functions.php:291
 msgid "Credit Card"
 msgstr "クレジットカード"
 
-#: includes/wc-account-functions.php:197 includes/wc-account-functions.php:211
+#: includes/wc-account-functions.php:198 includes/wc-account-functions.php:212
 msgid "Expires"
 msgstr "期限"
 
-#: includes/wc-account-functions.php:196
+#: includes/wc-account-functions.php:197
 msgid "Remaining"
 msgstr "残数"
 
-#: includes/wc-account-functions.php:195
+#: includes/wc-account-functions.php:196
 msgid "File"
 msgstr "ファイル名"
 
-#: includes/wc-account-functions.php:89
+#: includes/wc-account-functions.php:90
 msgid "Dashboard"
 msgstr "ダッシュボード"
 
@@ -877,7 +894,7 @@ msgid "Lets you charge a fixed rate for shipping."
 msgstr "送料として固定の費用が請求されます。"
 
 #: includes/payment-tokens/class-wc-payment-token-echeck.php:48
-#: includes/wc-account-functions.php:225 includes/wc-account-functions.php:312
+#: includes/wc-account-functions.php:226 includes/wc-account-functions.php:313
 msgid "eCheck"
 msgstr "eCheck"
 
@@ -1063,7 +1080,7 @@ msgstr "webhook 配信のハッシュを生成するために使用される秘�
 
 #: includes/api/class-wc-rest-webhooks-controller.php:512
 msgid "The URL where the webhook payload is delivered."
-msgstr "webhook payload が配信されるURL。"
+msgstr "webhook payload が配信される URL。"
 
 #: includes/api/class-wc-rest-webhooks-controller.php:506
 msgid "WooCommerce action names associated with the webhook."
@@ -1133,7 +1150,7 @@ msgstr "リクエストヘッダー。"
 #: includes/api/class-wc-rest-webhook-deliveries.php:236
 #: includes/api/class-wc-rest-webhook-deliveries.php:243
 msgid "The URL where the webhook was delivered."
-msgstr "webhook が配信されたURL。"
+msgstr "webhook が配信された URL。"
 
 #: includes/api/class-wc-rest-webhook-deliveries.php:230
 msgid "A friendly summary of the response including the HTTP response code, message, and body."
@@ -1273,441 +1290,441 @@ msgstr "期間中の粗利高。"
 msgid "Gross sales in the period."
 msgstr "期間中の総売上高。"
 
-#: includes/api/class-wc-rest-products-controller.php:2702
+#: includes/api/class-wc-rest-products-controller.php:2733
 msgid "Limit result set to products with a specific SKU."
 msgstr "特定のSKUの商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2696
+#: includes/api/class-wc-rest-products-controller.php:2727
 msgid "Limit result set to products with a specific attribute term (required an assigned attribute)."
 msgstr "特定の属性分類を割り当てられた商品にセットした結果に制限。(割り当てられた属性を必須)"
 
-#: includes/api/class-wc-rest-products-controller.php:2690
+#: includes/api/class-wc-rest-products-controller.php:2721
 msgid "Limit result set to products with a specific attribute."
 msgstr "特定の属性を割り当てられた商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2684
+#: includes/api/class-wc-rest-products-controller.php:2715
 msgid "Limit result set to products assigned a specific shipping class."
 msgstr "特定の配送クラスを割り当てられた商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2678
+#: includes/api/class-wc-rest-products-controller.php:2709
 msgid "Limit result set to products assigned a specific tag."
 msgstr "特定のタグを割り当てられた商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2672
+#: includes/api/class-wc-rest-products-controller.php:2703
 msgid "Limit result set to products assigned a specific category."
 msgstr "特定のカテゴリーを割り当てられた商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2665
+#: includes/api/class-wc-rest-products-controller.php:2696
 msgid "Limit result set to products assigned a specific type."
 msgstr "特定のタイプを割り当てられた商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2658
+#: includes/api/class-wc-rest-products-controller.php:2689
 msgid "Limit result set to products assigned a specific status."
 msgstr "特定の状況を割り当てられた商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2652
+#: includes/api/class-wc-rest-products-controller.php:2683
 msgid "Limit result set to products with a specific slug."
 msgstr "特定のスラッグがある商品にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-products-controller.php:2633
+#: includes/api/class-wc-rest-products-controller.php:2664
 msgid "Menu order, used to custom sort products."
 msgstr "商品並び替えに使われるメニューの順序。"
 
-#: includes/api/class-wc-rest-products-controller.php:2627
+#: includes/api/class-wc-rest-products-controller.php:2658
 msgid "List of grouped products ID."
 msgstr "グループ化された商品IDの一覧。"
 
-#: includes/api/class-wc-rest-products-controller.php:2558
+#: includes/api/class-wc-rest-products-controller.php:2585
 msgid "Variation image data."
 msgstr "バリエーション画像データ。"
 
-#: includes/api/class-wc-rest-products-controller.php:2540
+#: includes/api/class-wc-rest-products-controller.php:2567
 msgid "Variation height (%s)."
 msgstr "バリエーションの高さ (%s)"
 
-#: includes/api/class-wc-rest-products-controller.php:2535
+#: includes/api/class-wc-rest-products-controller.php:2562
 msgid "Variation width (%s)."
 msgstr "バリエーションの幅 (%s)。"
 
-#: includes/api/class-wc-rest-products-controller.php:2530
+#: includes/api/class-wc-rest-products-controller.php:2557
 msgid "Variation length (%s)."
 msgstr "バリエーションの長さ (%s)。"
 
-#: includes/api/class-wc-rest-products-controller.php:2525
+#: includes/api/class-wc-rest-products-controller.php:2552
 msgid "Variation dimensions."
 msgstr "バリエーションの大きさ"
 
-#: includes/api/class-wc-rest-products-controller.php:2520
+#: includes/api/class-wc-rest-products-controller.php:2547
 msgid "Variation weight (%s)."
 msgstr "バリエーションの重さ (%s)。"
 
-#: includes/api/class-wc-rest-products-controller.php:2514
+#: includes/api/class-wc-rest-products-controller.php:2541
 msgid "Shows if the variation is on backordered."
 msgstr "バリエーションがバックオーダ上にあるかどうかを示します。"
 
-#: includes/api/class-wc-rest-products-controller.php:2495
+#: includes/api/class-wc-rest-products-controller.php:2522
 msgid "Controls whether or not the variation is listed as \"in stock\" or \"out of stock\" on the frontend."
 msgstr "バリエーションがフロントエンドの「在庫切れ」「在庫」として記載されているかどうかを制御します。"
 
-#: includes/api/class-wc-rest-products-controller.php:2484
+#: includes/api/class-wc-rest-products-controller.php:2511
 msgid "Stock management at variation level."
 msgstr "バリエーションレベルでの在庫管理。"
 
-#: includes/api/class-wc-rest-products-controller.php:2466
+#: includes/api/class-wc-rest-products-controller.php:2493
 msgid "Number of days that the customer has up to be able to download the variation."
 msgstr "顧客がバリエーションをダウンロードできるようになるまでの日数。"
 
-#: includes/api/class-wc-rest-products-controller.php:2460
+#: includes/api/class-wc-rest-products-controller.php:2487
 msgid "Amount of times the variation can be downloaded."
 msgstr "バリエーションがダウンロード出来る合計の時間。"
 
-#: includes/api/class-wc-rest-products-controller.php:2431
+#: includes/api/class-wc-rest-products-controller.php:2455
 msgid "If the variation is downloadable."
 msgstr "もしバリエーションがダウンロード商品なら。"
 
-#: includes/api/class-wc-rest-products-controller.php:2425
+#: includes/api/class-wc-rest-products-controller.php:2449
 msgid "If the variation is virtual."
 msgstr "バリエーションが仮想商品の場合。"
 
-#: includes/api/class-wc-rest-products-controller.php:2414
+#: includes/api/class-wc-rest-products-controller.php:2438
 msgid "Shows if the variation can be bought."
 msgstr "バリエーションを購入できるかどうかを示します。"
 
-#: includes/api/class-wc-rest-products-controller.php:2408
+#: includes/api/class-wc-rest-products-controller.php:2432
 msgid "Shows if the variation is on sale."
 msgstr "バリエーションがセール中かどうかを示します。"
 
-#: includes/api/class-wc-rest-products-controller.php:2393
+#: includes/api/class-wc-rest-products-controller.php:2417
 msgid "Variation sale price."
 msgstr "バリエーションのセール価格。"
 
-#: includes/api/class-wc-rest-products-controller.php:2388
+#: includes/api/class-wc-rest-products-controller.php:2412
 msgid "Variation regular price."
 msgstr "バリエーションの標準価格"
 
-#: includes/api/class-wc-rest-products-controller.php:2382
+#: includes/api/class-wc-rest-products-controller.php:2406
 msgid "Current variation price."
 msgstr "現行のバリエーション価格"
 
-#: includes/api/class-wc-rest-products-controller.php:2370
+#: includes/api/class-wc-rest-products-controller.php:2394
 msgid "Variation URL."
 msgstr "バリエーションURL"
 
-#: includes/api/class-wc-rest-products-controller.php:2364
+#: includes/api/class-wc-rest-products-controller.php:2388
 msgid "The date the variation was last modified, in the site's timezone."
 msgstr "サイトの時間設定によるバリエーションが最後に更新された日付。"
 
-#: includes/api/class-wc-rest-products-controller.php:2358
+#: includes/api/class-wc-rest-products-controller.php:2382
 msgid "The date the variation was created, in the site's timezone."
 msgstr "サイトの時間設定によるバリエーションが作られた日付。"
 
-#: includes/api/class-wc-rest-products-controller.php:2352
+#: includes/api/class-wc-rest-products-controller.php:2376
 msgid "Variation ID."
 msgstr "バリエーションID。"
 
-#: includes/api/class-wc-rest-products-controller.php:2347
+#: includes/api/class-wc-rest-products-controller.php:2369
 msgid "List of variations."
 msgstr "バリエーション一覧。"
 
-#: includes/api/class-wc-rest-products-controller.php:2340
-#: includes/api/class-wc-rest-products-controller.php:2618
+#: includes/api/class-wc-rest-products-controller.php:2361
+#: includes/api/class-wc-rest-products-controller.php:2647
 msgid "Selected attribute term name."
 msgstr "選択した属性の用語名。"
 
-#: includes/api/class-wc-rest-products-controller.php:2325
+#: includes/api/class-wc-rest-products-controller.php:2344
 msgid "Defaults variation attributes."
 msgstr "デフォルトのバリエーション属性。"
 
-#: includes/api/class-wc-rest-products-controller.php:2318
+#: includes/api/class-wc-rest-products-controller.php:2336
 msgid "List of available term names of the attribute."
 msgstr "利用可能な属性の要素名の一覧。"
 
-#: includes/api/class-wc-rest-products-controller.php:2312
+#: includes/api/class-wc-rest-products-controller.php:2330
 msgid "Define if the attribute can be used as variation."
 msgstr "属性をバリエーションとして使うかを定義。"
 
-#: includes/api/class-wc-rest-products-controller.php:2306
+#: includes/api/class-wc-rest-products-controller.php:2324
 msgid "Define if the attribute is visible on the \"Additional Information\" tab in the product's page."
 msgstr "商品ページの「追加情報」タブで属性を表示するかどうかを定義。"
 
-#: includes/api/class-wc-rest-products-controller.php:2301
+#: includes/api/class-wc-rest-products-controller.php:2319
 msgid "Attribute position."
 msgstr "属性位置。"
 
-#: includes/api/class-wc-rest-products-controller.php:2291
-#: includes/api/class-wc-rest-products-controller.php:2330
-#: includes/api/class-wc-rest-products-controller.php:2608
+#: includes/api/class-wc-rest-products-controller.php:2309
+#: includes/api/class-wc-rest-products-controller.php:2351
+#: includes/api/class-wc-rest-products-controller.php:2637
 msgid "Attribute ID."
 msgstr "属性 ID。"
 
-#: includes/api/class-wc-rest-products-controller.php:2286
-#: includes/api/class-wc-rest-products-controller.php:2603
+#: includes/api/class-wc-rest-products-controller.php:2302
+#: includes/api/class-wc-rest-products-controller.php:2630
 msgid "List of attributes."
 msgstr "属性の一覧。"
 
-#: includes/api/class-wc-rest-products-controller.php:2279
-#: includes/api/class-wc-rest-products-controller.php:2596
+#: includes/api/class-wc-rest-products-controller.php:2294
+#: includes/api/class-wc-rest-products-controller.php:2623
 msgid "Image position. 0 means that the image is featured."
 msgstr "画像位置。 0だと画像が取り上げられていることを意味します。"
 
-#: includes/api/class-wc-rest-products-controller.php:2241
+#: includes/api/class-wc-rest-products-controller.php:2254
 msgid "List of images."
 msgstr "イメージ一覧。"
 
-#: includes/api/class-wc-rest-products-controller.php:2233
+#: includes/api/class-wc-rest-products-controller.php:2245
 msgid "Tag slug."
 msgstr "タグスラッグ。"
 
-#: includes/api/class-wc-rest-products-controller.php:2222
+#: includes/api/class-wc-rest-products-controller.php:2234
 msgid "Tag ID."
 msgstr "タグID。"
 
-#: includes/api/class-wc-rest-products-controller.php:2217
+#: includes/api/class-wc-rest-products-controller.php:2227
 msgid "List of tags."
 msgstr "タグのリスト。"
 
-#: includes/api/class-wc-rest-products-controller.php:2209
+#: includes/api/class-wc-rest-products-controller.php:2218
 msgid "Category slug."
 msgstr "カテゴリースラッグ。"
 
-#: includes/api/class-wc-rest-products-controller.php:2198
+#: includes/api/class-wc-rest-products-controller.php:2207
 msgid "Category ID."
 msgstr "カテゴリーID。"
 
-#: includes/api/class-wc-rest-products-controller.php:2193
+#: includes/api/class-wc-rest-products-controller.php:2200
 msgid "List of categories."
 msgstr "カテゴリーのリスト。"
 
-#: includes/api/class-wc-rest-products-controller.php:2188
+#: includes/api/class-wc-rest-products-controller.php:2195
 msgid "Optional note to send the customer after purchase."
 msgstr "購入後、お客様に送るオプション備考。"
 
-#: includes/api/class-wc-rest-products-controller.php:2183
+#: includes/api/class-wc-rest-products-controller.php:2190
 msgid "Product parent ID."
 msgstr "親商品ID"
 
-#: includes/api/class-wc-rest-products-controller.php:2178
+#: includes/api/class-wc-rest-products-controller.php:2185
 msgid "List of cross-sell products IDs."
 msgstr "クロスセル商品IDのリスト。"
 
-#: includes/api/class-wc-rest-products-controller.php:2173
+#: includes/api/class-wc-rest-products-controller.php:2180
 msgid "List of up-sell products IDs."
 msgstr "アップセル商品IDリスト。"
 
-#: includes/api/class-wc-rest-products-controller.php:2167
+#: includes/api/class-wc-rest-products-controller.php:2174
 msgid "List of related products IDs."
 msgstr "関連する商品IDのリスト。"
 
-#: includes/api/class-wc-rest-products-controller.php:2161
+#: includes/api/class-wc-rest-products-controller.php:2168
 msgid "Amount of reviews that the product have."
 msgstr "商品が所有するレビューの数。"
 
-#: includes/api/class-wc-rest-products-controller.php:2155
+#: includes/api/class-wc-rest-products-controller.php:2162
 msgid "Reviews average rating."
 msgstr "レビューの平均率。"
 
-#: includes/api/class-wc-rest-products-controller.php:2149
+#: includes/api/class-wc-rest-products-controller.php:2156
 msgid "Allow reviews."
 msgstr "レビューを許可。"
 
-#: includes/api/class-wc-rest-products-controller.php:2143
-#: includes/api/class-wc-rest-products-controller.php:2552
+#: includes/api/class-wc-rest-products-controller.php:2150
+#: includes/api/class-wc-rest-products-controller.php:2579
 msgid "Shipping class ID."
 msgstr "配送クラスID。"
 
-#: includes/api/class-wc-rest-products-controller.php:2138
-#: includes/api/class-wc-rest-products-controller.php:2547
+#: includes/api/class-wc-rest-products-controller.php:2145
+#: includes/api/class-wc-rest-products-controller.php:2574
 msgid "Shipping class slug."
 msgstr "配送クラススラッグ。"
 
-#: includes/api/class-wc-rest-products-controller.php:2132
+#: includes/api/class-wc-rest-products-controller.php:2139
 msgid "Shows whether or not the product shipping is taxable."
 msgstr "商品の出荷するに対して課税するかどうかにかかわらず表示。"
 
-#: includes/api/class-wc-rest-products-controller.php:2126
+#: includes/api/class-wc-rest-products-controller.php:2133
 msgid "Shows if the product need to be shipped."
 msgstr "商品に出荷が必要な場合、表示。"
 
-#: includes/api/class-wc-rest-products-controller.php:2119
+#: includes/api/class-wc-rest-products-controller.php:2126
 msgid "Product height (%s)."
 msgstr "商品の高さ (%s)。"
 
-#: includes/api/class-wc-rest-products-controller.php:2114
+#: includes/api/class-wc-rest-products-controller.php:2121
 msgid "Product width (%s)."
 msgstr "商品の幅 (%s)。"
 
-#: includes/api/class-wc-rest-products-controller.php:2109
+#: includes/api/class-wc-rest-products-controller.php:2116
 msgid "Product length (%s)."
 msgstr "商品の長さ (%s)。"
 
-#: includes/api/class-wc-rest-products-controller.php:2104
+#: includes/api/class-wc-rest-products-controller.php:2111
 msgid "Product dimensions."
 msgstr "商品の大きさ。"
 
-#: includes/api/class-wc-rest-products-controller.php:2099
+#: includes/api/class-wc-rest-products-controller.php:2106
 msgid "Product weight (%s)."
 msgstr "商品の重さ (%s)。"
 
-#: includes/api/class-wc-rest-products-controller.php:2093
+#: includes/api/class-wc-rest-products-controller.php:2100
 msgid "Allow one item to be bought in a single order."
 msgstr "一回の注文で1個の商品の購入を許す。"
 
-#: includes/api/class-wc-rest-products-controller.php:2087
+#: includes/api/class-wc-rest-products-controller.php:2094
 msgid "Shows if the product is on backordered."
 msgstr "商品が入荷待ちの場合、表示。"
 
-#: includes/api/class-wc-rest-products-controller.php:2081
-#: includes/api/class-wc-rest-products-controller.php:2508
+#: includes/api/class-wc-rest-products-controller.php:2088
+#: includes/api/class-wc-rest-products-controller.php:2535
 msgid "Shows if backorders are allowed."
 msgstr "もし入荷待ちを許可した場合、表示。"
 
-#: includes/api/class-wc-rest-products-controller.php:2074
-#: includes/api/class-wc-rest-products-controller.php:2501
+#: includes/api/class-wc-rest-products-controller.php:2081
+#: includes/api/class-wc-rest-products-controller.php:2528
 msgid "If managing stock, this controls if backorders are allowed."
 msgstr "在庫管理をする場合、入荷待ちを許可したばあいも管理します。"
 
-#: includes/api/class-wc-rest-products-controller.php:2063
-#: includes/api/class-wc-rest-products-controller.php:2490
+#: includes/api/class-wc-rest-products-controller.php:2070
+#: includes/api/class-wc-rest-products-controller.php:2517
 msgid "Stock quantity."
 msgstr "在庫数。"
 
-#: includes/api/class-wc-rest-products-controller.php:2057
+#: includes/api/class-wc-rest-products-controller.php:2064
 msgid "Stock management at product level."
 msgstr "商品レベルでの在庫管理。"
 
-#: includes/api/class-wc-rest-products-controller.php:2045
-#: includes/api/class-wc-rest-products-controller.php:2472
+#: includes/api/class-wc-rest-products-controller.php:2052
+#: includes/api/class-wc-rest-products-controller.php:2499
 msgid "Tax status."
 msgstr "税状況。"
 
-#: includes/api/class-wc-rest-products-controller.php:2040
+#: includes/api/class-wc-rest-products-controller.php:2047
 msgid "Product external button text. Only for external products."
 msgstr "外部リンク商品ボタンのテキスト。外部リンク商品のみ。"
 
-#: includes/api/class-wc-rest-products-controller.php:2034
+#: includes/api/class-wc-rest-products-controller.php:2041
 msgid "Product external URL. Only for external products."
 msgstr "商品の外部URL。外部リンク商品のみ。"
 
-#: includes/api/class-wc-rest-products-controller.php:2027
+#: includes/api/class-wc-rest-products-controller.php:2034
 msgid "Download type, this controls the schema on the front-end."
 msgstr "ダウンロードタイプ、これはフロントエンドでのスキーマを管理。"
 
-#: includes/api/class-wc-rest-products-controller.php:2021
+#: includes/api/class-wc-rest-products-controller.php:2028
 msgid "Number of days that the customer has up to be able to download the product."
 msgstr "お客様が商品をダウンロードできる日数。"
 
-#: includes/api/class-wc-rest-products-controller.php:2015
+#: includes/api/class-wc-rest-products-controller.php:2022
 msgid "Amount of times the product can be downloaded."
 msgstr "商品をダウンロードできる期間合計。"
 
-#: includes/api/class-wc-rest-products-controller.php:1997
-#: includes/api/class-wc-rest-products-controller.php:2442
+#: includes/api/class-wc-rest-products-controller.php:2003
+#: includes/api/class-wc-rest-products-controller.php:2468
 msgid "File MD5 hash."
 msgstr "ファイルの MD5 ハッシュ"
 
-#: includes/api/class-wc-rest-products-controller.php:1992
-#: includes/api/class-wc-rest-products-controller.php:2437
+#: includes/api/class-wc-rest-products-controller.php:1996
+#: includes/api/class-wc-rest-products-controller.php:2461
 msgid "List of downloadable files."
 msgstr "ダウンロードファイルのリスト"
 
-#: includes/api/class-wc-rest-products-controller.php:1986
+#: includes/api/class-wc-rest-products-controller.php:1990
 msgid "If the product is downloadable."
 msgstr "ダウンロード商品の場合。"
 
-#: includes/api/class-wc-rest-products-controller.php:1980
+#: includes/api/class-wc-rest-products-controller.php:1984
 msgid "If the product is virtual."
 msgstr "バーチャル商品の場合。"
 
-#: includes/api/class-wc-rest-products-controller.php:1974
+#: includes/api/class-wc-rest-products-controller.php:1978
 msgid "Amount of sales."
 msgstr "売上合計。"
 
-#: includes/api/class-wc-rest-products-controller.php:1968
+#: includes/api/class-wc-rest-products-controller.php:1972
 msgid "Shows if the product can be bought."
 msgstr "商品を売ることが出来たら表示する。"
 
-#: includes/api/class-wc-rest-products-controller.php:1962
+#: includes/api/class-wc-rest-products-controller.php:1966
 msgid "Shows if the product is on sale."
 msgstr "製品がセールならば表示する。"
 
-#: includes/api/class-wc-rest-products-controller.php:1956
+#: includes/api/class-wc-rest-products-controller.php:1960
 msgid "Price formatted in HTML."
 msgstr "HTMLでフォーマットされている価格。"
 
-#: includes/api/class-wc-rest-products-controller.php:1951
-#: includes/api/class-wc-rest-products-controller.php:2403
+#: includes/api/class-wc-rest-products-controller.php:1955
+#: includes/api/class-wc-rest-products-controller.php:2427
 msgid "End data of sale price."
 msgstr "セール価格の終了日"
 
-#: includes/api/class-wc-rest-products-controller.php:1946
-#: includes/api/class-wc-rest-products-controller.php:2398
+#: includes/api/class-wc-rest-products-controller.php:1950
+#: includes/api/class-wc-rest-products-controller.php:2422
 msgid "Start date of sale price."
 msgstr "セール価格の開始日"
 
-#: includes/api/class-wc-rest-products-controller.php:1941
+#: includes/api/class-wc-rest-products-controller.php:1945
 msgid "Product sale price."
 msgstr "商品セール価格"
 
-#: includes/api/class-wc-rest-products-controller.php:1936
+#: includes/api/class-wc-rest-products-controller.php:1940
 msgid "Product regular price."
 msgstr "商品の標準価格。"
 
-#: includes/api/class-wc-rest-products-controller.php:1930
+#: includes/api/class-wc-rest-products-controller.php:1934
 msgid "Current product price."
 msgstr "現在の商品価格。"
 
-#: includes/api/class-wc-rest-products-controller.php:1925
-#: includes/api/class-wc-rest-products-controller.php:2377
+#: includes/api/class-wc-rest-products-controller.php:1929
+#: includes/api/class-wc-rest-products-controller.php:2401
 msgid "Unique identifier."
 msgstr "固有の識別子。"
 
-#: includes/api/class-wc-rest-products-controller.php:1920
+#: includes/api/class-wc-rest-products-controller.php:1924
 msgid "Product short description."
 msgstr "商品の短い説明。"
 
-#: includes/api/class-wc-rest-products-controller.php:1915
+#: includes/api/class-wc-rest-products-controller.php:1919
 msgid "Product description."
 msgstr "商品説明。"
 
-#: includes/api/class-wc-rest-products-controller.php:1908
+#: includes/api/class-wc-rest-products-controller.php:1912
 msgid "Catalog visibility."
 msgstr "カタログ表示。"
 
-#: includes/api/class-wc-rest-products-controller.php:1902
+#: includes/api/class-wc-rest-products-controller.php:1906
 msgid "Featured product."
 msgstr "お勧め商品。"
 
-#: includes/api/class-wc-rest-products-controller.php:1895
+#: includes/api/class-wc-rest-products-controller.php:1899
 msgid "Product status (post status)."
 msgstr "商品状況(登録状況)。"
 
-#: includes/api/class-wc-rest-products-controller.php:1888
+#: includes/api/class-wc-rest-products-controller.php:1892
 msgid "Product type."
 msgstr "商品タイプ。"
 
-#: includes/api/class-wc-rest-products-controller.php:1882
+#: includes/api/class-wc-rest-products-controller.php:1886
 msgid "The date the product was last modified, in the site's timezone."
 msgstr "サイトの時間設定による商品が最後に更新された日付。"
 
-#: includes/api/class-wc-rest-products-controller.php:1876
+#: includes/api/class-wc-rest-products-controller.php:1880
 msgid "The date the product was created, in the site's timezone."
 msgstr "サイトの時間設定による商品が作成された日付。"
 
-#: includes/api/class-wc-rest-products-controller.php:1869
+#: includes/api/class-wc-rest-products-controller.php:1873
 msgid "Product URL."
-msgstr "商品URL。"
+msgstr "商品 URL。"
 
-#: includes/api/class-wc-rest-products-controller.php:1864
+#: includes/api/class-wc-rest-products-controller.php:1868
 msgid "Product slug."
 msgstr "商品スラッグ。"
 
-#: includes/api/class-wc-rest-products-controller.php:964
-#: includes/api/class-wc-rest-products-controller.php:1372
+#: includes/api/class-wc-rest-products-controller.php:968
+#: includes/api/class-wc-rest-products-controller.php:1376
 msgid "The SKU already exists on another product."
 msgstr "他の商品でそのSKUはすでに使われています。"
 
 #: includes/api/class-wc-rest-product-tags-controller.php:100
-#: includes/api/class-wc-rest-products-controller.php:2227
+#: includes/api/class-wc-rest-products-controller.php:2239
 msgid "Tag name."
 msgstr "タグ名。"
 
@@ -1740,56 +1757,56 @@ msgstr "サイトの時間設定によるレビューが作成された日付。
 msgid "Invalid product id."
 msgstr "無効な商品id。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:238
-#: includes/api/class-wc-rest-products-controller.php:2274
-#: includes/api/class-wc-rest-products-controller.php:2591
+#: includes/api/class-wc-rest-product-categories-controller.php:243
+#: includes/api/class-wc-rest-products-controller.php:2289
+#: includes/api/class-wc-rest-products-controller.php:2618
 msgid "Image alternative text."
 msgstr "画像の代替テキスト。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:233
-#: includes/api/class-wc-rest-products-controller.php:2269
-#: includes/api/class-wc-rest-products-controller.php:2586
+#: includes/api/class-wc-rest-product-categories-controller.php:238
+#: includes/api/class-wc-rest-products-controller.php:2284
+#: includes/api/class-wc-rest-products-controller.php:2613
 msgid "Image name."
 msgstr "画像名。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:227
-#: includes/api/class-wc-rest-products-controller.php:2263
-#: includes/api/class-wc-rest-products-controller.php:2580
+#: includes/api/class-wc-rest-product-categories-controller.php:232
+#: includes/api/class-wc-rest-products-controller.php:2278
+#: includes/api/class-wc-rest-products-controller.php:2607
 msgid "Image URL."
-msgstr "画像URL。"
+msgstr "画像 URL。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:221
-#: includes/api/class-wc-rest-products-controller.php:2257
-#: includes/api/class-wc-rest-products-controller.php:2574
+#: includes/api/class-wc-rest-product-categories-controller.php:226
+#: includes/api/class-wc-rest-products-controller.php:2272
+#: includes/api/class-wc-rest-products-controller.php:2601
 msgid "The date the image was last modified, in the site's timezone."
 msgstr "サイトの時間設定による画像が最後に更新された日付。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:215
-#: includes/api/class-wc-rest-products-controller.php:2251
-#: includes/api/class-wc-rest-products-controller.php:2568
+#: includes/api/class-wc-rest-product-categories-controller.php:220
+#: includes/api/class-wc-rest-products-controller.php:2266
+#: includes/api/class-wc-rest-products-controller.php:2595
 msgid "The date the image was created, in the site's timezone."
 msgstr "サイトの時間設定による画像が作られた日付。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:210
-#: includes/api/class-wc-rest-products-controller.php:2246
-#: includes/api/class-wc-rest-products-controller.php:2563
+#: includes/api/class-wc-rest-product-categories-controller.php:215
+#: includes/api/class-wc-rest-products-controller.php:2261
+#: includes/api/class-wc-rest-products-controller.php:2590
 msgid "Image ID."
-msgstr "画像ID。"
+msgstr "画像 ID。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:205
+#: includes/api/class-wc-rest-product-categories-controller.php:210
 msgid "Image data."
 msgstr "画像データ。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:198
+#: includes/api/class-wc-rest-product-categories-controller.php:203
 msgid "Category archive display type."
 msgstr "カテゴリーアーカイブの表示タイプ。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:185
+#: includes/api/class-wc-rest-product-categories-controller.php:190
 msgid "The id for the parent of the resource."
 msgstr "親リソースのid。"
 
-#: includes/api/class-wc-rest-product-categories-controller.php:169
-#: includes/api/class-wc-rest-products-controller.php:2203
+#: includes/api/class-wc-rest-product-categories-controller.php:174
+#: includes/api/class-wc-rest-products-controller.php:2212
 msgid "Category name."
 msgstr "カテゴリー名。"
 
@@ -1818,26 +1835,26 @@ msgid "Type of attribute."
 msgstr "属性のタイプ。"
 
 #: includes/api/class-wc-rest-product-attributes-controller.php:531
-#: includes/api/class-wc-rest-products-controller.php:2296
-#: includes/api/class-wc-rest-products-controller.php:2335
-#: includes/api/class-wc-rest-products-controller.php:2613
+#: includes/api/class-wc-rest-products-controller.php:2314
+#: includes/api/class-wc-rest-products-controller.php:2356
+#: includes/api/class-wc-rest-products-controller.php:2642
 msgid "Attribute name."
 msgstr "属性名。"
 
 #: includes/api/class-wc-rest-product-attribute-terms-controller.php:141
-#: includes/api/class-wc-rest-product-categories-controller.php:250
+#: includes/api/class-wc-rest-product-categories-controller.php:255
 #: includes/api/class-wc-rest-product-shipping-classes-controller.php:124
 #: includes/api/class-wc-rest-product-tags-controller.php:124
 msgid "Number of published products for the resource."
 msgstr "リソースの製品公開数。"
 
 #: includes/api/class-wc-rest-product-attribute-terms-controller.php:136
-#: includes/api/class-wc-rest-product-categories-controller.php:245
+#: includes/api/class-wc-rest-product-categories-controller.php:250
 msgid "Menu order, used to custom sort the resource."
 msgstr "カスタムリソースをソートするために使用されるメニューの順序。"
 
 #: includes/api/class-wc-rest-product-attribute-terms-controller.php:128
-#: includes/api/class-wc-rest-product-categories-controller.php:190
+#: includes/api/class-wc-rest-product-categories-controller.php:195
 #: includes/api/class-wc-rest-product-shipping-classes-controller.php:116
 #: includes/api/class-wc-rest-product-tags-controller.php:116
 msgid "HTML description of the resource."
@@ -1845,7 +1862,7 @@ msgstr "リソースのHTML記述。"
 
 #: includes/api/class-wc-rest-product-attribute-terms-controller.php:120
 #: includes/api/class-wc-rest-product-attributes-controller.php:539
-#: includes/api/class-wc-rest-product-categories-controller.php:177
+#: includes/api/class-wc-rest-product-categories-controller.php:182
 #: includes/api/class-wc-rest-product-shipping-classes-controller.php:108
 #: includes/api/class-wc-rest-product-tags-controller.php:108
 msgid "An alphanumeric identifier for the resource unique to its type."
@@ -1855,95 +1872,95 @@ msgstr "そのタイプに固有のリソースの英数字の識別子。"
 msgid "Term name."
 msgstr "要素名。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1800
+#: includes/api/class-wc-rest-orders-controller.php:1830
 msgid "Limit result set to orders assigned a specific product."
 msgstr "特定の製品を割り当てられた注文にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1794
+#: includes/api/class-wc-rest-orders-controller.php:1824
 msgid "Limit result set to orders assigned a specific customer."
 msgstr "特定の顧客に割り当て注文にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1787
+#: includes/api/class-wc-rest-orders-controller.php:1817
 msgid "Limit result set to orders assigned a specific status."
 msgstr "特定のステータスが割り当て注文にセットした結果に制限。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1764
+#: includes/api/class-wc-rest-orders-controller.php:1793
 msgid "Refund total."
 msgstr "払戻総額"
 
-#: includes/api/class-wc-rest-orders-controller.php:1758
+#: includes/api/class-wc-rest-orders-controller.php:1787
 msgid "Refund reason."
 msgstr "返金理由。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1752
+#: includes/api/class-wc-rest-orders-controller.php:1781
 msgid "Refund ID."
 msgstr "返金 ID。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1746
+#: includes/api/class-wc-rest-orders-controller.php:1773
 msgid "List of refunds."
 msgstr "返金の一覧。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1738
+#: includes/api/class-wc-rest-orders-controller.php:1764
 msgid "Discount total tax."
 msgstr "割引税合計。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1733
+#: includes/api/class-wc-rest-orders-controller.php:1759
 msgid "Discount total."
 msgstr "割引合計。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1717
+#: includes/api/class-wc-rest-orders-controller.php:1741
 msgid "Coupons line data."
 msgstr "クーポン行データ。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1674
+#: includes/api/class-wc-rest-orders-controller.php:1694
 msgid "Tax status of fee."
 msgstr "税状況の費用"
 
-#: includes/api/class-wc-rest-orders-controller.php:1669
+#: includes/api/class-wc-rest-orders-controller.php:1689
 msgid "Tax class of fee."
 msgstr "税クラスの費用。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1664
+#: includes/api/class-wc-rest-orders-controller.php:1684
 msgid "Fee name."
 msgstr "費用名。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1653
+#: includes/api/class-wc-rest-orders-controller.php:1671
 msgid "Fee lines data."
 msgstr "費用行データ。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1615
+#: includes/api/class-wc-rest-orders-controller.php:1629
 msgid "Shipping method ID."
 msgstr "配送方法ID。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1610
+#: includes/api/class-wc-rest-orders-controller.php:1624
 msgid "Shipping method name."
 msgstr "配送方法名。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1599
+#: includes/api/class-wc-rest-orders-controller.php:1611
 msgid "Shipping lines data."
 msgstr "配送行データ"
 
-#: includes/api/class-wc-rest-orders-controller.php:1591
+#: includes/api/class-wc-rest-orders-controller.php:1602
 msgid "Shipping tax total."
 msgstr "配送税合計。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1585
+#: includes/api/class-wc-rest-orders-controller.php:1596
 msgid "Tax total (not including shipping taxes)."
-msgstr "税合計( 配送税は含みません )。"
+msgstr "税金合計 (配送税は含みません) 。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1579
+#: includes/api/class-wc-rest-orders-controller.php:1590
 msgid "Show if is a compound tax rate."
 msgstr "複合税率がある場合に表示します。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1573
+#: includes/api/class-wc-rest-orders-controller.php:1584
 msgid "Tax rate label."
 msgstr "税率ラベル。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1561
+#: includes/api/class-wc-rest-orders-controller.php:1572
 msgid "Tax rate code."
 msgstr "税率コード。"
 
-#: includes/api/class-wc-rest-orders-controller.php:1549
+#: includes/api/class-wc-rest-orders-controller.php:1558
 msgid "Tax lines data."
 msgstr "税行のデータ。"
 
@@ -2006,7 +2023,7 @@ msgstr "請求先住所。"
 
 #: includes/api/class-wc-rest-orders-controller.php:1242
 msgid "Sum of all taxes."
-msgstr "すべての税合計。"
+msgstr "すべての税金の合計。"
 
 #: includes/api/class-wc-rest-orders-controller.php:1236
 msgid "Grand total."
@@ -2153,108 +2170,108 @@ msgstr "注文が作れません。 : %s"
 msgid "Customer ID is invalid."
 msgstr "顧客 ID が無効です。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:508
-#: includes/api/class-wc-rest-orders-controller.php:1807
+#: includes/api/class-wc-rest-order-refunds-controller.php:517
+#: includes/api/class-wc-rest-orders-controller.php:1837
 msgid "Number of decimal points to use in each resource."
 msgstr "小数点数は、各リソースで使用します。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:483
-#: includes/api/class-wc-rest-orders-controller.php:1539
+#: includes/api/class-wc-rest-order-refunds-controller.php:490
+#: includes/api/class-wc-rest-orders-controller.php:1546
 msgid "Meta value."
 msgstr "メタ値。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:477
-#: includes/api/class-wc-rest-orders-controller.php:1533
+#: includes/api/class-wc-rest-order-refunds-controller.php:484
+#: includes/api/class-wc-rest-orders-controller.php:1540
 msgid "Meta label."
 msgstr "メタラベル。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:471
-#: includes/api/class-wc-rest-orders-controller.php:1527
+#: includes/api/class-wc-rest-order-refunds-controller.php:478
+#: includes/api/class-wc-rest-orders-controller.php:1534
 msgid "Meta key."
 msgstr "メタキー。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:465
-#: includes/api/class-wc-rest-orders-controller.php:1521
+#: includes/api/class-wc-rest-order-refunds-controller.php:470
+#: includes/api/class-wc-rest-orders-controller.php:1526
 msgid "Line item meta data."
 msgstr "メタデータ項目"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:457
-#: includes/api/class-wc-rest-orders-controller.php:1513
-#: includes/api/class-wc-rest-orders-controller.php:1707
+#: includes/api/class-wc-rest-order-refunds-controller.php:461
+#: includes/api/class-wc-rest-orders-controller.php:1517
+#: includes/api/class-wc-rest-orders-controller.php:1729
 msgid "Tax subtotal."
 msgstr "税小計。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:451
-#: includes/api/class-wc-rest-orders-controller.php:1507
-#: includes/api/class-wc-rest-orders-controller.php:1643
-#: includes/api/class-wc-rest-orders-controller.php:1701
+#: includes/api/class-wc-rest-order-refunds-controller.php:455
+#: includes/api/class-wc-rest-orders-controller.php:1511
+#: includes/api/class-wc-rest-orders-controller.php:1659
+#: includes/api/class-wc-rest-orders-controller.php:1723
 msgid "Tax total."
-msgstr "税合計。"
+msgstr "税金合計。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:439
-#: includes/api/class-wc-rest-orders-controller.php:1495
-#: includes/api/class-wc-rest-orders-controller.php:1631
-#: includes/api/class-wc-rest-orders-controller.php:1689
+#: includes/api/class-wc-rest-order-refunds-controller.php:441
+#: includes/api/class-wc-rest-orders-controller.php:1497
+#: includes/api/class-wc-rest-orders-controller.php:1645
+#: includes/api/class-wc-rest-orders-controller.php:1709
 msgid "Line taxes."
 msgstr "税の行。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:434
-#: includes/api/class-wc-rest-orders-controller.php:1490
-#: includes/api/class-wc-rest-orders-controller.php:1625
-#: includes/api/class-wc-rest-orders-controller.php:1684
+#: includes/api/class-wc-rest-order-refunds-controller.php:436
+#: includes/api/class-wc-rest-orders-controller.php:1492
+#: includes/api/class-wc-rest-orders-controller.php:1639
+#: includes/api/class-wc-rest-orders-controller.php:1704
 msgid "Line total tax (after discounts)."
 msgstr "合計税額項目(割引後)"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:429
-#: includes/api/class-wc-rest-orders-controller.php:1485
-#: includes/api/class-wc-rest-orders-controller.php:1620
-#: includes/api/class-wc-rest-orders-controller.php:1679
+#: includes/api/class-wc-rest-order-refunds-controller.php:431
+#: includes/api/class-wc-rest-orders-controller.php:1487
+#: includes/api/class-wc-rest-orders-controller.php:1634
+#: includes/api/class-wc-rest-orders-controller.php:1699
 msgid "Line total (after discounts)."
 msgstr "合計項目(割引後)"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:424
-#: includes/api/class-wc-rest-orders-controller.php:1480
+#: includes/api/class-wc-rest-order-refunds-controller.php:426
+#: includes/api/class-wc-rest-orders-controller.php:1482
 msgid "Line subtotal tax (before discounts)."
 msgstr "小計税額項目(割引前)"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:419
-#: includes/api/class-wc-rest-orders-controller.php:1475
+#: includes/api/class-wc-rest-order-refunds-controller.php:421
+#: includes/api/class-wc-rest-orders-controller.php:1477
 msgid "Line subtotal (before discounts)."
 msgstr "小計項目(割引前)"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:413
-#: includes/api/class-wc-rest-orders-controller.php:1469
+#: includes/api/class-wc-rest-order-refunds-controller.php:415
+#: includes/api/class-wc-rest-orders-controller.php:1471
 msgid "Product price."
 msgstr "商品価格。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:407
-#: includes/api/class-wc-rest-orders-controller.php:1463
+#: includes/api/class-wc-rest-order-refunds-controller.php:409
+#: includes/api/class-wc-rest-orders-controller.php:1465
 msgid "Tax class of product."
 msgstr "商品の税クラス"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:402
-#: includes/api/class-wc-rest-orders-controller.php:1458
+#: includes/api/class-wc-rest-order-refunds-controller.php:404
+#: includes/api/class-wc-rest-orders-controller.php:1460
 msgid "Quantity ordered."
 msgstr "注文された数。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:397
-#: includes/api/class-wc-rest-orders-controller.php:1453
+#: includes/api/class-wc-rest-order-refunds-controller.php:399
+#: includes/api/class-wc-rest-orders-controller.php:1455
 msgid "Variation ID, if applicable."
 msgstr "バリエーションID、該当する場合。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:380
-#: includes/api/class-wc-rest-orders-controller.php:1436
-#: includes/api/class-wc-rest-products-controller.php:1859
+#: includes/api/class-wc-rest-order-refunds-controller.php:382
+#: includes/api/class-wc-rest-orders-controller.php:1438
+#: includes/api/class-wc-rest-products-controller.php:1863
 #: includes/api/class-wc-rest-report-top-sellers-controller.php:152
 msgid "Product name."
 msgstr "商品名。"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:374
-#: includes/api/class-wc-rest-orders-controller.php:1430
-#: includes/api/class-wc-rest-orders-controller.php:1555
-#: includes/api/class-wc-rest-orders-controller.php:1604
-#: includes/api/class-wc-rest-orders-controller.php:1658
-#: includes/api/class-wc-rest-orders-controller.php:1722
+#: includes/api/class-wc-rest-order-refunds-controller.php:376
+#: includes/api/class-wc-rest-orders-controller.php:1432
+#: includes/api/class-wc-rest-orders-controller.php:1566
+#: includes/api/class-wc-rest-orders-controller.php:1618
+#: includes/api/class-wc-rest-orders-controller.php:1678
+#: includes/api/class-wc-rest-orders-controller.php:1748
 msgid "Item ID."
 msgstr "アイテム ID 。"
 
@@ -2473,11 +2490,11 @@ msgstr "サイトの時間設定による顧客アカウントが作られた日
 #: includes/api/class-wc-rest-orders-controller.php:1139
 #: includes/api/class-wc-rest-product-attribute-terms-controller.php:106
 #: includes/api/class-wc-rest-product-attributes-controller.php:525
-#: includes/api/class-wc-rest-product-categories-controller.php:163
+#: includes/api/class-wc-rest-product-categories-controller.php:168
 #: includes/api/class-wc-rest-product-reviews-controller.php:220
 #: includes/api/class-wc-rest-product-shipping-classes-controller.php:94
 #: includes/api/class-wc-rest-product-tags-controller.php:94
-#: includes/api/class-wc-rest-products-controller.php:1853
+#: includes/api/class-wc-rest-products-controller.php:1857
 #: includes/api/class-wc-rest-tax-classes-controller.php:325
 #: includes/api/class-wc-rest-taxes-controller.php:568
 #: includes/api/class-wc-rest-webhook-deliveries.php:218
@@ -2522,14 +2539,14 @@ msgid "Cannot create existing resource."
 msgstr "すでにあるリソースは作ることが出来ません。"
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:220
-#: includes/api/class-wc-rest-products-controller.php:2008
-#: includes/api/class-wc-rest-products-controller.php:2453
+#: includes/api/class-wc-rest-products-controller.php:2014
+#: includes/api/class-wc-rest-products-controller.php:2479
 msgid "File URL."
 msgstr "ファイルURL。"
 
 #: includes/api/class-wc-rest-customer-downloads-controller.php:214
-#: includes/api/class-wc-rest-products-controller.php:2003
-#: includes/api/class-wc-rest-products-controller.php:2448
+#: includes/api/class-wc-rest-products-controller.php:2009
+#: includes/api/class-wc-rest-products-controller.php:2474
 msgid "File name."
 msgstr "ファイル名"
 
@@ -2570,100 +2587,100 @@ msgstr "ダウンロードID(MD5)。"
 msgid "Download file URL."
 msgstr "ダウンロードファイル URL。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:575
+#: includes/api/class-wc-rest-coupons-controller.php:574
 msgid "Limit result set to resources with a specific code."
 msgstr "特定のコードのリソースにセットした結果に制限。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:555
+#: includes/api/class-wc-rest-coupons-controller.php:554
 msgid "List of user IDs who have used the coupon."
 msgstr "クーポンを使用したユーザーIDのリスト。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:550
+#: includes/api/class-wc-rest-coupons-controller.php:549
 msgid "List of email addresses that can use this coupon."
 msgstr "このクーポンを使うことができるメールアドレスのリスト"
 
-#: includes/api/class-wc-rest-coupons-controller.php:545
+#: includes/api/class-wc-rest-coupons-controller.php:544
 msgid "Maximum order amount allowed when using the coupon."
 msgstr "クーポンを使用し出来る最大発注金額。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:540
+#: includes/api/class-wc-rest-coupons-controller.php:539
 msgid "Minimum order amount that needs to be in the cart before coupon applies."
 msgstr "クーポンを適用する前に無料になる注文金額がカートにある必要があります。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:534
+#: includes/api/class-wc-rest-coupons-controller.php:533
 msgid "Define if should not apply when have sale items."
 msgstr "セール商品を持っている場合は適用されないかどうかを定義します。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:529
+#: includes/api/class-wc-rest-coupons-controller.php:528
 msgid "List of category ID's the coupon does not apply to."
 msgstr "クーポンが適用されていないカテゴリー ID のリスト。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:524
+#: includes/api/class-wc-rest-coupons-controller.php:523
 msgid "List of category ID's the coupon applies to."
 msgstr "クーポンが適用されたカテゴリー ID のリスト。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:518
+#: includes/api/class-wc-rest-coupons-controller.php:517
 msgid "Define if can be applied for free shipping."
 msgstr "送料無料を適用することができるかどうかを定義します。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:513
+#: includes/api/class-wc-rest-coupons-controller.php:512
 msgid "Max number of items in the cart the coupon can be applied to."
-msgstr "クーポンを適用できる買い物カゴ内の最大商品数。"
+msgstr "クーポンを適用できるカート内の最大商品数。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:508
+#: includes/api/class-wc-rest-coupons-controller.php:507
 msgid "How many times the coupon can be used per customer."
 msgstr "お客様ごとにクーポンを使うことの出来る数。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:503
+#: includes/api/class-wc-rest-coupons-controller.php:502
 msgid "How many times the coupon can be used."
 msgstr "クーポンが使うことの出来る数。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:498
+#: includes/api/class-wc-rest-coupons-controller.php:497
 msgid "List of product ID's the coupon cannot be used on."
 msgstr "クーポンが利用できない商品IDのリスト。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:493
+#: includes/api/class-wc-rest-coupons-controller.php:492
 msgid "List of product ID's the coupon can be used on."
 msgstr "クーポンが使える商品 ID のリスト。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:487
+#: includes/api/class-wc-rest-coupons-controller.php:486
 msgid "Whether coupon can only be used individually."
 msgstr "クーポンを一回しか使えないようにするかどうか。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:481
+#: includes/api/class-wc-rest-coupons-controller.php:480
 msgid "Number of times the coupon has been used already."
 msgstr "既にクーポンが使用された回数。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:476
+#: includes/api/class-wc-rest-coupons-controller.php:475
 msgid "UTC DateTime when the coupon expires."
 msgstr "UTC（世界協定時）でのクーポン期限"
 
-#: includes/api/class-wc-rest-coupons-controller.php:471
+#: includes/api/class-wc-rest-coupons-controller.php:470
 msgid "The amount of discount."
 msgstr "割引額。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:464
+#: includes/api/class-wc-rest-coupons-controller.php:463
 msgid "Determines the type of discount that will be applied."
 msgstr "適用される割引の種類を決定します。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:459
+#: includes/api/class-wc-rest-coupons-controller.php:458
 msgid "Coupon description."
 msgstr "クーポン詳細。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:453
+#: includes/api/class-wc-rest-coupons-controller.php:452
 msgid "The date the coupon was last modified, in the site's timezone."
 msgstr "サイトの時間設定によるクーポンが最後に更新された日付。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:447
+#: includes/api/class-wc-rest-coupons-controller.php:446
 msgid "The date the coupon was created, in the site's timezone."
 msgstr "サイトの時間設定によるクーポンが作られた日付。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:442
-#: includes/api/class-wc-rest-orders-controller.php:1728
+#: includes/api/class-wc-rest-coupons-controller.php:441
+#: includes/api/class-wc-rest-orders-controller.php:1754
 msgid "Coupon code."
 msgstr "クーポンコード。"
 
-#: includes/api/class-wc-rest-coupons-controller.php:436
+#: includes/api/class-wc-rest-coupons-controller.php:435
 msgid "Unique identifier for the object."
 msgstr "オブジェクトの固有の識別子。"
 
@@ -2723,7 +2740,7 @@ msgstr "データベースがバックグラウンドで更新されています
 
 #: includes/admin/views/html-notice-update.php:12
 msgid "We need to update your store's database to the latest version."
-msgstr "お店のデータベースを最新版に更新する必要があります。"
+msgstr "店舗のデータベースを最新版に更新する必要があります。"
 
 #: includes/admin/views/html-notice-update.php:12
 #: includes/admin/views/html-notice-updating.php:12
@@ -2808,7 +2825,7 @@ msgstr "サーバーが%s関数をサポートしていません。- これはMa
 
 #: includes/admin/views/html-admin-page-status-report.php:192
 msgid "WordPress Requirements"
-msgstr "ワードプレスの必須条件"
+msgstr "WordPress 要件"
 
 #: includes/admin/views/html-admin-page-status-report.php:160
 msgid "The version of cURL installed on your server."
@@ -3034,7 +3051,7 @@ msgstr "カテゴリーを表示"
 
 #: includes/admin/settings/class-wc-settings-general.php:129
 msgid "No location by default"
-msgstr "デフォルトの地域は無くす"
+msgstr "デフォルト地域なし"
 
 #: includes/admin/settings/class-wc-settings-general.php:124
 msgid "This option determines a customers default location. The MaxMind GeoLite Database will be periodically downloaded to your wp-content directory if using geolocation."
@@ -3085,24 +3102,24 @@ msgstr "決済方法を削除"
 #: includes/admin/settings/class-wc-settings-checkout.php:95
 msgctxt "Settings group label"
 msgid "Checkout Process"
-msgstr "精算手続き"
+msgstr "購入手続き"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:159
 msgid "Endpoint for the My Account &rarr; Payment Methods page"
 msgstr "マイアカウント用のエンドポイント&rarr; 決済方法ページ"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:158
-#: includes/class-wc-query.php:117 includes/wc-account-functions.php:93
+#: includes/class-wc-query.php:117 includes/wc-account-functions.php:94
 msgid "Payment Methods"
 msgstr "決済方法"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:149
-#: includes/class-wc-query.php:114 includes/wc-account-functions.php:92
+#: includes/class-wc-query.php:114 includes/wc-account-functions.php:93
 msgid "Addresses"
 msgstr "住所"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:131
-#: includes/class-wc-query.php:108 includes/wc-account-functions.php:91
+#: includes/class-wc-query.php:108 includes/wc-account-functions.php:92
 msgid "Downloads"
 msgstr "ダウンロード"
 
@@ -3112,7 +3129,7 @@ msgstr "注意：払い戻しの理由は、顧客に表示されます。"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:223
 msgid "This order is no longer editable."
-msgstr "この注文は編集が出来ません。"
+msgstr "この注文は現在編集できません。"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:221
 msgid "Add item(s)"
@@ -3163,15 +3180,15 @@ msgstr "(%s %s)"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:615
 msgid "A simple offline gateway that lets you accept cash on delivery."
-msgstr "代引きを利用できるシンプルなオフライン支払い。"
+msgstr "代引きを受け付けられるシンプルなオフライン決済。"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:609
 msgid "A simple offline gateway that lets you accept BACS payment."
-msgstr "BACS支払いを利用できるシンプルなオフライン決済。"
+msgstr "BACS 支払いを受け付けられるシンプルなオフライン決済。"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:603
 msgid "A simple offline gateway that lets you accept a check as method of payment."
-msgstr "シンプルなオフライン支払いとして小切手を利用できます。"
+msgstr "小切手を受け付けられるシンプルなオフライン決済。"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:602
 #: includes/gateways/cheque/class-wc-gateway-cheque.php:27
@@ -3182,11 +3199,11 @@ msgstr "小切手支払い"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:589
 msgid "Accept payments via PayPal using account balance or credit card."
-msgstr "銀行口座（米国）やクレジットカードを使った支払いをおこないます。"
+msgstr "銀行口座 (米国) やクレジットカードを通じた PayPal での支払いを受け付けます。"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:583
 msgid "A modern and robust way to accept credit card payments on your store. %sLearn more about Stripe%s."
-msgstr "新しく確実な方法で、クレジットカードのお支払いをお店で行えます。%sStripeの詳細については、こちらをご覧ください。%s"
+msgstr "新しく確実な方法で、クレジットカードのお支払いを店舗で行えます。%sStripeの詳細については、こちらをご覧ください。%s"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:574
 msgid "PayPal Express Checkout"
@@ -3241,6 +3258,10 @@ msgstr "WooThemes ヘルプデスク"
 #: includes/admin/class-wc-admin-help.php:197
 msgid "Community Forum"
 msgstr "コミュニティーフォーラム"
+
+#: includes/admin/class-wc-admin-help.php:190
+msgid "For further assistance with WooCommerce core you can use the %1$scommunity forum%2$s. If you need help with premium extensions sold by WooCommerce, please %3$suse our helpdesk%4$s."
+msgstr "WooCommerce コアとさらなる支援のためには、%1$sコミュニティフォーラム%2$sを使用することができます。WooCommerceより販売されているプレミアムアドオンのサポートが必要な場合は、%3$sヘルプデスク%4$sをご利用ください。"
 
 #: includes/admin/class-wc-admin-help.php:181
 #: includes/admin/class-wc-admin-help.php:183
@@ -3417,28 +3438,28 @@ msgstr "指定されたISO 8601に準拠日後に公開されたリソースへ�
 
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:460
 #: includes/api/class-wc-rest-order-notes-controller.php:295
-#: includes/api/class-wc-rest-products-controller.php:1819
+#: includes/api/class-wc-rest-products-controller.php:1823
 #: includes/api/class-wc-rest-webhooks-controller.php:314
 msgid "The %s cannot be deleted."
 msgstr "%s は削除できません。"
 
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:451
-#: includes/api/class-wc-rest-products-controller.php:1810
+#: includes/api/class-wc-rest-products-controller.php:1814
 msgid "The %s has already been deleted."
 msgstr "%s はすでに削除されています。"
 
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:446
-#: includes/api/class-wc-rest-products-controller.php:1805
+#: includes/api/class-wc-rest-products-controller.php:1809
 msgid "The %s does not support trashing."
 msgstr "%s にはゴミ箱機能がありません。"
 
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:434
-#: includes/api/class-wc-rest-products-controller.php:1774
+#: includes/api/class-wc-rest-products-controller.php:1778
 msgid "Sorry, you are not allowed to delete %s."
 msgstr "あなたは %s を削除する権限がありません。"
 
 #: includes/abstracts/abstract-wc-rest-posts-controller.php:418
-#: includes/api/class-wc-rest-products-controller.php:1758
+#: includes/api/class-wc-rest-products-controller.php:1762
 #: includes/api/class-wc-rest-webhooks-controller.php:305
 msgid "Invalid post id."
 msgstr "無効な投稿 id 。"
@@ -3718,7 +3739,7 @@ msgstr "[{site_title}] 失敗注文 ({order_number})"
 
 #: includes/cli/class-wc-cli-tax.php:300 includes/cli/class-wc-cli-tax.php:495
 msgid "Invalid tax rate ID: %s"
-msgstr "無効な税率ID : %s"
+msgstr "無効な税率 ID: %s"
 
 #: includes/cli/class-wc-cli-product.php:295
 #: includes/cli/class-wc-cli-product.php:544
@@ -3746,11 +3767,11 @@ msgstr "無効な顧客 \"%s\""
 msgid "Invalid coupon ID or code: %s"
 msgstr "無効なクーポンIDまたはコード : %s"
 
-#: includes/class-wc-webhook.php:618
+#: includes/class-wc-webhook.php:622
 msgid "Error: Delivery URL returned response code: %s"
 msgstr "エラー : 配送URLが返信コードを戻した : %s"
 
-#: includes/class-wc-webhook.php:614
+#: includes/class-wc-webhook.php:618
 msgid "Error: Delivery URL cannot be reached: %s"
 msgstr "エラー : 配送URLが利用できません : %s"
 
@@ -4799,11 +4820,11 @@ msgstr "請求 &amp; 配送"
 
 #: templates/checkout/cart-errors.php:31
 msgid "Return To Cart"
-msgstr "カートに戻る"
+msgstr "カートへ戻る"
 
 #: templates/checkout/cart-errors.php:27
 msgid "There are some issues with the items in your cart (shown above). Please go back to the cart page and resolve these issues before checking out."
-msgstr "カート内アイテムにはいくつかの問題があります（上記を参照）。カートページに戻り、お支払いの前に問題点を解決してください。"
+msgstr "カートの中の項目にはいくつかの問題があります (上記を参照)。支払手続きをする前にカートページに戻って、これらの問題を解決してください。"
 
 #: templates/cart/shipping-calculator.php:96
 msgid "Update Totals"
@@ -4825,11 +4846,11 @@ msgstr "お支払いへ進む"
 
 #: templates/cart/mini-cart.php:86
 msgid "Checkout"
-msgstr "お支払いへ進む"
+msgstr "購入手続き"
 
 #: templates/cart/mini-cart.php:72
 msgid "No products in the cart."
-msgstr "カートの中に商品はございません"
+msgstr "カートに商品がありません"
 
 #: templates/cart/cross-sells.php:47
 msgid "You may be interested in&hellip;"
@@ -4908,7 +4929,7 @@ msgstr "\"%s\"を提供して<strong>%s</strong>アクセスを出来るよう�
 
 #: templates/auth/form-grant-access.php:25 templates/auth/form-login.php:27
 msgid "%s would like to connect to your store"
-msgstr "%sはあなたのお店に接続しようとしています"
+msgstr "%sはあなたの店舗に接続しようとしています"
 
 #: includes/widgets/class-wc-widget-top-rated-products.php:31
 msgid "Top Rated Products"
@@ -5122,18 +5143,18 @@ msgstr "WooCommerce レイヤーナビ"
 msgid "Shows a custom attribute in a widget which lets you narrow down the list of products when viewing product categories."
 msgstr "商品カテゴリを表示時、カスタム属性で商品のリストを絞り込むことができます。"
 
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:92
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:159
 msgid "Max"
 msgstr "Max"
 
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:87
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:154
 msgid "Min"
 msgstr "Min"
 
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:80
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:87
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:92
-#: includes/widgets/class-wc-widget-layered-nav-filters.php:97
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:147
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:154
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:159
+#: includes/widgets/class-wc-widget-layered-nav-filters.php:164
 msgid "Remove filter"
 msgstr "フィルターの削除"
 
@@ -5163,7 +5184,7 @@ msgstr "WooCommerce カート"
 
 #: includes/widgets/class-wc-widget-cart.php:25
 msgid "Display the user's Cart in the sidebar."
-msgstr "サイドバーにユーザーのカートが表示されます"
+msgstr "サイドバーにユーザーのカートを表示します。"
 
 #: includes/admin/settings/class-wc-settings-emails.php:271
 #: includes/wc-webhook-functions.php:25
@@ -5212,6 +5233,7 @@ msgstr "選択してください"
 
 #: includes/wc-template-functions.php:1913
 #: includes/wc-template-functions.php:2060
+#: includes/wc-template-functions.php:2070
 msgid "Choose an option"
 msgstr "選択してください"
 
@@ -5249,11 +5271,11 @@ msgstr "追加情報"
 
 #: includes/wc-template-functions.php:780
 msgid "Sort by price: high to low"
-msgstr "価格順：高いものから安いものへ"
+msgstr "価格順: 高い\t安い"
 
 #: includes/wc-template-functions.php:779
 msgid "Sort by price: low to high"
-msgstr "価格順：安いものから高いものへ"
+msgstr "価格順: 安い\t高い"
 
 #: includes/wc-template-functions.php:778
 msgid "Sort by newness"
@@ -5291,17 +5313,17 @@ msgstr "新商品には %s 追加"
 msgid "New products"
 msgstr "新商品"
 
-#: includes/wc-product-functions.php:246
+#: includes/wc-product-functions.php:249
 msgctxt "slug"
 msgid "uncategorized"
 msgstr "uncategorized"
 
-#: includes/wc-account-functions.php:58
+#: includes/wc-account-functions.php:59
 msgctxt "edit-address-slug"
 msgid "shipping"
 msgstr "shipping"
 
-#: includes/wc-account-functions.php:57
+#: includes/wc-account-functions.php:58
 msgctxt "edit-address-slug"
 msgid "billing"
 msgstr "billing"
@@ -6038,11 +6060,11 @@ msgstr "あなたのカード情報が正しく入力されていることを確
 
 #: includes/gateways/paypal/includes/settings-paypal.php:137
 msgid "API Signature"
-msgstr "API署名"
+msgstr "API 署名"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:129
 msgid "API Password"
-msgstr "APIパスワード"
+msgstr "API パスワード"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:123
 #: includes/gateways/paypal/includes/settings-paypal.php:131
@@ -6052,7 +6074,7 @@ msgstr "PayPalからのAPIの資格情報を取得します。"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:121
 msgid "API Username"
-msgstr "APIユーザー名"
+msgstr "API ユーザー名"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:118
 msgid "Enter your PayPal API credentials to process refunds via PayPal. Learn how to access your PayPal API Credentials %shere%s."
@@ -6088,11 +6110,11 @@ msgstr "決済状況"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:92
 msgid "PayPal verifies addresses therefore this setting can cause errors (we recommend keeping it disabled)."
-msgstr "PayPalがアドレスを検証します。その為、この設定ではエラーを引き起こす可能性があります。（我々はこれが無効になっていることをお勧めします）"
+msgstr "PayPal が住所を検証するため、この設定を有効化するとエラーが発生する可能性があります (無効化を推奨) 。"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:91
 msgid "Enable \"address_override\" to prevent address information from being changed."
-msgstr "変更されるアドレス情報を防ぐために  \"address_override\" を有効にします"
+msgstr "住所情報の変更を防ぐため、\"address_override\" を有効化する。"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:89
 msgid "Address Override"
@@ -6100,19 +6122,19 @@ msgstr "住所上書き"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:85
 msgid "PayPal allows us to send one address. If you are using PayPal for shipping labels you may prefer to send the shipping address rather than billing."
-msgstr "PayPalは、私たちに一つの住所を送信することができます。あなたがラベルを出荷するためにPayPalを使用している場合は、請求書ではなく、配送先住所を送信する方が良いでしょう。"
+msgstr "PayPal では1つの住所の送信を許可しています。出荷ラベル用に PayPal を使用している場合は、請求先ではなく配送先住所を送信することをお勧めします。"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:84
 msgid "Send shipping details to PayPal instead of billing."
-msgstr "配送詳細を送信し、PayPalの代わりに請求書を作成します。"
+msgstr "PayPal に請求先ではなく配送先情報を送信する。"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:77
 msgid "Please enter a prefix for your invoice numbers. If you use your PayPal account for multiple stores ensure this prefix is unique as PayPal will not allow orders with the same invoice number."
-msgstr "お店の請求書番号の接頭辞（prefix）を入力してください。複数店舗でPayPalアカウントを使用している場合は、PayPalは同じ請求書番号の注文を許可しない為、この接頭辞が固有である事を確認してください。"
+msgstr "請求書番号の接頭辞 (プリフィクス) を入力してください。PayPal は同一の請求書番号の注文を許可しないため、複数のショップで PayPal アカウントを使用している場合は、この接頭辞は必ず固有のものにしてください。"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:75
 msgid "Invoice Prefix"
-msgstr "送り状接頭辞（プレフィックス）"
+msgstr "請求書の接頭辞"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:69
 msgid "Optionally enable \"Payment Data Transfer\" (Profile > Profile and Settings > My Selling Tools > Website Preferences) and then copy your identity token here. This will allow payments to be verified without the need for PayPal IPN."
@@ -6128,7 +6150,7 @@ msgstr "メインの PayPal メールアドレスが上記で入力したアド�
 
 #: includes/gateways/paypal/includes/settings-paypal.php:59
 msgid "Receiver Email"
-msgstr "受信用Eメールアドレス"
+msgstr "受信者メールアドレス"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:54
 msgid "Advanced options"
@@ -6136,7 +6158,7 @@ msgstr "高度なオプション"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:51
 msgid "Log PayPal events, such as IPN requests, inside <code>%s</code>"
-msgstr "<code>%s</code>内部のIPNリクエストのようなPayPalイベントのログ"
+msgstr "PayPal イベントのログを保存します (例: <code>%s</code> 内の IPN リクエスト)"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:49
 msgid "Enable logging"
@@ -6244,7 +6266,7 @@ msgstr "払い戻ししました %s - 払戻 ID: %s"
 
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:207
 msgid "PayPal does not support your store currency."
-msgstr "PayPalは、ショップの通貨をサポートしていません。"
+msgstr "PayPal は、店舗の通貨をサポートしていません。"
 
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:207
 msgid "Gateway Disabled"
@@ -6372,7 +6394,7 @@ msgstr "BIC"
 
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:282
 msgid "Our Bank Details"
-msgstr "お振り込み先 銀行口座情報 詳細"
+msgstr "お振り込み先銀行口座の詳細"
 
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:159
 msgid "Remove selected account(s)"
@@ -6407,7 +6429,7 @@ msgstr "口座名義"
 
 #: includes/class-wc-query.php:111
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:123
-#: includes/wc-account-functions.php:94
+#: includes/wc-account-functions.php:95
 msgid "Account Details"
 msgstr "アカウント詳細"
 
@@ -7016,7 +7038,7 @@ msgstr "Webhook"
 
 #: includes/class-wc-post-types.php:378
 msgid "This is where you can add new coupons that customers can use in your store."
-msgstr "顧客がショップで使用できるクーポンを、新規に追加できる場所です。"
+msgstr "顧客が店舗で使用できるクーポンを、新規に追加できる場所です。"
 
 #: includes/class-wc-post-types.php:373
 msgid "Parent Coupon"
@@ -7073,7 +7095,7 @@ msgstr "払戻"
 
 #: includes/class-wc-post-types.php:317
 msgid "This is where store orders are stored."
-msgstr "受注が保存される場所です"
+msgstr "店舗の受注が保存される場所です"
 
 #: includes/class-wc-post-types.php:311
 msgid "Parent Orders"
@@ -7866,7 +7888,7 @@ msgstr "アカウントのユーザー名"
 
 #: includes/class-wc-cart.php:965
 msgid "You cannot add that amount to the cart &mdash; we have %s in stock and you already have %s in your cart."
-msgstr "買い物かごにその数を追加することはできません &mdash; 在庫が％s個あり、すでにカートに％s個入っています。"
+msgstr "カートにその数を追加することはできません &mdash; 在庫が %s 個あり、すでにカートに %s 個入っています。"
 
 #: includes/class-wc-cart.php:944
 msgid "You cannot add that amount of &quot;%s&quot; to the cart because there is not enough stock (%s remaining)."
@@ -8341,7 +8363,7 @@ msgstr "無効なURL %s"
 #: includes/api/legacy/v3/class-wc-api-products.php:2259
 #: includes/cli/class-wc-cli-product.php:921
 #: includes/cli/class-wc-cli-product.php:922
-#: includes/wc-product-functions.php:299
+#: includes/wc-product-functions.php:302
 #: templates/single-product/product-image.php:47
 msgid "Placeholder"
 msgstr "Placeholder"
@@ -8987,7 +9009,7 @@ msgstr "設定ウィザードを開始"
 
 #: includes/admin/views/html-notice-install.php:12
 msgid "<strong>Welcome to WooCommerce</strong> &#8211; You&lsquo;re almost ready to start selling :)"
-msgstr "<strong>WooCommerceへようこそ</strong> &#8211; まもなく販売を開始できます。:)"
+msgstr "<strong>WooCommerce へようこそ</strong> &#8211; もうすぐ販売開始の準備が完了します。"
 
 #: includes/admin/views/html-bulk-edit-product.php:297
 msgid "Sold Individually?"
@@ -9001,7 +9023,7 @@ msgstr "入荷待ち？"
 #: includes/admin/views/html-bulk-edit-product.php:217
 #: includes/admin/views/html-quick-edit-product.php:161
 msgid "In stock?"
-msgstr "在庫あり?"
+msgstr "在庫の有無"
 
 #: includes/admin/views/html-bulk-edit-product.php:186
 #: includes/admin/views/html-quick-edit-product.php:143
@@ -9246,7 +9268,7 @@ msgstr "%sページの編集"
 
 #: includes/admin/views/html-admin-page-status-report.php:553
 msgid "The URL of your WooCommerce shop's “My Account” Page (along with the page ID)."
-msgstr "あなたのWooCommerce店の\"マイ・アカウント\"ページURL(ページID含む)。"
+msgstr "WooCommerce ショップの「マイアカウント」ページ URL (ページ ID を含む)。"
 
 #: includes/admin/views/html-admin-page-status-report.php:550
 msgctxt "Page setting"
@@ -9255,7 +9277,7 @@ msgstr "マイアカウント"
 
 #: includes/admin/views/html-admin-page-status-report.php:548
 msgid "The URL of your WooCommerce shop's checkout (along with the page ID)."
-msgstr "あなたのWooCommerce店のチェックアウトURL(ページID含む)。"
+msgstr "あなたのWooCommerce ショップのチェックアウトURL(ページID含む)。"
 
 #: includes/admin/views/html-admin-page-status-report.php:545
 msgctxt "Page setting"
@@ -9264,7 +9286,7 @@ msgstr "決済方法"
 
 #: includes/admin/views/html-admin-page-status-report.php:543
 msgid "The URL of your WooCommerce shop's cart (along with the page ID)."
-msgstr "あなたのWooCommerce店のカートURL(ページID含む)。"
+msgstr "あなたのWooCommerce ショップのカートURL(ページID含む)。"
 
 #: includes/admin/views/html-admin-page-status-report.php:540
 msgctxt "Page setting"
@@ -9273,7 +9295,7 @@ msgstr "カート"
 
 #: includes/admin/views/html-admin-page-status-report.php:538
 msgid "The URL of your WooCommerce shop's homepage (along with the Page ID)."
-msgstr "あなたのWooCommerce店のホームページURL(ページID含む)。"
+msgstr "あなたのWooCommerce ショップのホームページURL(ページID含む)。"
 
 #: includes/admin/views/html-admin-page-status-report.php:535
 msgctxt "Page setting"
@@ -9399,7 +9421,7 @@ msgstr "GZip (gzopen)はMaxMindからGeoIPデータベースを開くために�
 
 #: includes/admin/views/html-admin-page-status-report.php:250
 msgid "Your server does not have the %s class enabled - HTML/Multipart emails, and also some extensions, will not work without DOMDocument."
-msgstr "お使いのサーバーは、%s クラスが有効になっていません - HTML /マルチパートメールを、また、いくつかの拡張機能は、のDOMDocumentなしでは動作しないことがあります。"
+msgstr "お使いのサーバーでは %s クラスが有効化されていません。HTML / Multipart メールと一部の拡張機能は DOMDocument なしでは動作しません。"
 
 #: includes/admin/views/html-admin-page-status-report.php:244
 msgid "HTML/Multipart emails use DOMDocument to generate inline CSS in templates."
@@ -9579,7 +9601,7 @@ msgstr "ホームURL"
 
 #: includes/admin/views/html-admin-page-status-report.php:25
 msgid "WordPress Environment"
-msgstr "WordPress環境"
+msgstr "WordPress 環境"
 
 #: includes/admin/views/html-admin-page-status-report.php:18
 msgid "Copy for Support"
@@ -9647,7 +9669,7 @@ msgstr "単一の合計"
 
 #: includes/admin/settings/views/settings-tax.php:101
 msgid "Display Tax Totals"
-msgstr "税合計を表示"
+msgstr "税金合計を表示"
 
 #: includes/admin/settings/views/settings-tax.php:97
 msgid "Define text to show after your product prices. This could be, for example, \"inc. Vat\" to explain your pricing. You can also have prices substituted here using one of the following: {price_including_tax}, {price_excluding_tax}."
@@ -9673,7 +9695,7 @@ msgstr "税込"
 
 #: includes/admin/settings/views/settings-tax.php:67
 msgid "Display Prices in the Shop"
-msgstr "店で表示する価格"
+msgstr "ショップで表示する価格"
 
 #: includes/admin/settings/views/settings-tax.php:63
 msgid "Reduced Rate%sZero Rate"
@@ -9894,7 +9916,7 @@ msgid "Duration"
 msgstr "期間"
 
 #: includes/admin/settings/views/html-webhook-log.php:13
-#: includes/wc-account-functions.php:210
+#: includes/wc-account-functions.php:211
 msgid "Method"
 msgstr "Method"
 
@@ -9926,13 +9948,13 @@ msgstr "選択した行（複数可）を削除"
 msgid "Insert row"
 msgstr "行を挿入"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:445
-#: includes/api/class-wc-rest-orders-controller.php:1501
-#: includes/api/class-wc-rest-orders-controller.php:1567
-#: includes/api/class-wc-rest-orders-controller.php:1637
-#: includes/api/class-wc-rest-orders-controller.php:1695
+#: includes/api/class-wc-rest-order-refunds-controller.php:449
+#: includes/api/class-wc-rest-orders-controller.php:1505
+#: includes/api/class-wc-rest-orders-controller.php:1578
+#: includes/api/class-wc-rest-orders-controller.php:1653
+#: includes/api/class-wc-rest-orders-controller.php:1717
 msgid "Tax rate ID."
-msgstr "税率ID。"
+msgstr "税率 ID。"
 
 #: includes/admin/settings/views/html-settings-tax.php:27
 msgid "Choose whether or not this tax rate also gets applied to shipping."
@@ -10138,7 +10160,7 @@ msgstr "重量単位"
 
 #: includes/admin/settings/class-wc-settings-products.php:416
 msgid "Measurements"
-msgstr "設定単位"
+msgstr "単位"
 
 #: includes/admin/settings/class-wc-settings-products.php:401
 msgid "Enable this option to grant access to downloads when orders are \"processing\", rather than \"completed\"."
@@ -10428,15 +10450,15 @@ msgstr "これはデモストアです &mdash; 注文は出来ません。"
 
 #: includes/admin/settings/class-wc-settings-general.php:153
 msgid "Store Notice Text"
-msgstr "通知テキストの内容"
+msgstr "店舗の通知テキストの内容"
 
 #: includes/admin/settings/class-wc-settings-general.php:146
 msgid "Enable site-wide store notice text"
-msgstr "サイト全体で表示される通知テキストを有効にします"
+msgstr "サイト全体で表示される店舗からの通知テキストを有効にします"
 
 #: includes/admin/settings/class-wc-settings-general.php:145
 msgid "Store Notice"
-msgstr "通知テキスト"
+msgstr "店舗通知"
 
 #: includes/admin/settings/class-wc-settings-general.php:132
 msgid "Geolocate (with page caching support)"
@@ -10449,7 +10471,7 @@ msgstr "位置情報（Geolocate）"
 #: includes/admin/settings/class-wc-settings-general.php:130
 #: includes/admin/settings/views/settings-tax.php:33
 msgid "Shop base address"
-msgstr "お店の本拠地"
+msgstr "ショップの本拠地"
 
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:33
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:37
@@ -10610,15 +10632,15 @@ msgstr "支払いページ"
 
 #: includes/admin/settings/class-wc-settings-checkout.php:137
 msgid "Cart Page"
-msgstr "買い物カゴページ"
+msgstr "カートページ"
 
 #: includes/admin/settings/class-wc-settings-checkout.php:131
 msgid "These pages need to be set so that WooCommerce knows where to send users to checkout."
-msgstr "WooCommerceはユーザーを支払い方法へ誘導するためには、これらのページを設定する必要があります。"
+msgstr "ユーザーが WooCommerce にて購入手続きを進めるために、以下の固定ページの設定が必要です。"
 
 #: includes/admin/settings/class-wc-settings-checkout.php:130
 msgid "Checkout Pages"
-msgstr "購入ページ"
+msgstr "購入手続きページ"
 
 #: includes/admin/settings/class-wc-settings-checkout.php:116
 msgid "Force HTTP when leaving the checkout"
@@ -10713,7 +10735,7 @@ msgid "Endpoint for the triggering logout. You can add this to your menus via a 
 msgstr "　ログアウトを引き起こすエンドポイント。カスタムリンクを経由してメニューに追加可能です。例:yoursite.com/?customer-logout=true"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:176
-#: includes/wc-account-functions.php:95 templates/auth/form-grant-access.php:39
+#: includes/wc-account-functions.php:96 templates/auth/form-grant-access.php:39
 msgid "Logout"
 msgstr "ログアウト"
 
@@ -10759,7 +10781,7 @@ msgstr "ページコンテンツ:"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:46
 msgid "My Account Page"
-msgstr "マイ・アカウントページ"
+msgstr "マイアカウントページ"
 
 #: includes/admin/settings/class-wc-settings-accounts.php:43
 msgid "These pages need to be set so that WooCommerce knows where to send users to access account related functionality."
@@ -11206,12 +11228,12 @@ msgstr "合計%s個のクーポンを使用中"
 msgid "%s discounts in total"
 msgstr "%s 値引合計"
 
-#: includes/admin/reports/class-wc-admin-report.php:486
+#: includes/admin/reports/class-wc-admin-report.php:498
 msgid "Sold 1 item in the last %d days"
 msgid_plural "Sold %d items in the last %d days"
 msgstr[0] "売上個数%s 過去%d日間 "
 
-#: includes/admin/reports/class-wc-admin-report.php:484
+#: includes/admin/reports/class-wc-admin-report.php:496
 msgid "Sold %s worth in the last %d days"
 msgstr "売上%s 過去%d日間 "
 
@@ -11219,8 +11241,8 @@ msgstr "売上%s 過去%d日間 "
 msgid "Variation description"
 msgstr "バリエーション詳細"
 
-#: includes/api/class-wc-rest-products-controller.php:2052
-#: includes/api/class-wc-rest-products-controller.php:2479
+#: includes/api/class-wc-rest-products-controller.php:2059
+#: includes/api/class-wc-rest-products-controller.php:2506
 #: includes/api/class-wc-rest-taxes-controller.php:627
 msgid "Tax class."
 msgstr "税区分"
@@ -11329,7 +11351,7 @@ msgstr "ファイル名"
 
 #: includes/admin/meta-boxes/views/html-product-attribute.php:63
 msgid "Enter some text, or some attributes by \"%s\" separating values."
-msgstr "いくつかのテキスト、または\"%s\"は分離値でいくつかの属性を入力します。"
+msgstr "テキストを入力するか、属性を\"%s\"で区切って入力します。"
 
 #: includes/admin/meta-boxes/views/html-product-attribute.php:55
 msgid "\"%s\" separate terms"
@@ -11370,7 +11392,7 @@ msgstr "任意"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:363
 msgid "Or, enter tax rate ID:"
-msgstr "または、税率IDを入力します："
+msgstr "または、税率 ID を入力します:"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:342
 #: includes/admin/settings/class-wc-settings-tax.php:181
@@ -11536,8 +11558,8 @@ msgstr "税込割引の後"
 msgid "Add&nbsp;meta"
 msgstr "meta を追加"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:386
-#: includes/api/class-wc-rest-orders-controller.php:1442
+#: includes/api/class-wc-rest-order-refunds-controller.php:388
+#: includes/api/class-wc-rest-orders-controller.php:1444
 msgid "Product SKU."
 msgstr "商品 SKU。"
 
@@ -11549,8 +11571,8 @@ msgstr "もう、存在しません"
 msgid "Variation ID:"
 msgstr "バリエーション ID:"
 
-#: includes/api/class-wc-rest-order-refunds-controller.php:392
-#: includes/api/class-wc-rest-orders-controller.php:1448
+#: includes/api/class-wc-rest-order-refunds-controller.php:394
+#: includes/api/class-wc-rest-orders-controller.php:1450
 #: includes/api/class-wc-rest-report-top-sellers-controller.php:158
 msgid "Product ID."
 msgstr "商品 ID。"
@@ -11607,7 +11629,7 @@ msgstr "#%s &ndash; バリエーションのSKUは重複してはいけません
 
 #: includes/admin/class-wc-admin-duplicate-product.php:167
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:1289
-#: includes/api/class-wc-rest-products-controller.php:1325
+#: includes/api/class-wc-rest-products-controller.php:1329
 #: includes/api/legacy/v2/class-wc-api-products.php:1263
 #: includes/api/legacy/v3/class-wc-api-products.php:1758
 #: includes/cli/class-wc-cli-product.php:1536
@@ -11847,7 +11869,7 @@ msgstr "送料区分"
 #: includes/admin/views/html-bulk-edit-product.php:169
 #: includes/admin/views/html-quick-edit-product.php:126
 msgid "No shipping class"
-msgstr "送料区分は無し"
+msgstr "送料区分なし"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:370
 msgid "LxWxH in decimal form"
@@ -11891,7 +11913,7 @@ msgstr "重さ"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:339
 msgid "Enable this to only allow one of this item to be bought in a single order"
-msgstr "1回の注文に対して1つしか購入できないようする場合これを選んでください。"
+msgstr "1回の注文で1つしか購入できないようにする場合はこれを有効化してください"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:339
 msgid "Sold individually"
@@ -11899,7 +11921,7 @@ msgstr "個別販売"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:330
 #: includes/admin/meta-boxes/views/html-variation-admin.php:160
-#: includes/api/class-wc-rest-products-controller.php:2068
+#: includes/api/class-wc-rest-products-controller.php:2075
 msgid "Controls whether or not the product is listed as \"in stock\" or \"out of stock\" on the frontend."
 msgstr "「在庫あり」か「在庫切れ」をリストするかどうかを、フロントエンド上で制御します。"
 
@@ -12152,7 +12174,7 @@ msgstr "バリエーション"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:99
 msgid "Linked Products"
-msgstr "リンクされている商品"
+msgstr "リンクされた商品"
 
 #: includes/abstracts/abstract-wc-order.php:1708
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:94
@@ -12288,7 +12310,7 @@ msgstr "その他"
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:83
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:92
 #: includes/shipping/legacy-free-shipping/class-wc-shipping-legacy-free-shipping.php:122
-#: includes/wc-account-functions.php:250
+#: includes/wc-account-functions.php:251
 #: templates/order/order-details-customer.php:61
 #: templates/order/order-details-customer.php:72
 #: templates/single-product/meta.php:35
@@ -13016,7 +13038,7 @@ msgstr "小切手支払"
 #: includes/admin/class-wc-admin-setup-wizard.php:594
 #: includes/admin/class-wc-admin-setup-wizard.php:597
 msgid "PayPal email address"
-msgstr "PayPal メールアドレス:"
+msgstr "PayPal メールアドレス"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:646
 msgid "WooCommerce can accept both online and offline payments. %2$sAdditional payment methods%3$s can be installed later and managed from the %1$scheckout settings%3$s screen."
@@ -13170,7 +13192,7 @@ msgstr "どの通貨を利用しますか？"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:298
 msgid "Where is your store based?"
-msgstr "店舗の地域 (都道府県)"
+msgstr "店舗地域 (都道府県)"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:294
 msgid "Store Locale Setup"
@@ -13216,7 +13238,7 @@ msgstr "支払い"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:237
 msgid "The cart page will be where the customers go to view their cart and begin checkout."
-msgstr "カートは、お客様が買い物カゴの中身を表示し、支払い手続きを始めるページです。"
+msgstr "カートページは、お客様がカートの中身を表示し支払い手続きを始めるページです。"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:236
 #: includes/class-wc-install.php:300
@@ -13390,7 +13412,7 @@ msgstr "日別売上"
 #: includes/admin/reports/class-wc-report-customer-list.php:212
 #: includes/admin/settings/class-wc-settings-accounts.php:113
 #: includes/class-wc-post-types.php:299 includes/class-wc-query.php:100
-#: includes/wc-account-functions.php:90
+#: includes/wc-account-functions.php:91
 msgid "Orders"
 msgstr "受注"
 
@@ -13459,7 +13481,7 @@ msgstr "郵便番号"
 #: includes/admin/settings/views/html-settings-tax.php:22
 #: templates/cart/shipping-calculator.php:83
 msgid "City"
-msgstr "市/町"
+msgstr "市区町村"
 
 #: includes/admin/class-wc-admin-profile.php:60
 #: includes/admin/class-wc-admin-profile.php:113
@@ -13568,22 +13590,22 @@ msgid "Show all types"
 msgstr "すべてのタイプを表示"
 
 #: includes/admin/class-wc-admin-post-types.php:1617
-#: includes/wc-product-functions.php:525
+#: includes/wc-product-functions.php:528
 msgid "Simple product"
 msgstr "基本的な商品"
 
 #: includes/admin/class-wc-admin-post-types.php:1614
-#: includes/wc-product-functions.php:528
+#: includes/wc-product-functions.php:531
 msgid "Variable product"
 msgstr "バリエーションのある商品"
 
 #: includes/admin/class-wc-admin-post-types.php:1611
-#: includes/wc-product-functions.php:527
+#: includes/wc-product-functions.php:530
 msgid "External/Affiliate product"
 msgstr "外部/アフィリエイト商品"
 
 #: includes/admin/class-wc-admin-post-types.php:1608
-#: includes/wc-product-functions.php:526
+#: includes/wc-product-functions.php:529
 msgid "Grouped product"
 msgstr "グループ化された商品"
 
@@ -13818,7 +13840,7 @@ msgstr "アクション"
 #: includes/admin/class-wc-admin-post-types.php:280
 #: includes/admin/meta-boxes/views/html-order-items.php:54
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:177
-#: includes/wc-account-functions.php:179 templates/cart/cart-totals.php:92
+#: includes/wc-account-functions.php:180 templates/cart/cart-totals.php:92
 #: templates/cart/cart-totals.php:93 templates/cart/cart.php:39
 #: templates/cart/cart.php:120 templates/checkout/review-order.php:27
 #: templates/checkout/review-order.php:106 templates/myaccount/my-orders.php:16
@@ -13846,7 +13868,7 @@ msgstr "購入商品"
 #: includes/admin/class-wc-admin-post-types.php:273
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:165
 #: includes/gateways/paypal/includes/class-wc-gateway-paypal-request.php:195
-#: includes/wc-account-functions.php:176 templates/myaccount/my-orders.php:13
+#: includes/wc-account-functions.php:177 templates/myaccount/my-orders.php:13
 msgid "Order"
 msgstr "注文"
 
@@ -13855,7 +13877,7 @@ msgstr "注文"
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:671
 #: includes/admin/settings/views/html-webhook-log.php:25
 #: includes/admin/settings/views/html-webhooks-edit.php:24
-#: includes/wc-account-functions.php:178 templates/myaccount/my-orders.php:15
+#: includes/wc-account-functions.php:179 templates/myaccount/my-orders.php:15
 msgid "Status"
 msgstr "ステータス"
 
@@ -13894,7 +13916,7 @@ msgstr "コード"
 #: includes/admin/reports/class-wc-report-sales-by-product.php:375
 #: includes/admin/settings/views/html-webhook-logs.php:17
 #: includes/admin/settings/views/html-webhook-logs.php:25
-#: includes/wc-account-functions.php:177
+#: includes/wc-account-functions.php:178
 #: includes/widgets/class-wc-widget-products.php:55
 #: templates/myaccount/my-orders.php:14
 msgid "Date"
@@ -14124,7 +14146,7 @@ msgstr "商品を更新しました。 <a href=\"%s\">商品を表示</a>"
 
 #: includes/admin/class-wc-admin-pointers.php:205
 msgid "When you are finished editing your product, hit the \"Publish\" button to publish your product to your store."
-msgstr "商品の編集が完了したら、\"公開\"のボタンを押して商品をショップに出品します。"
+msgstr "商品の編集が完了したら、\"公開\"のボタンを押して商品を店舗に出品します。"
 
 #: includes/admin/class-wc-admin-pointers.php:204
 msgid "Publish Your Product!"
@@ -14132,7 +14154,7 @@ msgstr "商品を公開!"
 
 #: includes/admin/class-wc-admin-pointers.php:193
 msgid "Optionally assign categories to your products to make them easier to browse through and find in your store."
-msgstr "お店で種類ごとなどで商品を探しやすくするために、カテゴリーを設定します。"
+msgstr "店舗で種類ごとなどで商品を探しやすくするために、カテゴリーを設定します。"
 
 #: includes/admin/class-wc-admin-help.php:117
 #: includes/admin/class-wc-admin-pointers.php:192
@@ -14153,7 +14175,7 @@ msgstr "商品タグ"
 
 #: includes/admin/class-wc-admin-pointers.php:169
 msgid "Upload or assign an image to your product here. This image will be shown in your store's catalog."
-msgstr "ここで商品画像をアップロードするか、割り当てをします。この画像は、お店のカタログ（商品一覧など）に表示されます。"
+msgstr "ここで商品画像をアップロードするか、割り当てをします。この画像は、店舗カタログ（商品一覧など）に表示されます。"
 
 #: includes/admin/class-wc-admin-pointers.php:168
 #: includes/admin/settings/class-wc-settings-products.php:176
@@ -14221,7 +14243,7 @@ msgstr "商品説明"
 
 #: includes/admin/class-wc-admin-pointers.php:61
 msgid "Give your new product a name here. This is a required field and will be what your customers will see in your store."
-msgstr "ここで新製品に名前を付けます。これは必須項目でお店でお客様が見る商品名です。"
+msgstr "ここで新製品に名前を付けます。これは必須項目で店舗でお客様が見る商品名です。"
 
 #: includes/admin/class-wc-admin-pointers.php:60
 msgid "Product Name"
@@ -14308,7 +14330,7 @@ msgstr "商品カテゴリーベース"
 #: includes/class-wc-shipping.php:78 includes/emails/class-wc-email.php:684
 #: woocommerce.php:126 woocommerce.php:134
 msgid "Cheatin&#8217; huh?"
-msgstr "騙そうとしている？&#8217;"
+msgstr "間違えましたか ?"
 
 #: includes/admin/class-wc-admin-meta-boxes.php:164
 #: includes/admin/settings/class-wc-settings-products.php:462
@@ -14357,7 +14379,7 @@ msgstr "商品の簡単な説明"
 
 #: includes/admin/class-wc-admin-menus.php:308
 msgid "Visit Store"
-msgstr "ストアへ移動"
+msgstr "店舗へ移動"
 
 #: includes/admin/class-wc-admin-menus.php:275
 msgid "Add to Menu"
@@ -14654,7 +14676,7 @@ msgstr "公開"
 #: includes/admin/meta-boxes/class-wc-meta-box-product-images.php:78
 #: includes/admin/meta-boxes/views/html-product-download.php:6
 #: includes/admin/meta-boxes/views/html-product-variation-download.php:5
-#: includes/wc-account-functions.php:255
+#: includes/wc-account-functions.php:256
 msgid "Delete"
 msgstr "削除"
 
@@ -14744,7 +14766,7 @@ msgstr "属性でもアーカイブを使いたい場合はこれを有効にし
 #: includes/admin/class-wc-admin-attributes.php:294
 #: includes/admin/class-wc-admin-attributes.php:456
 msgid "Enable Archives?"
-msgstr "アーカイブは有効にしますか？"
+msgstr "アーカイブを有効にしますか ?"
 
 #: includes/admin/class-wc-admin-attributes.php:289
 #: includes/admin/class-wc-admin-attributes.php:452
@@ -14842,7 +14864,7 @@ msgstr "コピーの請求情報は配送情報に？ここでは、現在入力
 
 #: includes/admin/class-wc-admin-assets.php:251
 msgid "Calculate line taxes? This will calculate taxes based on the customers country. If no billing/shipping is set it will use the store base country."
-msgstr "税明細を計算しますか? これにより、お客様の国に基づいて税金を計算します。請求と配送が設定されていない場合は、ショップ所在地を基本の国に使用します。"
+msgstr "税明細を計算しますか? これにより、お客様の国に基づいて税金を計算します。請求と配送が設定されていない場合は、店舗所在地を基本の国に使用します。"
 
 #: includes/admin/class-wc-admin-assets.php:250
 msgid "Calculate totals based on order items, discounts, and shipping?"
@@ -14860,7 +14882,7 @@ msgstr "バリエーションのために使用"
 #: includes/admin/class-wc-admin-assets.php:247
 #: includes/admin/meta-boxes/views/html-product-attribute.php:70
 msgid "Visible on the product page"
-msgstr "商品ページ上に表示される"
+msgstr "商品ページ上に表示"
 
 #: includes/admin/class-wc-admin-assets.php:246
 msgid "Enter some text, or some attributes by pipe (|) separating values."
@@ -14930,7 +14952,7 @@ msgstr "この払い戻しを処理してよろしいですか？この操作は
 
 #: includes/admin/class-wc-admin-assets.php:236
 msgid "Please select some items."
-msgstr "いくつかの項目を選択してください"
+msgstr "いくつか項目を選択してください。"
 
 #: includes/admin/class-wc-admin-assets.php:235
 msgid "Are you sure you want to remove the selected items? If you have previously reduced this item's stock, or this order was submitted by a customer, you will need to manually restore the item's stock."
@@ -15269,11 +15291,11 @@ msgstr "取り寄せの注文(予約注文など)が利用できます"
 
 #: includes/abstracts/abstract-wc-product.php:712
 msgid "%s in stock"
-msgstr "在庫%s 個"
+msgstr "在庫%s個"
 
 #: includes/abstracts/abstract-wc-product.php:702
 msgid "Only %s left in stock"
-msgstr "残り在庫 %s 個"
+msgstr "残り在庫%s個"
 
 #: includes/abstracts/abstract-wc-product.php:694
 #: includes/abstracts/abstract-wc-product.php:698
@@ -15333,7 +15355,7 @@ msgstr "商品 %1$s のバリエーション #%2$s の在庫は %3$s から %4$s
 msgid "Order status changed from %1$s to %2$s."
 msgstr "注文状況を %1$s から %2$s に変更しました。"
 
-#. #-#-#-#-#  tmp-woocommerce.pot (WooCommerce 2.6.8)  #-#-#-#-#
+#. #-#-#-#-#  tmp-woocommerce.pot (WooCommerce 2.6.11)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: includes/abstracts/abstract-wc-order.php:2320
 #: includes/abstracts/abstract-wc-order.php:2321
@@ -15341,8 +15363,8 @@ msgstr "注文状況を %1$s から %2$s に変更しました。"
 #: includes/admin/class-wc-admin-menus.php:60
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:50
 #: includes/admin/meta-boxes/class-wc-meta-box-order-notes.php:59
-#: includes/admin/wc-admin-functions.php:22 includes/class-wc-webhook.php:326
-#: includes/class-wc-webhook.php:327
+#: includes/admin/wc-admin-functions.php:22 includes/class-wc-webhook.php:330
+#: includes/class-wc-webhook.php:331
 msgid "WooCommerce"
 msgstr "WooCommerce"
 
@@ -15396,7 +15418,7 @@ msgstr "小計:"
 #: includes/class-wc-product-variable.php:362
 #: includes/class-wc-product-variation.php:328
 msgid "Free!"
-msgstr "無料！"
+msgstr "無料 !"
 
 #: includes/abstracts/abstract-wc-order.php:1191
 #: includes/abstracts/abstract-wc-order.php:1202
