@@ -27,7 +27,7 @@
 
 				<div class="site-branding col-md-6">
 					<div class="bname-top">
-						<?php bloginfo( 'name' ); ?>
+						<h1 class="site-title-hide"><?php bloginfo( 'name' ); ?></h1>
 					</div>
 					<?php if( get_header_image() != '' ) : ?>
 
