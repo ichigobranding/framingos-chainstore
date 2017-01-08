@@ -46,6 +46,13 @@ body {
     margin:0px;
     padding:0px;
 }
+.site-title-hide{
+    font-size:12px;
+    color:#000;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* div#content.site-content.container {
     padding: 0px;
     margin: 0px; 
@@ -124,7 +131,7 @@ margin: 0px 0 10px 0;
     font-size:14px;
 }
 h4.site-description{
-    font-size: 12px;
+    font-size: 11px;
 }
 #masthead{
   margin: 0px;
@@ -137,7 +144,7 @@ h4.site-description{
     color: #fff;
     width: 37px;
     text-align:center;
-    font-size: 1px;
+    font-size: 10px;
     padding: 1px;
     font-weight: 600;
     -moz-border-radius: 2px;
@@ -416,11 +423,6 @@ table#subdata2 th {
     line-height: 120%;
     text-align: center;
 }
-table#subdata2 td {
-    padding:5px 13px 8px 13px;
-    border: 1px #c2b69a dotted;
-    border-width: 0 0 1px 1px;
-}
 
 table#subdata2 .font-nomal{
  
@@ -569,6 +571,15 @@ div.container.wf h2.widget-title{
     overflow: hidden;
     zoom: 1;
 }
+.ibskinArticleHeader-consul {
+    margin: 0 12px;
+    padding: 8px 0px;
+    background: url(※) no-repeat;
+    background-position: 0 50%;
+    border: none;
+    overflow: hidden;
+    zoom: 1;
+}
 .fontW6 {
     border-left: 8px solid #e84331;
     font-size: 25px;
@@ -642,33 +653,39 @@ h1.site-title a{
     font-size:24px;
     cursor:pointer;
 }
-/* お問い合わせフォーム */
-
-@media screen and (min-width: 1000px) {
-   table#subdata2 { width: 600px; }
-   .formwaku {width: 640px;}
-   .wpcf7-form textarea{ width: 100%; }
-   .youbinwaku{width: 80%;}
-   .yubin{width: 25% !important;}
-   .yubin2{width: 30% !important;}
-   .namehaba{width: 40% !important;}
-   select {width: 15%;}
+/*スマホ対応 お問い合わせフォーム *******/
+@media only screen and (max-width: 979px) {
     table#subdata2 .td_ttl{
-    width:25%;
-    background-color:#f5f1e9;/* Branding  concept color 1  *******/
+    width:30%;
+    background-color:#f9e5e4;/* Branding  concept color 1 */
     font-weight:bold;}
-}
-@media screen and (min-width: 800px) {
-   table#subdata2 { width: 540px; }
-   .formwaku {width: 580px;}
-   .wpcf7-form textarea{ width: 100%; }
-   .youbinwaku{width: 80%;}
-   .yubin{width: 25% !important;}
-   .yubin2{width: 30% !important;}
-   .namehaba{width: 40% !important;}
-   select {width: 15%;}
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+table#subdata2 .td_ttl{
+    width:30%;
+    background-color:#f9e5e4;/* Branding  concept color 1 */
+    font-weight:bold;}
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) { 
+    table#subdata2 .td_ttl{
+    width:10%;
+    background-color:#f9e5e4;/* Branding  concept color 1 */
+    }
+} /* デバイスの横幅が320px以下の場合 */
+
+table#subdata2 td {
+    padding:5px 13px 8px 13px;
+    border: 1px #c2b69a dotted;
+    border-width: 0 0 1px 1px;
 }
 
+.td_ttl{
+    background-color:#eddddb;/* Branding  concept color 1 */
+    width:30%;
+    font-weight:bold;
+}
 .wpcf7-form input, .wpcf7-form textarea{
     margin: 10px 0;
     padding: 3px;
@@ -710,7 +727,7 @@ select{
 }
 }
 #submitBtn3{
-    background-color:  #e84331 /* Branding  concept color 1  *******/
+    background-color:  #e84331; /* Branding  concept color 1  *******/
     box-shadow: 0 6px #EF9086; /* Branding  concept color 2  *******/
     width: 80% !important;
     height: 50px;
@@ -761,11 +778,6 @@ select{
 }
 h1.site-title a:hover{
     color: #f9e5e4;
-}
-table#subdata2 .td_ttl{
-    background-color:#f9e5e4;
-    font-weight:bold;
-    width: 20%;
 }
 /*.navbar-default .navbar-nav > li > a {
     color: #fff;
@@ -842,7 +854,7 @@ table#subdata2 .td_ttl{
     font-size: 14px;
 }
 .meru {
-    background-color: #ff6b33;/* 新着メルマガ */
+    background-color: #69967c;/* 新着メルマガ */
     color: #fff;
     font-weight: 900;
     font-size: 11px;
@@ -853,7 +865,7 @@ table#subdata2 .td_ttl{
     color: #fff;
 }
 .nnnew {
-    background-color: #288402;/* 新着お知らせ */
+    background-color: #d6a84c;/* 新着お知らせ */
     color: #fff;
     font-weight: 900;
     font-size: 11px;
@@ -861,6 +873,39 @@ table#subdata2 .td_ttl{
     margin: 0 7px 0 0;
 }
 .nnnew a {
+    color: #fff;
+}
+.nnnew2 {
+    background-color: #9f69a8;/* 新着お知らせ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.nnnew2 a {
+    color: #fff;
+}
+.nnnew3 {
+    background-color: #6ca4bc;/* 新着お知らせ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.nnnew3 a {
+    color: #fff;
+}
+.nnnew4 {
+    background-color: #cc8bae;/* 新着お知らせ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.nnnew4 a {
     color: #fff;
 }
 table {
@@ -887,12 +932,15 @@ ul {
     line-height: 90% !important;
     color: #333;
     padding: 0px 0px 10px 5px;
-    border-bottom: 1px dotted #e84331;
+    border-bottom: 1px dotted #e84331;/* Branding  concept color 1  *******/
     font-weight: 600;
+}
+.re1511-ttlSmall{
+    color:#e84331;/* Branding  concept color 1  *******/
 }
 .ibskinArticle33 {
     padding: 5px 0;
-    border: 1px dotted #e84331;
+    border: 1px dotted #e84331;/* Branding  concept color 1  *******/
     background: #ffffff;
     margin-bottom: 15px;
 }
@@ -983,7 +1031,7 @@ td, th {
     font-weight: 600;
 }
 .tabeletitlebg {
-    background-color: #e84331;/* concept color****/
+    background-color: #e84331;/* concept color 1****/
     color: #fff;
     font-size: 18px;
 }
@@ -1020,7 +1068,7 @@ input[type="submit"] {
 }
 input[type="text"], input[type="email"], input[type="url"], input[type="password"] {
     padding: 10px;
-    width: 90%;
+    width: 100%!important;
 }
 .OM_table{width:100%;border-collapse:collapse;border:1px solid #e84331;background-color:#e84331;}/* concept color****/
 .OM_table tr td{text-align:center;}
@@ -1029,6 +1077,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .bizfom3{color: #fff;font-size: 14px;padding: 10px 5px;}
 .mailmagpadding{
     margin:50px 0 0 0;
+}
+.mailmagfom{
+    padding: 0 10px 0 0;
 }
 
 /* woocommerce *******/
