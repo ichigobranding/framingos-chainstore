@@ -23,7 +23,7 @@ get_header(); ?>
                                             <div class="ibskinArticle">
                                               <div class="ibskinArticle2">
                                                 <div class="ibskinArticle3">
-                                                      <div class="ibskinArticleHeader">
+                                                      <div class="ibskinArticleHeader-consul">
                                                           <h2 class="fontW6"><?php the_title(); ?></h2>
                                                       <div class="ibskinArticleBody2">
                                                                 <!--記事　中身-->
