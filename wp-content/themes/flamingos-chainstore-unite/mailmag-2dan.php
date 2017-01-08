@@ -11,18 +11,13 @@
 </tr>
 <tr>
 <td bgcolor="#fafafa" align="center" width="120"><b>お名前</b><br><span class="fna">(名字のみ)</span><strong style="color:#FF0000;"><span class="fna">*</span></strong></td>
-<td bgcolor="#fafafa" width="400"> <input type="text" name="name1" size="30" class="bizfom2">
+<td class="mailmagfom" bgcolor="#fafafa" width="400"> <input type="text" name="name1" size="30" class="bizfom2">
 </td>
 </tr>
 <tr>
 <td bgcolor="#fafafa" align="center" width="120"><b>メールアドレス</b><strong style="color:#FF0000;"><span class="fna">*</span></strong></td>
-<td bgcolor="#fafafa" width="400"> <input type="text" name="email" size="30" class="bizfom2">
+<td class="mailmagfom" bgcolor="#fafafa" width="400"> <input type="text" name="email" size="30" class="bizfom2">
 </td>
-</tr>
-</table>
-<table width="520">
-<tr>
-<td align="center"></td>
 </tr>
 </table>
 <center><input type="submit" name="sbm" value="登録"></center>

@@ -11,7 +11,7 @@
 </tr>
 <tr>
 <td bgcolor="#fafafa" align="center" width="120"><b>メールアドレス</b><strong style="color:#FF0000;"><span class="fna">*</span></strong></td>
-<td bgcolor="#fafafa" width="400"> <input type="text" name="email" size="30" class="bizfom2">
+<td class="mailmagfom" bgcolor="#fafafa" width="400"> <input type="text" name="email" size="30" class="bizfom2">
 </td>
 </tr>
 </table>
