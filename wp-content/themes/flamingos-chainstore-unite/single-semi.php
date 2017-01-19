@@ -46,7 +46,7 @@ get_header(); ?>
             </tr>-->
             <tr>
             <td class="td_nowrap" scope="row">開催日時</td>
-            <td><p><?php the_field('semiday'); ?>　<?php the_field('semitime'); ?><p></td>
+            <td><p><?php the_field('semiday_check'); ?>　<?php the_field('semitime'); ?><p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">開催場所</td>
@@ -76,7 +76,7 @@ get_header(); ?>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">募集期間</td>
-            <td><?php the_field('semiday'); ?>まで</br>※定員になり次第、募集を締め切らせていただきます</td>
+            <td><?php the_field('semidaykikan'); ?></br>※定員になり次第、募集を締め切らせていただきます</td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">定員</td>
@@ -123,13 +123,13 @@ get_header(); ?>
                             }
                             else
                             {
-                                the_field('semiform22'); 
+                              //the_content(); 
                             }
                             ?>
                          <!-- 募集終了 -->
-
+<?php the_content(); ?>
         <!-- <div class="right">
-                 <a href="<?php bloginfo(); ?>/semi"><button type="button" class="btn bottom-shousai">セミナー・講演一覧に戻る</button></a>
+                 <a href="<?//php bloginfo(); ?>/semi"><button type="button" class="btn bottom-shousai">セミナー・講演一覧に戻る</button></a>
         </div>--> 
             
                                                                 <!--記事　中身-->

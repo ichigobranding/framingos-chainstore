@@ -8,48 +8,11 @@ function theme_enqueue_styles() {
     );
 }
 /* contact form7 値引き渡し */
-add_filter('wpcf7_special_mail_tags', 'my_special_mail_tags',10,2);
-function my_special_mail_tags($output, $name)
-{
-    if ( ! isset( $_POST['_wpcf7_unit_tag'] ) || empty( $_POST['_wpcf7_unit_tag'] ) )
-        return $output;
-    if ( ! preg_match( '/^wpcf7-f(\d+)-p(\d+)-o(\d+)$/', $_POST['_wpcf7_unit_tag'], $matches ) )
-        return $output;
-    $post_id = (int) $matches[2];
-    if ( ! $post = get_post( $post_id ) )
-        return $output;
-    $name = preg_replace( '/^wpcf7\./', '_', $name );
-    if ( 'semiday_check' == $name )
-        $output = get_post_meta($post->ID,semiday,true);
-    if ( 'seminame_check' == $name )
-        $output = get_post_meta($post->ID,seminame,true);
-     if ( 'semitime_check' == $name )
-        $output = get_post_meta($post->ID,semitime,true);
-     if ( 'semiplace_check' == $name )
-        $output = get_post_meta($post->ID,semiplace,true);
-     if ( 'semiadd_check' == $name )
-        $output = get_post_meta($post->ID,semiadd,true);
-     if ( 'semimoney_check' == $name )
-        $output = get_post_meta($post->ID,semimoney,true);
-     if ( 'semibiko_check' == $name )
-        $output = get_post_meta($post->ID,semibiko,true);
-     if ( 'paypal_link_check' == $name )
-        $output = get_post_meta($post->ID,paypal_link,true);
-     if ( 'semiadd_check' == $name )
-        $output = get_post_meta($post->ID,semiadd,true);
-     if ( 'consulday_check' == $name )
-        $output = get_post_meta($post->ID,consulday,true);
-     if ( 'constart_check' == $name )
-        $output = get_post_meta($post->ID,constart,true);
-     if ( 'consulplace_check' == $name )
-        $output = get_post_meta($post->ID,consulplace,true);
-     if ( 'conadd_check' == $name )
-        $output = get_post_meta($post->ID,conadd,true);
-     if ( 'consulpay_check' == $name )
-        $output = get_post_meta($post->ID,consulpay,true);
-     if ( 'conbiko_check' == $name )
-        $output = get_post_meta($post->ID,conbiko,true);
-    return $output;
+add_filter( 'wpcf7_special_mail_tags', 'my_special_mail_tags', 10 ,2 );
+function my_special_mail_tags( $output, $name ) {
+	if ( 'semiday' == $name )
+		$output = get_post_meta( $post -> ID, 'semiday_check', true );
+	return $output;
 }
 /* contact form7 値引き渡し */
 /**
