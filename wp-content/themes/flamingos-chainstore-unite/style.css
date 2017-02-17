@@ -137,6 +137,10 @@ h4.site-description{
   margin: 0px;
   padding: 0px;
 }
+li{
+  list-style: none;
+}
+
 /* お問い合わせフォーム　必須マーク *******/
 .hissudesu {
     margin: 4px 0;
@@ -382,12 +386,19 @@ div.textwidget {
 .site-credits{
      margin:0 0 10px 0;
 }
-
+li.menu-item {
+    margin: 0 0 0 30px;
+    list-style-type: disc;
+}
 .cre{
     margin:13px 0 0 0;  
 }
 .memo{
     font-size: 15px;
+}
+li.menu-item {
+    margin: 0 0 0 30px;
+    list-style-type: disc;
 }
 .cre2{
     margin:10px 0 0 0;
@@ -522,7 +533,7 @@ div.container.wf h2.widget-title{
     color:#333;
     background-color: #f9e5e4;
     border-bottom:1px solid #e84331;
-    padding: 
+    font-size:16px;
 }
 .after-footer{
     padding: 20px 0;
@@ -1200,5 +1211,58 @@ background: #EF9086;/* Branding  concept color 2  *******/
 /*****************************
 
    メニューバー   中央寄せ 終了
+
+ *****************************/
+
+/*****************************
+
+   限定ページ　markdown マークダウン CSS
+
+ *****************************/
+
+.markcss h2{
+    color: #288fcf;
+    font-weight: 800;
+    border-bottom: #288fcf 1px solid;
+    font-size: 1.5em;
+    padding: 50px 0 10px 0!important;
+    margin: 0px 0 20px 0!important;
+    line-height: 1.4em;
+}
+
+.markcss li{
+     margin: 10px 0 0px 30px;
+     padding: 0;
+}
+/*****************************
+
+   限定ページ　markdown マークダウン CSS
+
+ *****************************/
+ /*****************************
+
+   特定商取引
+
+ *****************************/
+
+#data th{
+background:#FFB1BB;/* Branding  concept color 1  *******/
+color: #FFFFFF;
+font-size: 16px;
+}
+
+#data th,#data td{
+    border: 1px dotted #FFB1BB;　/* 枠線　 *//* Branding  concept color 1  *******/
+    padding: 6px 18px 6px 15px!important;
+    text-align: left;
+    min-width: 100px;
+}
+.td_ttl{
+    font-weight:bold;
+    padding: 6px 18px 6px 15px!important;
+}
+ /*****************************
+
+   特定商取引
 
  *****************************/

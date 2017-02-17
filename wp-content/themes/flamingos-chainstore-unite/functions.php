@@ -101,10 +101,10 @@ function my_password_form() {
   return
     '<img src="http://localhost:8888/flamingos-chainstore/wp-content/uploads/2016/12/member-login.png">
      <br><br>
-     <p>サポートプランのメンバー限定ページです。 <p>
-     <p>メンバーの方は、パスワードをご入力の上、ログインしてください。<p>
+     <p>サポートプランのメンバー限定ページです。 <p><br><br>
+     <p>メンバーの方は、パスワードをご入力の上、ログインしてください。<p><br><br>
     <form class="post_password" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
-      <input name="post_password" type="password" size="24" class="dwpass">
+      <input name="post_password" type="password" size="24" class="dwpass"><br><br><br>
       <input type="submit" name="Submit" value="' . esc_attr__("ログイン") . '">
     </form>';
 }

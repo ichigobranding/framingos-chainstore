@@ -1,15 +1,4 @@
-<?php
-/**
- * Theme: Flat Bootstrap
- * 
- * The Template for displaying all single posts.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package flat-bootstrap
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 <div class="container conbg">
       <div id="main-grid2" class="row"><!-- .row -->
       	<div id="primary" class="content-area">
@@ -69,7 +58,7 @@ get_header(); ?>
 							<div class="col-md-3 col-md-pull-6">
 								<?php get_template_part( 'left-sidebar' ); ?>
 							</div>
-					<<div class="col-md-3 sidebarpadd">
+					<div class="col-md-3 sidebarpadd">
 						<?php get_sidebar(); ?>
 					</div>
 				</div>
