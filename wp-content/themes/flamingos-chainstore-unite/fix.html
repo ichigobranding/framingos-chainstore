@@ -40,3 +40,69 @@ font-size: 16px;
    特定商取引
 
  *****************************/
+
+ /*****************************
+
+   footer メニューバーの追加
+
+ *****************************/
+
+<!-- footer menu -->
+<div id="footer-menu">
+    <?php wp_nav_menu( array ( 'theme_location' => 'footer-menu' ) ); ?>
+</div>
+<!-- footer menu -->
+
+
+/************************************
+** 特定商取引等の フッターメニュー　CSS
+************************************/
+#footer-menu{
+  margin:0 0 0 15px; 
+}
+#footer-menu {
+  color: #fff;
+}
+#footer-menu a{
+  color: #fff;
+  font-weight: 100;
+}
+
+#footer-menu ul{
+  margin: 10px 0;
+}
+ 
+#footer-menu ul li {
+  display: inline;
+  margin:0 0 0 0px;
+}
+ 
+#footer-menu ul li::before {
+    content: "|";
+    padding: 0 0.2em;  color: #fff;
+}
+ 
+#footer-menu ul li:first-child::before{
+  content: "";
+  padding: 0;
+}
+ 
+#footer-menu ul .sub-menu{
+  display: none;
+}
+/************************************
+** 特定商取引等の フッターメニュー　CSS
+************************************/
+
+
+/************************************
+** ファンクションに追加
+************************************/
+
+register_nav_menu( 'footer-menu', 'フッターメニュー' );
+
+ /*****************************
+
+   footer メニューバーの追加 ここまで
+
+ *****************************/
