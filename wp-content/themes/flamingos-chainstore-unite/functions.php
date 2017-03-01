@@ -120,6 +120,6 @@ function custom_postpass_time() {
     exit();
 }
 add_action( 'login_form_postpass', 'custom_postpass_time' );
-
+register_nav_menu( 'footer-menu', 'フッターメニュー' );
 } //end function
 endif; // end ! function_exists

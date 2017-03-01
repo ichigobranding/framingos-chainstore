@@ -113,7 +113,11 @@
   	<?php get_template_part( 'tellmail-footer' ); ?>
   </div>
 </div>
-
+<!-- footer menu -->
+<div id="footer-menu">
+    <?php wp_nav_menu( array ( 'theme_location' => 'footer-menu' ) ); ?>
+</div>
+<!-- footer menu -->
 		</div><!-- .container -->
 	</div><!-- .after-footer -->
 	<?php endif; ?>
