@@ -201,6 +201,9 @@ span.wpcf7-list-item {
 #login #nav, #login #backtoblog {
     text-shadow: 0 0px 0px #ffffff;
 }
+.member-login-page{
+    margin:20px 0;
+}
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-color: #fff;
     background-image: none;
@@ -732,7 +735,7 @@ table#subdata2 td {
 }
 
 .td_ttl{
-    background-color:#eddddb;/* Branding  concept color 1 */
+    background-color:#f9e5e4;/* Branding  concept color 1 */
     width:30%;
     font-weight:bold;
 }
@@ -1285,23 +1288,25 @@ background: #EF9086;/* Branding  concept color 2  *******/
  *****************************/
 
 #data th{
-background:#FFB1BB;/* Branding  concept color 1  *******/
+background:#e84331;/* Branding  concept color 1  *******/
 color: #FFFFFF;
 font-size: 16px;
 }
 
 #data th,#data td{
-    border: 1px dotted #FFB1BB;　/* 枠線　 *//* Branding  concept color 1  *******/
+    border: 1px dotted #e84331;　/* 枠線　 *//* Branding  concept color 1  *******/
     padding: 6px 18px 6px 15px!important;
     text-align: left;
     min-width: 100px;
+    padding:20px;
 }
 .td_ttl{
     font-weight:bold;
     padding: 6px 18px 6px 15px!important;
+    background-color:#f9e5e4;/* Branding  concept color 2 */
 }
- /*****************************
+/*****************************
 
    特定商取引
 
- *****************************/
+*****************************/

@@ -100,10 +100,9 @@ add_filter('protected_title_format', 'remove_protected');
 function my_password_form() {
   return
     '<img src="https://ichigo-branding.com/wp-content/uploads/2017/01/member-login.png">
-     <br><br>
-     <div class="member-login-page">サポートプランのメンバー限定ページです。メンバーの方は、パスワードをご入力の上、ログインしてください。</div>
+     <div class="member-login-page">サポートプランのメンバー限定ページです。メンバーの方は、パスワードをご入力の上、ログインしてください。
     <form class="post_password" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
-      <input name="post_password" type="password" size="24" class="dwpass">
+      <input name="post_password" type="password" size="24" class="dwpass"><br><br><br>
       <input type="submit" name="Submit" value="' . esc_attr__("ログイン") . '">
     </form>';
 }
