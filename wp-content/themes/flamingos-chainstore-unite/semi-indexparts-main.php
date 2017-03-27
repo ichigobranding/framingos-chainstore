@@ -28,21 +28,21 @@
                                           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                            <span class="topnewsTab <?= $nclass; ?>">
                                                           <!-- 満席 -->
-                                                            <?php
-                                                                   if( get_field('noform') )
+                                                            <!--<?//php
+                                                                   //if( get_field('noform') )
                                                                   {
-                                                                  echo '<span class="syuryo-icon">募集終了</span>';
+                                                                  //echo '<span class="syuryo-icon">募集終了</span>';
                                                                   }
-                                                                 else
-                                                                  if( get_field('semiend') )
+                                                                 //else
+                                                                  //if( get_field('semiend') )
                                                                   {
-                                                                  echo '<span class="syuryo-icon">満席</span>';
+                                                                  //echo '<span class="syuryo-icon">満席</span>';
                                                                   }
-                                                                  else
+                                                                  //else
                                                                   {
-                                                                  echo '';
+                                                                  //echo '';
                                                                   }
-                                                            ?>
+                                                            ?>-->
                                                           <!-- 満席 -->
                                           </span>                                          
                                             <?php echo mb_substr(strip_tags($post-> post_title),0,32).'...'; ?>

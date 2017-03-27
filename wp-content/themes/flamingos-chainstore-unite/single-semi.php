@@ -41,12 +41,12 @@ get_header(); ?>
             <!--<tr>
             <td class="td_nowrap" scope="row">講師</td>
             <td>
-                <?php the_field('koushimei'); ?>
+                <?//php the_field('koushimei'); ?>
             </td>
             </tr>-->
             <tr>
             <td class="td_nowrap" scope="row">開催日時</td>
-            <td><p><?php the_field('semiday_check'); ?>　<?php the_field('semitime'); ?><p></td>
+            <td><p><?php the_field('semiday'); ?>　<?php the_field('semitime'); ?><p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">開催場所</td>
@@ -106,11 +106,7 @@ get_header(); ?>
                             <?php
                             if( get_field('noform') )
                             {
-                                echo '<div class="manseki">募集終了</div>
-                              <br>
-                              募集を終了いたしました。<br><br>
-                              募集は、メルマガにて優先的にご案内しております。<br><br>
-                              <b><a href="get_stylesheet_directory_uri()/mailmag">メルマガのご登録はこちらです。</a></b><br><br><br>';
+                                the_field('semiyudo');
                             }
                             else
                             if( get_field('semiend') )
@@ -123,11 +119,10 @@ get_header(); ?>
                             }
                             else
                             {
-                              //the_content(); 
+                              the_field('semiform22');
                             }
                             ?>
                          <!-- 募集終了 -->
-<?php the_content(); ?>
         <!-- <div class="right">
                  <a href="<?//php bloginfo(); ?>/semi"><button type="button" class="btn bottom-shousai">セミナー・講演一覧に戻る</button></a>
         </div>--> 
