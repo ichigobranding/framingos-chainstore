@@ -1,5 +1,6 @@
 <div id="secondary" class="widget-area" role="complementary">
 <div id="sideba">
+<?php get_template_part( 'profileside' ); ?>
                <div class="imgbtn imgbtnpad-top">
                       <a href="<?php echo esc_url( home_url( '/' ) ); ?>/member">
                           <img src="<?php echo get_stylesheet_directory_uri() ?>/images/member-bana.png" alt="※"/>
