@@ -48,7 +48,12 @@
 				</div>
 
 			<div class="col-md-3 col-md-offset-3">
-				<?php get_template_part( 'tellmail' ); ?>
+				<!-- スマホ telmail -->
+					<?php if (wp_is_mobile()) :?>
+					<?php else: ?>
+						<?php get_template_part( 'tellmail' ); ?>
+					<?php endif; ?>
+				<!-- スマホ telmail -->
 			</div>
 
 		</header><!-- #masthead -->
