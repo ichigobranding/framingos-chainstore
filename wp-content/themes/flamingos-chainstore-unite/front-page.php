@@ -8,24 +8,29 @@
 
 	<div id="primary" class="content-area col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
+	<!-- スマホ版対応 topbana -->
 		<?php if (wp_is_mobile()) :?>
 			<!-- topbana -->
-			            <div class="tbanana imgbtn">
-			                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">
-			                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana-mobile.png" alt="※"/>
-			                </a>
-		            	</div>
-		    <!-- topbana -->
-
+			<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+			<br>
+			<!-- topbana -->
 		<?php else: ?>
 			<!-- topbana -->
-			            <div class="tbanana imgbtn">
-			                <a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">
-			                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
-			                </a>
-		            	</div>
-		    <!-- topbana -->
+			<div class="tbanana imgbtn">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
+					</a>
+			</div>
+			<!-- topbana -->
 		<?php endif; ?>
+	<!-- スマホ topbana -->
+	<!-- topbana -->
+			<!-- <div class="tbanana imgbtn">
+				<a href="<?//php echo esc_url( home_url( '/' ) ); ?>/※">
+					<img src="<?//php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
+					</a>
+			</div>-->
+	<!-- topbana -->
 	<!-- #IB-main## -->
 
 				<div class="row">
