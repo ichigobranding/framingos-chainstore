@@ -109,15 +109,6 @@ get_header(); ?>
                                 the_field('semiyudo');
                             }
                             else
-                            if( get_field('semiend') )
-                            {
-                                echo '<div class="manseki">満席のため締め切りました</div>
-                              <br>
-                              募集を終了いたしました。<br><br>
-                              募集は、メルマガにて優先的にご案内しております。<br><br>
-                              <b><a href="get_stylesheet_directory_uri()/mailmag">メルマガのご登録はこちらです。</a></b><br><br><br>';
-                            }
-                            else
                             {
                               the_field('semiform22');
                             }
