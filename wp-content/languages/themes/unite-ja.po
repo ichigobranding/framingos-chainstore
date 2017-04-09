@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Unite package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-11-09 22:56:12+0000\n"
+"PO-Revision-Date: 2017-02-18 08:56:06+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,31 +66,31 @@ msgstr "Unite オプション"
 
 #: inc/class-tgm-plugin-activation.php:3358
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr "プラグイン %1$s 更新中 (%2$d/%3$d)"
+msgstr "プラグインの更新: %1$s (%2$d/%3$d)"
 
 #: inc/class-tgm-plugin-activation.php:2784
 msgid "No plugins were selected to be activated. No action taken."
-msgstr "有効化するプラグインが選択されていません。操作無効。"
+msgstr "有効化するプラグインが選択されていません。何も実行しませんでした。"
 
 #: inc/class-tgm-plugin-activation.php:2679
 msgid "No plugins are available to be updated at this time."
-msgstr "更新するプラグインが利用可能ではありません。操作無効。"
+msgstr "現在更新できるプラグインはありません。"
 
 #: inc/class-tgm-plugin-activation.php:2641
 msgid "No plugins were selected to be updated. No action taken."
-msgstr "更新するプラグインが選択されていません。操作無効。"
+msgstr "アップデートするプラグインが選択されていません。何も実行しませんでした。"
 
 #: inc/class-tgm-plugin-activation.php:2639
 msgid "No plugins were selected to be installed. No action taken."
-msgstr "インストールするプラグインが選択されていません。操作無効。"
+msgstr "インストールするプラグインが選択されていません。何も実行しませんでした。"
 
 #: inc/class-tgm-plugin-activation.php:2605
 msgid "Update"
-msgstr "保存する"
+msgstr "更新"
 
 #: inc/class-tgm-plugin-activation.php:2566
 msgid "Upgrade message from the plugin author:"
-msgstr "プラグイン提供者からの更新メッセージ:"
+msgstr "プラグイン作者からの更新メッセージ:"
 
 #: inc/class-tgm-plugin-activation.php:2491
 msgctxt "%2$s = plugin name in screen reader markup"
@@ -103,7 +103,7 @@ msgstr "バージョン"
 
 #: inc/class-tgm-plugin-activation.php:2395
 msgid "Available version:"
-msgstr "利用可能バージョン:"
+msgstr "利用可能なバージョン:"
 
 #: inc/class-tgm-plugin-activation.php:2383
 msgid "Minimum required version:"
@@ -111,7 +111,7 @@ msgstr "最低要求バージョン:"
 
 #: inc/class-tgm-plugin-activation.php:2375
 msgid "Installed version:"
-msgstr "インストールバージョン:"
+msgstr "インストールしたバージョン:"
 
 #: inc/class-tgm-plugin-activation.php:2367
 msgctxt "as in: \"version nr unknown\""
@@ -126,7 +126,7 @@ msgstr[0] "使用中 <span class=\"count\">(%s)</span>"
 #: inc/class-tgm-plugin-activation.php:2282
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "アップデート利用可能 <span class=\"count\">(%s)</span>"
+msgstr[0] "利用可能な更新 <span class=\"count\">(%s)</span>"
 
 #: inc/class-tgm-plugin-activation.php:2279
 msgid "To Install <span class=\"count\">(%s)</span>"
@@ -146,15 +146,15 @@ msgstr "%1$s, %2$s"
 
 #: inc/class-tgm-plugin-activation.php:2223
 msgid "Update recommended"
-msgstr "アップデート推奨"
+msgstr "更新が推奨されています"
 
 #: inc/class-tgm-plugin-activation.php:2220
 msgid "Requires Update"
-msgstr "アップデート必要"
+msgstr "更新が必要です"
 
 #: inc/class-tgm-plugin-activation.php:2217
 msgid "Required Update not Available"
-msgstr "必要アップデート利用不可能"
+msgstr "必要な更新が利用できません"
 
 #: inc/class-tgm-plugin-activation.php:2211
 msgid "Active"
@@ -177,16 +177,16 @@ msgstr "と"
 
 #: inc/class-tgm-plugin-activation.php:934
 msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
-msgstr "リモートプラグインパッケージには複数のファイルが含まれているが、一つのフォルダにパッケージされていません。"
+msgstr "リモートプラグインパッケージは複数のファイルで構成されていますが、ファイルは1つのフォルダ内にパッケージされていません。"
 
 #: inc/class-tgm-plugin-activation.php:931
 #: inc/class-tgm-plugin-activation.php:934
 msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
-msgstr "WordPress ガイドラインに従うよう、プラグインの提供者に連絡してください。"
+msgstr "プラグイン開発者に連絡し、WordPress のガイドラインに従ってプラグインをパッケージ化するように依頼してください。"
 
 #: inc/class-tgm-plugin-activation.php:931
 msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
-msgstr "リモートプラグインパッケージに希望されたスラッグ名のフォルダは含まれず、リネームにも失敗します。"
+msgstr "リモートプラグインパッケージには、指定されたスラッグのフォルダがないため、名前の変更ができませんでした。"
 
 #: inc/class-tgm-plugin-activation.php:635
 msgid "Set the parent_slug config variable instead."
@@ -194,23 +194,23 @@ msgstr "代わりに parent_slug コンフィグ変数を設定してくださ�
 
 #: inc/class-tgm-plugin-activation.php:521
 msgid "Update Required"
-msgstr "更新する必要があります"
+msgstr "更新が必要です"
 
 #: inc/class-tgm-plugin-activation.php:520
 msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr "このテーマと互換性を保つため、プラグインの更新が必要です。"
+msgstr "使用中のテーマとの互換性を保つため、このプラグインを更新する必要があります。"
 
 #: inc/class-tgm-plugin-activation.php:405
 msgid "Please contact the administrator of this site for help."
-msgstr "ヘルプが必要な際はネットワーク管理者に連絡してください。"
+msgstr "ヘルプが必要な場合はこのサイトの管理者にお問い合わせください。"
 
 #: inc/class-tgm-plugin-activation.php:402
 msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
-msgstr "プラグインの有効化に失敗しました。このテーマはより最新の %s を必要とします。プラグインを更新してください。"
+msgstr "プラグインを有効化できませんでした。このテーマには上位バージョンの %s が必要です。プラグインを更新してください。"
 
 #: inc/class-tgm-plugin-activation.php:401
 msgid "No action taken. Plugin %1$s was already active."
-msgstr "操作無効。%1$s プラグインはすでに有効化されていました。"
+msgstr "操作を実行しませんでした。プラグイン %1$s はすでに有効です。"
 
 #: inc/class-tgm-plugin-activation.php:387
 msgid "Begin updating plugin"
@@ -263,7 +263,7 @@ msgstr "検索結果:"
 
 #: search.php:16
 msgid "Search Results for: %s"
-msgstr "「%s」の検索結果"
+msgstr "検索結果: %s"
 
 #: inc/customizer.php:325
 msgid "Additional CSS"
@@ -359,7 +359,7 @@ msgstr "メインページの本文"
 
 #: inc/customizer.php:101
 msgid "Typography"
-msgstr "タイポグラフィー"
+msgstr "文字装飾"
 
 #: inc/customizer.php:93
 msgid "Element color on hover"
@@ -388,7 +388,7 @@ msgstr "右サイドバー"
 
 #: inc/template-tags.php:104
 msgid "Your comment is awaiting moderation."
-msgstr "あなたのコメントは管理者の承認待ちです。"
+msgstr "あなたのコメントは承認待ちです。"
 
 #: inc/template-tags.php:97
 msgctxt "1: date, 2: time"
@@ -472,7 +472,7 @@ msgstr "全てのプラグインのインストール・有効化が完了しま
 
 #: inc/class-tgm-plugin-activation.php:336 inc/extras.php:356
 msgid "Something went wrong with the plugin API."
-msgstr "plugin API で問題が発生しました"
+msgstr "Plugin API で問題が発生しました。"
 
 #: inc/customizer.php:520 inc/extras.php:302
 msgid "Follow on Twitter"
@@ -508,7 +508,7 @@ msgstr "サポートとドキュメンテーション"
 
 #: inc/extras.php:95
 msgid "Submit"
-msgstr "投稿する"
+msgstr "送信"
 
 #: inc/extras.php:92
 msgid "Password:"
@@ -520,7 +520,7 @@ msgstr "<p>この投稿はパスワードで保護されています。下のパ
 
 #: inc/class-tgm-plugin-activation.php:3374
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr "プラグをインインストールしています %1$s (%2$d/%3$d)"
+msgstr "プラグインをインストールしています %1$s (%2$d/%3$d)"
 
 #: inc/class-tgm-plugin-activation.php:3373
 msgid "All installations have been completed."
@@ -528,7 +528,7 @@ msgstr "すべてのインストールが完了しました。"
 
 #: inc/class-tgm-plugin-activation.php:3372
 msgid "%1$s installed successfully."
-msgstr "%1$s が正常にインストールされました。"
+msgstr "%1$s を正常にインストールしました。"
 
 #: inc/class-tgm-plugin-activation.php:3371
 msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
@@ -554,7 +554,7 @@ msgstr "詳細を表示"
 
 #: inc/class-tgm-plugin-activation.php:3366
 msgid "%1$s installed and activated successfully."
-msgstr "%1$s が正常にインストールされ、有効化されました。"
+msgstr "%1$s を正常にインストールし、有効化しました。"
 
 #: inc/class-tgm-plugin-activation.php:3365
 msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
@@ -590,7 +590,7 @@ msgstr "インストール"
 
 #: inc/class-tgm-plugin-activation.php:2439
 msgid "Status"
-msgstr "ステータス"
+msgstr "状態"
 
 #: inc/class-tgm-plugin-activation.php:2434
 msgid "Type"
@@ -632,11 +632,11 @@ msgstr "必須"
 
 #: inc/class-tgm-plugin-activation.php:2182
 msgid "WordPress Repository"
-msgstr "WordPress公式レポジトリ"
+msgstr "WordPress 公式ディレクトリ"
 
 #: inc/class-tgm-plugin-activation.php:2188
 msgid "Pre-Packaged"
-msgstr "プレパッケージされた"
+msgstr "プリパッケージ"
 
 #: inc/class-tgm-plugin-activation.php:824
 #: inc/class-tgm-plugin-activation.php:3434
@@ -649,17 +649,17 @@ msgstr "無視する"
 
 #: inc/class-tgm-plugin-activation.php:403
 msgid "All plugins installed and activated successfully. %1$s"
-msgstr "すべてのプラグインが正常にインストール、有効化されました。 %1$s"
+msgstr "すべてのプラグインを正常にインストールし、有効化しました。 %1$s"
 
 #: inc/class-tgm-plugin-activation.php:400
 #: inc/class-tgm-plugin-activation.php:2828
 msgid "The following plugin was activated successfully:"
-msgstr "以下のプラグインは有効化されました:"
+msgstr "以下のプラグインを有効化しました:"
 
 #: inc/class-tgm-plugin-activation.php:399
 #: inc/class-tgm-plugin-activation.php:3025 inc/extras.php:368
 msgid "Plugin activated successfully."
-msgstr "プラグインは有効化されました。"
+msgstr "プラグインを有効化しました。"
 
 #: inc/class-tgm-plugin-activation.php:398
 msgid "Return to the dashboard"
@@ -667,12 +667,12 @@ msgstr "ダッシュボードに戻る"
 
 #: inc/class-tgm-plugin-activation.php:397 inc/extras.php:367
 msgid "Return to Required Plugins Installer"
-msgstr "必要なプラグインインストーラに戻る"
+msgstr "必須プラグインのインストール画面に戻る"
 
 #: inc/class-tgm-plugin-activation.php:392 inc/extras.php:366
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
-msgstr[0] "プラグインのアクティブ化を開始"
+msgstr[0] "プラグインの有効化を開始"
 
 #: inc/class-tgm-plugin-activation.php:382 inc/extras.php:365
 msgid "Begin installing plugin"
@@ -697,12 +697,12 @@ msgstr[0] "申し訳ありませんが　あなたの権限では、%s  プラ�
 #: inc/class-tgm-plugin-activation.php:372 inc/extras.php:361
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] "おすすめの %1$s プラグインは、アクティブに設定されていません"
+msgstr[0] "推奨プラグインが現在無効です: %1$s。"
 
 #: inc/class-tgm-plugin-activation.php:367 inc/extras.php:360
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] "テーマに必要なプラグイン　%1$s　が　アクティブに設定されていません"
+msgstr[0] "必須プラグインが現在無効です: %1$s。"
 
 #: inc/extras.php:359
 msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
@@ -712,12 +712,12 @@ msgstr[0] "申し訳ありませんが　あなたの権限では、%s  プラ�
 #: inc/class-tgm-plugin-activation.php:342 inc/extras.php:358
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] "このテーマは、%1$s　プラグイン利用をおすすめします"
+msgstr[0] "このテーマは、以下のプラグインの利用を推奨しています: %1$s。"
 
 #: inc/class-tgm-plugin-activation.php:337 inc/extras.php:357
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] "このテーマは、%1$s　プラグインが必要です"
+msgstr[0] "このテーマは、以下のプラグインの利用が必要です: %1$s。"
 
 #: inc/class-tgm-plugin-activation.php:335 inc/extras.php:355
 msgid "Installing Plugin: %s"
@@ -792,11 +792,11 @@ msgstr "ページ:"
 
 #: content-none.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "お探しのものが見つからないようです。検索すると良いかもしれません。"
+msgstr "お探しのコンテンツを見つけられませんでした。検索をお試しください。"
 
 #: content-none.php:23
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
+msgstr "ご指定の検索条件に一致する投稿がありませんでした。他のキーワードでもう一度検索してみてください。"
 
 #: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
@@ -804,11 +804,11 @@ msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1
 
 #: content-none.php:13
 msgid "Nothing Found"
-msgstr "何も見つかりませんでした"
+msgstr "見つかりません"
 
 #: comments.php:71
 msgid "Comments are closed."
-msgstr "コメントは受け付けていません。"
+msgstr "コメントは停止中です。"
 
 #: comments.php:37 comments.php:61
 msgid "Newer Comments &rarr;"
@@ -830,7 +830,7 @@ msgstr[0] "「%2$s」への%1$s件のフィードバック"
 
 #: sidebar.php:17
 msgid "Archives"
-msgstr "アーカイブ別"
+msgstr "アーカイブ"
 
 #. translators: %1$s: smiley
 #: 404.php:44

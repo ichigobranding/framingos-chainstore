@@ -2,16 +2,16 @@
 # This file is distributed under the same license as the Plugins - Custom Post Type UI - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-12-08 05:41:44+0000\n"
+"PO-Revision-Date: 2016-12-10 17:02:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Custom Post Type UI - Stable (latest release)\n"
 
-#: inc/utility.php:478
+#: inc/utility.php:483
 msgid "Object"
 msgstr "オブジェクト"
 
@@ -75,87 +75,83 @@ msgstr "登録済の投稿タイプから利用するものを選択。少なく
 msgid "Import/Export Taxonomies"
 msgstr "タクソノミーのインポート/エクスポート"
 
-#: inc/post-types.php:1030
+#: inc/post-types.php:1048
 msgid "Add support for available registered taxonomies."
 msgstr "登録済のタクソノミーから利用するものを選択。"
 
-#: inc/post-types.php:1016
+#: inc/post-types.php:1034
 msgid "Use this input to register custom \"supports\" values, separated by commas. Learn about this at %s"
 msgstr "カスタム「サポート」のスラッグとして登録したい値があればそれを入力。複数指定する場合はコンマ区切り。詳細は %s 参照。"
 
-#: inc/post-types.php:863
-msgid "Add support for various available post editor features on the right."
-msgstr "投稿編集画面でサポートし得る右記の各種機能から、この投稿タイプでサポートする機能を選択"
-
-#: inc/post-types.php:835
+#: inc/post-types.php:853
 msgid "The top-level admin menu page file name for which the post type should be in the sub menu of."
 msgstr "この投稿タイプをサブメニューとして表示させたい管理画面のトップレベルメニューページのファイル名。"
 
-#: inc/post-types.php:824
+#: inc/post-types.php:842
 msgid "(default: true) Whether or not to show the post type in the admin menu and where to show that menu."
 msgstr "管理画面のメニューにこの投稿タイプを表示する (デフォルト: true) および true の場合の表示場所"
 
-#: inc/post-types.php:793
+#: inc/post-types.php:811
 msgid "Available options"
 msgstr "利用可能なオプション"
 
-#: inc/post-types.php:787
+#: inc/post-types.php:805
 msgid "See %s in the \"menu_position\" section. Range of 5-100"
 msgstr "%s の中の \"menu_position\" の項を参照。指定できる範囲は5から100。"
 
-#: inc/post-types.php:770
+#: inc/post-types.php:788
 msgid "(default: true) Sets the query_var key for this post type."
 msgstr "この投稿タイプにクエリー変数キーを使用する (デフォルト: true)"
 
-#: inc/post-types.php:754 inc/taxonomies.php:753
+#: inc/post-types.php:772 inc/taxonomies.php:753
 msgid "(default: true) Should the permastruct be prepended with the front base."
 msgstr "パーマリンクの先頭に最上位階層を示す文字列を付加する (デフォルト: true)。"
 
-#: inc/post-types.php:729
+#: inc/post-types.php:747
 msgid "(default: true) Whether or not WordPress should use rewrites for this post type."
 msgstr "WordPress はこの投稿タイプにリライトを使用 (デフォルト: true)"
 
-#: inc/post-types.php:713
+#: inc/post-types.php:731
 msgid "(default: false) Whether or not the post type can have parent-child relationships."
 msgstr "この投稿タイプは親子関係が存在 (デフォルト: false)"
 
-#: inc/post-types.php:689
+#: inc/post-types.php:707
 msgid "(default: false) Whether or not to exclude posts with this post type from front end search results."
 msgstr "フロントエンドの検索結果からこの投稿タイプの投稿を除外する (デフォルト: false)"
 
-#: inc/post-types.php:660
+#: inc/post-types.php:678
 msgid "(default: false) Whether or not the post type will have a post type archive URL."
 msgstr "この投稿タイプには投稿タイプアーカイブの URL が存在 (デフォルト: false)"
 
-#: inc/post-types.php:632
+#: inc/post-types.php:650
 msgid "(default: false) Whether or not to show this post type data in the WP REST API."
 msgstr "この投稿タイプのデータを WP REST API で表示する (デフォルト: false)"
 
-#: inc/post-types.php:616
+#: inc/post-types.php:634
 msgid "(CPTUI default: true) Whether or not this post type is available for selection in navigation menus."
 msgstr "ナビゲーションメニューのセクションにこの投稿タイプを表示する (CTPUI デフォルト: true)"
 
-#: inc/post-types.php:600
+#: inc/post-types.php:618
 msgid "(default: true) Whether or not to generate a default UI for managing this post type."
 msgstr "この投稿タイプの管理用デフォルト UI を生成する (デフォルト: true)"
 
-#: inc/post-types.php:584
+#: inc/post-types.php:602
 msgid "(default: true) Whether or not queries can be performed on the front end as part of parse_request()"
 msgstr "フロントエンドで parse_request() の一部として実行されるクエリにて、この投稿タイプを指定したクエリーを実行可能 (デフォルト: true)"
 
-#: inc/post-types.php:583
+#: inc/post-types.php:601
 msgid "Publicly Queryable"
 msgstr "一般公開クエリー可"
 
-#: inc/post-types.php:568
+#: inc/post-types.php:586
 msgid "(CPTUI default: true) Whether or not posts of this type should be shown in the admin UI and is publicly queryable."
 msgstr "この投稿タイプの投稿が管理画面とフロントエンドの両方から利用可能   (CPTUI デフォルト: true)"
 
-#: inc/post-types.php:546 inc/taxonomies.php:568
+#: inc/post-types.php:564 inc/taxonomies.php:568
 msgid "Toggle panel: Settings"
 msgstr "パネル開閉: 設定"
 
-#: inc/post-types.php:443
+#: inc/post-types.php:452
 msgid "Used for hierarchical types that need a colon."
 msgstr "階層型の投稿タイプについて「親投稿タイプ名: 」といった様式の文字列が必要な状況で使われます。"
 
@@ -175,15 +171,15 @@ msgstr "パネル開閉: 基本設定"
 msgid "Import/Export Post Types"
 msgstr "投稿タイプをインポート/エクスポート"
 
-#: inc/listings.php:227
+#: inc/listings.php:245
 msgid "CPTUI registered taxonomies count total: %d"
 msgstr "CPTUI 登録済のタクソノミーの合計: %d"
 
-#: inc/listings.php:183
+#: inc/listings.php:198
 msgid "*Replace \"post_slug\" with the slug of the actual post slug."
 msgstr "*「post_slug」の部分は、投稿タイプの実際のスラッグに読み替えてください。"
 
-#: inc/listings.php:116 inc/listings.php:294
+#: inc/listings.php:120 inc/listings.php:316
 msgid "Get code"
 msgstr "コードを取得"
 
@@ -191,43 +187,27 @@ msgstr "コードを取得"
 msgid "CPTUI registered post types count total: %d"
 msgstr "CPTUI で登録済の投稿タイプの合計: %d"
 
-#: inc/about.php:159
+#: inc/about.php:158
 msgid "Wanna make the most of WordPress? Sign up for the Pluginize newsletter and get access to discounts, plugin announcements, and more!"
 msgstr "WordPress をもっと活用しませんか ? Pluginize のニュースメールを購読して、お得な情報やプラグインのお知らせなどを入手しましょう !"
 
-#: inc/about.php:137
+#: inc/about.php:134
 msgid "Stay informed"
 msgstr "最新の情報を入手しましょう !"
 
-#: inc/about.php:105
+#: inc/about.php:97
 msgid "More from %s"
 msgstr "その他の %s プロダクト"
-
-#: inc/about.php:69
-msgid "From our previous release:"
-msgstr "以前のリリースからの主な改善点:"
-
-#: inc/about.php:67
-msgid "Previously, due to how settings were saved, there was need for an extra refresh for newly saved settings to be applied to a post type or taxonomy. Under the hood, we have amended the saving process in order to remove need to trigger a refresh to see applied changes."
-msgstr "以前は、設定保存の実装法が原因で、設定変更内容を投稿タイプやタクソノミーに適用させるために余分な再読込みが必要でした。設定保存の実装法を改善し、ページ再読込みをしなくても設定変更内容が適用されるようにしました。"
-
-#: inc/about.php:66
-msgid "Eliminated page refresh need."
-msgstr "ページ再読込みの不要化"
-
-#: inc/about.php:63
-msgid "Once again we have evolved the UI for post type and taxonomy parameter screens. We strive to adhere to familiar WordPress admin familiarity and have adapted styles and UX applied to WordPress metaboxes."
-msgstr "投稿タイプ・タクソノミーのパラメータ設定画面で UI をさらに進化させました。 WordPressを使い慣れている管理者の皆様方にとっての親しみやすさと、スタイルや UX 面でのWordPress メタボックスとの親和性を高めるよう努めました。"
 
 #: inc/about.php:47
 msgid "Thank you for choosing Custom Post Type UI! We hope that your experience with our plugin makes creating post types and taxonomies and organizing your content quick and easy."
 msgstr "Custom Post Type UI をご利用くださいましてまことにありがとうございます。カスタム投稿タイプ ・カスタムタクソノミーの作成とそれらを使用したコンテンツの構成をより早くより簡単にするお役に立てれば幸いです。"
 
-#: inc/about.php:172 inc/utility.php:348
+#: inc/about.php:171 inc/utility.php:348
 msgid "Subscribe"
 msgstr "購読"
 
-#: inc/about.php:162 inc/utility.php:338
+#: inc/about.php:161 inc/utility.php:338
 msgid "Email Address"
 msgstr "メールアドレス"
 
@@ -235,75 +215,75 @@ msgstr "メールアドレス"
 msgid "Get email updates from pluginize.com about Custom Post Type UI"
 msgstr "pluginize.com からの Custom Post Type UI 更新情報メールを購読する"
 
-#: inc/support.php:171
+#: inc/support.php:182
 msgid "We encourage checking out %s for easily displaying post type content wherever you can utilize a shortcode. If you prefer to handle on your own, you will need to utilize the %s class to handle display in custom locations. If you have set the post type to have archives, the archive url should be something like \"http://www.mysite.com/post-type-slug\""
 msgstr "%s の導入を検討されるようお勧めします。このプラグインを使うと、ショートコードを使える場所ならばどこにでもカスタム投稿タイプのコンテンツを容易に表示できます。それを御自身で行うには、 %s クラスを有効にして、所望の場所にカスタム投稿タイプのコンテンツを表示できるようカスタマイズを行う必要があります。カスタム投稿タイプをアーカイブありに設定している場合には \"http://www.mysite.com/post-type-slug\" といった URL へアクセスすることで当該カスタム投稿タイプのアーカイブをサイトに表示することもできます。"
 
-#: inc/support.php:110
+#: inc/support.php:112
 msgid "No it does not. The Shortcode builder is not multisite dependent and will work with either setup."
 msgstr "必要ありません。 Shortcode builder はマルチサイトには依存していません。マルチサイトでも通常サイトでもどちらでも動作します。"
 
-#: inc/support.php:109
+#: inc/support.php:111
 msgid "Does Custom Post Type UI Extended require multisite?"
 msgstr "Custom Post Type UI 拡張にはマルチサイトが必要ですか ?"
 
-#: inc/support.php:105
+#: inc/support.php:107
 msgid "Yes you will. The Custom Post Type UI Extended is not a replacement of the free version with added extra features. It acts based on the data made available through Custom Post Type UI"
 msgstr "必要です。 Custom Post Type UI 拡張は、無料版の機能にプラスアルファをした、という性格のものではなく、 Custom Post Type UI が作ったデータに基づいて動作するプロダクトです。"
 
-#: inc/support.php:104
+#: inc/support.php:106
 msgid "Do I still need Custom Post Type UI if I purchase and install Custom Post Type UI Extended?"
 msgstr "Custom Post Type UI 拡張を購入しインストールしてある場合でも Custom Post Type UI は必要ですか ?"
 
-#: inc/support.php:100
+#: inc/support.php:102
 msgid "No, there is no data being sent out from your site with these. The only way anything is tracked is via UTM parameters for WebDevStudios's analytics so we can get an idea of where traffic is coming from. Those are only tracked if you actually click on an ad spot."
 msgstr "してません。広告スペースはサイト情報について何一つ送信していません。トラッキングに類する唯一のものとしては、広告スペースをクリックした際にクリック元に関して WebDevStudios が分析するために使われる  UTM パラメーターがありますが、これは、実際に広告スペースをクリックしなければトラックされることがないものです。"
 
-#: inc/support.php:99
+#: inc/support.php:101
 msgid "Are these ad spots tracking my personal information in any way?"
 msgstr "例の広告スペース、個人情報をトラッキングしてたりしない ?"
 
-#: inc/support.php:90
+#: inc/support.php:92
 msgid "You can have them automatically removed from display via a purchased copy of %s."
 msgstr "%s をお求めいただけますと自動的に消滅いたします。"
 
-#: inc/support.php:87
+#: inc/support.php:88
 msgid "How can I remove the ads that suddenly started showing up?"
 msgstr "急に表示されるようになったこの広告はどうやったら消せるの ?"
 
-#: inc/support.php:83
+#: inc/support.php:84
 msgid "No. These spots are intended for and will only be used for other available WebDevStudios products and services."
 msgstr "ありません。広告スペースは WebDevStudios のプロダクト・サービスのためにのみ使用します。それは今後も変わりません。"
 
-#: inc/support.php:82
+#: inc/support.php:83
 msgid "Will these ad spots ever show third-party data?"
 msgstr "この先、広告スペースにサードパーティー製品の情報を掲載することもありますか ?"
 
-#: inc/support.php:78
+#: inc/support.php:79
 msgid "Pluginize offers both free and paid WordPress plugins."
 msgstr "Pluginize は無料および有料の WordPress プラグインを提供しています。"
 
-#: inc/support.php:77
+#: inc/support.php:78
 msgid "What does Pluginize offer?"
 msgstr "Pluginize は何を提供していますか ?"
 
-#: inc/support.php:73
+#: inc/support.php:74
 msgid "Pluginize is a marketplace of plugins by WebDevStudios."
 msgstr "Pluginize は WebDevStudios によるプラグインのマーケットプレイスです。"
 
-#: inc/support.php:72
+#: inc/support.php:73
 msgid "What is Pluginize?"
 msgstr "Pluginize とは ?"
 
-#: inc/support.php:69
+#: inc/support.php:70
 msgid "Pluginize"
 msgstr "Pluginize"
 
-#: inc/support.php:62
+#: inc/support.php:63
 msgid "CPTUI Extended"
 msgstr "CPTUI 拡張"
 
-#: inc/support.php:59
+#: inc/support.php:60
 msgid "Please note that %s this plugin will not handle display %s of registered post types or taxonomies in your current theme. It simply registers them for you. To display your data, check out %s. If all else fails, visit us on the %s"
 msgstr "このプラグインは、登録した投稿タイプ・タクソノミーがお使いのテーマで%sどう表示されるかについては制御しません%s。登録のみを扱います。表示を制御したい場合は %s の導入を御検討ください。問題点等ございましたら%sへお越しください。"
 
@@ -315,7 +295,7 @@ msgstr "サポートフォーラム"
 msgid "About"
 msgstr "About"
 
-#: inc/taxonomies.php:1087
+#: inc/taxonomies.php:1093
 msgid "Please provide a post type to attach to."
 msgstr "このタクソノミーを利用する投稿タイプを指定してください。"
 
@@ -381,11 +361,11 @@ msgstr "このタクソノミーの管理メニュー項目として使われま
 
 #: inc/taxonomies.php:245
 msgid "Migrate terms to newly renamed taxonomy?"
-msgstr "タームを改名後のタクソノミーへ移行する。"
+msgstr "タームを改名後のタクソノミーへ移行する"
 
 #: inc/taxonomies.php:236
 msgid "DO NOT EDIT the taxonomy slug unless also planning to migrate terms. Changing the slug registers a new taxonomy entry."
-msgstr "「タームを改名後のタクソノミーへ移行する」を併用する場合を除き、基本、タクソノミースラッグは編集しないでください。編集すると、既存のタクソノミーのスラッグが変わるのではなく、既存のタクソノミーとは別に、編集後のスラッグを持つ新たなタクソノミーが登録されることになります。"
+msgstr "タームを改名後のタクソノミーへ移行せずにタクソノミースラッグは編集しないでください。スラッグを変更すると既存のタームのスラッグが変わるのではなく、新しいタクソノミーが登録されることになります。"
 
 #: inc/taxonomies.php:224
 msgid "The taxonomy name/slug. Used for various queries for taxonomy content."
@@ -395,147 +375,147 @@ msgstr "タクソノミーの名前 / スラッグ。タクソノミーのコン
 msgid "View Taxonomies"
 msgstr "タクソノミーを表示"
 
-#: inc/utility.php:608
+#: inc/utility.php:635
 msgid "Please choose a different post type name. %s matches an existing page slug, which can cause conflicts."
 msgstr "別の投稿タイプ名を選んでください。%s は既存のページスラッグと一致し、競合する可能性があります。"
 
-#: inc/post-types.php:1052 inc/taxonomies.php:310
+#: inc/post-types.php:1070 inc/taxonomies.php:310
 msgid "(WP Core)"
 msgstr "(WP コア)"
 
-#: inc/post-types.php:855
+#: inc/post-types.php:873
 msgid "Choose image icon"
 msgstr "画像アイコンを選択"
 
-#: inc/post-types.php:847
+#: inc/post-types.php:865
 msgid "Image URL or Dashicon class name to use for icon. Custom image should be 20px by 20px."
 msgstr "アイコン画像の URL または Dashicon のクラス名。カスタム画像は20px × 20pxにする必要があります。"
 
-#: inc/post-types.php:537
+#: inc/post-types.php:546
 msgid "(e.g. Movies list)"
 msgstr "(例: 映画一覧)"
 
-#: inc/post-types.php:533
+#: inc/post-types.php:542
 msgid "Screen reader text for the items list heading on the post type listing screen."
 msgstr "投稿タイプ一覧画面の上部のヘッダー用スクリーンリーダーテキスト"
 
-#: inc/post-types.php:532 inc/taxonomies.php:558
+#: inc/post-types.php:541 inc/taxonomies.php:558
 msgid "Items List"
 msgstr "項目一覧"
 
-#: inc/post-types.php:528
+#: inc/post-types.php:537
 msgid "(e.g. Movies list navigation)"
 msgstr "(例: 映画リストナビゲーション)"
 
-#: inc/post-types.php:524
+#: inc/post-types.php:533
 msgid "Screen reader text for the pagination heading on the post type listing screen."
 msgstr "投稿タイプ一覧画面の上部のページネーション用スクリーンリーダーテキスト"
 
-#: inc/post-types.php:523 inc/taxonomies.php:549
+#: inc/post-types.php:532 inc/taxonomies.php:549
 msgid "Items List Navigation"
 msgstr "項目一覧ナビゲーション"
 
-#: inc/post-types.php:519
+#: inc/post-types.php:528
 msgid "(e.g. Filter movies list)"
-msgstr "(例: 映画一覧をフィルター)"
+msgstr "(例: 映画一覧を絞り込む)"
 
-#: inc/post-types.php:515
+#: inc/post-types.php:524
 msgid "Screen reader text for the filter links heading on the post type listing screen."
 msgstr "投稿タイプ一覧画面の上部の絞り込みリンク用スクリーンリーダーテキスト"
 
-#: inc/post-types.php:514
+#: inc/post-types.php:523
 msgid "Filter Items List"
 msgstr "項目一覧の絞り込み"
 
-#: inc/post-types.php:510
+#: inc/post-types.php:519
 msgid "(e.g. Uploaded to this movie)"
-msgstr "(例: この映画にアップロード済み)"
+msgstr "(例: この映画へのアップロード)"
 
-#: inc/post-types.php:506
+#: inc/post-types.php:515
 msgid "Used as the \"Uploaded to this post\" or \"Uploaded to this page\" phrase for the post type."
 msgstr "投稿タイプの「この投稿へのアップロード」「この固定ページへのアップロード」として使用する文言。"
 
-#: inc/post-types.php:505
+#: inc/post-types.php:514
 msgid "Uploaded to this Item"
-msgstr "この項目をアップロード"
+msgstr "この項目へのアップロード"
 
-#: inc/post-types.php:501
+#: inc/post-types.php:510
 msgid "(e.g. Insert into movie)"
 msgstr "(例: 映画に挿入)"
 
-#: inc/post-types.php:497
+#: inc/post-types.php:506
 msgid "Used as the \"Insert into post\" or \"Insert into page\" phrase for the post type."
 msgstr "投稿タイプの「投稿に挿入」「固定ページに挿入」として使用する文言。"
 
-#: inc/post-types.php:496
+#: inc/post-types.php:505
 msgid "Insert into item"
 msgstr "項目を挿入"
 
-#: inc/post-types.php:492
+#: inc/post-types.php:501
 msgid "(e.g. Movie archives)"
 msgstr "(例: 映画アーカイブ)"
 
-#: inc/post-types.php:488
+#: inc/post-types.php:497
 msgid "Post type archive label used in nav menus."
 msgstr "ナビゲーションメニューで使用する投稿タイプアーカイブのラベル"
 
-#: inc/post-types.php:483
+#: inc/post-types.php:492
 msgid "(e.g. Use as featured image for this movie)"
 msgstr "(例: この映画のアイキャッチ画像として使用)"
 
-#: inc/post-types.php:479
+#: inc/post-types.php:488
 msgid "Used as the \"Use as featured image\" phrase for the post type."
 msgstr "投稿タイプの「アイキャッチ画像に設定」として使用する文言。"
 
-#: inc/post-types.php:478
+#: inc/post-types.php:487
 msgid "Use Featured Image"
 msgstr "アイキャッチ画像を使用"
 
-#: inc/post-types.php:474
+#: inc/post-types.php:483
 msgid "(e.g. Remove featured image for this movie)"
 msgstr "(例: この映画のアイキャッチ画像を削除)"
 
-#: inc/post-types.php:470
+#: inc/post-types.php:479
 msgid "Used as the \"Remove featured image\" phrase for the post type."
 msgstr "投稿タイプの「アイキャッチ画像を削除」として使用する文言。"
 
-#: inc/post-types.php:469
+#: inc/post-types.php:478
 msgid "Remove Featured Image"
 msgstr "アイキャッチ画像を削除"
 
-#: inc/post-types.php:465
+#: inc/post-types.php:474
 msgid "(e.g. Set featured image for this movie)"
 msgstr "(例: この映画にアイキャッチ画像を設定)"
 
-#: inc/post-types.php:461
+#: inc/post-types.php:470
 msgid "Used as the \"Set featured image\" phrase for the post type."
 msgstr "投稿タイプの「アイキャッチ画像に設定」として使用する文言。"
 
-#: inc/post-types.php:460
+#: inc/post-types.php:469
 msgid "Set Featured Image"
 msgstr "アイキャッチ画像を設定"
 
-#: inc/post-types.php:456
+#: inc/post-types.php:465
 msgid "(e.g. Featured image for this movie)"
 msgstr "(例: 映画のアイキャッチ画像)"
 
-#: inc/post-types.php:452
+#: inc/post-types.php:461
 msgid "Used as the \"Featured Image\" phrase for the post type."
 msgstr "投稿タイプの「アイキャッチ画像」として使用する文言。"
 
-#: inc/post-types.php:433
+#: inc/post-types.php:442
 msgid "Used when there are no posts to display on the post type list trash screen."
 msgstr "この投稿タイプの投稿一覧画面でゴミ箱を表示して表示対象が無かった時に使われます。"
 
-#: inc/post-types.php:424
+#: inc/post-types.php:433
 msgid "Used when there are no posts to display on the post type list screen."
 msgstr "この投稿タイプの投稿一覧画面で検索対象が見つからなかった時に使われます。"
 
-#: inc/post-types.php:415
+#: inc/post-types.php:424
 msgid "Used as the text for the search button on post type list screen."
 msgstr "この投稿タイプの投稿一覧画面で検索ボタンのラベルとして使われます。"
 
-#: inc/post-types.php:406
+#: inc/post-types.php:406 inc/post-types.php:415
 msgid "Used in the admin bar when viewing editor screen for a published post in the post type."
 msgstr "この投稿タイプの公開済投稿を投稿編集画面で表示している時、管理画面のメニューバーで使われます。"
 
@@ -573,11 +553,7 @@ msgstr "この投稿タイプの管理メニュー項目として使われます
 
 #: inc/post-types.php:235
 msgid "DO NOT EDIT the post type slug unless also planning to migrate posts. Changing the slug registers a new post type entry."
-msgstr "「投稿を改名後の投稿タイプへ移行する」を併用する場合を除き、基本、投稿タイプスラッグは編集しないでください。編集すると、既存の投稿タイプのスラッグが変わるのではなく、既存の投稿タイプとは別に、編集後のスラッグを持つ新たな投稿タイプが登録されることになります。"
-
-#: inc/post-types.php:230 inc/taxonomies.php:231
-msgid "Slugs should only contain alphanumeric, latin characters. Underscores or dashes should be used in place of spaces."
-msgstr "スラッグには半角英数字・半角ラテン文字だけを含めるようにしましょう。スペースの代わりにアンダースコアかダッシュを使ってください。"
+msgstr "投稿を改名後の投稿タイプへ移行する場合を除き、投稿タイプのスラッグを編集しないでください。既存の投稿タイプのスラッグが変わるのではなく、新たな投稿タイプが登録されることになります。"
 
 #: inc/post-types.php:224
 msgid "The post type name/slug. Used for various queries for post type content."
@@ -595,147 +571,119 @@ msgstr "投稿タイプを表示"
 msgid "Are you sure you want to delete this? Deleting will NOT remove created content."
 msgstr "本当に削除してもよろしいですか ? なお、この削除を行っても、関連づけられた作成済みコンテンツは削除されません。"
 
-#: inc/about.php:80
-msgid "We have continued working on the accessibility of the plugin, building off what we accomplished in previous releases. If you have feedback on where it could be further improved, let us know."
-msgstr "以前のリリースにおける成果に甘んじることなく、プラグインのアクセシビリティ向上へむけ、さらなる取り組みを継続しております。改善の余地など御意見ございましたら御連絡をお願いします。"
-
-#: inc/about.php:79
-msgid "Continued accessibility improvements"
-msgstr "継続的なアクセシビリティの改善"
-
-#: inc/about.php:76
-msgid "We improved what we do after registering a new post type or taxonomy to better prevent having to manually flush rewrite rules."
-msgstr "新たな投稿タイプやタクソノミーが登録された後の処理を改善し、リライトルールを手動でリフレッシュしなければならないケースを減らしました。"
-
-#: inc/about.php:75
-msgid "Improved rewrite rules flushing"
-msgstr "リライトルールリフレッシュの改善"
-
-#: inc/about.php:72
-msgid "We added measures on the post type and taxonomy slug inputs to prevent using characters that should not be used in slugs. This is primarily for when adding new post types and taxonomies, but will also affect when editing existing options. Do not hesitate to contact support if you are experiencing issues."
-msgstr "投稿タイプ・タクソノミーのスラッグ入力時にスラッグで使用すべきではない文字が混入しないよう対策を講じました。この対策は、基本的には新たな投稿タイプ・タクソノミーを追加する時のためのものですが、既存のものを編集する際にも影響してきます。この対策によるものと思われる何らかの問題に直面した場合は、どうそ遠慮なくサポート窓口まで御相談ください。"
-
-#: inc/about.php:71
-msgid "Slug prevention measures"
-msgstr "スラッグの不正文字対策"
-
-#: inc/about.php:62
-msgid "Evolved UI for Custom Post Type UI"
-msgstr "Custom Post Type UI の進化した UI"
-
 #: inc/taxonomies.php:703
 msgid "(default: taxonomy slug). Query var needs to be true to use."
 msgstr "(デフォルト: タクソノミーのスラッグ) 使用するには「クエリ変数」設定 true が要"
 
-#: inc/support.php:146
+#: inc/support.php:148
 msgid "Please see the solution from the following forum support thread."
 msgstr "サポートフォーラムの以下のスレッドから解決策をご覧ください。"
 
-#: inc/support.php:144
+#: inc/support.php:146
 msgid "Is there any way to get CPTUI-registered post types working with Visual Composer Media Grid?"
 msgstr "CPTUI で登録した投稿タイプを Visual Composer Media Grid で使うには ?"
 
-#: inc/support.php:139
+#: inc/support.php:141
 msgid "We recommend using VelocityPage."
 msgstr "VelocityPage を使うことをお勧めします。"
 
-#: inc/support.php:138
+#: inc/support.php:140
 msgid "Do you have any recommendations for an alternative to Visual Composer?"
 msgstr "Visual Composer の代替としてお勧めのものはありますか ?"
 
-#: inc/support.php:120
+#: inc/support.php:122
 msgid "Visit the Import/Export page and copy the export code into the import side on the left. Replace the space with an underscore and then click \"Import\". You should be able to delete the individual post types afterwards."
 msgstr "インポート/エクスポートページを開き、右方のエクスポート側に表示されているコードを左方のインポート側にコピーしてください。コピーした内容の空白文字部分をアンダースコアに置き換えてから「インポート」をクリックしてください。以上を行った後は、各投稿タイプが削除できるようになっているはずです。"
 
-#: inc/support.php:119
+#: inc/support.php:121
 msgid "I have post types with spaces in their slug and can not successfully delete them. How can I fix that?"
 msgstr "スラッグに空白文字が含まれている投稿タイプが削除できません。どうすればよいですか ?"
 
-#: inc/post-types.php:780
+#: inc/post-types.php:798
 msgid "Custom query var slug to use instead of the default."
 msgstr "デフォルト値の代替として使うカスタムクエリー変数スラッグ"
 
-#: inc/post-types.php:779
+#: inc/post-types.php:797
 msgid "(default: post type slug) Query var needs to be true to use."
 msgstr "(デフォルト: 投稿タイプのスラッグ) 使用するには「クエリ変数」設定 true が要"
 
-#: inc/post-types.php:778
+#: inc/post-types.php:796
 msgid "Custom Query Var Slug"
 msgstr "カスタムクエリー変数スラッグ"
 
-#: inc/post-types.php:640 inc/taxonomies.php:821
+#: inc/post-types.php:658 inc/taxonomies.php:821
 msgid "Slug to use in REST API URLs."
 msgstr "REST API の URL で使うスラッグ"
 
-#: inc/post-types.php:639 inc/taxonomies.php:820
+#: inc/post-types.php:657 inc/taxonomies.php:820
 msgid "REST API base slug"
 msgstr "REST API ベーススラッグ"
 
-#: inc/post-types.php:631 inc/taxonomies.php:812
+#: inc/post-types.php:649 inc/taxonomies.php:812
 msgid "Show in REST API"
 msgstr "REST API で表示"
 
-#: inc/post-types.php:615
+#: inc/post-types.php:633
 msgid "Show in Nav Menus"
 msgstr "ナビゲーションメニューに表示"
 
-#: inc/listings.php:416
+#: inc/listings.php:444
 msgid "No taxonomies registered for display. Visit %s to get started."
 msgstr "表示対象となる登録済みタクソノミーはありません。サブメニューの「%s」から登録してください。"
 
-#: inc/listings.php:343
+#: inc/listings.php:368
 msgid "*Replace \"term_slug\" with the slug of the actual taxonomy term."
 msgstr "*「term_slug」の部分は、タクソノミーの実際のスラッグに読み替えてください。"
 
-#: inc/listings.php:334 inc/post-types.php:487
+#: inc/post-types.php:496
 msgid "Archives"
 msgstr "アーカイブ別"
 
-#: inc/listings.php:397
+#: inc/listings.php:425
 msgid "No post types registered for display. Visit %s to get started."
 msgstr "表示対象となる登録済み投稿タイプはありません。サブメニューの「%s」から登録してください。"
 
-#: inc/listings.php:189 inc/listings.php:348
+#: inc/listings.php:204 inc/listings.php:373
 msgid "Template hierarchy Theme Handbook"
 msgstr "テンプレート階層について (テーマハンドブック)"
 
-#: inc/listings.php:174
+#: inc/listings.php:189
 msgid "Single Posts file name examples."
 msgstr "投稿個別表示のファイル名の例。"
 
-#: inc/listings.php:168
+#: inc/listings.php:183 inc/listings.php:359
 msgid "Archives file name examples."
 msgstr "アーカイブのファイル名の例。"
 
-#: inc/listings.php:51 inc/listings.php:236
+#: inc/listings.php:51 inc/listings.php:254
 msgid "Template Hierarchy"
 msgstr "テンプレート階層"
 
-#: inc/import_export.php:747
+#: inc/tools.php:815
 msgid "Send debug info"
 msgstr "デバッグ情報の送信"
 
-#: inc/import_export.php:738
+#: inc/tools.php:806
 msgid "Please provide an email address to send debug information to: "
 msgstr "デバッグ情報の送信先電子メールアドレスを入力してください: "
 
-#: inc/import_export.php:711
+#: inc/tools.php:779
 msgid "%s Taxonomy"
 msgstr "%s タクソノミー"
 
-#: inc/import_export.php:694
+#: inc/tools.php:762
 msgid "%s Post Type"
 msgstr "%s 投稿タイプ"
 
-#: inc/import_export.php:586
+#: inc/tools.php:652
 msgid "This will not export the associated posts or taxonomy terms, just the settings."
 msgstr "エクスポートされるのは設定内容だけです。投稿データやタクソノミータームのデータはエクスポートされません。"
 
-#: inc/import_export.php:56
+#: inc/tools.php:57
 msgid "Debug Info"
 msgstr "デバッグ情報"
 
-#: inc/about.php:58
+#: inc/about.php:59
 msgid "What's new in version %s"
 msgstr "バージョン %s の新着情報"
 
@@ -763,15 +711,15 @@ msgstr "WordPress でカスタム投稿タイプおよびカスタムタクソ�
 msgid "https://github.com/WebDevStudios/custom-post-type-ui/"
 msgstr "https://github.com/WebDevStudios/custom-post-type-ui/"
 
-#: inc/utility.php:594
+#: inc/utility.php:621
 msgid "Please choose a different taxonomy name. %s is already registered."
 msgstr "ほかのタクソノミースラッグを指定してください。 %s は既に登録されています。"
 
-#: inc/taxonomies.php:1083
+#: inc/taxonomies.php:1089
 msgid "Please provide a taxonomy name"
 msgstr "カスタムタクソノミー名を入力してください"
 
-#: inc/taxonomies.php:1010
+#: inc/taxonomies.php:1016
 msgid "Please provide a taxonomy to delete"
 msgstr "削除するカスタムタクソノミーを入力してください"
 
@@ -938,103 +886,103 @@ msgstr "(例: 俳優)"
 msgid "Taxonomy Slug"
 msgstr "タクソノミースラッグ"
 
-#: inc/support.php:228
+#: inc/support.php:245
 msgid "Change text inside the post/page editor title field. Should be able to adapt as necessary."
 msgstr "投稿 / 固定ページ編集画面のタイトルフィールド内の文字列を変更してください。以下のコードを用途に応じて調整してお使いください。"
 
-#: inc/support.php:227
+#: inc/support.php:244
 msgid "How do I filter the \"enter title here\" text in the post editor screen?"
 msgstr "投稿編集画面に表示される「ここにタイトルを入力」という文字列をフィルターしてカスタマイズするには ?"
 
-#: inc/support.php:223
+#: inc/support.php:240
 msgid "%s has compiled a nice list of functions used by our plugin. Note not all will be useful as they are attached to hooks."
 msgstr "%s に、このプラグインで使われている関数のかなりの部分についてリファレンスが収録されています。一部の関数についてはフックに付随しており単独では有用ではないので注意ください。"
 
-#: inc/support.php:222
+#: inc/support.php:239
 msgid "Is there any function reference list?"
 msgstr "関数リファレンスはありますか ?"
 
-#: inc/support.php:213
+#: inc/support.php:230
 msgid "%s has an excellent %spost%s introducing users to the %sPosts 2 Posts%s plugin that should be a good start."
 msgstr "%s による、 %sPosts 2 Posts%s プラグインの素晴らしい%s紹介記事%sが良い参考になるでしょう。"
 
-#: inc/support.php:210
+#: inc/support.php:226
 msgid "Post relationships?"
 msgstr "投稿間の関連付けを行うには ?"
 
-#: inc/support.php:204
+#: inc/support.php:220
 msgid "Check out the %s function for documentation and usage examples."
 msgstr "%s 関数のドキュメントや使用例を参照ください。"
 
-#: inc/support.php:201
+#: inc/support.php:216
 msgid "How do I add a newly registered taxonomy to a post type that already exists?"
 msgstr "新たに登録したタクソノミーを既存の投稿タイプに追加するには ?"
 
-#: inc/support.php:195
+#: inc/support.php:210
 msgid "We recommend checking out %s, the latest iteration of \"Custom Metaboxes and Fields for WordPress\". Both are maintained by WebDevStudios."
 msgstr "%s をお試しになることをお勧めします。Custom Metaboxes and Fields for WordPress の最新後継バージョンです。 前身バージョンも後継バージョンもどちらも WebDevStudios が保守を行っています。"
 
-#: inc/support.php:192
+#: inc/support.php:206
 msgid "How do I add custom metaboxes to my post type?"
 msgstr "カスタムメタボックスを投稿タイプに追加するには ?"
 
-#: inc/support.php:189
+#: inc/support.php:203
 msgid "Advanced"
 msgstr "上級者モード"
 
-#: inc/support.php:182
+#: inc/support.php:196
 msgid "You will need to add your newly created post type to the types that the category and tag archives query for. You can see a tutorial on how to do that at %s"
 msgstr "カテゴリーアーカイブ・タグアーカイブのクエリーに、検索対象として、作成したカスタム投稿タイプを加える必要があります。それに関するチュートリアルが %s にあります。"
 
-#: inc/support.php:181
+#: inc/support.php:192
 msgid "I have added categories and tags to my custom post type, but they do not appear in the archives."
 msgstr "カテゴリーとタグをカスタム投稿タイプに追加しましたが、アーカイブに現れません"
 
-#: inc/support.php:168
+#: inc/support.php:178
 msgid "How do I display my custom post type on my site?"
 msgstr "カスタム投稿タイプをサイトに表示するには"
 
-#: inc/support.php:161
+#: inc/support.php:171
 msgid "Please visit the %sTemplate Hierarchy%s page on the WordPress codex for details about available templates."
 msgstr "利用可能なテンプレートについて詳しくは、 WordPress codex の%sテンプレート階層%sのページをご覧ください。"
 
-#: inc/support.php:158
+#: inc/support.php:167
 msgid "What template files should I edit to alter my post type display?"
 msgstr "作成したカスタム投稿タイプの投稿について表示のされ方を変えたい時は、どのテンプレートファイルを編集すれば良いですか ?"
 
-#: inc/support.php:155
+#: inc/support.php:164
 msgid "Front-end Display"
 msgstr "フロントエンドの表示"
 
-#: inc/support.php:135
+#: inc/support.php:137
 msgid "Make sure your theme has post \"post-thumbnails\" theme support enabled."
 msgstr "お使いのテーマで投稿に対する「アイキャッチ画像」機能が有効になっているかどうか確認してください。"
 
-#: inc/support.php:134
+#: inc/support.php:136
 msgid "I have added post thumbnail and/or post format support to my post type, but those do not appear when adding a post type post."
 msgstr "カスタム投稿タイプに対して、投稿サムネイルの追加かつ / ないし投稿フォーマットのサポート追加を行いましたが、当該投稿タイプの投稿を追加してもそれらが表示されません。"
 
-#: inc/support.php:131
+#: inc/support.php:133
 msgid "Renaming the slug for a post type or taxonomy creates a new entry in our saved option which gets registered as its own post type or taxonomy. Since the settings will be mirrored from the previous slug, you will just need to delete the previous version's entry."
 msgstr "カスタム投稿タイプやタクソノミーのスラッグを変更すると、保存されたオプションに新しい項目が作成され、独自の投稿タイプまたはタクソノミーとして登録されます。設定は以前のスラッグから反映されるため、古いバージョンの項目を削除するだけで完了です。"
 
-#: inc/support.php:130
+#: inc/support.php:132
 msgid "I changed my custom post type or taxonomy slug and now I have duplicates shown. How do I remove the duplicate?"
 msgstr "カスタム投稿タイプやタクソノミーのスラッグを変更したら変更前のと変更後のが重複して表示されるようになりました。重複をなくすにはどうすればよいですか ?"
 
-#: inc/support.php:125
+#: inc/support.php:127
 msgid "You can either change the custom post type name back to the original name or try the Post Type Switcher plugin"
 msgstr "カスタム投稿タイプの名前を元に戻すか、または Post Type Switcher プラグインをお試しください。"
 
-#: inc/support.php:124
+#: inc/support.php:126
 msgid "I changed my custom post type name and now I can not get to my posts. How do I get them back?"
 msgstr "カスタム投稿タイプの名前を変更したら投稿が取得できなくなりました。どうすれば元に戻せますか ?"
 
-#: inc/support.php:116
+#: inc/support.php:118
 msgid "General"
 msgstr "一般"
 
-#: inc/support.php:63
+#: inc/support.php:64
 msgid "Support Forums"
 msgstr "サポートフォーラム"
 
@@ -1042,178 +990,178 @@ msgstr "サポートフォーラム"
 msgid "Custom Post Type UI Support"
 msgstr "Custom Post Type UI サポート"
 
-#: inc/utility.php:580
+#: inc/utility.php:607
 msgid "Please choose a different post type name. %s is already registered."
 msgstr "別の投稿タイプ名を選択してください。「%s」はすでに登録されています。"
 
-#: inc/utility.php:622
+#: inc/utility.php:649
 msgid "Please do not use quotes in post type/taxonomy names or rewrite slugs"
 msgstr "投稿タイプ / タクソノミーの名前またはリライトスラッグにはクオート (引用符) を使用しないでください"
 
-#: inc/post-types.php:1297
+#: inc/post-types.php:1318
 msgid "Please provide a post type name"
 msgstr "投稿タイプ名を入力してください"
 
-#: inc/post-types.php:1223
+#: inc/post-types.php:1245
 msgid "Please provide a post type to delete"
 msgstr "削除対象の投稿タイプを指定してください"
 
-#: inc/post-types.php:1060
+#: inc/post-types.php:1078
 msgid "Adds %s support"
 msgstr "%s サポートの追加"
 
-#: inc/post-types.php:1028
+#: inc/post-types.php:1046
 msgid "Built-in Taxonomies"
 msgstr "利用するタクソノミー"
 
-#: inc/post-types.php:1022
+#: inc/post-types.php:1040
 msgid "Provide custom support slugs here."
 msgstr "カスタム「サポート」のスラッグを入力。"
 
-#: inc/post-types.php:1015 inc/post-types.php:1016
+#: inc/post-types.php:1033 inc/post-types.php:1034
 msgid "Custom \"Supports\""
 msgstr "カスタム「サポート」"
 
-#: inc/post-types.php:1008
+#: inc/post-types.php:1026
 msgid "None"
 msgstr "なし"
 
-#: inc/post-types.php:865
+#: inc/post-types.php:883
 msgid "Use the \"None\" option to explicitly set \"supports\" to false."
 msgstr "すべてのサポートを明示的に無効化したい場合は「なし」をチェック。"
 
-#: inc/post-types.php:997
+#: inc/post-types.php:1015
 msgid "Post Formats"
 msgstr "投稿フォーマット"
 
-#: inc/post-types.php:986
+#: inc/post-types.php:1004
 msgid "Page Attributes"
 msgstr "ページ属性"
 
-#: inc/post-types.php:975
+#: inc/post-types.php:993
 msgid "Author"
 msgstr "登録者"
 
-#: inc/post-types.php:451 inc/post-types.php:909
+#: inc/post-types.php:460 inc/post-types.php:927
 msgid "Featured Image"
 msgstr "アイキャッチ画像"
 
-#: inc/post-types.php:964
+#: inc/post-types.php:982
 msgid "Revisions"
 msgstr "リビジョン"
 
-#: inc/post-types.php:953
+#: inc/post-types.php:971
 msgid "Comments"
 msgstr "コメント"
 
-#: inc/post-types.php:942
+#: inc/post-types.php:960
 msgid "Custom Fields"
 msgstr "カスタムフィールド"
 
-#: inc/post-types.php:931
+#: inc/post-types.php:949
 msgid "Trackbacks"
 msgstr "トラックバック"
 
-#: inc/post-types.php:920
+#: inc/post-types.php:938
 msgid "Excerpt"
 msgstr "抜粋"
 
-#: inc/post-types.php:894
+#: inc/post-types.php:912
 msgid "Editor"
 msgstr "エディター"
 
-#: inc/post-types.php:879
+#: inc/post-types.php:897
 msgid "Title"
 msgstr "タイトル"
 
-#: inc/post-types.php:846
+#: inc/post-types.php:864
 msgid "(Full URL for icon or Dashicon class)"
 msgstr "(アイコン画像の完全な URL または Dashicon のクラス名)"
 
-#: inc/post-types.php:841
+#: inc/post-types.php:859
 msgid "Menu Icon"
 msgstr "メニューアイコン"
 
-#: inc/post-types.php:810
+#: inc/post-types.php:828
 msgid "\"Show UI\" must be \"true\". If an existing top level page such as \"tools.php\" is indicated for second input, post type will be sub menu of that."
 msgstr "「UI を表示」が true の場合のみ有意です。2番目の入力欄へ「tools.php」のように既存のトップレベルページを指定すると、この投稿タイプのメニューがそのトップレベルページのサブメニューとして表示されます。"
 
-#: inc/post-types.php:809
+#: inc/post-types.php:827
 msgid "Show in Menu"
 msgstr "メニューに表示"
 
-#: inc/post-types.php:803
+#: inc/post-types.php:821
 msgid "The position in the menu order the post type should appear. show_in_menu must be true."
 msgstr "この投稿タイプが表示されるメニューの位置。「メニューに表示」が true の場合のみ有意。"
 
-#: inc/post-types.php:784
+#: inc/post-types.php:802
 msgid "Menu Position"
 msgstr "メニューの位置"
 
-#: inc/post-types.php:769 inc/taxonomies.php:694
+#: inc/post-types.php:787 inc/taxonomies.php:694
 msgid "Query Var"
 msgstr "クエリー変数"
 
-#: inc/post-types.php:753
+#: inc/post-types.php:771
 msgid "With Front"
 msgstr "フロントでのリライト"
 
-#: inc/post-types.php:739
+#: inc/post-types.php:757
 msgid "Custom post type slug to use instead of the default."
 msgstr "デフォルトの代わりに使うカスタム投稿タイプのスラッグ。"
 
-#: inc/post-types.php:738
+#: inc/post-types.php:756
 msgid "(default: post type slug)"
 msgstr "(デフォルト: 投稿タイプのスラッグ)"
 
-#: inc/post-types.php:737 inc/taxonomies.php:733
+#: inc/post-types.php:755 inc/taxonomies.php:733
 msgid "Custom Rewrite Slug"
 msgstr "カスタムリライトスラッグ"
 
-#: inc/post-types.php:728 inc/taxonomies.php:723
+#: inc/post-types.php:746 inc/taxonomies.php:723
 msgid "Rewrite"
 msgstr "リライト"
 
-#: inc/post-types.php:712 inc/taxonomies.php:614
+#: inc/post-types.php:730 inc/taxonomies.php:614
 msgid "Hierarchical"
 msgstr "階層"
 
-#: inc/post-types.php:698
+#: inc/post-types.php:716
 msgid "The post type to use for checking read, edit, and delete capabilities."
 msgstr "閲覧 / 編集 / 削除の権限をチェックするのに使われる、投稿タイプを示す文字列。"
 
-#: inc/post-types.php:697
+#: inc/post-types.php:715
 msgid "Capability Type"
 msgstr "権限タイプ"
 
-#: inc/post-types.php:688
+#: inc/post-types.php:706
 msgid "Exclude From Search"
 msgstr "検索から除外"
 
-#: inc/post-types.php:671
+#: inc/post-types.php:689
 msgid "Slug to be used for archive URL."
 msgstr "アーカイブ URL に使うスラッグ。"
 
-#: inc/post-types.php:646
+#: inc/post-types.php:664
 msgid "If left blank, the archive slug will default to the post type slug."
 msgstr "空にしておくと投稿タイプのスラッグをデフォルトのアーカイブのスラッグとして利用します。"
 
-#: inc/post-types.php:645
+#: inc/post-types.php:663
 msgid "Has Archive"
 msgstr "アーカイブあり"
 
-#: inc/post-types.php:599 inc/taxonomies.php:634
+#: inc/post-types.php:617 inc/taxonomies.php:634
 msgid "Show UI"
 msgstr "UI を表示"
 
-#: inc/post-types.php:567 inc/taxonomies.php:594
+#: inc/post-types.php:585 inc/taxonomies.php:594
 msgid "Public"
 msgstr "一般公開"
 
-#: inc/post-types.php:559 inc/post-types.php:575 inc/post-types.php:591
-#: inc/post-types.php:607 inc/post-types.php:623 inc/post-types.php:652
-#: inc/post-types.php:680 inc/post-types.php:704 inc/post-types.php:720
-#: inc/post-types.php:745 inc/post-types.php:761 inc/post-types.php:816
+#: inc/post-types.php:577 inc/post-types.php:593 inc/post-types.php:609
+#: inc/post-types.php:625 inc/post-types.php:641 inc/post-types.php:670
+#: inc/post-types.php:698 inc/post-types.php:722 inc/post-types.php:738
+#: inc/post-types.php:763 inc/post-types.php:779 inc/post-types.php:834
 #: inc/taxonomies.php:584 inc/taxonomies.php:606 inc/taxonomies.php:624
 #: inc/taxonomies.php:644 inc/taxonomies.php:664 inc/taxonomies.php:684
 #: inc/taxonomies.php:713 inc/taxonomies.php:742 inc/taxonomies.php:764
@@ -1221,10 +1169,10 @@ msgstr "一般公開"
 msgid "True"
 msgstr "True"
 
-#: inc/post-types.php:558 inc/post-types.php:574 inc/post-types.php:590
-#: inc/post-types.php:606 inc/post-types.php:622 inc/post-types.php:651
-#: inc/post-types.php:679 inc/post-types.php:703 inc/post-types.php:719
-#: inc/post-types.php:744 inc/post-types.php:760 inc/post-types.php:815
+#: inc/post-types.php:576 inc/post-types.php:592 inc/post-types.php:608
+#: inc/post-types.php:624 inc/post-types.php:640 inc/post-types.php:669
+#: inc/post-types.php:697 inc/post-types.php:721 inc/post-types.php:737
+#: inc/post-types.php:762 inc/post-types.php:778 inc/post-types.php:833
 #: inc/taxonomies.php:581 inc/taxonomies.php:603 inc/taxonomies.php:621
 #: inc/taxonomies.php:641 inc/taxonomies.php:661 inc/taxonomies.php:681
 #: inc/taxonomies.php:710 inc/taxonomies.php:739 inc/taxonomies.php:761
@@ -1232,35 +1180,35 @@ msgstr "True"
 msgid "False"
 msgstr "False"
 
-#: inc/post-types.php:447
+#: inc/post-types.php:456
 msgid "(e.g. Parent Movie:)"
 msgstr "(例: 親映画: )"
 
-#: inc/post-types.php:442
+#: inc/post-types.php:451
 msgid "Parent"
 msgstr "親"
 
-#: inc/post-types.php:437
+#: inc/post-types.php:446
 msgid "(e.g. No Movies found in Trash)"
 msgstr "(例: ゴミ箱内に映画が見つかりません)"
 
-#: inc/post-types.php:432
+#: inc/post-types.php:441
 msgid "Not Found in Trash"
 msgstr "ゴミ箱にはありません。"
 
-#: inc/post-types.php:428
+#: inc/post-types.php:437
 msgid "(e.g. No Movies found)"
 msgstr "(例: 映画が見つかりません)"
 
-#: inc/post-types.php:423
+#: inc/post-types.php:432
 msgid "Not Found"
 msgstr "見つかりません"
 
-#: inc/post-types.php:419
+#: inc/post-types.php:428
 msgid "(e.g. Search Movie)"
 msgstr "(例: 映画を検索)"
 
-#: inc/post-types.php:414
+#: inc/post-types.php:423
 msgid "Search Item"
 msgstr "項目検索"
 
@@ -1324,21 +1272,21 @@ msgstr "投稿タイプのカスタム管理メニュー名。"
 msgid "Menu Name"
 msgstr "メニュー名"
 
-#: inc/post-types.php:311 inc/post-types.php:1115
+#: inc/post-types.php:311 inc/post-types.php:1133
 msgid "Add Post Type"
 msgstr "投稿タイプを追加"
 
-#: inc/post-types.php:299 inc/post-types.php:1103
+#: inc/post-types.php:299 inc/post-types.php:1121
 msgid "Delete Post Type"
 msgstr "投稿タイプを削除"
 
-#: inc/post-types.php:288 inc/post-types.php:1092
+#: inc/post-types.php:288 inc/post-types.php:1110
 msgid "Save Post Type"
 msgstr "投稿タイプを保存"
 
 #: inc/post-types.php:244
 msgid "Migrate posts to newly renamed post type?"
-msgstr "投稿を改名後の投稿タイプへ移行する。"
+msgstr "投稿を改名後の投稿タイプへ移行する"
 
 #: inc/taxonomies.php:396
 msgid "Description"
@@ -1376,23 +1324,23 @@ msgstr "選択"
 msgid "Select: "
 msgstr "選択: "
 
-#: inc/listings.php:232
+#: inc/listings.php:250
 msgid "Taxonomy"
 msgstr "タクソノミー"
 
-#: inc/listings.php:163 inc/listings.php:329
+#: inc/listings.php:177 inc/listings.php:353
 msgid "No custom labels to display"
 msgstr "表示するカスタムラベルがありません"
 
-#: inc/listings.php:121
+#: inc/listings.php:125
 msgid "View frontend archive"
 msgstr "フロントエンドでアーカイブを表示"
 
-#: inc/listings.php:50 inc/listings.php:235
+#: inc/listings.php:50 inc/listings.php:253
 msgid "Labels"
 msgstr "ラベル"
 
-#: inc/listings.php:48 inc/post-types.php:861
+#: inc/listings.php:48 inc/post-types.php:879
 msgid "Supports"
 msgstr "サポート"
 
@@ -1404,197 +1352,192 @@ msgstr "投稿タイプ"
 msgid "Post Types and Taxonomies registered by Custom Post Type UI."
 msgstr "Custom Post Type UI で登録された投稿タイプとタクソノミー"
 
-#: inc/import_export.php:517
-msgid "Post types"
-msgstr "投稿タイプ"
-
-#: inc/import_export.php:290
+#: inc/tools.php:327
 msgid "No post types to display at this time"
 msgstr "現時点で表示する投稿タイプはありません"
 
-#: inc/import_export.php:168
+#: inc/tools.php:196
 msgid "No taxonomies to display at this time"
 msgstr "現時点で表示するタクソノミーはありません"
 
-#: inc/import_export.php:700
+#: inc/tools.php:768
 msgid "All CPT UI Taxonomies"
 msgstr "すべての CPT UI タクソノミー"
 
-#: inc/import_export.php:686 inc/import_export.php:695
-#: inc/import_export.php:703 inc/import_export.php:712
+#: inc/tools.php:754 inc/tools.php:763 inc/tools.php:771 inc/tools.php:780
 msgid "Copy/paste the code below into your functions.php file."
 msgstr "以下のコードを functions.php ファイルにコピー & ペーストしてください。"
 
-#: inc/import_export.php:683
+#: inc/tools.php:749
 msgid "All CPT UI Post Types"
 msgstr "すべての CPT UI 投稿タイプ"
 
-#: inc/import_export.php:681
+#: inc/tools.php:747
 msgid "Get Post Type and Taxonomy Code"
 msgstr "投稿タイプ・タクソノミーに関するコードを取得"
 
-#: inc/import_export.php:663
+#: inc/tools.php:729
 msgid "Use the content above to import current taxonomies into a different WordPress site. You can also use this to simply back up your taxonomy settings."
 msgstr "現在のタクソノミー設定を別なサイトにインポートしたい時は上の欄にあるコンテンツを使ってください。設定内容をバックアップするためにこのコンテンツを使うこともできます。"
 
-#: inc/import_export.php:657
+#: inc/tools.php:723
 msgid "No taxonomies registered yet."
 msgstr "タクソノミーはまだ登録されていません。"
 
-#: inc/import_export.php:651
+#: inc/tools.php:717
 msgid "Export Taxonomies"
 msgstr "タクソノミーのエクスポート"
 
-#: inc/import_export.php:642
+#: inc/tools.php:708
 msgid "To import taxonomies from a different WordPress site, paste the exported content from that site and click the \"Import\" button."
 msgstr "別のサイトからタクソノミーをインポートするには、移行元サイトでエクスポートしたコンテンツを移行先サイトで貼り付けてインポートボタンを押してください。"
 
-#: inc/import_export.php:632
+#: inc/tools.php:698
 msgid "Import Taxonomies"
 msgstr "タクソノミーをインポート"
 
-#: inc/import_export.php:625
+#: inc/tools.php:691
 msgid "Use the content above to import current post types into a different WordPress site. You can also use this to simply back up your post type settings."
 msgstr "現在の投稿タイプ設定を別なサイトにインポートしたい時は上の欄にあるコンテンツを使ってください。設定内容をバックアップするためにこのコンテンツを使うこともできます。"
 
-#: inc/import_export.php:622 inc/import_export.php:660
+#: inc/tools.php:688 inc/tools.php:726
 msgid "To copy the system info, click below then press Ctrl + C (PC) or Cmd + C (Mac)."
 msgstr "設定をコピーするには下の領域をクリックしてCtrl + C (PC) または Cmd + C (Mac) を押してください。"
 
-#: inc/import_export.php:619
+#: inc/tools.php:685
 msgid "No post types registered yet."
 msgstr "投稿タイプはまだ登録されていません。"
 
-#: inc/import_export.php:613
+#: inc/tools.php:679
 msgid "Export Post Types"
 msgstr "投稿タイプをエクスポート"
 
-#: inc/import_export.php:608 inc/import_export.php:646
+#: inc/tools.php:674 inc/tools.php:712
 msgid "Import"
 msgstr "インポート"
 
-#: inc/import_export.php:604
+#: inc/tools.php:670
 msgid "To import post types from a different WordPress site, paste the exported content from that site and click the \"Import\" button."
 msgstr "別のサイトから投稿タイプをインポートするには、移行元サイトでエクスポートしたコンテンツを移行先サイトで貼り付けてインポートボタンを押してください。"
 
-#: inc/import_export.php:600 inc/import_export.php:638
+#: inc/tools.php:666 inc/tools.php:704
 msgid "Importing will overwrite previous registered settings."
 msgstr "インポートすると、以前に登録した設定はインポートした内容で上書きされます。"
 
-#: inc/import_export.php:600 inc/import_export.php:638
+#: inc/tools.php:666 inc/tools.php:704
 msgid "Note:"
 msgstr "注:"
 
-#: inc/import_export.php:597 inc/import_export.php:635
+#: inc/tools.php:663 inc/tools.php:701
 msgid "Paste content here."
 msgstr "ここにコンテンツをペーストしてください。"
 
-#: inc/import_export.php:594
+#: inc/tools.php:660
 msgid "Import Post Types"
 msgstr "投稿タイプをインポート"
 
-#: inc/import_export.php:585
+#: inc/tools.php:651
 msgid "NOTE"
 msgstr "注"
 
-#: inc/import_export.php:579
+#: inc/tools.php:645
 msgid "If you are wanting to migrate registered post types or taxonomies from this site to another, that will also use Custom Post Type UI, use the import and export functionality. If you are moving away from Custom Post Type UI, use the information in the \"Get Code\" tab."
 msgstr "ここで提供するインポート/エクスポート機能は、 Custom Post Type UI を使用している複数のサイトの間で、当該プラグインにて登録した投稿タイプ・タクソノミー設定を移行するために使うものです。Custom Post Type UI の使用をやめる際の移行には「コードを取得」タブの機能を使ってください。"
 
-#: custom-post-type-ui.php:842
+#: custom-post-type-ui.php:854
 msgid "Choose from the most used %s"
 msgstr "最もよく使われている%sから選択"
 
-#: custom-post-type-ui.php:841
+#: custom-post-type-ui.php:853
 msgid "Add or remove %s"
 msgstr "%s を追加または削除"
 
-#: custom-post-type-ui.php:840
+#: custom-post-type-ui.php:852
 msgid "Separate %s with commas"
 msgstr "%s が複数ある場合はコンマで区切ってください。"
 
-#: custom-post-type-ui.php:839
+#: custom-post-type-ui.php:851
 msgid "New %s name"
 msgstr "新しい %s の名前"
 
-#: custom-post-type-ui.php:837
+#: custom-post-type-ui.php:849
 msgid "Update %s"
 msgstr "%s を更新"
 
-#: custom-post-type-ui.php:835
+#: custom-post-type-ui.php:847
 msgid "Parent %s:"
 msgstr "親 %s:"
 
-#: custom-post-type-ui.php:834
+#: custom-post-type-ui.php:846
 msgid "Parent %s"
 msgstr "親 %s"
 
-#: custom-post-type-ui.php:832
+#: custom-post-type-ui.php:844
 msgid "Popular %s"
 msgstr "人気の %s"
 
-#: custom-post-type-ui.php:828
+#: custom-post-type-ui.php:840
 msgid "No %s found in trash."
 msgstr "ゴミ箱には%sがありません。"
 
-#: custom-post-type-ui.php:827
+#: custom-post-type-ui.php:839
 msgid "No %s found."
 msgstr "%s が見つかりません。"
 
-#: custom-post-type-ui.php:826 custom-post-type-ui.php:831
+#: custom-post-type-ui.php:838 custom-post-type-ui.php:843
 msgid "Search %s"
 msgstr "%s を検索"
 
-#: custom-post-type-ui.php:825 custom-post-type-ui.php:833
+#: custom-post-type-ui.php:837 custom-post-type-ui.php:845
 msgid "All %s"
 msgstr "%s 一覧"
 
-#: custom-post-type-ui.php:824
+#: custom-post-type-ui.php:836
 msgid "View %s"
 msgstr "表示 %s"
 
-#: custom-post-type-ui.php:823
+#: custom-post-type-ui.php:835
 msgid "New %s"
 msgstr "新規 %s"
 
-#: custom-post-type-ui.php:822 custom-post-type-ui.php:836 inc/listings.php:112
-#: inc/listings.php:290
+#: custom-post-type-ui.php:834 custom-post-type-ui.php:848 inc/listings.php:116
+#: inc/listings.php:312
 msgid "Edit %s"
 msgstr "%s を編集"
 
-#: custom-post-type-ui.php:821 custom-post-type-ui.php:838
+#: custom-post-type-ui.php:833 custom-post-type-ui.php:850
 msgid "Add new %s"
 msgstr "新規 %s を追加"
 
-#: custom-post-type-ui.php:740
+#: custom-post-type-ui.php:752
 msgid "%s has failed to be imported"
 msgstr "%s をインポートできませんでした。"
 
-#: custom-post-type-ui.php:738
+#: custom-post-type-ui.php:750
 msgid "%s has been successfully imported"
 msgstr "%s をインポートしました。"
 
-#: custom-post-type-ui.php:734 inc/utility.php:564
+#: custom-post-type-ui.php:746 inc/utility.php:569
 msgid "%s has failed to be deleted"
 msgstr "%s を削除できませんでした。"
 
-#: custom-post-type-ui.php:732 inc/utility.php:549
+#: custom-post-type-ui.php:744 inc/utility.php:554
 msgid "%s has been successfully deleted"
 msgstr "%s を削除しました。"
 
-#: custom-post-type-ui.php:728 inc/utility.php:534
+#: custom-post-type-ui.php:740 inc/utility.php:539
 msgid "%s has failed to be updated"
 msgstr "%s を更新できませんでした"
 
-#: custom-post-type-ui.php:726 inc/utility.php:519
+#: custom-post-type-ui.php:738 inc/utility.php:524
 msgid "%s has been successfully updated"
 msgstr "%s を更新しました"
 
-#: custom-post-type-ui.php:722 inc/utility.php:504
+#: custom-post-type-ui.php:734 inc/utility.php:509
 msgid "%s has failed to be added"
 msgstr "%s を追加できませんでした"
 
-#: custom-post-type-ui.php:720 inc/utility.php:489
+#: custom-post-type-ui.php:732 inc/utility.php:494
 msgid "%s has been successfully added"
 msgstr "%s を追加しました"
 
@@ -1602,21 +1545,20 @@ msgstr "%s を追加しました"
 msgid "Help"
 msgstr "ヘルプ"
 
-#: inc/listings.php:47 inc/listings.php:233 inc/post-types.php:550
+#: inc/listings.php:47 inc/listings.php:251 inc/post-types.php:568
 #: inc/taxonomies.php:572
 msgid "Settings"
 msgstr "設定"
 
-#: inc/import_export.php:49
+#: inc/tools.php:50
 msgid "Get Code"
 msgstr "コードを取得"
 
-#: inc/import_export.php:42 inc/import_export.php:563 inc/listings.php:49
-#: inc/listings.php:224
+#: inc/listings.php:49 inc/listings.php:242 inc/tools.php:43
 msgid "Taxonomies"
 msgstr "タクソノミー"
 
-#: inc/import_export.php:35 inc/listings.php:38 inc/listings.php:234
+#: inc/listings.php:38 inc/listings.php:252 inc/tools.php:36
 msgid "Post Types"
 msgstr "投稿タイプ"
 
@@ -1636,14 +1578,6 @@ msgstr "投稿タイプを編集"
 msgid "Add New Post Type"
 msgstr "新規投稿タイプを追加"
 
-#: inc/post-types.php:62
-msgid "Manage Post Types"
-msgstr "投稿タイプの管理"
-
-#: inc/taxonomies.php:62
-msgid "Manage Taxonomies"
-msgstr "タクソノミーの管理"
-
 #: inc/utility.php:111
 msgid "Follow on Twitter:"
 msgstr "Twitter でフォロー:"
@@ -1652,45 +1586,41 @@ msgstr "Twitter でフォロー:"
 msgid "%s version %s by %s"
 msgstr "%s バージョン %s 作成者: %s"
 
-#. #-#-#-#-#  tmp-custom-post-type-ui.pot (Custom Post Type UI 1.4.3) 
+#. #-#-#-#-#  tmp-custom-post-type-ui.pot (Custom Post Type UI 1.5.3) 
 #. #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: inc/about.php:34 inc/utility.php:103
 msgid "Custom Post Type UI"
 msgstr "Custom Post Type UI"
 
-#: custom-post-type-ui.php:157
+#: custom-post-type-ui.php:159
 msgid "About CPT UI"
 msgstr "CPT UI について"
 
-#: custom-post-type-ui.php:143
+#: custom-post-type-ui.php:145
 msgid "Help/Support"
-msgstr "ヘルプ・サポート"
+msgstr "ヘルプとサポート"
 
-#: custom-post-type-ui.php:142 inc/import_export.php:32
-msgid "Import/Export"
-msgstr "インポート/エクスポート"
-
-#: custom-post-type-ui.php:141
+#: custom-post-type-ui.php:143
 msgid "Registered Types/Taxes"
-msgstr "登録済み投稿タイプ/タクソノミー"
+msgstr "登録済み"
 
-#: custom-post-type-ui.php:141
+#: custom-post-type-ui.php:143
 msgid "Registered Types and Taxes"
 msgstr "登録済み投稿タイプとタクソノミー"
 
-#: custom-post-type-ui.php:140 inc/listings.php:419
+#: custom-post-type-ui.php:142 inc/listings.php:447
 msgid "Add/Edit Taxonomies"
-msgstr "タクソノミーを追加/編集"
+msgstr "タクソノミーの追加と編集"
 
-#: custom-post-type-ui.php:139 inc/listings.php:400
+#: custom-post-type-ui.php:141 inc/listings.php:428
 msgid "Add/Edit Post Types"
-msgstr "投稿タイプを追加/編集"
+msgstr "投稿タイプの追加と編集"
 
-#: custom-post-type-ui.php:138
+#: custom-post-type-ui.php:140
 msgid "CPT UI"
 msgstr "CPT UI"
 
-#: custom-post-type-ui.php:138
+#: custom-post-type-ui.php:140
 msgid "Custom Post Types"
 msgstr "カスタム投稿タイプ"
