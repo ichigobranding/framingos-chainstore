@@ -11,15 +11,15 @@
 	<!-- スマホ版対応 topbana -->
 		<?php if (wp_is_mobile()) :?>
 			<!-- topbana -->
-			<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-			<br>
+			<img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana-mobile-small.png" alt="※"/>
+			<!--<?//php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>-->
 			<!-- topbana -->
 		<?php else: ?>
 			<!-- topbana -->
 			<div class="tbanana imgbtn">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>/※">
+				<!--<a href="<?//php echo esc_url( home_url( '/' ) ); ?>/※">-->
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
-					</a>
+					<!--</a>-->
 			</div>
 			<!-- topbana -->
 		<?php endif; ?>
