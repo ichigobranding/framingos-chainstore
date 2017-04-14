@@ -44,10 +44,10 @@ get_header(); ?>
                   <?php
                     $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                     $param = array(
-                      'posts_per_page' => '1', //表示件数。-1なら全件表示
+                      'posts_per_page' => '10', //表示件数。-1なら全件表示
                       'post_type' => 'semi', //カスタム投稿タイプの名称を入れる
                       'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-                      'order' => 'ASC',
+                      'order' => 'des',
                       'paged' => $paged
                     );
                     $wp_query = new WP_Query($param);
@@ -56,21 +56,21 @@ get_header(); ?>
                       <div class="semiwaku3">
 
                                                           <!-- 満席 -->
-                                                            <?php
-                                                                   if( get_field('semiend') )
+                                                             <!--<?php
+                                                                  //if( get_field('semiend') )
                                                                   {
-                                                                  echo '<button type="button" class="btn btn-danger">満席のため締め切りました</button>';
+                                                                  //iecho '<button type="button" class="btn btn-danger">満席のため締め切りました</button>';
                                                                   }
-                                                                 else
-                                                                  if( get_field('noform') )
+                                                                 //ielse
+                                                                  //iif( get_field('noform') )
                                                                   {
-                                                                  echo '<button type="button" class="btn btn-danger">募集終了</button>';
+                                                                  //iecho '<button type="button" class="btn btn-danger">募集終了</button>';
                                                                   }
-                                                                  else
+                                                                  //ielse
                                                                   {
-                                                                  echo '';
+                                                                  //iecho '';
                                                                   }
-                                                            ?>
+                                                            ?>-->
                                                           <!-- 満席 -->
                           <li>
                             <div class="semiwaku">
