@@ -36,7 +36,7 @@ get_header(); ?>
                                                   <?php
                                                       $wp_query = new WP_Query();
                                                       $param = array(
-                                                          'posts_per_page' => '1', //表示件数。-1なら全件表示
+                                                          'posts_per_page' => '20', //表示件数。-1なら全件表示
                                                           'post_type' => array('merumaga','newss'), //取得するステータス。publishなら一般公開のもののみ
                                                           'orderby' => 'post_date', //日付順に並び替え
                                                           'order' => 'DESC',
