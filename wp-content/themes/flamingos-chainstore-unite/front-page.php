@@ -36,10 +36,10 @@
 				<div class="row">
 						<div class="col-md-6 col-md-push-3 centerc">
 							<?php get_template_part( 'messageborad' ); ?>
-							<?php get_template_part( 'messageborad-w' ); ?>
+							<!--<?//php get_template_part( 'messageborad-w' ); ?>-->
 							<?php get_template_part( 'semi-indexparts-main' ); ?>
 							<?php get_template_part( 'consul-indexparts-main' ); ?>
-							<?php get_template_part( 'index-w' ); ?>
+							<!--<?//php get_template_part( 'index-w' ); ?>-->
 							<?php get_template_part( 'blogul' ); ?>
 						</div>
 							<div class="col-md-3 col-md-pull-6">
