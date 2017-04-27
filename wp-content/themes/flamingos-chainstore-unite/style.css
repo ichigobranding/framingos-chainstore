@@ -1312,6 +1312,31 @@ font-size: 16px;
    特定商取引
 
 *****************************/
+/*****************************
 
+    セミナー募集の申し込みボタン
 
+ *****************************/
 
+.sendform{
+    width: 100%;
+    height:60px;
+    font-size:25px;
+}
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #a94442;
+    border-color: #204d74;
+}
+/*****************************
+
+    セミナー募集の申し込みボタン
+
+ *****************************/
+/*****************************
+   コンサル　設定変更
+ *****************************/
+.right4{
+    float:right;
+}
+ /****************************/
