@@ -3,5 +3,5 @@
   <?php get_template_part( 'newblogside' ); ?>
   <?php get_template_part( 'amebloside' ); ?>
   <?php get_template_part( 'temaside' ); ?>
-  <?php get_template_part( 'bookmarkside' ); ?>
+  <!--<?//php get_template_part( 'bookmarkside' ); ?>-->
 </div>
