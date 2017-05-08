@@ -1340,3 +1340,16 @@ font-size: 16px;
     float:right;
 }
  /****************************/
+/*****************************
+   テーマ階層
+ *****************************/
+li.children{
+    padding:0 0 0 0px;
+    margin:0 0 0 10px;
+}
+li.children:before {
+    display: inline;
+    white-space: pre;
+    content: "└ ";
+}
+ /****************************/
