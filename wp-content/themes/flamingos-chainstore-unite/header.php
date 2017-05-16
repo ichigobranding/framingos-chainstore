@@ -70,11 +70,11 @@
 		            </button>
 
 		        </div>
-
 				<?php
 		            wp_nav_menu( array(
 		                //'theme_location'    => 'primary',
 		                'depth'             => 2,
+		                'menu' => 'topmenu-fl',
 		                'container'         => 'div',
 		                'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
 		                'menu_class' => 'nav nav-justified cenmenu', //<ul> class 中央寄せ
