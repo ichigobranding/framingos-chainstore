@@ -861,7 +861,7 @@ h1.site-title a:hover{
     margin: 18px 0 5px 0;
     padding: 0px 10px 10px 7px;
     font-size: 12px;
-    height:200px; /* åˆæœŸ250 */
+    height:145px; /* åˆæœŸ250 */
     overflow:auto;
 }
 
@@ -960,6 +960,17 @@ h1.site-title a:hover{
     margin: 0 7px 0 0;
 }
 .nnnew4 a {
+    color: #fff;
+}
+.ameneww {
+    background-color: #2d8c3c;/* 新着アメブロ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.ameneww a {
     color: #fff;
 }
 table {
