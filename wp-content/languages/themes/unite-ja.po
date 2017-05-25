@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Unite package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-02-18 08:56:06+0000\n"
+"PO-Revision-Date: 2017-05-18 22:47:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Unite\n"
 
@@ -30,19 +30,19 @@ msgstr "Unite ソーシャルウィジェット"
 #: inc/socialnav.php:13
 msgctxt "nav menu location"
 msgid "Social Menu"
-msgstr "ソーシャルメニュー"
+msgstr "SNS メニュー"
 
 #: inc/metaboxes.php:21
 msgid "Select layout for this specific Post only"
-msgstr "この特定の投稿のみのレイアウトを選択"
+msgstr "この投稿のみに適用するレイアウトを選択"
 
 #: inc/metaboxes.php:16
 msgid "Select layout for this specific Page only ( Note: This setting only reflects if page Template is set as Default Template and Blog Type Templates.)"
-msgstr "この特定のページのみのレイアウトを選択 (注: この設定は、ページテンプレートがデフォルトテンプレートとブログタイプテンプレートになっている時のみ反映されます)"
+msgstr "このページのみに適用するレイアウトを選択 (注: この設定はページテンプレートが「標準テンプレート」と「ブログタイプテンプレート」の場合のみ反映されます)"
 
 #: inc/customizer.php:297
 msgid "Content Options"
-msgstr "コンテンツ設定"
+msgstr "コンテンツオプション"
 
 #: inc/customizer.php:162
 msgid "Color for all headings (h1-h6)"
@@ -50,7 +50,7 @@ msgstr "全見出しの色 (h1-h6)"
 
 #: inc/customizer.php:71
 msgid "Choose between different layout options to be used as default"
-msgstr "デフォルトとして使うレイアウトを複数のオプションの中から選択してください"
+msgstr "異なるレイアウト設定からデフォルトを選択"
 
 #: inc/customizer.php:55
 msgid "Blog Layout"
@@ -251,7 +251,7 @@ msgstr "全幅 (サイドバーなし)"
 
 #: sidebar.php:24
 msgid "Meta"
-msgstr "メタ"
+msgstr "メタ情報"
 
 #: searchform.php:11
 msgid "Search..."
@@ -259,7 +259,7 @@ msgstr "検索…"
 
 #: searchform.php:9
 msgid "Search for:"
-msgstr "検索結果:"
+msgstr "検索:"
 
 #: search.php:16
 msgid "Search Results for: %s"
@@ -275,7 +275,7 @@ msgstr "カスタム CSS"
 
 #: inc/customizer.php:314
 msgid "Other"
-msgstr "他"
+msgstr "その他"
 
 #: inc/customizer.php:192
 msgid "Social icon color"
@@ -359,7 +359,7 @@ msgstr "メインページの本文"
 
 #: inc/customizer.php:101
 msgid "Typography"
-msgstr "文字装飾"
+msgstr "タイポグラフィー"
 
 #: inc/customizer.php:93
 msgid "Element color on hover"
@@ -388,7 +388,7 @@ msgstr "右サイドバー"
 
 #: inc/template-tags.php:104
 msgid "Your comment is awaiting moderation."
-msgstr "あなたのコメントは承認待ちです。"
+msgstr "コメントは承認待ち。"
 
 #: inc/template-tags.php:97
 msgctxt "1: date, 2: time"
@@ -453,6 +453,10 @@ msgstr "人気"
 msgid "Unite: Popular Posts Widget"
 msgstr "Unite: 人気の投稿ウィジェット"
 
+#: inc/widgets/popular-posts-widget.php:13
+msgid "Displays tabbed list of popular posts, recent posts & comments"
+msgstr "人気のある投稿、最近の投稿、コメントのタブ付きリストを表示します"
+
 #: inc/extras.php:412
 msgid "%d item"
 msgid_plural "%d items"
@@ -468,7 +472,7 @@ msgstr "ショッピングカートを見る"
 
 #: inc/extras.php:369
 msgid "All plugins installed and activated successfully. %s"
-msgstr "全てのプラグインのインストール・有効化が完了しました：%s"
+msgstr "すべてのプラグインのインストール・有効化が完了しました: %s"
 
 #: inc/class-tgm-plugin-activation.php:336 inc/extras.php:356
 msgid "Something went wrong with the plugin API."
@@ -512,7 +516,7 @@ msgstr "送信"
 
 #: inc/extras.php:92
 msgid "Password:"
-msgstr "パスワード"
+msgstr "パスワード:"
 
 #: inc/extras.php:91
 msgid "<p>This post is password protected. To view it please enter your password below:</p>"
@@ -598,11 +602,15 @@ msgstr "タイプ"
 
 #: inc/class-tgm-plugin-activation.php:2433
 msgid "Source"
-msgstr "ソース"
+msgstr "取得方法"
 
 #: inc/class-tgm-plugin-activation.php:2432
 msgid "Plugin"
 msgstr "プラグイン"
+
+#: inc/class-tgm-plugin-activation.php:2418
+msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
+msgstr "インストール・更新・有効化が必要なプラグインはありません。<a href=\"%1$s\">ダッシュボードに戻る</a>"
 
 #: inc/class-tgm-plugin-activation.php:2496
 msgctxt "%2$s = plugin name in screen reader markup"
@@ -783,7 +791,7 @@ msgstr ", "
 #: content-page.php:23 content-single.php:67 content.php:71 front-page.php:24
 #: inc/template-tags.php:81 inc/template-tags.php:100
 msgid "Edit"
-msgstr "編集"
+msgstr "編集する"
 
 #: content-page.php:18 content-single.php:27 content.php:37 front-page.php:19
 #: image.php:82
@@ -800,7 +808,7 @@ msgstr "ご指定の検索条件に一致する投稿がありませんでした
 
 #: content-none.php:19
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+msgstr "最初の投稿をする準備ができましたか ?  <a href=\"%1$s\">ここからスタート</a>してください。"
 
 #: content-none.php:13
 msgid "Nothing Found"
@@ -843,11 +851,11 @@ msgstr "よく使われているカテゴリー"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr "ここには何も見つかりませんでした。以下のリンクまたは検索をお試しください。"
+msgstr "ここにはなにもないようです。下記のリンクまたは検索を試してみてください。"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "お探しのページが見つかりません。"
+msgstr "このページは見つかりません。"
 
 #. Author URI of the plugin/theme
 msgid "http://colorlib.com/wp/"

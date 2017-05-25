@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-05-08 07:17:55+0000\n"
+"PO-Revision-Date: 2017-05-19 03:19:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -6513,15 +6513,15 @@ msgstr "送信"
 
 #: modules/stats.php:1087
 msgid "Show top search terms over"
-msgstr "以下の期間のトップ検索キーワードを表示:"
+msgstr "以下の期間の人気検索キーワードを表示:"
 
 #: modules/stats.php:1074
 msgid "Show top posts over"
-msgstr "以下の表示数以上の人気記事を表示:"
+msgstr "以下の期間の人気記事を表示:"
 
 #: modules/stats.php:1061
 msgid "Chart stats by"
-msgstr "統計情報表:"
+msgstr "統計情報グラフ期間:"
 
 #: modules/stats.php:1038
 msgid "the past year"
@@ -6570,7 +6570,7 @@ msgstr "統計レポートを表示できる権限グループを選択してく
 
 #: modules/stats.php:804
 msgid "Report visibility"
-msgstr "表示状態を報告"
+msgstr "レポートの表示"
 
 #: modules/stats.php:803
 msgid "Smiley face"
@@ -6606,7 +6606,7 @@ msgstr "管理バー"
 
 #: modules/stats.php:783
 msgid "Visit <a href=\"%s\">Site Stats</a> to see your stats."
-msgstr "<a href=\"%s\">サイト統計情報</a>で統計情報を表示できます。"
+msgstr "統計情報を表示するには<a href=\"%s\">サイト統計情報</a>画面をご覧ください。"
 
 #: modules/stats.php:529
 msgid "View Site Stats without JavaScript"
