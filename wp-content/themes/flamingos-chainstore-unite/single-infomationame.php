@@ -38,20 +38,14 @@ get_header(); ?>
 
 	                                                      <!--記事　中身-->
 														            <?php while ( have_posts() ) : the_post(); ?>	
-																                                                          <!--記事info-->
+																<!--記事info-->
                                                                           <div class="ibarticleDetailArea">
                                                                               <time datetime="2016-08-12" pubdate="pubdate"><?php echo get_the_date(); ?></time><?php get_template_part( 'new' ); ?>
                                                                               <br />テーマ：<?php echo get_the_term_list( $id,message, $before, $sep, $after ); ?>
                                                                           </div>
-                                                          <!--記事info-->
-																	
-																			<strong>
-																				<span style="color: #ff0000;">
-																				「<?php the_title(); ?>」の記事をアップしました。
-																				</span>
-																			</strong><br><br>
+                                                                <!--記事info-->
 
-																		
+															「<?php the_title(); ?>」の記事をアップしました。<br><br>
 
 																			<a href="<?php the_field('ame-new-url'); ?>" target="_blank">
 																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">アメブロの記事はこちらです</span></span></strong></a>
@@ -59,27 +53,15 @@ get_header(); ?>
 
 																		<?php endwhile; // end of the loop. ?>
 																		<br><br><br><br>
-																		<p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
-														                                                                      
+																		<p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>                                           
 	                                                          <!--記事　中身-->
-	                                               
                                                             </div>
                                                 </div>
                                               </div>
                                             </div>
                                           </article>
 								 <!--記事全体-->
-		                         
-
-
-
 									</div>
-
-
-
-
-
-
 						</div>
 							<div class="col-md-3 col-md-pull-6">
 								<?php get_template_part( 'left-sidebar' ); ?>
