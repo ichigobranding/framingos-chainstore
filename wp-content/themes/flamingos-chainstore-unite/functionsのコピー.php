@@ -8,12 +8,12 @@ function theme_enqueue_styles() {
     );
 }
 /* contact form7 値引き渡し */
-// add_filter( 'wpcf7_special_mail_tags', 'my_special_mail_tags', 10 ,2 );
-// function my_special_mail_tags( $output, $name ) {
-// 	if ( 'semiday' == $name )
-// 		$output = get_post_meta( $post -> ID, 'semiday_check', true );
-// 	return $output;
-// }
+add_filter( 'wpcf7_special_mail_tags', 'my_special_mail_tags', 10 ,2 );
+function my_special_mail_tags( $output, $name ) {
+	if ( 'semiday' == $name )
+		$output = get_post_meta( $post -> ID, 'semiday_check', true );
+	return $output;
+}
 /* contact form7 値引き渡し */
 /**
  * Register widgetized areas
