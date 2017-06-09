@@ -44,15 +44,15 @@ get_header(); ?>
                                                                               <br />テーマ：<?php echo get_the_term_list( $id,message, $before, $sep, $after ); ?>
                                                                           </div>
                                                                 <!--記事info-->
-
-															「<?php the_title(); ?>」の記事をアップしました。<br><br>
+                                アメブロで新しい記事を公開しました。<br><br>
+															 <span style="color: #ff0000;"><strong>タイトルは「<?php the_title(); ?>」です。</strong></span><br><br>
 
 																			<a href="<?php the_field('ame-new-url'); ?>" target="_blank">
-																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">アメブロの記事はこちらです</span></span></strong></a>
+																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">記事はこちらからご覧ください！</span></span></strong></a>
 
 
 																		<?php endwhile; // end of the loop. ?>
-																		<br><br><br><br>
+																		<br>
 																		<p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>                                           
 	                                                          <!--記事　中身-->
                                                             </div>

@@ -13,25 +13,25 @@
 get_header(); ?>
 <div class="container conbg">
       <div id="main-grid2" class="row"><!-- .row -->
-      	<div id="primary" class="content-area">
-      		<main id="main" class="site-main" role="main">
+        <div id="primary" class="content-area">
+          <main id="main" class="site-main" role="main">
 
-				<div class="row">
-						<div class="col-md-6 col-md-push-3">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3">
 
-								<?php get_template_part( 'page-kiji-temp' ); ?>
+                <?php get_template_part( 'page-kiji-temp' ); ?>
 
-						</div>
-							<div class="col-md-3 col-md-pull-6">
-								<?php get_template_part( 'left-sidebar' ); ?>
-							</div>
-					<div class="col-md-3 sidebarpadd">
-						<?php get_sidebar(); ?>
-					</div>
-				</div>
+            </div>
+              <div class="col-md-3 col-md-pull-6">
+                <?php get_template_part( 'left-sidebar' ); ?>
+              </div>
+          <div class="col-md-3 sidebarpadd">
+            <?php get_sidebar(); ?>
+          </div>
+        </div>
 
-      		</main><!-- #main -->
-      	</div><!-- #primary -->
+          </main><!-- #main -->
+        </div><!-- #primary -->
       </div><!-- .row -->
 </div><!-- .container -->
 
