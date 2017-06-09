@@ -1414,20 +1414,6 @@ li.children:before {
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {  .tescol{height: 220px;} }
 
-/*スマホの場合の中央カラム *******/
-/*@media only screen and (min-width: 980px) and (max-width: 1900px) {
- .tescol{height: 220px;}
-} /*デバイスの横幅が1400px以下の場合*/
-/*@media only screen and (min-width: 768px) and (max-width: 979px) {
- .tescol{height: 260px;}
-} /*デバイスの横幅が979px以下の場合*/
-/*@media only screen and (min-width: 321px) and (max-width: 767px) {
-.tescol{height: 240px;}
-} /*デバイスの横幅が321以上768以下の場合*/
-/@media only screen and (max-width: 320px) { 
-.tescol{height: 170px;}
-} /* デバイスの横幅が320px以下の場合 */
-
 .tescol2{
     margin: 0 0 20px 0;
 }
@@ -1445,29 +1431,12 @@ li.children:before {
 @media (min-width: 992px) and (max-width: 1199px) {  .tescol2{height: 200px;} }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  .tescol2{height: 205px;} }
-
-
+@media (min-width: 1200px) {  .tescol2{height: 235px;} }
 /*マウスオーバーで半透明 *******/
 img:hover {
    opacity: 0.5;
 }
 /*マウスオーバーで半透明 *******/
-
-
-
-/*スマホの場合の中央カラム *******/
-/*@media only screen and (min-width: 980px) and (max-width: 1900px) {
- .tescol2{height: 200px;}
-} /*デバイスの横幅が1400px以下の場合*/
-/*@media only screen and (min-width: 768px) and (max-width: 979px) {
- .tescol2{height: 260px;}
-} /*デバイスの横幅が979px以下の場合*/
-/*@media only screen and (min-width: 321px) and (max-width: 767px) {
-.tescol2{height: 215px;}
-} /*デバイスの横幅が321以上768以下の場合*/
-/*@media only screen and (max-width: 320px) { 
-.tescol2{height: 170px;}
-} /* デバイスの横幅が320px以下の場合 */
-/****************************/
-
+/*****************************
+   事例紹介
+ *****************************/

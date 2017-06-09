@@ -144,7 +144,7 @@ function is_mobile(){
   return preg_match($pattern, $_SERVER['HTTP_USER_AGENT']);
 }//ヘッダー画像　スマホを判別
 
-// アイキャッチ画像の表示の仕方を指定（リサイズ）
+// 事例紹介アイキャッチ画像の表示の仕方を指定（リサイズ）
 set_post_thumbnail_size(400 ,251 ,true);
 
 endif; // end ! function_exists
