@@ -7172,271 +7172,271 @@ msgid "%s Comment"
 msgid_plural "%s Comments"
 msgstr[0] "%s件のコメント"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6453
+#: wp-includes/class-wp-xmlrpc-server.php:6476
 msgid "The specified target URL does not exist."
 msgstr "指定したターゲット URL が存在しません。"
 
 #. translators: 1: URL of the page linked from, 2: URL of the page linked to
-#: wp-includes/class-wp-xmlrpc-server.php:6420
+#: wp-includes/class-wp-xmlrpc-server.php:6443
 msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 msgstr "%1$s より %2$s へのピンバックが登録されました。ウェブでの会話を続けてください ! :-)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6387
+#: wp-includes/class-wp-xmlrpc-server.php:6410
 msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
 msgstr "ソース URL にターゲット URL へのリンクが含まれていないので、ソースとして使用することができません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6350
+#: wp-includes/class-wp-xmlrpc-server.php:6373
 msgid "We cannot find a title on that page."
 msgstr "そのページのタイトルが見つかりません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6329
+#: wp-includes/class-wp-xmlrpc-server.php:6352
 msgid "The source URL does not exist."
 msgstr "元のURLが存在しません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6304
+#: wp-includes/class-wp-xmlrpc-server.php:6327
 msgid "The pingback has already been registered."
 msgstr "そのピンバックはすでに登録済みです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6296
+#: wp-includes/class-wp-xmlrpc-server.php:6319
 msgid "The source URL and the target URL cannot both point to the same resource."
 msgstr "ソース URL とターゲット URL に同一のリソースを指定することはできません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6286
-#: wp-includes/class-wp-xmlrpc-server.php:6293
-#: wp-includes/class-wp-xmlrpc-server.php:6300
-#: wp-includes/class-wp-xmlrpc-server.php:6446
+#: wp-includes/class-wp-xmlrpc-server.php:6309
+#: wp-includes/class-wp-xmlrpc-server.php:6316
+#: wp-includes/class-wp-xmlrpc-server.php:6323
+#: wp-includes/class-wp-xmlrpc-server.php:6469
 msgid "The specified target URL cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
 msgstr "指定されたターゲット URL はターゲットとして使用できません。この URL は存在しないかピンバックが有効になっていません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6251
+#: wp-includes/class-wp-xmlrpc-server.php:6274
 msgid "Is there no link to us?"
 msgstr "私たちへのリンクはないのですか ?"
 
 #. translators: 1: file name, 2: error message
-#: wp-includes/class-wp-xmlrpc-server.php:5841
+#: wp-includes/class-wp-xmlrpc-server.php:5864
 msgid "Could not write file %1$s (%2$s)."
 msgstr "ファイル %1$s に書き込めませんでした (%2$s)。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5820
+#: wp-includes/class-wp-xmlrpc-server.php:5843
 msgid "Sorry, you have used your space allocation."
 msgstr "割り当てられたスペースを使い切ってしまったようです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5427
+#: wp-includes/class-wp-xmlrpc-server.php:5450
 msgid "Sorry, your entry could not be edited."
 msgstr "投稿を編集できませんでした。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5382
+#: wp-includes/class-wp-xmlrpc-server.php:5405
 msgid "Sorry, you are not allowed to publish this page."
 msgstr "この投稿を公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5275
+#: wp-includes/class-wp-xmlrpc-server.php:5298
 msgid "Sorry, you are not allowed to change the page author as this user."
 msgstr "ページ投稿者をこのユーザーに変更する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5270
+#: wp-includes/class-wp-xmlrpc-server.php:5293
 msgid "Sorry, you are not allowed to change the post author as this user."
 msgstr "投稿者をこのユーザーに変更する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4934
+#: wp-includes/class-wp-xmlrpc-server.php:4957
 msgid "Sorry, you are not allowed to create pages as this user."
 msgstr "このユーザーとして固定ページを作成する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4901
-#: wp-includes/class-wp-xmlrpc-server.php:5225
+#: wp-includes/class-wp-xmlrpc-server.php:4924
+#: wp-includes/class-wp-xmlrpc-server.php:5248
 msgid "Invalid post format."
 msgstr "無効な投稿フォーマットです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4875
-#: wp-includes/class-wp-xmlrpc-server.php:4888
-#: wp-includes/class-wp-xmlrpc-server.php:4893
+#: wp-includes/class-wp-xmlrpc-server.php:4898
+#: wp-includes/class-wp-xmlrpc-server.php:4911
+#: wp-includes/class-wp-xmlrpc-server.php:4916
 msgid "Sorry, you are not allowed to publish posts on this site."
 msgstr "このサイトで投稿を公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4864
+#: wp-includes/class-wp-xmlrpc-server.php:4887
 msgid "Sorry, you are not allowed to publish pages on this site."
 msgstr "このサイトでページを公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4725
+#: wp-includes/class-wp-xmlrpc-server.php:4748
 msgid "For some strange yet very annoying reason, this post could not be edited."
 msgstr "なにか面妖でとてもうっとうしい理由のため、この投稿は編集できませんでした。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4710
-#: wp-includes/class-wp-xmlrpc-server.php:5384
-#: wp-includes/class-wp-xmlrpc-server.php:6194
+#: wp-includes/class-wp-xmlrpc-server.php:4733
+#: wp-includes/class-wp-xmlrpc-server.php:5407
+#: wp-includes/class-wp-xmlrpc-server.php:6217
 msgid "Sorry, you are not allowed to publish this post."
 msgstr "このブログを公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4701
-#: wp-includes/class-wp-xmlrpc-server.php:4773
-#: wp-includes/class-wp-xmlrpc-server.php:5605
-#: wp-includes/class-wp-xmlrpc-server.php:6139
+#: wp-includes/class-wp-xmlrpc-server.php:4724
+#: wp-includes/class-wp-xmlrpc-server.php:4796
+#: wp-includes/class-wp-xmlrpc-server.php:5628
+#: wp-includes/class-wp-xmlrpc-server.php:6162
 msgid "Sorry, no such post."
 msgstr "そのような投稿はありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4578
-#: wp-includes/class-wp-xmlrpc-server.php:4591
+#: wp-includes/class-wp-xmlrpc-server.php:4601
+#: wp-includes/class-wp-xmlrpc-server.php:4614
 msgid "Sorry, that file cannot be edited."
 msgstr "そのファイルは編集できません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4541
-#: wp-includes/class-wp-xmlrpc-server.php:5923
+#: wp-includes/class-wp-xmlrpc-server.php:4564
+#: wp-includes/class-wp-xmlrpc-server.php:5946
 msgid "Either there are no posts, or something went wrong."
 msgstr "投稿がないか、何かうまくいかなかったようです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4434
+#: wp-includes/class-wp-xmlrpc-server.php:4457
 msgid "Sorry, you are not allowed to access user data on this site."
 msgstr "このサイトのユーザーデータにアクセスする権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4240
-#: wp-includes/class-wp-xmlrpc-server.php:4310
+#: wp-includes/class-wp-xmlrpc-server.php:4263
+#: wp-includes/class-wp-xmlrpc-server.php:4333
 msgid "Sorry, revisions are disabled."
 msgstr "リビジョンが無効化されています。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3940
-#: wp-includes/class-wp-xmlrpc-server.php:3988
-#: wp-includes/class-wp-xmlrpc-server.php:5815
+#: wp-includes/class-wp-xmlrpc-server.php:3963
+#: wp-includes/class-wp-xmlrpc-server.php:4011
+#: wp-includes/class-wp-xmlrpc-server.php:5838
 msgid "Sorry, you are not allowed to upload files."
 msgstr "ファイルをアップロードする権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3888
+#: wp-includes/class-wp-xmlrpc-server.php:3911
 msgid "Sorry, you are not allowed to update options."
 msgstr "設定を更新する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3690
+#: wp-includes/class-wp-xmlrpc-server.php:3713
 msgid "Sorry, you are not allowed access to details of this post."
 msgstr "この投稿の詳細へアクセスする権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3649
-#: wp-includes/class-wp-xmlrpc-server.php:3730
-#: wp-includes/class-wp-xmlrpc-server.php:3762
-#: wp-includes/class-wp-xmlrpc-server.php:3794
-#: wp-includes/class-wp-xmlrpc-server.php:4032
+#: wp-includes/class-wp-xmlrpc-server.php:3672
+#: wp-includes/class-wp-xmlrpc-server.php:3753
+#: wp-includes/class-wp-xmlrpc-server.php:3785
+#: wp-includes/class-wp-xmlrpc-server.php:3817
+#: wp-includes/class-wp-xmlrpc-server.php:4055
 msgid "Sorry, you are not allowed access to details about this site."
 msgstr "このサイトの詳細へアクセスする権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3608
+#: wp-includes/class-wp-xmlrpc-server.php:3631
 #: wp-includes/script-loader.php:705
 msgid "An unknown error occurred"
 msgstr "不明なエラーが発生しました"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3593
+#: wp-includes/class-wp-xmlrpc-server.php:3616
 msgid "A valid email address is required."
 msgstr "有効なメールアドレスが必要です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3591
+#: wp-includes/class-wp-xmlrpc-server.php:3614
 msgid "Comment author name and email are required."
 msgstr "コメント投稿者の名前とメールアドレスは入力必須です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3557
+#: wp-includes/class-wp-xmlrpc-server.php:3580
 msgid "Comment is required."
 msgstr "コメントは必須です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3553 wp-includes/comment.php:2983
+#: wp-includes/class-wp-xmlrpc-server.php:3576 wp-includes/comment.php:2983
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:473
 msgid "Sorry, comments are closed for this item."
 msgstr "この投稿へのコメントは受け付けていません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3531
+#: wp-includes/class-wp-xmlrpc-server.php:3554
 msgid "You must be registered to comment."
 msgstr "コメントするにはユーザー登録する必要があります。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3477
+#: wp-includes/class-wp-xmlrpc-server.php:3500
 msgid "Sorry, the comment could not be edited."
 msgstr "コメントを編集できませんでした。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3288
-#: wp-includes/class-wp-xmlrpc-server.php:3445
+#: wp-includes/class-wp-xmlrpc-server.php:3311
+#: wp-includes/class-wp-xmlrpc-server.php:3468
 msgid "Invalid comment status."
 msgstr "コメントの状態が正しくありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3235
-#: wp-includes/class-wp-xmlrpc-server.php:3367
-#: wp-includes/class-wp-xmlrpc-server.php:3434
+#: wp-includes/class-wp-xmlrpc-server.php:3258
+#: wp-includes/class-wp-xmlrpc-server.php:3390
+#: wp-includes/class-wp-xmlrpc-server.php:3457
 msgid "Sorry, you are not allowed to moderate or edit this comment."
 msgstr "このコメントをモデレートまたは編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3231
-#: wp-includes/class-wp-xmlrpc-server.php:3363
-#: wp-includes/class-wp-xmlrpc-server.php:3430
+#: wp-includes/class-wp-xmlrpc-server.php:3254
+#: wp-includes/class-wp-xmlrpc-server.php:3386
+#: wp-includes/class-wp-xmlrpc-server.php:3453
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:317
 msgid "Invalid comment ID."
 msgstr "無効なコメント ID です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3184
-#: wp-includes/class-wp-xmlrpc-server.php:5751
-#: wp-includes/class-wp-xmlrpc-server.php:5973
+#: wp-includes/class-wp-xmlrpc-server.php:3207
+#: wp-includes/class-wp-xmlrpc-server.php:5774
+#: wp-includes/class-wp-xmlrpc-server.php:5996
 msgid "Sorry, you must be able to edit posts on this site in order to view categories."
 msgstr "カテゴリーを表示するにはこのサイトの投稿を編集する権限が必要です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3137
+#: wp-includes/class-wp-xmlrpc-server.php:3160
 msgid "Sorry, you are not allowed to delete a category."
 msgstr "カテゴリーを削除する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3090
-#: wp-includes/class-wp-xmlrpc-server.php:3092
+#: wp-includes/class-wp-xmlrpc-server.php:3113
+#: wp-includes/class-wp-xmlrpc-server.php:3115
 msgid "Sorry, the new category failed."
 msgstr "新しいカテゴリーの追加に失敗しました。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3062
+#: wp-includes/class-wp-xmlrpc-server.php:3085
 msgid "Sorry, you are not allowed to add a category."
 msgstr "カテゴリーを追加する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3008
+#: wp-includes/class-wp-xmlrpc-server.php:3031
 msgid "Sorry, you must be able to edit posts on this site in order to view tags."
 msgstr "タグを表示するにはこのサイトの投稿を編集する権限が必要です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2967
-#: wp-includes/class-wp-xmlrpc-server.php:4236
-#: wp-includes/class-wp-xmlrpc-server.php:4533
-#: wp-includes/class-wp-xmlrpc-server.php:5638
+#: wp-includes/class-wp-xmlrpc-server.php:2990
+#: wp-includes/class-wp-xmlrpc-server.php:4259
+#: wp-includes/class-wp-xmlrpc-server.php:4556
+#: wp-includes/class-wp-xmlrpc-server.php:5661
 msgid "Sorry, you are not allowed to edit posts."
 msgstr "投稿を編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2808
+#: wp-includes/class-wp-xmlrpc-server.php:2831
 msgid "Failed to delete the page."
 msgstr "このページの削除に失敗しました。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2803
+#: wp-includes/class-wp-xmlrpc-server.php:2826
 msgid "Sorry, you are not allowed to delete this page."
 msgstr "この固定ページを削除する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2709
-#: wp-includes/class-wp-xmlrpc-server.php:2911
+#: wp-includes/class-wp-xmlrpc-server.php:2732
+#: wp-includes/class-wp-xmlrpc-server.php:2934
 msgid "Sorry, you are not allowed to edit pages."
 msgstr "固定ページを編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2679
-#: wp-includes/class-wp-xmlrpc-server.php:2799
-#: wp-includes/class-wp-xmlrpc-server.php:2861
+#: wp-includes/class-wp-xmlrpc-server.php:2702
+#: wp-includes/class-wp-xmlrpc-server.php:2822
+#: wp-includes/class-wp-xmlrpc-server.php:2884
 msgid "Sorry, no such page."
 msgstr "そのようなページはありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2668
-#: wp-includes/class-wp-xmlrpc-server.php:2865
+#: wp-includes/class-wp-xmlrpc-server.php:2691
+#: wp-includes/class-wp-xmlrpc-server.php:2888
 msgid "Sorry, you are not allowed to edit this page."
 msgstr "この固定ページを編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2632
+#: wp-includes/class-wp-xmlrpc-server.php:2655
 msgid "Sorry, the user cannot be updated."
 msgstr "そのユーザーは更新できません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2552
-#: wp-includes/class-wp-xmlrpc-server.php:2598
+#: wp-includes/class-wp-xmlrpc-server.php:2575
+#: wp-includes/class-wp-xmlrpc-server.php:2621
 msgid "Sorry, you are not allowed to edit your profile."
 msgstr "プロフィールを編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2495
+#: wp-includes/class-wp-xmlrpc-server.php:2518
 msgid "Invalid role."
 msgstr "無効な権限グループです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2479
+#: wp-includes/class-wp-xmlrpc-server.php:2502
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:186
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:377
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:379
 msgid "Sorry, you are not allowed to list users."
 msgstr "ユーザー一覧を表示する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2426
+#: wp-includes/class-wp-xmlrpc-server.php:2449
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:338
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:601
 #: wp-includes/user.php:1417 wp-includes/user.php:1738
@@ -7444,68 +7444,68 @@ msgstr "ユーザー一覧を表示する権限がありません。"
 msgid "Invalid user ID."
 msgstr "無効なユーザー ID です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2421
+#: wp-includes/class-wp-xmlrpc-server.php:2444
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:573
 msgid "Sorry, you are not allowed to edit this user."
 msgstr "このユーザーを編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2196
-#: wp-includes/class-wp-xmlrpc-server.php:2291
+#: wp-includes/class-wp-xmlrpc-server.php:2219
+#: wp-includes/class-wp-xmlrpc-server.php:2314
 msgid "Sorry, you are not allowed to assign terms in this taxonomy."
 msgstr "このタクソノミーではタームを割り当てる権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2145
+#: wp-includes/class-wp-xmlrpc-server.php:2168
 msgid "Sorry, you are not allowed to assign this term."
 msgstr "タームを割り当てる権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2082
+#: wp-includes/class-wp-xmlrpc-server.php:2105
 msgid "Sorry, deleting the term failed."
 msgstr "キーワードの削除に失敗しました。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2073
+#: wp-includes/class-wp-xmlrpc-server.php:2096
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:570
 msgid "Sorry, you are not allowed to delete this term."
 msgstr "タームを削除する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:2020
+#: wp-includes/class-wp-xmlrpc-server.php:2043
 msgid "Sorry, editing the term failed."
 msgstr "キーワードの編集に失敗しました。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1994
+#: wp-includes/class-wp-xmlrpc-server.php:2017
 msgid "This taxonomy is not hierarchical so you can't set a parent."
 msgstr "このタクソノミーは階層化されていないので、親は設定できません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1982
+#: wp-includes/class-wp-xmlrpc-server.php:2005
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:339
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:483
 msgid "Sorry, you are not allowed to edit this term."
 msgstr "タームを編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1921
+#: wp-includes/class-wp-xmlrpc-server.php:1944
 msgid "Sorry, your term could not be created."
 msgstr "タームを追加できませんでした。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1904
-#: wp-includes/class-wp-xmlrpc-server.php:2003 wp-includes/taxonomy.php:2005
+#: wp-includes/class-wp-xmlrpc-server.php:1927
+#: wp-includes/class-wp-xmlrpc-server.php:2026 wp-includes/taxonomy.php:2005
 #: wp-includes/taxonomy.php:2627
 msgid "Parent term does not exist."
 msgstr "親キーワードがありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1895
+#: wp-includes/class-wp-xmlrpc-server.php:1918
 msgid "This taxonomy is not hierarchical."
 msgstr "このタクソノミーは階層化されていません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1891
-#: wp-includes/class-wp-xmlrpc-server.php:1989
+#: wp-includes/class-wp-xmlrpc-server.php:1914
+#: wp-includes/class-wp-xmlrpc-server.php:2012
 msgid "The term name cannot be empty."
 msgstr "キーワード名を入力してください。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1881
+#: wp-includes/class-wp-xmlrpc-server.php:1904
 msgid "Sorry, you are not allowed to create terms in this taxonomy."
 msgstr "このタクソノミーではタームを作成する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1798
-#: wp-includes/class-wp-xmlrpc-server.php:4120
+#: wp-includes/class-wp-xmlrpc-server.php:1821
+#: wp-includes/class-wp-xmlrpc-server.php:4143
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:87
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:85
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:136
@@ -7513,132 +7513,132 @@ msgstr "このタクソノミーではタームを作成する権限がありま
 msgid "Sorry, you are not allowed to edit posts in this post type."
 msgstr "この投稿タイプの投稿を編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1646
-#: wp-includes/class-wp-xmlrpc-server.php:4783
+#: wp-includes/class-wp-xmlrpc-server.php:1669
+#: wp-includes/class-wp-xmlrpc-server.php:4806
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:834
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:322
 msgid "The post cannot be deleted."
 msgstr "投稿を削除できません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1640
-#: wp-includes/class-wp-xmlrpc-server.php:4777
+#: wp-includes/class-wp-xmlrpc-server.php:1663
+#: wp-includes/class-wp-xmlrpc-server.php:4800
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:758
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:803
 msgid "Sorry, you are not allowed to delete this post."
 msgstr "この投稿を削除する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1575
+#: wp-includes/class-wp-xmlrpc-server.php:1598
 msgid "There is a revision of this post that is more recent."
 msgstr "この投稿にはより最近のリビジョンがあります。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1526
-#: wp-includes/class-wp-xmlrpc-server.php:4647
-#: wp-includes/class-wp-xmlrpc-server.php:5106
+#: wp-includes/class-wp-xmlrpc-server.php:1549
+#: wp-includes/class-wp-xmlrpc-server.php:4670
+#: wp-includes/class-wp-xmlrpc-server.php:5129
 msgid "Sorry, your entry could not be posted."
 msgstr "投稿できませんでした。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1474
+#: wp-includes/class-wp-xmlrpc-server.php:1500
 msgid "Sorry, you are not allowed to add a term to one of the given taxonomies."
 msgstr "指定したタクソノミーのひとつにキーワードを追加する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1467
+#: wp-includes/class-wp-xmlrpc-server.php:1493
 msgid "Ambiguous term name used in a hierarchical taxonomy. Please use term ID instead."
 msgstr "階層化されているタクソノミーで不明瞭なキーワードが使われています。代わりにキーワード ID を使ってください。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1429
-#: wp-includes/class-wp-xmlrpc-server.php:1979
-#: wp-includes/class-wp-xmlrpc-server.php:2070
-#: wp-includes/class-wp-xmlrpc-server.php:2142 wp-includes/taxonomy.php:1996
+#: wp-includes/class-wp-xmlrpc-server.php:1455
+#: wp-includes/class-wp-xmlrpc-server.php:2002
+#: wp-includes/class-wp-xmlrpc-server.php:2093
+#: wp-includes/class-wp-xmlrpc-server.php:2165 wp-includes/taxonomy.php:1996
 msgid "Invalid term ID."
 msgstr "キーワード ID が無効です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1421
-#: wp-includes/class-wp-xmlrpc-server.php:1445
+#: wp-includes/class-wp-xmlrpc-server.php:1447
+#: wp-includes/class-wp-xmlrpc-server.php:1471
 msgid "Sorry, you are not allowed to assign a term to one of the given taxonomies."
 msgstr "指定のタクソノミーのひとつにキーワードを割り当てる権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1418
-#: wp-includes/class-wp-xmlrpc-server.php:1442
+#: wp-includes/class-wp-xmlrpc-server.php:1444
+#: wp-includes/class-wp-xmlrpc-server.php:1468
 msgid "Sorry, one of the given taxonomies is not supported by the post type."
 msgstr "指定されたタクソノミーのうち、この投稿タイプに対応していないものがあります。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1397
-#: wp-includes/class-wp-xmlrpc-server.php:3946
-#: wp-includes/class-wp-xmlrpc-server.php:5085
-#: wp-includes/class-wp-xmlrpc-server.php:5450
+#: wp-includes/class-wp-xmlrpc-server.php:1423
+#: wp-includes/class-wp-xmlrpc-server.php:3969
+#: wp-includes/class-wp-xmlrpc-server.php:5108
+#: wp-includes/class-wp-xmlrpc-server.php:5473
 msgid "Invalid attachment ID."
 msgstr "無効な添付ファイル ID です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1351
-#: wp-includes/class-wp-xmlrpc-server.php:4941
+#: wp-includes/class-wp-xmlrpc-server.php:1377
+#: wp-includes/class-wp-xmlrpc-server.php:4964
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1029
 msgid "Invalid author ID."
 msgstr "無効な作成者 ID です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1346
-#: wp-includes/class-wp-xmlrpc-server.php:4930
+#: wp-includes/class-wp-xmlrpc-server.php:1372
+#: wp-includes/class-wp-xmlrpc-server.php:4953
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:496
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:504
 msgid "Sorry, you are not allowed to create posts as this user."
 msgstr "このユーザーとして投稿を編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1341
+#: wp-includes/class-wp-xmlrpc-server.php:1367
 msgid "Sorry, you are not allowed to create password protected posts in this post type."
 msgstr "この投稿タイプでパスワード保護された投稿を作成する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1332
+#: wp-includes/class-wp-xmlrpc-server.php:1358
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1124
 msgid "Sorry, you are not allowed to publish posts in this post type."
 msgstr "この投稿タイプで投稿を公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1327
+#: wp-includes/class-wp-xmlrpc-server.php:1353
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1118
 msgid "Sorry, you are not allowed to create private posts in this post type."
 msgstr "この投稿タイプで非公開の投稿を作成する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1318
-#: wp-includes/class-wp-xmlrpc-server.php:4627
+#: wp-includes/class-wp-xmlrpc-server.php:1344
+#: wp-includes/class-wp-xmlrpc-server.php:4650
 msgid "Sorry, you are not allowed to post on this site."
 msgstr "このサイトに投稿する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1315
-#: wp-includes/class-wp-xmlrpc-server.php:5219
+#: wp-includes/class-wp-xmlrpc-server.php:1341
+#: wp-includes/class-wp-xmlrpc-server.php:5242
 msgid "The post type may not be changed."
 msgstr "投稿タイプは変更できません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1313
-#: wp-includes/class-wp-xmlrpc-server.php:1737
-#: wp-includes/class-wp-xmlrpc-server.php:4306
-#: wp-includes/class-wp-xmlrpc-server.php:4480
-#: wp-includes/class-wp-xmlrpc-server.php:4707
-#: wp-includes/class-wp-xmlrpc-server.php:5211
-#: wp-includes/class-wp-xmlrpc-server.php:5508
-#: wp-includes/class-wp-xmlrpc-server.php:5850
-#: wp-includes/class-wp-xmlrpc-server.php:6021
-#: wp-includes/class-wp-xmlrpc-server.php:6075
+#: wp-includes/class-wp-xmlrpc-server.php:1339
+#: wp-includes/class-wp-xmlrpc-server.php:1760
+#: wp-includes/class-wp-xmlrpc-server.php:4329
+#: wp-includes/class-wp-xmlrpc-server.php:4503
+#: wp-includes/class-wp-xmlrpc-server.php:4730
+#: wp-includes/class-wp-xmlrpc-server.php:5234
+#: wp-includes/class-wp-xmlrpc-server.php:5531
+#: wp-includes/class-wp-xmlrpc-server.php:5873
+#: wp-includes/class-wp-xmlrpc-server.php:6044
+#: wp-includes/class-wp-xmlrpc-server.php:6098
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:399
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:636
 msgid "Sorry, you are not allowed to edit this post."
 msgstr "この投稿を編集する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1311
-#: wp-includes/class-wp-xmlrpc-server.php:1570
-#: wp-includes/class-wp-xmlrpc-server.php:1636
-#: wp-includes/class-wp-xmlrpc-server.php:1734
-#: wp-includes/class-wp-xmlrpc-server.php:2665
-#: wp-includes/class-wp-xmlrpc-server.php:3545
-#: wp-includes/class-wp-xmlrpc-server.php:3549
-#: wp-includes/class-wp-xmlrpc-server.php:3686
-#: wp-includes/class-wp-xmlrpc-server.php:4233
-#: wp-includes/class-wp-xmlrpc-server.php:4297
-#: wp-includes/class-wp-xmlrpc-server.php:4300
-#: wp-includes/class-wp-xmlrpc-server.php:4303
-#: wp-includes/class-wp-xmlrpc-server.php:4477
-#: wp-includes/class-wp-xmlrpc-server.php:5208
-#: wp-includes/class-wp-xmlrpc-server.php:5505
-#: wp-includes/class-wp-xmlrpc-server.php:6018
-#: wp-includes/class-wp-xmlrpc-server.php:6072
-#: wp-includes/class-wp-xmlrpc-server.php:6191 wp-includes/post.php:3012
+#: wp-includes/class-wp-xmlrpc-server.php:1337
+#: wp-includes/class-wp-xmlrpc-server.php:1593
+#: wp-includes/class-wp-xmlrpc-server.php:1659
+#: wp-includes/class-wp-xmlrpc-server.php:1757
+#: wp-includes/class-wp-xmlrpc-server.php:2688
+#: wp-includes/class-wp-xmlrpc-server.php:3568
+#: wp-includes/class-wp-xmlrpc-server.php:3572
+#: wp-includes/class-wp-xmlrpc-server.php:3709
+#: wp-includes/class-wp-xmlrpc-server.php:4256
+#: wp-includes/class-wp-xmlrpc-server.php:4320
+#: wp-includes/class-wp-xmlrpc-server.php:4323
+#: wp-includes/class-wp-xmlrpc-server.php:4326
+#: wp-includes/class-wp-xmlrpc-server.php:4500
+#: wp-includes/class-wp-xmlrpc-server.php:5231
+#: wp-includes/class-wp-xmlrpc-server.php:5528
+#: wp-includes/class-wp-xmlrpc-server.php:6041
+#: wp-includes/class-wp-xmlrpc-server.php:6095
+#: wp-includes/class-wp-xmlrpc-server.php:6214 wp-includes/post.php:3012
 #: wp-includes/post.php:3546
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:331
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:693
@@ -7647,141 +7647,141 @@ msgstr "この投稿を編集する権限がありません。"
 msgid "Invalid post ID."
 msgstr "無効な投稿 ID です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1305
-#: wp-includes/class-wp-xmlrpc-server.php:1792
-#: wp-includes/class-wp-xmlrpc-server.php:3300
-#: wp-includes/class-wp-xmlrpc-server.php:4115
-#: wp-includes/class-wp-xmlrpc-server.php:4879
-#: wp-includes/class-wp-xmlrpc-server.php:4937
-#: wp-includes/class-wp-xmlrpc-server.php:5215
-#: wp-includes/class-wp-xmlrpc-server.php:5279 wp-includes/post.php:1160
+#: wp-includes/class-wp-xmlrpc-server.php:1331
+#: wp-includes/class-wp-xmlrpc-server.php:1815
+#: wp-includes/class-wp-xmlrpc-server.php:3323
+#: wp-includes/class-wp-xmlrpc-server.php:4138
+#: wp-includes/class-wp-xmlrpc-server.php:4902
+#: wp-includes/class-wp-xmlrpc-server.php:4960
+#: wp-includes/class-wp-xmlrpc-server.php:5238
+#: wp-includes/class-wp-xmlrpc-server.php:5302 wp-includes/post.php:1160
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:128
 msgid "Invalid post type."
 msgstr "無効な投稿形式。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1273
+#: wp-includes/class-wp-xmlrpc-server.php:1278
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:500
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:644
 msgid "Sorry, you are not allowed to make posts sticky."
 msgstr "投稿を先頭固定表示にする権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:1265
+#: wp-includes/class-wp-xmlrpc-server.php:1270
 msgid "Sorry, you cannot stick a private post."
 msgstr "非公開設定の投稿を固定表示にすることはできません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:668
+#: wp-includes/class-wp-xmlrpc-server.php:673
 msgid "Insufficient arguments passed to this XML-RPC method."
 msgstr "この XML-RPC メソッドへ不完全な変数が渡されました。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:554
+#: wp-includes/class-wp-xmlrpc-server.php:559
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles"
 msgstr "新しい記事に対し他のブログからの通知 (ピンバック・トラックバック) を受け付ける"
 
-#: wp-includes/class-wp-xmlrpc-server.php:549
+#: wp-includes/class-wp-xmlrpc-server.php:554
 msgid "Allow people to post comments on new articles"
 msgstr "新しい投稿へのコメントを許可する"
 
-#: wp-includes/class-wp-xmlrpc-server.php:544
+#: wp-includes/class-wp-xmlrpc-server.php:549
 msgid "Large size image height"
 msgstr "大サイズ画像の高さ"
 
-#: wp-includes/class-wp-xmlrpc-server.php:539
+#: wp-includes/class-wp-xmlrpc-server.php:544
 msgid "Large size image width"
 msgstr "大サイズ画像の幅"
 
-#: wp-includes/class-wp-xmlrpc-server.php:534
+#: wp-includes/class-wp-xmlrpc-server.php:539
 msgid "Medium-Large size image height"
 msgstr "中-大サイズ画像高さ"
 
-#: wp-includes/class-wp-xmlrpc-server.php:529
+#: wp-includes/class-wp-xmlrpc-server.php:534
 msgid "Medium-Large size image width"
 msgstr "中-大サイズ画像横幅"
 
-#: wp-includes/class-wp-xmlrpc-server.php:524
+#: wp-includes/class-wp-xmlrpc-server.php:529
 msgid "Medium size image height"
 msgstr "中サイズ画像の高さ"
 
-#: wp-includes/class-wp-xmlrpc-server.php:519
+#: wp-includes/class-wp-xmlrpc-server.php:524
 msgid "Medium size image width"
 msgstr "中サイズ画像の幅"
 
-#: wp-includes/class-wp-xmlrpc-server.php:514
+#: wp-includes/class-wp-xmlrpc-server.php:519
 msgid "Crop thumbnail to exact dimensions"
 msgstr "指定したサイズにサムネイルをトリミングする"
 
-#: wp-includes/class-wp-xmlrpc-server.php:509
+#: wp-includes/class-wp-xmlrpc-server.php:514
 msgid "Thumbnail Height"
 msgstr "サムネイルの高さ"
 
-#: wp-includes/class-wp-xmlrpc-server.php:504
+#: wp-includes/class-wp-xmlrpc-server.php:509
 msgid "Thumbnail Width"
 msgstr "サムネイルの幅"
 
-#: wp-includes/class-wp-xmlrpc-server.php:499
+#: wp-includes/class-wp-xmlrpc-server.php:504
 msgid "Allow new users to sign up"
 msgstr "新規ユーザーの登録を許可"
 
-#: wp-includes/class-wp-xmlrpc-server.php:494
+#: wp-includes/class-wp-xmlrpc-server.php:499
 msgid "Time Format"
 msgstr "時刻フォーマット"
 
-#: wp-includes/class-wp-xmlrpc-server.php:489
+#: wp-includes/class-wp-xmlrpc-server.php:494
 msgid "Date Format"
 msgstr "日付のフォーマット"
 
-#: wp-includes/class-wp-xmlrpc-server.php:484
+#: wp-includes/class-wp-xmlrpc-server.php:489
 msgid "Site Tagline"
 msgstr "サイトのキャッチフレーズ"
 
-#: wp-includes/class-wp-xmlrpc-server.php:474
+#: wp-includes/class-wp-xmlrpc-server.php:479
 msgid "Time Zone"
 msgstr "タイムゾーン"
 
-#: wp-includes/class-wp-xmlrpc-server.php:467
+#: wp-includes/class-wp-xmlrpc-server.php:472
 msgid "Post Thumbnail"
 msgstr "投稿サムネイル"
 
-#: wp-includes/class-wp-xmlrpc-server.php:462
+#: wp-includes/class-wp-xmlrpc-server.php:467
 msgid "Stylesheet"
 msgstr "スタイルシート"
 
-#: wp-includes/class-wp-xmlrpc-server.php:457
+#: wp-includes/class-wp-xmlrpc-server.php:462
 msgid "Template"
 msgstr "テンプレート"
 
-#: wp-includes/class-wp-xmlrpc-server.php:452
+#: wp-includes/class-wp-xmlrpc-server.php:457
 msgid "Image default align"
 msgstr "画像配置の初期設定"
 
-#: wp-includes/class-wp-xmlrpc-server.php:447
+#: wp-includes/class-wp-xmlrpc-server.php:452
 msgid "Image default size"
 msgstr "画像サイズの初期設定"
 
-#: wp-includes/class-wp-xmlrpc-server.php:442
+#: wp-includes/class-wp-xmlrpc-server.php:447
 msgid "Image default link type"
 msgstr "画像リンクタイプの初期設定"
 
-#: wp-includes/class-wp-xmlrpc-server.php:437
+#: wp-includes/class-wp-xmlrpc-server.php:442
 msgid "The URL to the admin area"
 msgstr "管理画面の URL"
 
-#: wp-includes/class-wp-xmlrpc-server.php:432
+#: wp-includes/class-wp-xmlrpc-server.php:437
 msgid "Login Address (URL)"
 msgstr "ログインアドレス (URL)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:427
+#: wp-includes/class-wp-xmlrpc-server.php:432
 msgid "Site Address (URL)"
 msgstr "サイトアドレス (URL)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:422
+#: wp-includes/class-wp-xmlrpc-server.php:427
 msgid "WordPress Address (URL)"
 msgstr "WordPress アドレス (URL)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:417
+#: wp-includes/class-wp-xmlrpc-server.php:422
 msgid "Software Version"
 msgstr "ソフトのバージョン"
 
-#: wp-includes/class-wp-xmlrpc-server.php:412
+#: wp-includes/class-wp-xmlrpc-server.php:417
 msgid "Software Name"
 msgstr "ソフト名"
 
@@ -7943,12 +7943,12 @@ msgstr "存在しないタームです。"
 
 #: wp-includes/class-wp-tax-query.php:565
 #: wp-includes/class-wp-tax-query.php:572 wp-includes/class-wp-term.php:179
-#: wp-includes/class-wp-xmlrpc-server.php:1876
-#: wp-includes/class-wp-xmlrpc-server.php:1964
-#: wp-includes/class-wp-xmlrpc-server.php:2061
-#: wp-includes/class-wp-xmlrpc-server.php:2132
-#: wp-includes/class-wp-xmlrpc-server.php:2191
-#: wp-includes/class-wp-xmlrpc-server.php:2286
+#: wp-includes/class-wp-xmlrpc-server.php:1899
+#: wp-includes/class-wp-xmlrpc-server.php:1987
+#: wp-includes/class-wp-xmlrpc-server.php:2084
+#: wp-includes/class-wp-xmlrpc-server.php:2155
+#: wp-includes/class-wp-xmlrpc-server.php:2214
+#: wp-includes/class-wp-xmlrpc-server.php:2309
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:169
 #: wp-includes/taxonomy.php:419 wp-includes/taxonomy.php:639
 #: wp-includes/taxonomy.php:730 wp-includes/taxonomy.php:894
@@ -9812,45 +9812,45 @@ msgctxt "nav menu home label"
 msgid "Home"
 msgstr "ホーム"
 
-#: wp-includes/class-wp-customize-manager.php:4331
+#: wp-includes/class-wp-customize-manager.php:4349
 msgid "Please enter a valid YouTube URL."
 msgstr "有効な YouTube URL を入力してください。"
 
 #. translators: 1: .mp4, 2: .mov
-#: wp-includes/class-wp-customize-manager.php:4307
+#: wp-includes/class-wp-customize-manager.php:4325
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
 msgstr "%1$s または %2$s ファイルのみヘッダー動画として利用可能です。動画ファイルを変換してもう一度やり直すか、動画を YouTube にアップロードし、リンクを以下の設定で指定します。"
 
-#: wp-includes/class-wp-customize-manager.php:4301
+#: wp-includes/class-wp-customize-manager.php:4319
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 msgstr "動画ファイルは、ヘッダー動画として使用するには大きすぎます。動画を短くするか、圧縮設定を最適化し、8MB 未満のファイルを再度アップロードしてください。あるいは、YouTubeに動画をアップロードし、以下の設定でリンクを指定します。"
 
-#: wp-includes/class-wp-customize-manager.php:4261
+#: wp-includes/class-wp-customize-manager.php:4279
 msgid "Unrecognized background setting."
 msgstr "認識できない背景設定です。"
 
-#: wp-includes/class-wp-customize-manager.php:4252
-#: wp-includes/class-wp-customize-manager.php:4256
+#: wp-includes/class-wp-customize-manager.php:4270
+#: wp-includes/class-wp-customize-manager.php:4274
 msgid "Invalid value for background size."
 msgstr "背景のサイズが無効です。"
 
-#: wp-includes/class-wp-customize-manager.php:4248
+#: wp-includes/class-wp-customize-manager.php:4266
 msgid "Invalid value for background position Y."
 msgstr "背景の位置 Y の値が無効です。"
 
-#: wp-includes/class-wp-customize-manager.php:4244
+#: wp-includes/class-wp-customize-manager.php:4262
 msgid "Invalid value for background position X."
 msgstr "背景の位置 X の値が無効です。"
 
-#: wp-includes/class-wp-customize-manager.php:4240
+#: wp-includes/class-wp-customize-manager.php:4258
 msgid "Invalid value for background attachment."
 msgstr "背景の添付ファイルが無効です。"
 
-#: wp-includes/class-wp-customize-manager.php:4236
+#: wp-includes/class-wp-customize-manager.php:4254
 msgid "Invalid value for background repeat."
 msgstr "背景の繰り返しの値が無効です。"
 
-#: wp-includes/class-wp-customize-manager.php:4151
+#: wp-includes/class-wp-customize-manager.php:4169
 msgid ""
 "You can add your own CSS here.\n"
 "\n"
@@ -9860,188 +9860,188 @@ msgstr ""
 "\n"
 "詳しくは上のヘルプアイコンをクリックしてください。"
 
-#: wp-includes/class-wp-customize-manager.php:4145
+#: wp-includes/class-wp-customize-manager.php:4163
 msgid "(link opens in a new window)"
 msgstr "(リンクは新しいウィンドウで開きます)"
 
-#: wp-includes/class-wp-customize-manager.php:4144
+#: wp-includes/class-wp-customize-manager.php:4162
 msgid "Learn more about CSS"
 msgstr "CSS について詳細を読む"
 
-#: wp-includes/class-wp-customize-manager.php:4143
+#: wp-includes/class-wp-customize-manager.php:4161
 msgid "https://codex.wordpress.org/CSS"
 msgstr "http://wpdocs.osdn.jp/CSS"
 
-#: wp-includes/class-wp-customize-manager.php:4142
+#: wp-includes/class-wp-customize-manager.php:4160
 msgid "CSS allows you to customize the appearance and layout of your site with code. Separate CSS is saved for each of your themes. In the editing area the Tab key enters a tab character. To move below this area by pressing Tab, press the Esc key followed by the Tab key."
 msgstr "CSS を使うとサイトの外観やレイアウトをコードでカスタマイズできます。テーマのコードとは独立した CSS が各テーマ毎に個別に保存されます。編集エリアでは Tab キーは Tab 文字として入力されます。Tab キーを打ってこの編集エリアから下に移動するには、Esc キーを打ってから Tab キーを打ってください。"
 
-#: wp-includes/class-wp-customize-manager.php:4138
+#: wp-includes/class-wp-customize-manager.php:4156
 msgid "Additional CSS"
 msgstr "追加 CSS"
 
-#: wp-includes/class-wp-customize-manager.php:4130
+#: wp-includes/class-wp-customize-manager.php:4148
 msgid "Posts page"
 msgstr "投稿ページ"
 
-#: wp-includes/class-wp-customize-manager.php:4118
+#: wp-includes/class-wp-customize-manager.php:4136
 msgid "Front page"
 msgstr "フロントページ"
 
-#: wp-includes/class-wp-customize-manager.php:4108
+#: wp-includes/class-wp-customize-manager.php:4126
 msgid "A static page"
 msgstr "固定ページ"
 
-#: wp-includes/class-wp-customize-manager.php:4107
+#: wp-includes/class-wp-customize-manager.php:4125
 msgid "Your latest posts"
 msgstr "最新の投稿"
 
-#: wp-includes/class-wp-customize-manager.php:4103
+#: wp-includes/class-wp-customize-manager.php:4121
 msgid "Front page displays"
 msgstr "フロントページの表示"
 
-#: wp-includes/class-wp-customize-manager.php:4092
+#: wp-includes/class-wp-customize-manager.php:4110
 msgid "Your theme supports a static front page."
 msgstr "テーマは固定フロントページをサポートしています。"
 
-#: wp-includes/class-wp-customize-manager.php:4090
+#: wp-includes/class-wp-customize-manager.php:4108
 msgid "Static Front Page"
 msgstr "固定フロントページ"
 
-#: wp-includes/class-wp-customize-manager.php:4069
+#: wp-includes/class-wp-customize-manager.php:4087
 msgid "Scroll with Page"
 msgstr "ページと一緒にスクロール"
 
-#: wp-includes/class-wp-customize-manager.php:4057
+#: wp-includes/class-wp-customize-manager.php:4075
 msgid "Repeat Background Image"
 msgstr "背景画像の繰り返し"
 
-#: wp-includes/class-wp-customize-manager.php:4044
+#: wp-includes/class-wp-customize-manager.php:4062
 msgid "Original"
 msgstr "元のサイズ"
 
-#: wp-includes/class-wp-customize-manager.php:4040
+#: wp-includes/class-wp-customize-manager.php:4058
 msgid "Image Size"
 msgstr "画像サイズ"
 
-#: wp-includes/class-wp-customize-manager.php:4025
+#: wp-includes/class-wp-customize-manager.php:4043
 #: wp-includes/customize/class-wp-customize-background-position-control.php:69
 msgid "Image Position"
 msgstr "画像の位置"
 
-#: wp-includes/class-wp-customize-manager.php:4008
+#: wp-includes/class-wp-customize-manager.php:4026
 msgctxt "Custom Preset"
 msgid "Custom"
 msgstr "カスタム"
 
-#: wp-includes/class-wp-customize-manager.php:4007
+#: wp-includes/class-wp-customize-manager.php:4025
 msgctxt "Repeat Image"
 msgid "Repeat"
 msgstr "繰り返し"
 
-#: wp-includes/class-wp-customize-manager.php:4006
-#: wp-includes/class-wp-customize-manager.php:4045
+#: wp-includes/class-wp-customize-manager.php:4024
+#: wp-includes/class-wp-customize-manager.php:4063
 msgid "Fit to Screen"
 msgstr "画面に合わせる"
 
-#: wp-includes/class-wp-customize-manager.php:4005
-#: wp-includes/class-wp-customize-manager.php:4046
+#: wp-includes/class-wp-customize-manager.php:4023
+#: wp-includes/class-wp-customize-manager.php:4064
 msgid "Fill Screen"
 msgstr "フルスクリーン"
 
-#: wp-includes/class-wp-customize-manager.php:4004
+#: wp-includes/class-wp-customize-manager.php:4022
 msgctxt "Default Preset"
 msgid "Default"
 msgstr "デフォルト"
 
-#: wp-includes/class-wp-customize-manager.php:4000
+#: wp-includes/class-wp-customize-manager.php:4018
 msgctxt "Background Preset"
 msgid "Preset"
 msgstr "プリセット"
 
-#: wp-includes/class-wp-customize-manager.php:3975
+#: wp-includes/class-wp-customize-manager.php:3993
 #: wp-includes/customize/class-wp-customize-background-image-control.php:30
 msgid "Background Image"
 msgstr "背景画像"
 
-#: wp-includes/class-wp-customize-manager.php:3958
+#: wp-includes/class-wp-customize-manager.php:3976
 msgid "Or, enter a YouTube URL:"
 msgstr "または YouTube の URL を入力することもできます。"
 
-#: wp-includes/class-wp-customize-manager.php:3950
+#: wp-includes/class-wp-customize-manager.php:3968
 msgid "Choose Video"
 msgstr "動画を選択"
 
-#: wp-includes/class-wp-customize-manager.php:3948
+#: wp-includes/class-wp-customize-manager.php:3966
 msgid "No video selected"
 msgstr "動画が選択されていません"
 
-#: wp-includes/class-wp-customize-manager.php:3947
+#: wp-includes/class-wp-customize-manager.php:3965
 msgid "Change Video"
 msgstr "動画を変更"
 
-#: wp-includes/class-wp-customize-manager.php:3946
-#: wp-includes/class-wp-customize-manager.php:3949
+#: wp-includes/class-wp-customize-manager.php:3964
+#: wp-includes/class-wp-customize-manager.php:3967
 msgid "Select Video"
 msgstr "動画を選択"
 
-#: wp-includes/class-wp-customize-manager.php:3940
+#: wp-includes/class-wp-customize-manager.php:3958
 msgid "Header Video"
 msgstr "ヘッダー動画"
 
-#: wp-includes/class-wp-customize-manager.php:3893
+#: wp-includes/class-wp-customize-manager.php:3911
 #: wp-includes/customize/class-wp-customize-header-image-control.php:31
 msgid "Header Image"
 msgstr "ヘッダー画像"
 
 #. translators: 1: .mp4, 2: header height in pixels
-#: wp-includes/class-wp-customize-manager.php:3887
+#: wp-includes/class-wp-customize-manager.php:3905
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
 msgstr "%1$s 形式の動画ファイルをアップロードしてください。最良の結果を出すにはファイルサイズを最小限にしてください。お使いのテーマは動画の高さとして%2$sピクセルを推奨しています。"
 
 #. translators: 1: .mp4, 2: header width in pixels
-#: wp-includes/class-wp-customize-manager.php:3880
+#: wp-includes/class-wp-customize-manager.php:3898
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
 msgstr "%1$s 形式の動画ファイルをアップロードしてください。最良の結果を出すにはファイルサイズを最小限にしてください。お使いのテーマは動画の幅として%2$sピクセルを推奨しています。"
 
 #. translators: 1: .mp4, 2: header size in pixels
-#: wp-includes/class-wp-customize-manager.php:3873
+#: wp-includes/class-wp-customize-manager.php:3891
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 msgstr "%1$s 形式の動画ファイルをアップロードしてください。最良の結果を出すにはファイルサイズを最小限にしてください。お使いのテーマは動画の大きさとして%2$sピクセルを推奨しています。"
 
-#: wp-includes/class-wp-customize-manager.php:3866
+#: wp-includes/class-wp-customize-manager.php:3884
 msgid "This theme doesn't support video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "このテーマは、このページでの動画ヘッダーをサポートしていません。フロントページか動画ヘッダーをサポートしている他のページに移動してください。"
 
-#: wp-includes/class-wp-customize-manager.php:3862
+#: wp-includes/class-wp-customize-manager.php:3880
 msgid "If you add a video, the image will be used as a fallback while the video loads."
 msgstr "動画を追加する場合、ヘッダー画像はフォールバックとして使用され、動画のロード途中に表示されます。"
 
-#: wp-includes/class-wp-customize-manager.php:3861
+#: wp-includes/class-wp-customize-manager.php:3879
 msgid "Header Media"
 msgstr "ヘッダーメディア"
 
-#: wp-includes/class-wp-customize-manager.php:3854
+#: wp-includes/class-wp-customize-manager.php:3872
 msgid "Background Color"
 msgstr "背景色"
 
-#: wp-includes/class-wp-customize-manager.php:3839
+#: wp-includes/class-wp-customize-manager.php:3857
 msgid "Header Text Color"
 msgstr "ヘッダーテキスト色"
 
-#: wp-includes/class-wp-customize-manager.php:3816
+#: wp-includes/class-wp-customize-manager.php:3834
 msgid "Colors"
 msgstr "色"
 
-#: wp-includes/class-wp-customize-manager.php:3802
+#: wp-includes/class-wp-customize-manager.php:3820
 msgid "Choose logo"
 msgstr "ロゴを選択"
 
-#: wp-includes/class-wp-customize-manager.php:3800
+#: wp-includes/class-wp-customize-manager.php:3818
 msgid "No logo selected"
 msgstr "ロゴが選択されていません"
 
-#: wp-includes/class-wp-customize-manager.php:3799
+#: wp-includes/class-wp-customize-manager.php:3817
 #: wp-includes/customize/class-wp-customize-color-control.php:54
 #: wp-includes/customize/class-wp-customize-image-control.php:38
 #: wp-includes/customize/class-wp-customize-media-control.php:62
@@ -10049,7 +10049,7 @@ msgstr "ロゴが選択されていません"
 msgid "Default"
 msgstr "デフォルト"
 
-#: wp-includes/class-wp-customize-manager.php:3798
+#: wp-includes/class-wp-customize-manager.php:3816
 #: wp-includes/class-wp-customize-widgets.php:731
 #: wp-includes/class-wp-editor.php:1054
 #: wp-includes/customize/class-wp-customize-image-control.php:37
@@ -10059,118 +10059,118 @@ msgstr "デフォルト"
 msgid "Remove"
 msgstr "削除"
 
-#: wp-includes/class-wp-customize-manager.php:3797
+#: wp-includes/class-wp-customize-manager.php:3815
 msgid "Change logo"
 msgstr "ロゴを変更"
 
-#: wp-includes/class-wp-customize-manager.php:3796
-#: wp-includes/class-wp-customize-manager.php:3801
+#: wp-includes/class-wp-customize-manager.php:3814
+#: wp-includes/class-wp-customize-manager.php:3819
 msgid "Select logo"
 msgstr "ロゴを選択"
 
-#: wp-includes/class-wp-customize-manager.php:3788
+#: wp-includes/class-wp-customize-manager.php:3806
 msgid "Logo"
 msgstr "ロゴ"
 
 #. translators: %s: site icon size in pixels
-#: wp-includes/class-wp-customize-manager.php:3772
+#: wp-includes/class-wp-customize-manager.php:3790
 msgid "The Site Icon is used as a browser and app icon for your site. Icons must be square, and at least %s pixels wide and tall."
 msgstr "サイトアイコンはサイトのアプリとブラウザーのアイコンとして使用されます。アイコンは正方形で、幅・高さともに %s ピクセル以上である必要があります。"
 
-#: wp-includes/class-wp-customize-manager.php:3769
+#: wp-includes/class-wp-customize-manager.php:3787
 msgid "Site Icon"
 msgstr "サイトアイコン"
 
-#: wp-includes/class-wp-customize-manager.php:3755
-#: wp-includes/class-wp-customize-manager.php:3832
+#: wp-includes/class-wp-customize-manager.php:3773
+#: wp-includes/class-wp-customize-manager.php:3850
 msgid "Display Site Title and Tagline"
 msgstr "サイトのタイトルとキャッチフレーズを表示"
 
-#: wp-includes/class-wp-customize-manager.php:3742
+#: wp-includes/class-wp-customize-manager.php:3760
 msgid "Tagline"
 msgstr "キャッチフレーズ"
 
-#: wp-includes/class-wp-customize-manager.php:3731
-#: wp-includes/class-wp-xmlrpc-server.php:479
+#: wp-includes/class-wp-customize-manager.php:3749
+#: wp-includes/class-wp-xmlrpc-server.php:484
 msgid "Site Title"
 msgstr "サイトのタイトル"
 
-#: wp-includes/class-wp-customize-manager.php:3720
+#: wp-includes/class-wp-customize-manager.php:3738
 msgid "Site Identity"
 msgstr "サイト基本情報"
 
-#: wp-includes/class-wp-customize-manager.php:3634
+#: wp-includes/class-wp-customize-manager.php:3652
 msgid "Enter mobile preview mode"
 msgstr "モバイルプレビューモードに入る"
 
-#: wp-includes/class-wp-customize-manager.php:3631
+#: wp-includes/class-wp-customize-manager.php:3649
 msgid "Enter tablet preview mode"
 msgstr "タブレットプレビューモードに入る"
 
-#: wp-includes/class-wp-customize-manager.php:3627
+#: wp-includes/class-wp-customize-manager.php:3645
 msgid "Enter desktop preview mode"
 msgstr "デスクトッププレビューモードに入る"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:3299
+#: wp-includes/class-wp-customize-manager.php:3317
 msgid "Live Preview: %s"
 msgstr "ライブプレビュー: %s"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:3296
+#: wp-includes/class-wp-customize-manager.php:3314
 msgid "Customize: %s"
 msgstr "カスタマイズ: %s"
 
 #. translators: 1: panel id, 2: link to 'customize_loaded_components' filter
 #. reference
-#: wp-includes/class-wp-customize-manager.php:2956
+#: wp-includes/class-wp-customize-manager.php:2974
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "%1$s を手動で削除すると PHP の警告を引き起こす可能性があります。代わりに %2$s フィルターを使用してください。"
 
-#: wp-includes/class-wp-customize-manager.php:2356
+#: wp-includes/class-wp-customize-manager.php:2374
 msgid "There is %s invalid setting."
 msgid_plural "There are %s invalid settings."
 msgstr[0] "%s件の無効な設定があります。"
 
-#: wp-includes/class-wp-customize-manager.php:2027
+#: wp-includes/class-wp-customize-manager.php:2045
 #: wp-includes/class-wp-customize-setting.php:549
 msgid "Invalid value."
 msgstr "無効な値です。"
 
-#: wp-includes/class-wp-customize-manager.php:2004
+#: wp-includes/class-wp-customize-manager.php:2022
 msgid "Unauthorized to modify setting due to capability."
 msgstr "設定を変更する権限がありません。"
 
-#: wp-includes/class-wp-customize-manager.php:1999
+#: wp-includes/class-wp-customize-manager.php:2017
 msgid "Setting does not exist or is unrecognized."
 msgstr "設定が存在しないか、または認識できません。"
 
-#: wp-includes/class-wp-customize-manager.php:1792
+#: wp-includes/class-wp-customize-manager.php:1810
 msgid "This form is not live-previewable."
 msgstr "このフォームは、ライブプレビューできません。"
 
-#: wp-includes/class-wp-customize-manager.php:1791
+#: wp-includes/class-wp-customize-manager.php:1809
 msgid "This link is not live-previewable."
 msgstr "このリンクは、ライブプレビューできません。"
 
-#: wp-includes/class-wp-customize-manager.php:1790
+#: wp-includes/class-wp-customize-manager.php:1808
 #: wp-includes/customize/class-wp-customize-selective-refresh.php:184
 msgid "Shift-click to edit this element."
 msgstr "この要素を編集するには Shift キーを押しながらクリックします。"
 
-#: wp-includes/class-wp-customize-manager.php:1571
+#: wp-includes/class-wp-customize-manager.php:1589
 msgid "Unauthorized. You may remove the customize_messenger_channel param to preview as frontend."
 msgstr "権限がありません。フロントエンドでプレビューするには customize_messenger_channel 変数を削除するとよいかもしれません。"
 
-#: wp-includes/class-wp-customize-manager.php:522
+#: wp-includes/class-wp-customize-manager.php:540
 msgid "The requested theme does not exist."
 msgstr "選択したテーマはありません。"
 
-#: wp-includes/class-wp-customize-manager.php:512
+#: wp-includes/class-wp-customize-manager.php:530
 msgid "Sorry, you are not allowed to edit theme options on this site."
 msgstr "このサイトのテーマ設定を編集する権限がありません。"
 
-#: wp-includes/class-wp-customize-manager.php:493
+#: wp-includes/class-wp-customize-manager.php:511
 msgid "Non-existent changeset UUID."
 msgstr "チェンジセット UUID が存在しません。"
 
@@ -10270,12 +10270,12 @@ msgstr "ピンバック:"
 msgid "Feed for all posts filed under %s"
 msgstr "%s に含まれるすべての投稿のフィード"
 
-#: wp-includes/class-http.php:965 wp-includes/class-wp-http-curl.php:232
+#: wp-includes/class-http.php:984 wp-includes/class-wp-http-curl.php:232
 #: wp-includes/class-wp-http-curl.php:271
 msgid "Too many redirects."
 msgstr "転送が多すぎます。"
 
-#: wp-includes/class-http.php:534
+#: wp-includes/class-http.php:553
 msgid "There are no HTTP transports available which can complete the requested request."
 msgstr "要求されたリクエストを完了できる HTTP トランスポートがありません。"
 
@@ -10287,7 +10287,8 @@ msgstr "ファイルストリーミングの送り先となるディレクトリ
 msgid "User has blocked requests through HTTP."
 msgstr "ユーザーは HTTP 経由のリクエストをブロックしました。"
 
-#: wp-includes/class-http.php:264 wp-includes/class-wp-xmlrpc-server.php:6246
+#: wp-includes/class-http.php:264 wp-includes/class-http.php:484
+#: wp-includes/class-wp-xmlrpc-server.php:6269
 msgid "A valid URL was not provided."
 msgstr "有効な URL ではありません。"
 
