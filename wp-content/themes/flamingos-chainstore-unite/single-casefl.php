@@ -17,26 +17,39 @@ get_header(); ?>
       	<div id="primary" class="content-area">
       		<main id="main" class="site-main" role="main">
                     <div class="row">
-                        <div class="col-md-8 col-md-push-2">
+                        <div class="col-md-10 col-md-push-1">
                           <div class="kiji-page">
                                <!--記事全体-->
                                             <div class="ibskinArticle">
                                                       <div class="ibskinArticleBody2">
+
+                                                      <div >
+                                                          <div class="ibskinArticleTitle">
+                                                                <h1 class="ibskinArticleHeader-case2">
+                                                                  <b><?php the_title(); ?></b>
+                                                                </h1>
+                                                          </div>
+                                                      </div>
+
                                                                 <!--記事　中身-->
                                                       <?php while ( have_posts() ) : the_post(); ?>
-                                                      <?php get_template_part( 'content', 'page' ); ?>
+                                         <!--記事info-->
+                                                          <div class="ibarticleDetailArea">
+                                                             <time datetime="2016-08-12" pubdate="pubdate"><?php echo get_the_date(); ?></time><?php get_template_part( 'new' ); ?>
+                                                              <br />テーマ：<?php echo get_the_term_list( $id,tema, $before, $sep, $after ); ?>
+                                                          </div>
+                                                                    <!--記事info-->
+                                                      <?php the_content(); ?>
+
+                                                          <!--記事info-->
                                                       <?php endwhile; // end of the loop. ?>
                                                                 <!--記事　中身-->
                                                             <div class="hensyuu">
                                                             <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
                                                             </div>
                                                       </div>                                             
-                                            </div>                          
-                                <div class="iblistLink">
-                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>case">
-                                              事例一覧へ
-                                        </a>
-                                </div>
+                                            </div> 
+<?php get_template_part( 'case-parts' ); ?>
                                <!--記事全体-->
                         </div><!--kiji page-->
 

@@ -32,7 +32,8 @@
 					                                                                              <br />テーマ：<?php echo get_the_term_list( $id,message, $before, $sep, $after ); ?>
 					                                                                          </div>
 					                                                          <!--記事info-->
-																			<?php the_field('newsnakami'); ?>
+					                                                          <?php the_content(); ?>
+																			 <!--<?//php the_field('newsnakami'); ?>-->
                                                                       
 																		<?php endwhile; // end of the loop. ?>
 																		<br><br><br><br>

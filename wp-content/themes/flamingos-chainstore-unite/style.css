@@ -1390,6 +1390,14 @@ li.children:before {
     margin:30px 0 20px 0;
     font-size: 15px;
 }
+.ibskinArticleHeader-case2 {
+    padding: 0px 0px 10px 0;
+    border-bottom: 1px solid #e84331;
+    overflow: hidden;
+    zoom: 1;
+    margin: 0px 0 20px 0;
+    font-size: 18px;
+}
 .ibMenuHeader-case {
     font-weight: bold;
     padding: 5px 10px 5px 7px;
