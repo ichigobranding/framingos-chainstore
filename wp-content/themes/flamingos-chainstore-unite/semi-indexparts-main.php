@@ -1,6 +1,6 @@
 <div class="ibskinArticle33">
               <h2 class="re1511-ttl">
-                <i class="fa fa-calendar"></i> 募集中のセミナー<em class="re1511-ttlSmall">Seminar</em>
+                <i class="fa fa-calendar"></i> セミナー情報<em class="re1511-ttlSmall">Seminar</em>
                 <br>
               </h2>
                 <div id="topnewsBox-new">

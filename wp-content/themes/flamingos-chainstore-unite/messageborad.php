@@ -37,7 +37,7 @@
                   </ul>
 
                       <div class="iblistLink">
-                        <a href="<?php the_permalink(); ?>/newsslist">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>newsslist">
                               一覧を見る
                         </a>
                       </div>
