@@ -1440,11 +1440,6 @@ li.children:before {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {  .tescol2{height: 235px;} }
-/*マウスオーバーで半透明 *******/
-img:hover {
-   opacity: 0.5;
-}
-/*マウスオーバーで半透明 *******/
 /*****************************
    事例紹介
  *****************************/
