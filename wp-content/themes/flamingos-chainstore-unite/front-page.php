@@ -8,22 +8,7 @@
 
 	<div id="primary" class="content-area col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
-	<!-- スマホ版対応 topbana -->
-		<?php if (wp_is_mobile()) :?>
-			<!-- topbana -->
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana-mobile-small.png" alt="※"/>
-			<!--<?//php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>-->
-			<!-- topbana -->
-		<?php else: ?>
-			<!-- topbana -->
-			<div class="tbanana imgbtn">
-				<!--<a href="<?//php echo esc_url( home_url( '/' ) ); ?>/※">-->
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/>
-					<!--</a>-->
-			</div>
-			<!-- topbana -->
-		<?php endif; ?>
-	<!-- スマホ topbana -->
+	<?php get_template_part( 'smabana' ); ?>
 	<!-- topbana -->
 			<!-- <div class="tbanana imgbtn">
 				<a href="<?//php echo esc_url( home_url( '/' ) ); ?>/※">
@@ -32,9 +17,9 @@
 			</div>-->
 	<!-- topbana -->
 	<!-- #IB-main## -->
-
 				<div class="row">
 						<div class="col-md-6 col-md-push-3 centerc">
+							<?php get_template_part( 'ap-bana' ); ?>
 							<?php get_template_part( 'messageborad' ); ?>
 							<!--<?//php get_template_part( 'messageborad-w' ); ?>-->
 							<?php get_template_part( 'semi-indexparts-main' ); ?>
