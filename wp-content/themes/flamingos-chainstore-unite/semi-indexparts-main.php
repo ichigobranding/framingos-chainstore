@@ -42,11 +42,11 @@
                           <?php endif;
                           wp_reset_postdata(); ?>
                     </ul>
-                       <div class="iblistLink">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/semiuplist">
+                       <!--<div class="iblistLink">
+                        <a href="<?//php echo esc_url( home_url( '/' ) ); ?>/semiuplist">
                               一覧を見る
                         </a>
-                      </div>
+                      </div>-->
                  </div>
                 </div>
                 <!-- セミナー -->

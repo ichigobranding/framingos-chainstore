@@ -1451,6 +1451,10 @@ li.children:before {
     padding: 3px;
     font-size: 13px;
 }
+.semilistul{
+    padding:0;
+}
+
  /*****************************
    募集一覧　＆　過去開催
  *****************************/
@@ -1459,3 +1463,26 @@ li.children:before {
     margin: 0 0 15px 0;
 }
 /* バナー幅 */
+
+ /*****************************
+   人気記事フォントサイズ
+ *****************************/
+.widgets-list-layout-links{
+    font-size:14px;
+}
+.wpp-post-title{
+    font-size:14px;
+}
+.wpp-thumbnail {
+    margin: 0 20px 0 0;
+}
+.widgets-list-layout-links {
+    float: left!important;
+    margin:0 0 0 20px;
+}
+.widget > ul > li, li.recentcomments {
+    padding:0 0 8px 0;
+}
+.wpp-views {
+    font-size:13px;
+}

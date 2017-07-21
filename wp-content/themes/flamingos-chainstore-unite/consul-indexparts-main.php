@@ -1,7 +1,7 @@
 <div class="ibskinArticle33">
             <!-- コンサル一覧 -->
               <h2 class="re1511-ttl">
-                <i class="fa fa-calendar"></i> 募集中の個別相談<em class="re1511-ttlSmall">Consulting</em>
+                <i class="fa fa-calendar"></i> 個別相談情報<em class="re1511-ttlSmall">Consulting</em>
                 <br>
               </h2>
                 <div id="topnewsBox-new">
