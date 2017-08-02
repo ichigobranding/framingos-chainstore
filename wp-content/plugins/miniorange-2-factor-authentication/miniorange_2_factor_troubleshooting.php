@@ -152,7 +152,7 @@
 				<hr>
 			<h3><a  data-toggle="collapse" href="#question19" aria-expanded="false" ><li>My phone has no internet connectivity and i am entering the one time passcode from miniOrange Authenticator App, it says Invalid OTP.</li></a></h3>
 				<div class="mo2f_collapse" id="question19">
-					Click on the <b>Settings Icon</b> on top right corner in <b>miniOrange Authenticator App</b> and then press <b>Sync button</b> under 'Time correction for codes' to sync your time with miniOrange Servers. If you still can't get it right, submit a query here in our <b>support section</b>.<br><br>
+					Click on the <b>Settings Icon</b> on top right corner in miniOrange<b> Authenticator App</b> and then press <b>Sync button</b> under 'Time correction for codes' to sync your time with miniOrange Servers. If you still can't get it right, submit a query here in our <b>support section</b>.<br><br>
 				</div>
 				<hr>
 				<?php if(current_user_can( 'manage_options' )) { ?>

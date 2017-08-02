@@ -385,7 +385,7 @@ class Miniorange_Password_2Factor_Login{
 				unset($_SESSION[ 'mo2f-login-qrCode' ]);
 				unset($_SESSION[ 'mo2f-login-transactionId' ]);
 				$redirect_to = isset($_POST[ 'redirect_to' ]) ? $_POST[ 'redirect_to' ] : null;
-				$mo2fa_login_message = 'Please enter the one time passcode shown in the <b>miniOrange Authenticator</b> app.';
+				$mo2fa_login_message = 'Please enter the one time passcode shown in the miniOrange<b> Authenticator</b> app.';
 				$mo2fa_login_status = 'MO_2_FACTOR_CHALLENGE_SOFT_TOKEN';
 				$this->miniorange_pass2login_form_fields($mo2fa_login_status, $mo2fa_login_message, $redirect_to);
 			}
@@ -677,7 +677,7 @@ class Miniorange_Password_2Factor_Login{
 	
 	function mo2f_pass2login_otp_verification($user,$mo2f_second_factor, $redirect_to){
 		if($mo2f_second_factor == 'SOFT TOKEN'){
-			$mo2fa_login_message = 'Please enter the one time passcode shown in the <b>miniOrange Authenticator</b> app.';
+			$mo2fa_login_message = 'Please enter the one time passcode shown in the miniOrange<b> Authenticator</b> app.';
 			$mo2fa_login_status = 'MO_2_FACTOR_CHALLENGE_SOFT_TOKEN';
 			$this->miniorange_pass2login_form_fields($mo2fa_login_status, $mo2fa_login_message, $redirect_to);
 		}else if($mo2f_second_factor == 'GOOGLE AUTHENTICATOR'){
@@ -776,7 +776,7 @@ class Miniorange_Password_2Factor_Login{
 			unset($_SESSION[ 'mo2f-login-qrCode' ]);
 			unset($_SESSION[ 'mo2f-login-transactionId' ]);
 			
-			$mo2fa_login_message = 'Please enter the one time passcode shown in the <b>miniOrange Authenticator</b> app.';
+			$mo2fa_login_message = 'Please enter the one time passcode shown in the miniOrange<b> Authenticator</b> app.';
 			$mo2fa_login_status = 'MO_2_FACTOR_CHALLENGE_SOFT_TOKEN';
 			$this->miniorange_pass2login_form_fields($mo2fa_login_status, $mo2fa_login_message, $redirect_to);
 		}else{

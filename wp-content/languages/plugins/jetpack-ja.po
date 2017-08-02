@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-05-19 03:19:20+0000\n"
+"PO-Revision-Date: 2017-07-07 07:10:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -198,7 +198,7 @@ msgstr "単一のダッシュボードからすべてのサイトを管理する
 
 #: _inc/jetpack-strings.php:363
 msgid "I already use this app."
-msgstr "すでにこのアプリを使っています。"
+msgstr "すでにこのアプリを利用中です。"
 
 #: _inc/jetpack-strings.php:323
 msgid "Create address"
@@ -647,7 +647,7 @@ msgstr "広告非表示の高速高品質動画をホスト。"
 
 #: _inc/jetpack-strings.php:530
 msgid "Generate income with high-quality ads."
-msgstr "高品質広告で収益を生む。"
+msgstr "高品質な広告で収益を得ましょう。"
 
 #: _inc/jetpack-strings.php:529
 msgid "Real-time site backups and automatic threat resolution."
@@ -818,7 +818,7 @@ msgstr "アイキャッチ画像を表示"
 
 #: _inc/jetpack-strings.php:321
 msgid "Must be enabled to use tiled galleries."
-msgstr "タイルギャラリーを使用するには有効にする必要があります。"
+msgstr "タイルギャラリーを使用するには有効化する必要があります。"
 
 #: _inc/jetpack-strings.php:317
 msgctxt "Settings header"
@@ -827,7 +827,7 @@ msgstr "WordPress.com ツールバー"
 
 #: _inc/jetpack-strings.php:316
 msgid "Enable the WordPress.com toolbar"
-msgstr "WordPress.com ツールバーを有効にする"
+msgstr "WordPress.com ツールバーを有効化"
 
 #: _inc/jetpack-strings.php:315
 msgid "The WordPress.com toolbar replaces the default admin bar and offers quick links to the Reader, all your sites, your WordPress.com profile, and notifications. Centralize your WordPress experience with a single global toolbar."
@@ -835,7 +835,7 @@ msgstr "WordPress.com ツールバーはデフォルトの管理バーに代わ�
 
 #: _inc/jetpack-strings.php:313
 msgid "Writing tools available to you will be shown here when an administrator enables them."
-msgstr "管理者が有効にすると、使用できる作成ツールがここに表示されます。"
+msgstr "管理者が有効化すると、使用できる作成ツールがここに表示されます。"
 
 #: _inc/jetpack-strings.php:311
 msgid "Add, organize, and display {{testimonialLink}}testimonials{{/testimonialLink}}. If your theme doesn’t support testimonials yet, you can display them using the shortcode\t( [testimonials] )."
@@ -856,7 +856,7 @@ msgstr "作成"
 
 #: _inc/jetpack-strings.php:286
 msgid "Note that {{b}}verifying your site with these services is not necessary{{/b}} in order for your site to be indexed by search engines. To use these advanced search engine tools and verify your site with a service, paste the HTML Tag code below. Read the {{support}}full instructions{{/support}} if you are having trouble. Supported verification services: {{google}}Google Search Console{{/google}}, {{bing}}Bing Webmaster Center{{/bing}}, {{pinterest}}Pinterest Site Verification{{/pinterest}}, and {{yandex}}Yandex.Webmaster{{/yandex}}."
-msgstr "検索エンジンでサイトがインデックスされるために、{{b}}サイトをこれらのサービスで認証する必要はない{{/b}}ことに注意してください。これらの高度な検索エンジンツールを使用して、サービスでサイトを認証するには、下に HTML タグコードを貼り付けてください。問題がある場合は、{{support}}詳細な手順{{/support}}をお読みください。対応認証サービス:{{google}}Google Search Console{{/google}}、{{bing}}Bing Webmaster Center{{/bing}}、{{pinterest}}Pinterest Site Vertification{{/pinterest}}、および {{yandex}}Yandex.Webmaster{{/yandex}}。"
+msgstr "検索エンジンでサイトがインデックスされるようにするには、{{b}}各サービスでサイトを認証する必要はありません{{/b}}。高度な検索エンジンツールを使用し、サービスでサイトを認証するには、下に HTML タグコードを貼り付けてください。問題がある場合は、{{support}}詳細な手順{{/support}}をお読みください。対応認証サービス:{{google}}Google Search Console{{/google}}、{{bing}}Bing Webmaster Center{{/bing}}、{{pinterest}}Pinterest Site Verification{{/pinterest}}、{{yandex}}Yandex.Webmaster{{/yandex}}。"
 
 #: _inc/jetpack-strings.php:284
 msgid "Bing"
@@ -872,7 +872,7 @@ msgstr "XML サイトマップを生成"
 
 #: _inc/jetpack-strings.php:280
 msgid "Your sitemap is automatically sent to all major search engines for indexing."
-msgstr "サイトマップは、インデックスを付けるためにすべての主要な検索エンジンに自動的に送信されます。"
+msgstr "サイトマップはすべての主要な検索エンジンに自動送信され、インデックスの作成に使われます。"
 
 #: _inc/jetpack-strings.php:279
 msgid "Your site is not currently accessible to search engines. You might have \"Search Engine Visibility\" disabled in your {{a}}Reading Settings{{/a}}."
@@ -889,7 +889,7 @@ msgstr "トラフィックの統計情報と概要の収集"
 
 #: _inc/jetpack-strings.php:270
 msgid "The image helps collect stats, but should work when hidden."
-msgstr "画像は統計収集に役立ちますが、非表示時に機能する必要があります。"
+msgstr "画像は統計収集に役立ちますが、非表示時でも機能するはずです。"
 
 #: _inc/jetpack-strings.php:269
 msgid "Count logged in page views from"
@@ -897,7 +897,7 @@ msgstr "次の場所からログインして閲覧したページビューの数
 
 #: _inc/jetpack-strings.php:268
 msgid "Allow stats reports to be viewed by"
-msgstr "統計レポートの閲覧を許可する相手"
+msgstr "統計レポートの閲覧を許可するユーザー"
 
 #: _inc/jetpack-strings.php:267
 msgctxt "Settings header"
@@ -1091,7 +1091,7 @@ msgstr "「いいね」ボタン"
 
 #: _inc/jetpack-strings.php:230
 msgid "Allow readers to show their appreciation of your posts by adding a like button to your content"
-msgstr "コンテンツに「いいね」ボタンを追加して、投稿に対して読者が同意を示すことを許可します"
+msgstr "コンテンツに「いいね」ボタンを追加し、読者が投稿を評価するのを許可する"
 
 #: _inc/jetpack-strings.php:200
 msgctxt "A caption for a small button to fix security issues."
@@ -1149,7 +1149,7 @@ msgstr "配色"
 
 #: _inc/jetpack-strings.php:105
 msgid "Enable Markdown use for comments."
-msgstr "コメントの Markdown 記法を有効にします。"
+msgstr "コメントの Markdown 記法を有効化する。"
 
 #: _inc/jetpack-strings.php:68
 msgid "Connections"
@@ -2041,7 +2041,7 @@ msgstr "開始するにあたり、投稿エディターで「メディアを追
 
 #: _inc/jetpack-strings.php:261 _inc/jetpack-strings.php:490
 msgid "{{span}}You can now also configure related posts in the Customizer. {{ExternalLink}}Try it out!{{/ExternalLink}}{{/span}}"
-msgstr "{{span}}カスタマイザーで関連記事の設定もできるようになりました。{{ExternalLink}}お試しください。{{/ExternalLink}}{{/span}}"
+msgstr "{{span}}カスタマイザーでも関連記事の設定ができるようになりました。{{ExternalLink}}お試しください。{{/ExternalLink}}{{/span}}"
 
 #: _inc/jetpack-strings.php:484
 msgid "{{link}}Configure your Monitor notification settings on WordPress.com{{/link}}"
@@ -3586,7 +3586,7 @@ msgstr "ご使用の WordPress は古いバージョンです。"
 
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:46
 msgid "Turn on JavaScript to unlock Jetpack's full potential!"
-msgstr "JavaScript を有効にすると、Jetpack のすべての機能を使用できるようになります。"
+msgstr "JavaScript を有効化すると、Jetpack のすべての機能を使用できるようになります。"
 
 #: _inc/lib/admin-pages/class.jetpack-settings-page.php:41
 msgid "You have JavaScript disabled"
@@ -5310,7 +5310,7 @@ msgstr "フィルターコミックリスト"
 
 #: modules/custom-css/custom-css.php:1287
 msgid "Show all"
-msgstr "全て表示"
+msgstr "すべて表示"
 
 #. translators: %1$s is replaced with an input field for numbers.
 #: modules/custom-css/custom-css.php:1038
@@ -7595,7 +7595,7 @@ msgid ""
 "With Carousel active, any standard WordPress galleries or single images you have embedded in posts or pages will\n"
 "\t\tlaunch a full-screen photo browsing experience with comments and EXIF metadata."
 msgstr ""
-"カルーセルを有効にすると、投稿やページに埋め込んだ標準 WordPress ギャラリーを\n"
+"カルーセルを有効化すると、投稿やページに埋め込んだ標準 WordPress ギャラリーを\n"
 "\t\tコメントと EXIF メタデータ付きの全画面の写真として表示できます。"
 
 #: modules/module-info.php:223
@@ -7883,7 +7883,7 @@ msgstr "コメント投稿者のプロフィールへ Gravatar アカウント�
 #: modules/module-headings.php:59
 msgctxt "Module Description"
 msgid "Enable pop-up business cards over commenters’ Gravatars."
-msgstr "コメント投稿者の Gravatar 画像上でポップアップカードを有効化します。"
+msgstr "コメント投稿者の Gravatar 画像上でポップアップカードを有効化する。"
 
 #: modules/module-headings.php:58
 msgctxt "Module Name"

@@ -477,7 +477,7 @@
 	function download_instruction_for_mobile_app($current_user){	?>	
 	<div id="mo2f_app_div" class="mo_margin_left">
 		<?php if(!get_user_meta($current_user->ID,'mo2f_mobile_registration_status',true)) { ?>
-		<a  class="mo_app_link" data-toggle="collapse"  href="#mo2f_sub_header_app" aria-expanded="false" ><h3 class="mo2f_authn_header">Step-1 : Download the  <span style="color: #F78701;">miniOrange Authenticator</span> App</h3></a><hr class="mo_hr">
+		<a  class="mo_app_link" data-toggle="collapse"  href="#mo2f_sub_header_app" aria-expanded="false" ><h3 class="mo2f_authn_header">Step-1 : Download the miniOrange<span style="color: #F78701;"> Authenticator</span> App</h3></a><hr class="mo_hr">
 		
 		<div class="mo2f_collapse in" id="mo2f_sub_header_app">
 		<?php } ?>
@@ -489,7 +489,7 @@
 				<ol>
 				<li>Go to App Store</li>
 				<li>Search for <b>miniOrange</b></li>
-				<li>Download and install <span style="color: #F78701;"><b>miniOrange Authenticator</b></span> app (<b>NOT MOAuth</b>)</li>
+				<li>Download and install <span style="color: #F78701;">miniOrange<b> Authenticator</b></span> app (<b>NOT MOAuth</b>)</li>
 				</ol>
 					<span><a target="_blank" href="https://itunes.apple.com/us/app/miniorange-authenticator/id796303566?ls=1"><img src="<?php echo plugins_url( 'includes/images/appstore.png' , __FILE__ );?>" style="width:120px; height:45px; margin-left:6px;"></a></span>
 				</td>
@@ -498,9 +498,9 @@
 				<ol>
 				<li> Go to Google Play Store.</li>
 				<li> Search for <b>miniOrange.</b></li>
-				<li>Download and install miniOrange <span style="color: #F78701;"><b>miniOrange Authenticator</b></span> app (<b>NOT MOAuth </b>)</li>
+				<li>Download and install <span style="color: #F78701;"><b> Authenticator</b></span> app (<b>NOT miniOrange Authenticator/MOAuth)</b></li>
 				</ol>
-				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.miniorange.authbeta"><img src="<?php echo plugins_url( 'includes/images/playStore.png' , __FILE__ );?>" style="width:120px; height:=45px; margin-left:6px;"></a>
+				<a target="_blank" href="https://play.google.com/store/apps/details?id=com.miniorange.android.authenticator&hl=en"><img src="<?php echo plugins_url( 'includes/images/playStore.png' , __FILE__ );?>" style="width:120px; height:=45px; margin-left:6px;"></a>
 				</td>
 		
 			</tr>
@@ -986,6 +986,31 @@
 						</div>
 					</td>
 				</tr>
+				<tr>	
+					<!-- OTP Over SMS and EMail method-->
+					<td class="<?php if( !current_user_can('manage_options') && !(in_array("SMS AND EMAIL", $opt))  ){ echo "mo2f_td_hide"; }else { echo "mo2f_td_show"; } ?>">
+						<div><div class="mo2f_grayed_out_link"><?php echo $random_mo_key ? '<span style="float:right;" title="This feature is avialable in premium version of plugin"><a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_pricing" ><b>PREMIUM**</b></a></span>' :'';?></div>
+						<div class="mo2f_thumbnail<?php echo $random_mo_key ? " mo2f_grayed_out" : '';?>" >
+							<label title="Supported in Landline phones, Smartphones, Feature phones.">
+								<input type="radio"  name="mo2f_selected_2factor_method" style="margin:5px;" value="PHONE VERIFICATION" <?php checked($mo2f_second_factor == 'SMS AND EMAIL');
+								if(!$random_mo_key && (get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_PLUGIN_SETTINGS' || get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_INITIALIZE_TWO_FACTOR') ){ 
+											} else{ echo 'disabled'; } ?> />
+								OTP Over SMS And Email 
+							</label><hr>
+							<p>
+								You will receive a one time passcode via SMS on your phone and your e-mail. You have to enter the otp on your screen to login. Supported in Smartphones, Feature Phones.
+							</p>
+							<?php if(get_user_meta($current_user->ID,'mo2f_otp_registration_status',true)){ ?>
+								<div class="configuredLandline" id="PHONE_VERIFICATION" title="Supported in Landline phones, Smartphones, Feature phones.">
+									<a href="#reconfigure" data-method="PHONE VERIFICATION" >Reconfigure</a> | <a href="#test" data-method="PHONE VERIFICATION">Test</a>
+								</div>
+							<?php } else { ?>
+								<div class="notConfiguredLandline" title="supported in Landline phone,smartphone,feature phone"><a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_demo#demo2">How To Setup ?</a></div>
+							<?php } ?>
+						</div>
+						</div>
+					</td>
+				</tr>
 				
 				</table>
 				<?php echo $random_mo_key ? '<h4>*10 free transactions of OTP over SMS are provided in the free version of the plugin. </h4><h4>
@@ -1417,7 +1442,7 @@
 		$url = get_option('mo2f_host_name');
 		?>
 		
-			<p>Open your <b>miniOrange Authenticator</b> app and click on <b>Configure button</b> to scan the QR Code. Your phone should have internet connectivity to scan QR code.</p>
+			<p>Open your miniOrange<b> Authenticator</b> app and click on <b>Add Account</b> to scan the QR Code. Your phone should have internet connectivity to scan QR code.</p>
 			<div style="color:red;">
 			<p>I am not able to scan the QR code, <a  data-toggle="collapse" href="#mo2f_scanqrcode" aria-expanded="false" >click here </a></p></div>
 			<div class="mo2f_collapse" id="mo2f_scanqrcode">
@@ -1502,7 +1527,7 @@
 		?>
 		
 			<h3>Test QR Code Authentication</h3><hr>
-			<p>Open your <b>miniOrange Authenticator App</b> and click on <b>Green button</b> to scan the QR code. Your phone should have internet connectivity to scan QR code.</p>
+			<p>Open your miniOrange <b>Authenticator App</b> and click on <b>'Scan QR code'</b> to scan the QR code. Your phone should have internet connectivity to scan QR code.</p>
 			
 			<div style="color:red;"><b>I am not able to scan the QR code, <a  data-toggle="collapse" href="#mo2f_testscanqrcode" aria-expanded="false" >click here </a></b></div>
 			<div class="mo2f_collapse" id="mo2f_testscanqrcode">

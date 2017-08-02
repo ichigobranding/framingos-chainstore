@@ -1,25 +1,16 @@
 === Google Authenticator - Two Factor Authentication (2FA) ===
-Contributors: miniOrange
+Contributors: cyberlord92,
+Donate link: https://miniorange.com/
 Tags: google authenticator, two factor authentication, two factor, 2FA, 2 factor authentication, two step verification, 1 google authenticator, login, authy, authy two factor, Clef, 2 Factor, yubico, Two-Factor Authentication, Mobile Authentication, otp, strong authentication, 2 step authentication, smartphone authentication, Multifactor authentication, multi factor authentication, multi factor, no password, passwordless login, security, website security, one time passcode, password, soft token, woocommerce, authenticate, two factor auth, two-factor, duo, QR Code, QR Code Authentication, scan QR Code, wordfence, login security, google authenticator, google , email verification, trusted device, device Id , KBA , knowledge based authentication
 Requires at least: 3.0.1
 Tested up to: 4.8
-Stable tag: 4.5.0
+Stable tag: 4.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Google Authenticator and Best Enterprise Grade Two Factor Authentication. Fully supported QR Code,Push Notification,Remember Device,Authy,SMS,Email.
+Google Authenticator and Best Enterprise Grade Two Factor Authentication (2FA). Supports QR Code,Push Notification,Remember Device,Authy,SMS,Email.
 
 == Description ==
-
-<h4>Migrating from Clef - We have got you covered</h4>
-
-If you are migrating from Clef to Google Authenticator - Two Factor Authentication plugin then follow the steps below to easily setup the plugin and have the experience of Clef like.
-
-* Install the plugin.
-* Verify you email.
-* Click on QR Code Authentication method.
-* Scan the QR Code from the miniOrange Authenticator App.
-* Step by Step direction are given in the plugin to help you setup the plugin.
 
 A highly secure & easy to setup Two Factor Authentication (Google Authenticator) for your WordPress site. Rather than relying on a password alone, which can be phished or guessed, miniOrange Two Factor authentication (Google Authenticator) adds a second layer of security to your WordPress accounts. It protects your website from hacks and unauthorized login attempts.
 
@@ -37,6 +28,16 @@ This plugin provides two factor authentication during login. If you are looking 
 * Google Authenticator method is supported by both Google Authenticator and Authy App. You can configure Google Authenticator method by Google Authenticator as well as Authy 2-Factor Authentication App.
 * If you want to login from mobile browser then any authentication method can be converted into Security Questions (KBA) by just one click. 
 * You can customize the Security Questions (KBA). You can add your own setup of questions in the Security Questions list. Administrator as well as users both can add custom questions. Administrator can also decide how many questions user can setup for Security Questions.
+
+<h4>Migrating from Clef - We have got you covered</h4>
+
+If you are migrating from Clef to Google Authenticator - Two Factor Authentication plugin then follow the steps below to easily setup the plugin and have the experience of Clef like.
+
+* Install the plugin.
+* Verify your email.
+* Click on QR Code Authentication method.
+* Scan the QR Code from the miniOrange Authenticator App.
+* Step by Step direction are given in the plugin to help you setup the plugin.
 
 <h4>Apps Supported by miniOrange Two Factor Authentication?</h4>
 * miniOrange Authenticator App. 
@@ -58,19 +59,19 @@ We support both miniOrange Authenticator and Google Authenticator. But, we recom
 * miniOrange Authenticator App <b>encrypts all data</b>, whereas Google Authenticator stores data in plain text.
 * miniOrange Authenticator App has in-build <b>Pin-Protection</b> so you can protect your google authenticator keys or whole app using pin whereas Google Authenticator is not protected at all.
 * miniOrange has better backup methods.
-* No need to type in the code at all. <a href="http://miniorange.com/contact" target="_blank">Contact us</a> to get <b>miniOrange Autofill Plugin</b>, it can seamlessly connect your computer to your phone. Code will get auto filled and saved.
+* No need to type in the code at all. <a href="https://miniorange.com/contact" target="_blank">Contact us</a> to get <b>miniOrange Autofill Plugin</b>, it can seamlessly connect your computer to your phone. Code will get auto filled and saved.
 
 <h4>Free/Premium Version</h4>
-By default, Two-Factor Authentication (Google Authenticatot) plugin for Wordpress is free for 1 user forever. Limited Authentication methods are included in the free version of plugin. Telephony credits are needed for certain authentication methods like Phone Verification, OTP over SMS. In order to protect more accounts or use enterprise features, you need to upgrade to premium version of plugin. Besides including all authentication methods, it has inline registration for all users, user management dashboard access, remember device, manage device profiles, customize options for email and sms templates,custom redirect after login,customize Security Questions (KBA) customized UI for login screens etc. You can upgrade to premium version of plugin to have these features. 
+By default, Two-Factor Authentication (Google Authenticator) plugin for Wordpress is free for 1 user forever. Limited Authentication methods are included in the free version of plugin. Telephony credits are needed for certain authentication methods like Phone Verification, OTP over SMS. In order to protect more accounts or use enterprise features, you need to upgrade to premium version of plugin. Besides including all authentication methods, it has inline registration for all users, user management dashboard access, remember device, manage device profiles, customize options for email and sms templates,custom redirect after login,customize Security Questions (KBA) customized UI for login screens etc. You can upgrade to premium version of plugin to have these features. 
 
 
 Customized solutions and Active support is available. Email us at info@miniorange.com or call at +1 9786589387. 
 
 Ability to define trusted locations, trusted time of access and User behavior rules are supported. Email us at info@miniorange.com or call at +1 9786589387.  
 
-Single Sign on into any cloud application E.g Google Apps, Salesforce, Office 365, Box, DropBox etc are supported. Check out 3000+ apps that are supported here http://miniorange.com/single-sign-on-sso
+Single Sign on into any cloud application E.g Google Apps, Salesforce, Office 365, Box, DropBox etc are supported. Check out 3000+ apps that are supported here https://miniorange.com/single-sign-on-sso
 
-miniOrange supports 15+ authentication methods. For a complete list of authentication methods please visit http://miniorange.com/strong_auth . If you want to have any other 2-factor for your WordPress site, <a href="http://miniorange.com/contact" target="_blank">Contact us</a>.
+miniOrange supports 15+ authentication methods. For a complete list of authentication methods please visit https://miniorange.com/strong_auth . If you want to have any other 2-factor for your WordPress site, <a href="https://miniorange.com/contact" target="_blank">Contact us</a>.
 
 * One time passcodes (OTP) over SMS
 * OTP over Email
@@ -212,7 +213,7 @@ You can login using our alternate login method. Click on the Forgot Phone link a
 					   
 = My phone has no internet connectivity and i am entering the one time passcode from miniOrange Authenticator App, it says Invalid OTP? =
 					   
-Click on the <b>Settings Icon</b> on top right corner in <b>miniOrange Authenticator App</b> and then press <b>Sync button</b> under 'Time correction for codes' to sync your time with miniOrange Servers. If you still can't logged in then please email us at info@miniorange.com or <a href="http://miniorange.com/contact" target="_blank">Contact us</a>.Soft Token method is just like google authenticator method.
+Click on the <b>Settings Icon</b> on top right corner in <b>miniOrange Authenticator App</b> and then press <b>Sync button</b> under 'Time correction for codes' to sync your time with miniOrange Servers. If you still can't logged in then please email us at info@miniorange.com or <a href="https://miniorange.com/contact" target="_blank">Contact us</a>.Soft Token method is just like google authenticator method.
 					
 = I want to go back to default login with password? =
 					
@@ -224,7 +225,7 @@ You should go to <b>Setup Two Factor</b> Tab and click on <b>Reconfigure</b> to 
 				
 = What If I want to use any other second factor like OTP Over SMS, Security Questions, Device Id, etc ? =
 				
-miniOrange authentication service has 15+ authentication methods.One time passcodes (OTP) over SMS, OTP over Email, OTP over SMS and Email, Out of Band SMS, Out of Band Email, Soft Token, Push Notification, USB based Hardware token (yubico), Security Questions, Mobile Authentication (QR Code Authentication), Voice Authentication (Biometrics), Phone Verification, Device Identification, Location, Time of Access User Behavior. To know more about authentication methods, please visit <a href="http://miniorange.com/strong_auth" target="_blank">http://miniorange.com/strong_auth </a>. If you want to have any other 2-factor for your WordPress site, please email us at info@miniorange.com or <a href="http://miniorange.com/contact" target="_blank">Contact us</a>.
+miniOrange authentication service has 15+ authentication methods.One time passcodes (OTP) over SMS, OTP over Email, OTP over SMS and Email, Out of Band SMS, Out of Band Email, Soft Token, Push Notification, USB based Hardware token (yubico), Security Questions, Mobile Authentication (QR Code Authentication), Voice Authentication (Biometrics), Phone Verification, Device Identification, Location, Time of Access User Behavior. To know more about authentication methods, please visit <a href="https://miniorange.com/strong_auth" target="_blank">https://miniorange.com/strong_auth </a>. If you want to have any other 2-factor for your WordPress site, please email us at info@miniorange.com or <a href="https://miniorange.com/contact" target="_blank">Contact us</a>.
 
 == Screenshots ==
 
@@ -239,6 +240,12 @@ miniOrange authentication service has 15+ authentication methods.One time passco
 
 
 == Changelog ==
+
+= 4.5.2 =
+* Google Authenticator (2FA) : Readme Update: Description Update
+
+= 4.5.1 =
+* Google Authenticator (2FA) : Updated the new Authenticator App's link and the 'How to Setup Tab' tab.
 
 = 4.5.0 =
 * Google Authenticator (2FA) : Fix Google Authenticator configuration issue.

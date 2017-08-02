@@ -3,7 +3,7 @@
 * Plugin Name: miniOrange 2 Factor Authentication
 * Plugin URI: http://miniorange.com
 * Description: This plugin provides various two-factor authentication methods as an additional layer of security for wordpress login. We Support Phone Call, SMS, Email Verification, QR Code, Push, Soft Token, Google Authenticator, Authy, Security Questions(KBA), Woocommerce front-end login, Shortcodes for custom login pages.
-* Version: 4.5.0
+* Version: 4.5.2
 * Author: miniOrange
 * Author URI: http://miniorange.com
 * License: GPL2
@@ -28,7 +28,7 @@ class Miniorange_Authentication {
 	
 	function __construct() {
 	
-		$mo2f_auth_types = array('OUT OF BAND EMAIL','SMS','PHONE VERIFICATION','SOFT TOKEN','MOBILE AUTHENTICATION','PUSH NOTIFICATIONS','GOOGLE AUTHENTICATOR','AUTHY 2-FACTOR AUTHENTICATION','KBA');
+		$mo2f_auth_types = array('OUT OF BAND EMAIL','SMS','PHONE VERIFICATION','SOFT TOKEN','MOBILE AUTHENTICATION','PUSH NOTIFICATIONS','GOOGLE AUTHENTICATOR','SMS AND EMAIL', 'AUTHY 2-FACTOR AUTHENTICATION','KBA');
 		add_option( 'mo2f_auth_methods_for_users' ,$mo2f_auth_types);
 		add_option( 'mo2f_inline_registration',0);
 		add_option( 'mo2f_enable_mobile_support', 1);

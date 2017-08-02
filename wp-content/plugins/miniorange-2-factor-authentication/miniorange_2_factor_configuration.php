@@ -167,7 +167,7 @@
 									<img class="first-slide" style="padding-left:3%;" src="<?php echo plugins_url('includes/images/help/step3.png', __FILE__ ) ?>" alt="First slide">
 								</div>
 								<div class="item">
-									<center><p><b>Step 4.</b> Downlaod the miniOrange Authenticator App and Click on Configure button</p></center>
+									<center><p><b>Step 4.</b> Download the miniOrange Authenticator App and Click on Configure button</p></center>
 									<img class="first-slide" style="padding-left:3%;" src="<?php echo plugins_url('includes/images/help/step4.png', __FILE__ ) ?>" alt="First slide">
 								</div>
 								<div class="item">
