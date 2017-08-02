@@ -1,4 +1,4 @@
-<div class="leftsidebara">
+<div class="leftsidebara image">
   <?php get_template_part( 'freespaseside' ); ?>
   <?php get_template_part( 'newblogside' ); ?>
   <?php get_template_part( 'amebloside' ); ?>

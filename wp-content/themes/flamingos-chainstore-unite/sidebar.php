@@ -1,4 +1,4 @@
-<div id="secondary" class="widget-area" role="complementary">
+<div id="secondary" class="widget-area image" role="complementary">
 <div id="sideba">
 <?php get_template_part( 'profileside' ); ?>
                <div class="imgbtn imgbtnpad-top">

@@ -1486,3 +1486,54 @@ li.children:before {
 .wpp-views {
     font-size:13px;
 }
+/*****************************
+  写真リンク
+ *****************************/
+.image a:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+}
+/*****************************
+   ブログ機能
+ *****************************/
+.blogultitle{
+    font-size:16px;
+    padding:0;
+    margin:5px 0;
+    line-height:1.4em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+     /*height: 25px;*/
+    overflow: hidden;
+    width: 100%;
+}
+.nainai {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 35px;
+    overflow: hidden;
+    width: 100%;
+    color:gray;
+}
+.thumbnail {
+    display: block;
+    padding: 0;
+    margin:0;
+    border: 0px solid #ddd;
+}
+.timepad{
+    margin: 10px 0 0 0;
+}
+.timepad2{
+    font-size: 12px;
+}
+.ibskinArticleblog{
+    padding: 0px 0 0 0;
+    border: 1px solid #b5a35b;
+    background: #ffffff;
+    margin-bottom: 15px;
+}

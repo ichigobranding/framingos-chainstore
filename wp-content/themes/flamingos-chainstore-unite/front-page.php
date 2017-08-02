@@ -7,7 +7,7 @@
  get_header(); ?>
 
 	<div id="primary" class="content-area col-sm-12 col-md-12">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main image" role="main">
 	<?php get_template_part( 'smabana' ); ?>
 	<!-- topbana -->
 			<!-- <div class="tbanana imgbtn">
@@ -18,20 +18,23 @@
 	<!-- topbana -->
 	<!-- #IB-main## -->
 				<div class="row">
-						<div class="col-md-6 col-md-push-3 centerc">
+						<!--<div class="col-md-6 col-md-push-3 centerc">-->
+						<div class="col-md-8 centerc">
 							<?php get_template_part( 'ap-bana' ); ?>
 							<?php get_template_part( 'messageborad' ); ?>
 							<!--<?//php get_template_part( 'messageborad-w' ); ?>-->
 							<?php get_template_part( 'semi-indexparts-main' ); ?>
 							<?php get_template_part( 'consul-indexparts-main' ); ?>
 							<!--<?//php get_template_part( 'index-w' ); ?>-->
-							<?php get_template_part( 'blogul' ); ?>
+							<!--<?//php get_template_part( 'blogul' ); ?>-->
+							<?php get_template_part( 'blogul-lis' ); ?>
 						</div>
-							<div class="col-md-3 col-md-pull-6">
-								 <?php get_template_part( 'left-sidebar' ); ?>
-							</div>
-					<div class="col-md-3 sidebarpadd">
-						<?php get_sidebar(); ?>
+							<!--<div class="col-md-3 col-md-pull-6">
+								 <?//php get_template_part( 'left-sidebar' ); ?>
+							</div>-->
+					<div class="col-md-4 sidebarpadd">
+					<!--<div class="col-md-4 sidebarpadd">-->
+						<?php get_template_part( 'sidebar2' ); ?>
 					</div><!-- side -->
 				</div><!-- row -->
 		<!-- #IB-main## -->
