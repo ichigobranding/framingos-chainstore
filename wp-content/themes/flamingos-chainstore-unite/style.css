@@ -1436,10 +1436,10 @@ li.children:before {
 @media (min-width: 768px) and (max-width: 991px) { .tescol2{height: 260px;} }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {  .tescol2{height: 200px;} }
+@media (min-width: 992px) and (max-width: 1199px) {  .tescol2{height: 240px;} }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  .tescol2{height: 235px;} }
+@media (min-width: 1200px) {  .tescol2{height: 255px;} }
 /*****************************
    事例紹介
  *****************************/
