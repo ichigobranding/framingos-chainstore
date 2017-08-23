@@ -47,7 +47,7 @@
 					<?php endif; // header image was removed (again) ?>
 				</div>
 
-			<div class="col-md-3 col-md-offset-3">
+			<div class="col-md-4 col-md-offset-2">
 				<!-- スマホ telmail -->
 					<?php if (wp_is_mobile()) :?>
 					<?php else: ?>
