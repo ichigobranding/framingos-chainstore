@@ -404,7 +404,7 @@ button.mo2f_close {
 	
 }
 
-.mo2f_modal-content {
+.login mo_customer_validation-modal-content {
 	position: relative !important;
 	background-color: #fff !important;
 	-webkit-background-clip: padding-box !important;
@@ -424,14 +424,18 @@ button.mo2f_close {
 	top: 0;
 	right: 0;
 	left: 0;
-	background-color: #000 !important;
+	background-color: #f1f1f1 !important;
 	filter: alpha(opacity = 50)!important;
 	opacity: 0.8 !important;
 	height:	100% !important;
 }
 
 
-
+#smsAlertModal{
+	background-color: black !important;
+	opacity: 0.8 !important;
+	filter: alpha(opacity = 50)!important;
+}
 
 
 .mo2f_modal-header {
@@ -486,7 +490,7 @@ button.mo2f_close {
 		width: 373px;
 		margin: 0px auto
 	}
-	.mo2f_modal-content {
+	.login mo_customer_validation-modal-content {
 		-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 		box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
 	}
@@ -511,8 +515,211 @@ button.mo2f_close {
 	
 	text-align: center !important;
 }
+
 #otpMessage{
 	border-radius: 4px;
     padding: 1px 5px;
-    background: rgba(1, 145, 191, 0.117647);
+    background: #f1f1f1;
+}
+
+.mo2f_carousel-indicators {
+position: absolute;
+bottom: -20px;
+z-index: 15;
+width: 60%;
+list-style: none;
+text-align: center;
+}
+
+.miniorange_kba_validate:hover, .miniorange_validate_otp:hover, .miniorange_login_forgotphone:hover, 
+.miniorange_login_offline:hover, .miniorange_login_forgotphone:hover, .miniorange_otp_token_submit:hover
+ {
+	background-color:#0073AA!important
+}
+.miniorange_kba_validate, .miniorange_validate_otp, .miniorange_login_forgotphone, 
+.miniorange_login_offline, .miniorange_login_forgotphone , .miniorange_otp_token_submit{
+	background:#00A0D2!important;
+	border-color:#0073AA!important;
+	box-shadow:0 1px 0 rgba(120,200,230,.5) inset,0 1px 0 rgba(0,0,0,.15)!important;
+	color:#FFF!important;
+	text-decoration:none!important;
+	cursor:pointer!important;
+	border-width:1px!important;
+	border-style:solid!important;
+	border-radius:3px!important;
+	white-space:nowrap!important;
+	box-sizing:border-box!important;
+	line-height:28px!important;
+	padding:0 12px!important;
+	font-size:13px!important
+}
+
+
+.mo_customer_validation-modal.fade .mo_customer_validation-modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%)
+}
+.mo_customer_validation-modal.in .mo_customer_validation-modal-dialog {
+    -webkit-transform: translate(0, 80px)!important;
+    -ms-transform: translate(0, 80px)!important;
+    -o-transform: translate(0, 80px)!important;
+    transform: translate(0, 80px)!important
+}
+.mo_customer_validation-modal-open .mo_customer_validation-modal {
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+.mo_customer_validation-modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px
+}
+.mo_customer_validation-modal-content {
+    position: relative;
+    -webkit-background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline: 0;
+    margin-top: 8%;
+    margin-left: 0;
+    padding: 15px 20px 0;
+    font-family: "Open Sans", sans-serif;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.4em;
+    background: #FFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .13)
+}
+.mo_customer_validation-modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000!important;
+    filter: alpha(opacity=50)!important;
+    opacity: .9!important;
+    height: 100%!important
+}
+.mo_customer_validation-modal-header {
+    min-height: 14px;
+    padding: 10px 10px 20px;
+    border-bottom: 1px solid #e5e5e5
+}
+.mo_customer_validation-modal-title {
+    margin: 0!important;
+    line-height: 1!important
+}
+.mo_customer_validation-modal-body {
+    position: relative;
+    padding: 5%;
+    overflow: hidden!important;
+    max-height: 550px!important
+}
+.mo_customer_validation-modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+.mo_customer_validation-modal-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-left: 5px
+}
+.mo_customer_validation-modal-footer .btn-group .btn+.btn {
+    margin-left: -1px
+}
+.mo_customer_validation-modal-footer .btn-block+.btn-block {
+    margin-left: 0
+}
+.mo_customer_validation-modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+@media (min-width: 768px) {
+    .mo_customer_validation-modal-dialog {
+        width: auto;
+        margin: 0 auto
+    }
+    .mo_customer_validation-modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+    .mo_customer_validation-modal-sm {
+        width: 300px
+    }
+    .mo_customer_validation-modal-md {
+        width: 532px
+    }
+    .mo_customer_validation-modal-lg {
+        width: 50%
+    }
+}
+@media (min-width: 992px) {
+    .mo_customer_validation-modal-dialog {
+        width: auto;
+        margin: 0 auto
+    }
+    .mo_customer_validation-modal-lg {
+        width: 490px
+    }
+    .mo_customer_validation-modal-md {
+        width: 532px
+    }
+}
+.mo_customer_validation-textbox {
+    background: #FBFBFB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    width: 100%;
+    border: 1px solid #DDD;
+    padding: 3px;
+    margin: 2px 6px 16px 0
+}
+.mo_customer_validation-textbox:focus {
+    border-color: #5B9DD9;
+    box-shadow: 0 0 2px rgba(30, 140, 190, .8)
+}
+.button-primary,
+.button-secondary {
+    background: #00A0D2;
+    border-color: #0073AA;
+    box-shadow: 0 1px 0 rgba(120, 200, 230, .5) inset, 0 1px 0 rgba(0, 0, 0, .15);
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    line-height: 28px;
+    padding: 0 12px;
+    font-size: 13px
+}
+.button:hover {
+    background-color: #0073AA
+}
+.close {
+    float: right;
+    transition: color .1s ease-in-out, background .1s ease-in-out;
+    text-decoration: none;
+    color: #999;
+    font-size: 13px
+}
+.mo_validate_close:focus,
+.mo_validate_close:hover {
+    color: #0085ba
+}
+
+.mo_registration_pricing_text{
+	font-size:15px!important;
+	color:#fff!important;
+	font-weight:700!important
 }

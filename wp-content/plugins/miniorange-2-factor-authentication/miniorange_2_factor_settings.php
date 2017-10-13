@@ -3,7 +3,7 @@
 * Plugin Name: miniOrange 2 Factor Authentication
 * Plugin URI: http://miniorange.com
 * Description: This plugin provides various two-factor authentication methods as an additional layer of security for wordpress login. We Support Phone Call, SMS, Email Verification, QR Code, Push, Soft Token, Google Authenticator, Authy, Security Questions(KBA), Woocommerce front-end login, Shortcodes for custom login pages.
-* Version: 4.5.2
+* Version: 4.5.3
 * Author: miniOrange
 * Author URI: http://miniorange.com
 * License: GPL2
@@ -29,6 +29,7 @@ class Miniorange_Authentication {
 	function __construct() {
 	
 		$mo2f_auth_types = array('OUT OF BAND EMAIL','SMS','PHONE VERIFICATION','SOFT TOKEN','MOBILE AUTHENTICATION','PUSH NOTIFICATIONS','GOOGLE AUTHENTICATOR','SMS AND EMAIL', 'AUTHY 2-FACTOR AUTHENTICATION','KBA');
+		add_action( 'admin_post_nopriv_mo_prefix_initialization', array( $this, 'miniorange_prefix_initializaion'));
 		add_option( 'mo2f_auth_methods_for_users' ,$mo2f_auth_types);
 		add_option( 'mo2f_inline_registration',0);
 		add_option( 'mo2f_enable_mobile_support', 1);
@@ -40,6 +41,10 @@ class Miniorange_Authentication {
 		add_option( 'mo2f_modal_display', 0);
 		add_option( 'mo2f_enable_forgotphone', 1);
 		add_option( 'mo2f_enable_xmlrpc', 0);
+		/* App Specific Password
+		add_option( 'mo_app_password', 0);
+		add_action( 'init',  array( $this, 'miniorange_auth_init' ) );
+		*/
 		add_option( 'mo2f_disable_poweredby',0);
 		add_option( 'mo2f_show_sms_transaction_message', 0);
 		add_option( 'mo2f_custom_plugin_name', 'miniOrange 2-Factor');
@@ -117,6 +122,9 @@ class Miniorange_Authentication {
 		}
 	}
 	
+	function miniorange_prefix_initializaion(){
+	}
+	
 	function get_customer_SMS_transactions()
 	{
 	    
@@ -172,6 +180,9 @@ class Miniorange_Authentication {
 		delete_option('mo2f_number_of_transactions');
 		delete_option('mo2f_set_transactions');
 		delete_option('mo2f_show_sms_transaction_message');
+		/* App Specific Password
+		delete_option('mo_app_password');
+		*/
 		global $current_user;
 		
 		delete_user_meta($current_user->ID,'mo_2factor_user_registration_status');
@@ -187,6 +198,9 @@ class Miniorange_Authentication {
 		delete_user_meta($current_user->ID,'mo2f_kba_registration_status');
 		delete_user_meta($current_user->ID,'mo2f_email_verification_status');
 		delete_user_meta($current_user->ID,'mo2f_authy_authentication_status');
+		/* App Specific Password
+		delete_user_meta($current_user->ID,'mo2f_app_password');
+		*/
 	}
 	
 
@@ -267,15 +281,15 @@ class Miniorange_Authentication {
 	}
 
 	function mo_2_factor_enable_frontend_style() {
-		wp_enqueue_style( 'mo2f_frontend_login_style', plugins_url('includes/css/front_end_login.css?version=4.4.1', __FILE__));
-		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.4.1', __FILE__));
-		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.4.1', __FILE__));
+		wp_enqueue_style( 'mo2f_frontend_login_style', plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__));
+		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__));
+		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.5.3', __FILE__));
 	}
 	
 	function plugin_settings_style() {
-		wp_enqueue_style( 'mo_2_factor_admin_settings_style', plugins_url('includes/css/style_settings.css?version=4.4.1', __FILE__));
-		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.4.1', __FILE__));
-		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.4.1', __FILE__));
+		wp_enqueue_style( 'mo_2_factor_admin_settings_style', plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__));
+		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.5.3', __FILE__));
+		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__));
 	}
 
 	function plugin_settings_script($mo2fa_hook_page) {
@@ -297,12 +311,34 @@ class Miniorange_Authentication {
 		add_action( 'admin_notices', array( $this, 'mo_auth_success_message') );
 	}
 
+	/* App Specific Password
+	// added for App specific password - If post request is sent for creating a new password
+	function miniorange_auth_init(){
+		global $current_user;
+		$current_user = wp_get_current_user();
+		
+		if ( defined( 'DOING_AJAX' ) && DOING_AJAX) {
+			add_action( 'wp_ajax_Authenticator_action', array( $this, 'ajax_callback' ) );
+		}
+		
+		// call to generate password
+		if(isset($_GET['option']) && $_GET['option'] ="generatepassword"){
+			ajax_callback();
+			exit;
+		}
+		
+	}*/
+	
 	function miniorange_auth_save_settings(){
+		
+		global $current_user;
+		$current_user = wp_get_current_user();
+		
 		if( ! session_id() || session_id() == '' || !isset($_SESSION) ) {
 			session_start();
 		}
-		global $current_user;
-		$current_user = wp_get_current_user();
+		
+		
 		if(current_user_can( 'manage_options' )){
 		if(isset($_POST['option']) and $_POST['option'] == "mo_auth_register_customer"){	//register the admin to miniOrange
 			//validate and sanitize
@@ -677,6 +713,17 @@ class Miniorange_Authentication {
 				update_option( 'mo2f_activate_plugin', isset( $_POST['mo2f_activate_plugin']) ? $_POST['mo2f_activate_plugin'] : 0);
 				update_option( 'mo2f_enable_mobile_support', isset( $_POST['mo2f_enable_mobile_support']) ? $_POST['mo2f_enable_mobile_support'] : 0);
 				update_option( 'mo2f_enable_xmlrpc', isset( $_POST['mo2f_enable_xmlrpc']) ? $_POST['mo2f_enable_xmlrpc'] : 0);
+				
+				/* App Specific Password
+				// saving the generated App specific password 
+				$app_password = $_POST['app_password'];
+		        
+				if (strtoupper($app_password) != '**** **** **** ****' ) {
+					// Store the password in hashed format
+					$app_password = sha1(strtoupper(str_replace(' ', '', $app_password )));
+					update_user_option( $current_user->ID, 'mo2f_app_password', $app_password, true );
+					update_option('mo_app_password', $app_password);
+				}*/
 				
 				global $wp_roles;
 				if (!isset($wp_roles))
@@ -1840,6 +1887,41 @@ class Miniorange_Authentication {
 			return 1;
 		}
 	}
+	
+	/* App Specific Password
+	//AJAX Function to callback
+	function ajax_callback(){
+		
+		global $user_id;
+			
+		$secret = create_secret();
+		$result = array( 'new-secret' => $secret );
+			
+		header( 'Content-Type: application/json' );
+		echo json_encode( $result ); 
+
+		// die() is required to return a proper result
+		die(); 
+			
+	}
+	
+	//Create password secret
+	function create_secret() {
+	
+		$chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'; // allowed characters in Base32
+		$charsLength = strlen($chars);
+		$secret = '';
+		
+		for ( $i = 0; $i < 16; $i++ ) {
+			$secret .= substr( $chars, wp_rand( 0, strlen( $chars ) - 1 ), 1 );
+		}
+		
+		return $secret;
+		
+	}*/
+
+
+
 	
 new Miniorange_Authentication;
 ?>

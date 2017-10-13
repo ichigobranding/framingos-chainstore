@@ -203,7 +203,7 @@
    
    <div id="demo4">
    <h3>
-      How to Test Soft Token
+      How to Test Soft Token ?
       <div style="float:right;"><a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mobile_configure">←Back</a></div>
    </h3>
    <hr>

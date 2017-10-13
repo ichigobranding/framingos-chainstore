@@ -172,17 +172,17 @@ body.login-action-login  div#login div#login_error1{
 	cursor:pointer;
 }
 .mo_green{
-	background:green;
-	border-color:green;
+	background:#2ECC71;
+	border-color:#2ECC71;
 	width:37%;
 }
 .mo_red{
-	background:rgb(247, 38, 38);
-	border-color:rgb(247, 38, 38);
+	background:#E74C3C;
+	border-color:#E74C3C;
 	width:37%;
 }
 .showQRHelp, .showOTPHelp{
-	background-color: rgba(215, 217, 218, 0.78) !important;
+	text-align:center !important;
 }
 
 .mo_email_textbox{

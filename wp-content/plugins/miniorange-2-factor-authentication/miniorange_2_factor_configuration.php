@@ -25,7 +25,7 @@
 				<a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_login" class="nav-tab <?php echo $mo2f_active_tab == 'mo2f_login' ? 'nav-tab-active' : ''; ?>" id="mo2f_tab2">Login Settings</a>
 				<a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=advance_option" class="nav-tab <?php echo $mo2f_active_tab == 'advance_option' ? 'nav-tab-active' : ''; ?>" id="mo2f_tab2">Premium Options</a>
 				<a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_pricing" class="nav-tab <?php echo $mo2f_active_tab == 'mo2f_pricing' ? 'nav-tab-active' : ''; ?>" id="mo2f_tab6">Licensing Plans</a>
-				<a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_demo" class="nav-tab <?php echo $mo2f_active_tab == 'mo2f_demo' ? 'nav-tab-active' : ''; ?>" id="mo2f_tab4">How It Works</a>
+				<a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_demo" class="nav-tab <?php echo $mo2f_active_tab == 'mo2f_demo' ? 'nav-tab-active' : ''; ?>" id="mo2f_tab4">How To Setup</a>
 			    <a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_help" class="nav-tab <?php echo $mo2f_active_tab == 'mo2f_help' ? 'nav-tab-active' : ''; ?>" id="mo2f_tab5">Help & Troubleshooting</a>
 				
 			</h2>
@@ -34,7 +34,7 @@
 		
 		<div class="mo2f_container">
 		<div id="messages"></div>
-			<table style="width:100%;">
+			<table style="width:100%;padding:10px;">
 				<tr>
 					<td style="width:60%;vertical-align:top;">
 						<?php
@@ -138,7 +138,7 @@
 	<div id="clefMigration" class="mo2f_modal mo2f_modal_inner fade" role="dialog">
 		<div class="mo2f_modal-dialog">
 			<!-- Modal content-->
-			<div class="mo2f_modal-content" style="width:660px !important;">
+			<div class="login mo_customer_validation-modal-content" style="width:660px !important;">
 				<div class="mo2f_modal-header">
 					<button type="button" class="mo2f_close" data-dismiss="modal">&times;</button>
 					<h2 class="mo2f_modal-title">Follow these steps if you are migrating from Clef.</h2>
@@ -390,6 +390,7 @@
 				<table><tbody>
 				<tr>
 				<td>
+
 				<input type='checkbox' name='mo2f_authmethods[]'  value='OUT OF BAND EMAIL' <?php echo (in_array("OUT OF BAND EMAIL", $opt)) ? 'checked="checked"' : '';  if(!$random_mo_key && get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_PLUGIN_SETTINGS'){}else{ echo 'disabled';} ?> />Email Verification&nbsp;&nbsp;
 				</td>
 				<td>
@@ -444,7 +445,7 @@
 				 <div id="mo2f_note"><b>Note:</b> If this option is enabled then users have to setup their two-factor account forcefully during their login. By selecting second option, you will provide your users to skip their two-factor setup during login.</div>
 				</div>
 				 <br />
-				 <h3>Mobile Support</h3><hr>
+				 <h3>Mobile Support</h3><hr><br>
 				 <input type="checkbox" name="mo2f_enable_mobile_support" value="1" <?php checked( get_option('mo2f_enable_mobile_support') == 1 ); 
 				 if(get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_PLUGIN_SETTINGS'){}else{ echo 'disabled';} ?> />
 				 Enable Mobile Support for users.<br /><br />
@@ -508,13 +509,25 @@
 				<br><br />
 				
 				<h3>XML-RPC Settings</h3>
-				<hr>
+				<hr><br>
 				Enabling this option will decrease your overall login security. Users will be able to login through external applications which support XML-RPC without authenticating from miniOrange. <b>Please keep it unchecked.</b><br /><br />
 				<input type="checkbox" id="mo2f_enable_xmlrpc" name="mo2f_enable_xmlrpc" value="1" <?php checked( get_option('mo2f_enable_xmlrpc') == 1 ); 
 				 if(get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_PLUGIN_SETTINGS'){}else{ echo 'disabled';} ?> />
 				Enable XML-RPC Login.
 				
-				<br /><br />
+				<!--(Application Specific Password)
+				<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div id="mo2f_xmlrpc_password" >
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input name="app_password" id="app_password" readonly="readonly" value="**** **** **** ****" type="text" size="25">
+					<input name="app_createpassword" id="app_createpassword" value="Create new password" type="button" class="button">
+					
+					<span class="description" id="app_passworddesc" style="display: none;">  Password is not stored in cleartext, this is your only chance to see it.</span>
+				</div>
+				
+				<br /><br /><div id="mo2f_note"><b>Note:</b> Enable this option in case you want to use the plugin with any third party applications like WordPress application.</div>
+				-->
+				<br/><br />
 				
 				<h3>Enable Two-Factor plugin</h3>
 				<hr>
@@ -554,6 +567,40 @@
 				<?php } ?>
 				
 			</script>
+			<!--<script>
+				if(jQuery('input[name="mo2f_enable_xmlrpc"]:checked').length == 0){
+					jQuery('#mo2f_xmlrpc_password').hide();
+				}
+				var checker = document.getElementById('mo2f_enable_xmlrpc');
+				var generatebtn = document.getElementById('app_createpassword');
+				checker.onchange = function() {
+				  generatebtn.disabled = !this.checked;
+				  if(this.checked){
+					jQuery('#mo2f_xmlrpc_password').show();
+				  }else{
+					jQuery('#mo2f_xmlrpc_password').hide(); 
+				  }
+				};
+			</script>
+			<script type ="text/javascript">
+				var Appnonce= <?php echo wp_create_nonce('Authenticatoraction');?> ';
+				
+				jQuery("#app_createpassword").on('click',function() {
+					
+					var data=new Object();
+					data['action']	= 'Authenticator_action';
+					data['nonce']	= Appnonce;
+					data['save']	= 1;
+					
+					var url = '<?php echo site_url(); ?>/?option=generatepassword';
+					
+					jQuery.post(url, data,function(response) {
+						jQuery('#app_password').val(response['new-secret'].match(new RegExp(".{0,4}","g")).join(' '));
+						jQuery('#app_passworddesc').show();
+					});  	
+				});
+	
+			</script>-->	
 		</div>
 
 	<?php

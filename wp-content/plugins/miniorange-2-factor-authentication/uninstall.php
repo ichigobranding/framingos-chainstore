@@ -38,6 +38,9 @@
 		delete_option('mo2f_enable_mobile_support'); 
 		delete_option( 'mo2f_new_customer' );
 		delete_option('mo2f_show_sms_transaction_message');
+		/* App Specific Password
+		delete_option('mo2f_app_password');
+		*/
 		
 		//delete all stored key-value pairs for the roles
 		global $wp_roles;
@@ -90,6 +93,9 @@
 			delete_option( 'mo2f_number_of_transactions' );
 			delete_option( 'mo2f_set_transactions' );	
 			delete_option('mo2f_show_sms_transaction_message');
+			/* App Specific Password
+			delete_option('mo2f_app_password');			
+			*/
 			
 			//delete all stored key-value pairs for the roles
 			global $wp_roles;
@@ -121,6 +127,9 @@
 			delete_user_meta($user->ID,'mo2f_kba_registration_status');
 			delete_user_meta($user->ID,'mo2f_email_verification_status');
 			delete_user_meta($user->ID,'mo2f_authy_authentication_status');
+			/* App Specific Password
+			delete_user_meta($user->ID,'mo2f_app_password');
+			*/
 		}
 		
 		//delete previous version key-value pairs

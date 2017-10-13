@@ -25,7 +25,7 @@
 	
 }
 .mo2f-textbox{
-	//width: 100% !important;
+	width: 160px;
 	margin: 15px 0px !important;
 	background-color: rgba(123, 110, 110, 0.06) !important;
 	border-radius: 4px !important;
@@ -50,7 +50,7 @@
 
 .mo2fa_display_message_frontend{
 	text-align:center !important;
-	font-size: 15px !important;
+	font-size: 13px !important;
 }
 
 .mo2f-link{
@@ -60,8 +60,8 @@
 	cursor: pointer !important;
 }
 .mo_green{
-	background:green !important;
-	border-color:green !important;
+	background:#2ECC71 !important;
+	border-color:#2ECC71 !important;
 	width:26% !important;
 	border-width: 1px;
     vertical-align: middle !important;
@@ -71,8 +71,8 @@
 	cursor:pointer;
 }
 .mo_red{
-	background:rgb(247, 38, 38) !important;
-	border-color:rgb(247, 38, 38) !important;
+	background:#E74C3C !important;
+	border-color:#E74C3C !important;
 	width:26% !important;
 	border-width: 1px;
     vertical-align: middle !important;
@@ -84,7 +84,6 @@
 
 
 .showQRHelp, .showOTPHelp{
-	background-color: rgba(215, 217, 218, 0.78) !important;
 	text-align:center !important;
 	
 }

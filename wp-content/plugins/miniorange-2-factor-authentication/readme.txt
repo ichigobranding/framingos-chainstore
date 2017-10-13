@@ -3,8 +3,8 @@ Contributors: cyberlord92,
 Donate link: https://miniorange.com/
 Tags: google authenticator, two factor authentication, two factor, 2FA, 2 factor authentication, two step verification, 1 google authenticator, login, authy, authy two factor, Clef, 2 Factor, yubico, Two-Factor Authentication, Mobile Authentication, otp, strong authentication, 2 step authentication, smartphone authentication, Multifactor authentication, multi factor authentication, multi factor, no password, passwordless login, security, website security, one time passcode, password, soft token, woocommerce, authenticate, two factor auth, two-factor, duo, QR Code, QR Code Authentication, scan QR Code, wordfence, login security, google authenticator, google , email verification, trusted device, device Id , KBA , knowledge based authentication
 Requires at least: 3.0.1
-Tested up to: 4.8
-Stable tag: 4.5.2
+Tested up to: 4.8.2
+Stable tag: 4.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -240,6 +240,9 @@ miniOrange authentication service has 15+ authentication methods.One time passco
 
 
 == Changelog ==
+
+= 4.5.3 =
+* Google Authenticator (2FA) : Changed UI of the Login Pages, Redirect to Login Page bug fixes.
 
 = 4.5.2 =
 * Google Authenticator (2FA) : Readme Update: Description Update

@@ -117,8 +117,8 @@ class Miniorange_Mobile_Login{
 	}
 	
 	function mo_2_factor_hide_login() {
-		wp_register_style( 'hide-login', plugins_url( 'includes/css/hide-login.css?version=4.4.1', __FILE__ ) );
-		wp_register_style( 'bootstrap', plugins_url( 'includes/css/bootstrap.min.css?version=4.4.1', __FILE__ ) );
+		wp_register_style( 'hide-login', plugins_url( 'includes/css/hide-login.css?version=4.5.3', __FILE__ ) );
+		wp_register_style( 'bootstrap', plugins_url( 'includes/css/bootstrap.min.css?version=4.5.3', __FILE__ ) );
 		
 		wp_enqueue_style( 'hide-login' );
 		wp_enqueue_style( 'bootstrap' );
@@ -127,15 +127,15 @@ class Miniorange_Mobile_Login{
 	
 	function mo_2_factor_show_login() {
 		if(get_option('mo2f_show_loginwith_phone')){
-			wp_register_style( 'show-login', plugins_url( 'includes/css/hide-login-form.css?version=4.4.1', __FILE__ ) );
+			wp_register_style( 'show-login', plugins_url( 'includes/css/hide-login-form.css?version=4.5.3', __FILE__ ) );
 		}else{
-			wp_register_style( 'show-login', plugins_url( 'includes/css/show-login.css?version=4.4.1', __FILE__ ) );
+			wp_register_style( 'show-login', plugins_url( 'includes/css/show-login.css?version=4.5.3', __FILE__ ) );
 		}
 		wp_enqueue_style( 'show-login' );
 	}
 	
 	function mo_2_factor_show_login_with_password_when_phonelogin_enabled(){
-		wp_register_style( 'show-login', plugins_url( 'includes/css/show-login.css?version=4.4.1', __FILE__ ) );
+		wp_register_style( 'show-login', plugins_url( 'includes/css/show-login.css?version=4.5.3', __FILE__ ) );
 		wp_enqueue_style( 'show-login' );
 	}
 	
@@ -233,7 +233,7 @@ class Miniorange_Mobile_Login{
 			<div class="mo2f-button-container" id="mo2f_button_container">
 				<input type="text" name="mo2fa_usernamekey" id="mo2fa_usernamekey" autofocus="true" placeholder="Username"/>
 					<p>
-						<input type="button" name="miniorange_login_submit"  style="width:100% !important;" onclick="mouserloginsubmit();" id="miniorange_login_submit" class="miniorange-button button-add" value="Login with your phone" />
+						<input type="button" name="miniorange_login_submit"  style="width:100% !important;" onclick="mouserloginsubmit();" id="miniorange_login_submit" class="miniorange-button button-add" value="Login with 2nd factor" />
 					</p>
 					<?php if(!get_option('mo2f_show_loginwith_phone')){ ?><br /><br /><?php } ?>
 			</div>

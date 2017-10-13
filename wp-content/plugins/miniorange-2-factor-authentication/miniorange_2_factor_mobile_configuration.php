@@ -150,13 +150,8 @@
 				<br />
 				<h3>Custom Email and SMS Templates*</h3><hr>
 					You can change the templates for Email and SMS as per your requirement.<br />
-					<a href = "javascript:void(0)" class="button button-primary button-large" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Customize Templates</a>
-					<div id="light" class="white_content">
-						<div style="height:80%;background-color:rgba(128, 128, 128, 0.05);padding:10px;">
-							<a href = "javascript:void(0)" style="float:right;" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
-							<br/>This is a premium feature.  <a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_pricing">Click here</a> to upgrade the plugin.
-						</div>
-					</div>
+					<br>
+					<a href = "javascript:void(0)" class="button button-primary button-large" disabled>Customize Templates</a>
 					<div id="fade" class="black_overlay"></div>
 				<h3>Custom Redirection*</h3><hr>
 					This option will allow the users during login to redirect on the specific page role wise. 
@@ -280,19 +275,17 @@
 		<div id="smsAlertModal" class="mo2f_modal mo2f_modal_inner fade" role="dialog">
 			<div class="mo2f_modal-dialog">
 				<!-- Modal content-->
-				<div class="mo2f_modal-content" style="width:660px !important;">
+				<div class="login mo_customer_validation-modal-content" style="width:660px !important;">
 					<div class="mo2f_modal-header">
 						<button type="button" class="mo2f_close" data-dismiss="modal">&times;</button>
 						<h2 class="mo2f_modal-title">Please Note!</h2>
 					</div>
 					<div class="mo2f_modal-body">
-						<p>Only <b><u>10 free transactions</u></b> of OTP over SMS are provided in the free version, post which your account <b style="color: red;">will get locked out, if you do not buy more transactions</b>. We highly recommended you to go for the other Phone based authentication methods like <b>Soft Token/Push Notification/QR Code Authentication </b>since they are as secure as the <b>OTP OVER SMS</b> method, and they do not require purchase of more transactions.</p>
+						<p style="font-size:14px;">Only <b><u>10 free transactions</u></b> of SMS can be used, post which your account <b style="color: red;">will get locked out, if you do not buy more  SMS transactions</b>. We highly recommended you to go for the other Phone based authentication methods like <b>Soft Token/Push Notification/QR Code Authentication </b>since they are as secure as the <b>OTP OVER SMS</b> method, and they do not require any purchase.</p>
 						<ol  style="list-style-type:circle">
-						<li>Setting up knowledge based questions (KBA) as an alternate login method will protect you in case your phone is not working or out of reach. <br /> 
-						<br>
-						<li><b>What to do in case you are locked out (Its common when you are setting up 2FA for the first time, so please read this).<br /></b/></li>
-							<b>Rename</b> the plugin by FTP access. Go to <b>wp-content/plugins folder</b> and rename miniorange-2-factor-authentication folder.<br /><br />
-							</li>
+							<li>Setting up knowledge based questions (KBA) as an alternate login method will protect you in case your phone is not working or out of reach.<br></li>
+							<li><b style="color: red;">What to do in case you are locked out?<br /></b/></li>
+							<b>Rename</b> the plugin from FTP access. Go to <b>wp-content/plugins folder</b> and rename miniorange-2-factor-authentication folder.<br />You will be able to login with your Wordpress Username and password.<br />
 						</ol>
 					</div>
 					<div class="mo2f_modal-footer">
@@ -393,7 +386,7 @@
 							}
 						?>
 						<tr style="height:40px;">
-							<td style="border-right-color:white;"><a href="#mo_registered_forgot_password"><b>Click Here</b></a> if you forgot your password ?</td>
+							<td style="border-right-color:white;"><a href="#mo_registered_forgot_password"><b>&nbsp; Click Here</b></a> if you forgot your password ?</td>
 							<td></td>
 							
 						</tr>
@@ -726,7 +719,7 @@
 		if(!get_user_meta($current_user->ID,'mo2f_kba_registration_status',true) && ((get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_PLUGIN_SETTINGS') || (get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_INITIALIZE_TWO_FACTOR'))){
 			
 		?>
-		
+		<br>
 		<div style="display:block;color:red;background-color:rgba(251, 232, 0, 0.15);padding:5px;border:solid 1px rgba(255, 0, 9, 0.36);" class="error notice is-dismissible"><a href="#mo2f_kba_config">Click Here</a> to configure Security Questions (KBA) as alternate 2 factor method so that you are not locked out of your account in case you lost or forgot your phone. </div>
 		
 		<?php
@@ -747,19 +740,17 @@
 			<div id="smsAlertModal" class="mo2f_modal mo2f_modal_inner fade" role="dialog">
 				<div class="mo2f_modal-dialog">
 					<!-- Modal content-->
-					<div class="mo2f_modal-content" style="width:660px !important;">
+					<div class="login mo_customer_validation-modal-content" style="width:660px !important;">
 						<div class="mo2f_modal-header">
 							<button type="button" class="mo2f_close" data-dismiss="modal">&times;</button>
 							<h2 class="mo2f_modal-title">Please Note!</h2>
 						</div>
 						<div class="mo2f_modal-body">
-							<p>Only <b><u>10 free transactions</u></b> of OTP over SMS are provided in the free version, post which your account <b style="color: red;">will get locked out, if you do not buy more transactions</b>. We highly recommended you to go for the other Phone based authentication methods like <b>Soft Token/Push Notification/QR Code Authentication </b>since they are as secure as the <b>OTP OVER SMS</b> method, and they do not require purchase of more transactions.</p>
+							<p style="font-size:14px;">Only <b><u>10 free transactions</u></b> of SMS can be used, post which your account <b style="color: red;">will get locked out, if you do not buy more  SMS transactions</b>. We highly recommended you to go for the other Phone based authentication methods like <b>Soft Token/Push Notification/QR Code Authentication </b>since they are as secure as the <b>OTP OVER SMS</b> method, and they do not require any purchase.</p>
 							<ol  style="list-style-type:circle">
-							<li>Setting up knowledge based questions (KBA) as an alternate login method will protect you in case your phone is not working or out of reach. <br /> 
-							<br>
-							<li><b>What to do in case you are locked out (Its common when you are setting up 2FA for the first time, so please read this).<br /></b/></li>
-								<b>Rename</b> the plugin by FTP access. Go to <b>wp-content/plugins folder</b> and rename miniorange-2-factor-authentication folder.<br /><br />
-								</li>
+								<li>Setting up knowledge based questions (KBA) as an alternate login method will protect you in case your phone is not working or out of reach.<br></li>
+								<li><b style="color: red;">What to do in case you are locked out?<br /></b/></li>
+								<b>Rename</b> the plugin from FTP access. Go to <b>wp-content/plugins folder</b> and rename miniorange-2-factor-authentication folder.<br />You will be able to login with your Wordpress Username and password.<br />
 							</ol>
 						</div>
 						<div class="mo2f_modal-footer">
@@ -769,7 +760,7 @@
 				</div>
 			</div>
 							
-			<table style="width:100%;">
+			<table style="width:100%;padding:10px;">
 				<tr>
 					<td>
 						<span class="color-icon selectedMethod"></span> - Active Method
@@ -930,7 +921,7 @@
 								Google Authenticator
 							</label><hr>
 							<p>
-								You have to enter 6 digits code generated by Google Authenticator App to login. Supported in Smartphones only.
+								You have to enter the 6 digits code generated by Google Authenticator App to login. Supported in Smartphones only.
 							</p>
 							
 							<?php if(get_user_meta($current_user->ID,'mo2f_google_authentication_status',true)){ ?>
@@ -991,7 +982,7 @@
 					<td class="<?php if( !current_user_can('manage_options') && !(in_array("SMS AND EMAIL", $opt))  ){ echo "mo2f_td_hide"; }else { echo "mo2f_td_show"; } ?>">
 						<div><div class="mo2f_grayed_out_link"><?php echo $random_mo_key ? '<span style="float:right;" title="This feature is avialable in premium version of plugin"><a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_pricing" ><b>PREMIUM**</b></a></span>' :'';?></div>
 						<div class="mo2f_thumbnail<?php echo $random_mo_key ? " mo2f_grayed_out" : '';?>" >
-							<label title="Supported in Landline phones, Smartphones, Feature phones.">
+							<label title="Supported in Laptops, Smartphones, Feature phones.">
 								<input type="radio"  name="mo2f_selected_2factor_method" style="margin:5px;" value="PHONE VERIFICATION" <?php checked($mo2f_second_factor == 'SMS AND EMAIL');
 								if(!$random_mo_key && (get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_PLUGIN_SETTINGS' || get_user_meta($current_user->ID,'mo_2factor_user_registration_status',true) == 'MO_2_FACTOR_INITIALIZE_TWO_FACTOR') ){ 
 											} else{ echo 'disabled'; } ?> />
@@ -1000,21 +991,17 @@
 							<p>
 								You will receive a one time passcode via SMS on your phone and your e-mail. You have to enter the otp on your screen to login. Supported in Smartphones, Feature Phones.
 							</p>
-							<?php if(get_user_meta($current_user->ID,'mo2f_otp_registration_status',true)){ ?>
-								<div class="configuredLandline" id="PHONE_VERIFICATION" title="Supported in Landline phones, Smartphones, Feature phones.">
-									<a href="#reconfigure" data-method="PHONE VERIFICATION" >Reconfigure</a> | <a href="#test" data-method="PHONE VERIFICATION">Test</a>
-								</div>
-							<?php } else { ?>
-								<div class="notConfiguredLandline" title="supported in Landline phone,smartphone,feature phone"><a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_demo#demo2">How To Setup ?</a></div>
-							<?php } ?>
+							 
+							<div class="notConfiguredBasic" title="Supported in Smartphones, Feature Phones."><a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_demo#demo2">How To Setup ?</a></div>
+							
 						</div>
 						</div>
 					</td>
 				</tr>
 				
 				</table>
-				<?php echo $random_mo_key ? '<h4>*10 free transactions of OTP over SMS are provided in the free version of the plugin. </h4><h4>
-				**These authentication methods are provided in premium plugin.</h4>' : ''; ?>
+				<?php echo $random_mo_key ? '<h4>* Only 10 free transactions of SMS are provided with the plugin, post which you will have to purchase more SMS transactions as per your need. Please refer to the <b>Licensing Plans</b> tab for more details.</h4><h4>
+				** These authentication methods are provided in premium plugin.</h4>' : ''; ?>
 				<input type="hidden" name="option" value="mo2f_save_2factor_method" />		
 		</form>
 			<form name="f" method="post" action="" id="mo2f_2factor_save_form">
@@ -1605,7 +1592,7 @@
 					<input type="hidden" name="option" value="mo2f_validate_soft_token" />
 					
 								<input class="mo2f_table_textbox" style="width:200px;" autofocus="true" type="text" name="otp_token" required placeholder="Enter OTP" style="width:95%;"/>
-								<a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_demo#demo4">Click here to see How It Works ?</a><br><br>
+								<a href="admin.php?page=miniOrange_2_factor_settings&amp;mo2f_tab=mo2f_demo#demo4">Click here to see How To Setup ?</a><br><br>
 					<input type="button" name="back" id="back_btn" class="button button-primary button-large" value="Back" />
 					<input type="submit" name="validate" id="validate" class="button button-primary button-large" value="Validate OTP" />
 					
@@ -1870,7 +1857,7 @@
 				<h4 class="mo2f_pricing_sub_header" style="padding-bottom:16px !important;">( You are automatically on this plan )</h4>
 				<hr>
 				<p class="mo2f_pricing_text">For 1 user - Forever</p><hr>
-				<p  class="mo2f_pricing_text" style="padding-bottom:8px;">$0 - Subscription Fees<br /><br /></p>
+				<p  class="mo2f_pricing_text" style="padding-bottom:2px;">$0 - Subscription Fees<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
 				<hr>
 				<p class="mo2f_pricing_text">Features:</p>
 				<p class="mo2f_pricing_text">Limited Authentication Methods<br />
@@ -1921,6 +1908,20 @@
 						<option > 10000 users - $799 per year </option>
 						<option > 20000 users - $999 per year </option>	
 					</select>
+				</p>
+				<p  class="mo2f_pricing_text">SMS Cost <br />(<span style="font-size:10px;">Only applicable if you will use OTP over SMS as authentication method.</span>)<br>
+					<select class="form-control" style="border-radius:5px;width:250px;">
+					    <option>$5 per 100 OTP + SMS delivery charges</option>
+						<option>$15 per 500 OTP + SMS delivery charges</option>
+						<option>$22 per 1k OTP + SMS delivery charges</option>
+						<option>$30 per 5k OTP + SMS delivery charges</option>
+						<option>$40 per 10k OTP + SMS delivery charges</option>
+						<option>$90 per 50k OTP + SMS delivery charges</option>
+					</select>
+				</p>  
+				<p class="mo2f_pricing_text ">
+					<i><span style="color:#b01a1a">Transaction prices & SMS delivery charges depend on country.</span><br/>
+					Lifetime validity.</i>
 				</p>
 				<hr>
 				<p class="mo2f_pricing_text">Features:</p>
@@ -1983,6 +1984,22 @@
 						<option > 10000 users - $799 per year </option>
 						<option > 20000 users - $999 per year </option>	
 					</select></p>
+				
+				<p  class="mo2f_pricing_text">SMS Cost<br />(<span style="font-size:10px;">Only applicable if you will use OTP over SMS as authentication method.</span>)<br>
+					<select class="form-control" style="border-radius:5px;width:250px;">
+					    <option>$5 per 100 OTP + SMS delivery charges</option>
+						<option>$15 per 500 OTP + SMS delivery charges</option>
+						<option>$22 per 1k OTP + SMS delivery charges</option>
+						<option>$30 per 5k OTP + SMS delivery charges</option>
+						<option>$40 per 10k OTP + SMS delivery charges</option>
+						<option>$90 per 50k OTP + SMS delivery charges</option>
+					</select>
+				</p>  
+				<p class="mo_registration_pricing_text">
+					<i><span style="color:#b01a1a">Transaction prices & SMS delivery charges depend on country.</span><br/>
+					Lifetime validity.</i>
+				</p>
+				
 				<hr>
 				<p class="mo2f_pricing_text">Features:</p>
 				<p class="mo2f_pricing_text">All Authentication Methods***<br />
@@ -2011,22 +2028,20 @@
 		</table>
 		<br>
 		<h3>* Steps to upgrade to premium plugin -</h3>
-		<p>1. You will be redirected to miniOrange Login Console. Enter your password with which you created an account with us and verify your 2nd factor. After that you will be redirected to payment page.</p>
+		<p>1. You will be redirected to miniOrange Login Console. Enter your password with which you created an account with us and verify your 2nd factor. After that you will be redirected to the payment page.</p>
 		<p>2. Enter you card details and complete the payment. On successful payment completion, you will see the link to download the premium plugin.</p>
-		<p>3. Once you download the premium plugin, just unzip it and replace the folder with existing plugin. </p>
-		<b>Note: Delete the Free plugin from the Wordpress Admin Panel and upload the plugin using zip.</b>
-		<p>4. From this point on, do not update the plugin from the Wordpress store. </p>
+		<p>3. Once you download the premium plugin, delete the Free plugin from the Wordpress Admin Panel and upload the Premium plugin using zip. </p>
 		<br /><hr><br />
-		<h3>** If you don't find the number of users in the dropdown then check the price for exact number of users by clicking on 'Click here to upgrade' button.</h3>
+		<h3>** If you don't find your required number of users in the dropdown, click on 'Click here to upgrade' button, you will be taken to the Payment Page where you can check the price for  the exact number of users.</h3>
 		<p>You can mail us at <a href="mailto:info@miniorange.com"><b>info@miniorange.com</b></a> or submit the support form under User Profile tab to contact us.</p><br /><hr><br />
-		<h3>***All Authentication Methods:</h3><ol> 
+		<h3>*** All Authentication Methods:</h3><ol> 
 		<li>We highly recommend to use phone based authentication methods like Soft Token, QR Code Authentication and Push Notification.</li>
 		<li>Setting up knowledge based questions (KBA) as an alternate login method will protect you in case your phone is not working or out of reach. <br /><b><u>What to do in case you are locked out (Its common when you are setting up 2FA for the first time, so please read this).<br /><a  data-toggle="collapse" href="#mo2f_locekd_out" aria-expanded="false" >Click Here to know how to login, in case you are locked out.</a></u></b/>
 		<div class="mo2f_collapse" id="mo2f_locekd_out">
 			==><b>Rename</b> the plugin by FTP access. Go to <b>wp-content/plugins folder</b> and rename miniorange-2-factor-authentication folder.<br /><br />
 		</div>
 		</li> 
-		<li>OTP over SMS and Email delivery depends on the SMS and SMTP Gateway you choose. There are different levels of these gateway:</li>
+		<li>OTP over SMS delivery depends on the SMS and SMTP Gateway you choose. There are different levels of these gateway:</li>
 			<ul>
 				<li><b>Standard Gateway:</b> You may get a lag in the service of SMS and Email.</li>
 				<li><b>Premium Gateway:</b> The delivery of SMS will be fast if you choose this gateway. However, we provide a global gateway and you may have a better local gateway. So our experience is that if you want OTP over SMS then the best thing is to go with your own local gateway which is proven and fast in your local area. </li>
@@ -2034,12 +2049,12 @@
 			</ul>
 		</ol>
 		<br /><hr><br />
-		<p><b>****</b> 2 Factor will work with various login forms like Woocommerce, Theme My Login and many more. We are not claiming that 2 Factor will work with all the customized login forms. In such case, custom work is needed to integrate two factor with your customized login page.</p>
+		<p><b>****</b> The 2 Factor plugin works with various login forms like Woocommerce, Theme My Login and many more. We do not claim that 2 Factor works with all the customized login forms. In such cases, custom work is needed to integrate 2 factor with your customized login page.</p>
 		<br/><hr><br>
 		<h3>***** End to End 2FA Integration - We will setup a Conference Call / Gotomeeting and do end to end setup for you. We provide services to do the setup on your behalf.
 		<h3>10 Days Return Policy -</h3>
 
-		<div>At miniOrange, we want to ensure you are 100% happy with your purchase. If the premium plugin you purchased is not working as advertised and you've attempted to resolve any issues with our support team, which couldn't get resolved then we will refund the whole amount within 10 days of the purchase. Please email us at <a href="mailto:info@miniorange.com"><i>info@miniorange.com</i></a> for any queries regarding the return policy.<br /> 
+		<div>At miniOrange, we want to ensure you are 100% happy with your purchase. If the premium plugin you purchased is not working as advertised and you've attempted to resolve any issues with our support team, which couldn't get resolved, we will refund the whole amount within 10 days of the purchase. Please email us at <a href="mailto:info@miniorange.com"><i>info@miniorange.com</i></a> for any queries regarding the return policy.<br /> 
 		If you have any doubts regarding the licensing plans, you can mail us at <a href="mailto:info@miniorange.com"><i>info@miniorange.com</i></a> or submit a query using the support form.</div><br /><br />
 		
 						
