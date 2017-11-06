@@ -4,7 +4,7 @@ Donate link: https://miniorange.com/
 Tags: google authenticator, two factor authentication, two factor, 2FA, 2 factor authentication, two step verification, 1 google authenticator, login, authy, authy two factor, Clef, 2 Factor, yubico, Two-Factor Authentication, Mobile Authentication, otp, strong authentication, 2 step authentication, smartphone authentication, Multifactor authentication, multi factor authentication, multi factor, no password, passwordless login, security, website security, one time passcode, password, soft token, woocommerce, authenticate, two factor auth, two-factor, duo, QR Code, QR Code Authentication, scan QR Code, wordfence, login security, google authenticator, google , email verification, trusted device, device Id , KBA , knowledge based authentication
 Requires at least: 3.0.1
 Tested up to: 4.8.2
-Stable tag: 4.5.3
+Stable tag: 4.5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -241,6 +241,12 @@ miniOrange authentication service has 15+ authentication methods.One time passco
 
 == Changelog ==
 
+= 4.5.5 =
+* Google Authenticator (2FA) : 404 bug fixes.
+
+= 4.5.4 =
+* Google Authenticator (2FA) : Better UI of Login Pages, Fixed Redirection issue. Fixed the error in the last version (4.5.3) for the customers who were getting undefined action error.
+
 = 4.5.3 =
 * Google Authenticator (2FA) : Changed UI of the Login Pages, Redirect to Login Page bug fixes.
 
@@ -462,6 +468,12 @@ More descriptive setup messages and UI changes.
 * First version of Two Factor Auth ( 2FA ) plugin supported with mobile auhthentication for admin only.
 
 == Upgrade Notice ==
+
+= 4.5.5 =
+* Google Authenticator (2FA) : 404 bug fixes.
+
+= 4.5.4 =
+* Google Authenticator (2FA) : Better UI of Login Pages, Fixed Redirection issue. Fixed the error in the last version (4.5.3) for the customers who were getting undefined action error.
 
 = 4.4.3 =
 * Google Authenticator (2FA) : Fixed the login flow for third party Apps that supports XML-RPC.

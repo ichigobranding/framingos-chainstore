@@ -721,5 +721,19 @@ text-align: center;
 .mo_registration_pricing_text{
 	font-size:15px!important;
 	color:#fff!important;
-	font-weight:700!important
+	font-weight:700!important;
+}
+
+.mo_otp_token {
+	font-size:15px;
+	color:#212F3C;
+	border:none;
+	display:block; 
+	border-bottom-style: solid;    
+	border-width: 2px;
+	border-color:#D0D3D4;
+	border-radius:0px;
+	outline:none;
+    width:140px;
+	text-align:center;
 }

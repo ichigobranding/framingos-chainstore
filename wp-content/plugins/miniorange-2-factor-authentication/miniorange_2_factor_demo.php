@@ -1,5 +1,3 @@
-
-
 <div class="mo2f_table_layout">
    <?php echo mo2f_check_if_registered_with_miniorange($current_user); ?>
    <h3>

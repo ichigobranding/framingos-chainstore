@@ -32,7 +32,7 @@
                ?>
             <input type="hidden" name="miniorange_attribute_collection_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-login-attribute-collection-nonce'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
-         </form>
+	    </form>
       </div>
    </body>
 </html>
@@ -187,10 +187,10 @@
       <?php
          echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>';
          echo '<script src="' . plugins_url('includes/js/bootstrap.min.js', __FILE__) . '" ></script>';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__) . '" />';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__) . '" />';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__) . '" />';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.3', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.5', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.5', __FILE__) . '" />';
          ?>
    </head>
    <body>
@@ -232,7 +232,7 @@
       <form name="f" id="mo2f_backto_mo_loginform" method="post" action="<?php echo wp_login_url(); ?>" style="display:none;">
          <input type="hidden" name="miniorange_mobile_validation_failed_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-mobile-validation-failed-nonce'); ?>" />
       </form>
-      <form name="f" id="mo2f_challenge_forgotphone_form" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+      <form name="f" id="mo2f_challenge_forgotphone_form" method="post"   style="display:none;">
          <input type="hidden" name="mo2f_selected_2factor_method" />
          <input type="hidden" name="miniorange_challenge_forgotphone_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-challenge-forgotphone-nonce'); ?>" />
          <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
@@ -259,10 +259,10 @@
       <?php
          echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>';
          echo '<script src="' . plugins_url('includes/js/bootstrap.min.js', __FILE__) . '" ></script>';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__) . '" />';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__) . '" />';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__) . '" />';
-         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.3', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.5', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__) . '" />';
+         echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.5', __FILE__) . '" />';
          ?>
    </head>
    <body>
@@ -280,7 +280,7 @@
                      <div id="otpMessage">
                         <p style="font-size:13px;"><?php echo (isset($login_message) && !empty($login_message)) ? $login_message : 'Please answer the following questions:'; ?></p>
                      </div>
-                     <form name="f" id="mo2f_submitkba_loginform" method="post" action="admin_post_nopriv_mo_prefix_initialization">
+                     <form name="f" id="mo2f_submitkba_loginform" method="post"  >
                         <div id="mo2f_kba_content">
                            <p style="font-size:15px;">
                               <?php if(isset($_SESSION['mo_2_factor_kba_questions'])){
@@ -338,10 +338,10 @@
          <?php
             echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>';
             echo '<script src="' . plugins_url('includes/js/bootstrap.min.js', __FILE__) . '" ></script>';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.3', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.5', __FILE__) . '" />';
             ?>
       </head>
       <body>
@@ -455,20 +455,20 @@
          <form name="f" id="mo2f_backto_mo_loginform" method="post" action="<?php echo wp_login_url(); ?>" style="display:none;">
             <input type="hidden" name="miniorange_mobile_validation_failed_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-mobile-validation-failed-nonce'); ?>" />
          </form>
-         <form name="f" id="mo2f_mobile_validation_form" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+         <form name="f" id="mo2f_mobile_validation_form" method="post"   style="display:none;">
             <input type="hidden" name="miniorange_mobile_validation_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-mobile-validation-nonce'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
          </form>
-         <form name="f" id="mo2f_show_softtoken_loginform" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+         <form name="f" id="mo2f_show_softtoken_loginform" method="post"   style="display:none;">
             <input type="hidden" name="miniorange_softtoken" value="<?php echo wp_create_nonce('miniorange-2-factor-softtoken'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
          </form>
-         <form name="f" id="mo2f_show_forgotphone_loginform" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+         <form name="f" id="mo2f_show_forgotphone_loginform" method="post"   style="display:none;">
             <input type="hidden" name="request_origin_method" value="<?php echo $login_status; ?>" />
             <input type="hidden" name="miniorange_forgotphone" value="<?php echo wp_create_nonce('miniorange-2-factor-forgotphone'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
          </form>
-         <form name="f" id="mo2f_alternate_login_kbaform" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+         <form name="f" id="mo2f_alternate_login_kbaform" method="post"   style="display:none;">
             <input type="hidden" name="miniorange_alternate_login_kba_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-alternate-login-kba-nonce'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
          </form>
@@ -540,10 +540,10 @@
          <?php
             echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>';
             echo '<script src="' . plugins_url('includes/js/bootstrap.min.js', __FILE__) . '" ></script>';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.3', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.5', __FILE__) . '" />';
             ?>
       </head>
       <body>
@@ -627,15 +627,15 @@
          <form name="f" id="mo2f_backto_mo_loginform" method="post" action="<?php echo wp_login_url(); ?>" style="display:none;">
             <input type="hidden" name="miniorange_mobile_validation_failed_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-mobile-validation-failed-nonce'); ?>" />
          </form>
-         <form name="f" id="mo2f_mobile_validation_form" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+         <form name="f" id="mo2f_mobile_validation_form" method="post"   style="display:none;">
             <input type="hidden" name="miniorange_mobile_validation_nonce" value="<?php echo wp_create_nonce('miniorange-2-factor-mobile-validation-nonce'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
          </form>
-         <form name="f" id="mo2f_show_softtoken_loginform" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+         <form name="f" id="mo2f_show_softtoken_loginform" method="post"   style="display:none;">
             <input type="hidden" name="miniorange_softtoken" value="<?php echo wp_create_nonce('miniorange-2-factor-softtoken'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
          </form>
-         <form name="f" id="mo2f_show_forgotphone_loginform" method="post" action="admin_post_nopriv_mo_prefix_initialization" style="display:none;">
+         <form name="f" id="mo2f_show_forgotphone_loginform" method="post"   style="display:none;">
             <input type="hidden" name="request_origin_method" value="<?php echo $login_status; ?>" />
             <input type="hidden" name="miniorange_forgotphone" value="<?php echo wp_create_nonce('miniorange-2-factor-forgotphone'); ?>" />
             <input type="hidden" name="redirect_to" value="<?php echo $redirect_to; ?>" />
@@ -708,10 +708,10 @@
          <?php
             echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>';
             echo '<script src="' . plugins_url('includes/js/bootstrap.min.js', __FILE__) . '" ></script>';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.3', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.5', __FILE__) . '" />';
             ?>
       </head>
       <body>
@@ -733,8 +733,10 @@
                      <br />
                      <div id="showOTP">
                         <div class="mo2f-login-container">
-                           <form name="f" id="mo2f_submitotp_loginform" method="post" action="admin_post_nopriv_mo_prefix_initialization"> 
-                              <input type="text" name="mo2fa_softtoken"  style="height:28px !important;" placeholder="Enter one time passcode" id="mo2fa_softtoken" required="true" class="mo2f-textbox" autofocus="true" pattern="[0-9]{4,8}" title="Only digits within range 4-8 are allowed."/>
+                           <form name="f" id="mo2f_submitotp_loginform" method="post"  > 
+							  <center> 
+								 <input type="text" name="mo2fa_softtoken" style="height:28px !important;" placeholder="Enter the code" id="mo2fa_softtoken" required="true" class="mo_otp_token" autofocus="true" pattern="[0-9]{4,8}" title="Only digits within range 4-8 are allowed."/>
+						   	  </center>
                               <br />
                               <input type="submit" name="miniorange_otp_token_submit" id="miniorange_otp_token_submit" class="miniorange_otp_token_submit"  value="Validate" />
                               <input type="hidden" name="request_origin_method" value="<?php echo $login_status; ?>" />
@@ -886,10 +888,10 @@
          <?php
             echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>';
             echo '<script src="' . plugins_url('includes/js/bootstrap.min.js', __FILE__) . '" ></script>';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__) . '" />';
-            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.3', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/front_end_login.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__) . '" />';
+            echo '<link rel="stylesheet" type="text/css" href="' . plugins_url('includes/css/hide-login.css?version=4.5.5', __FILE__) . '" />';
             ?>
       </head>
       <body>

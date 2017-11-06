@@ -18,6 +18,7 @@ $current_user = wp_get_current_user();
 						<tr><td>
 							<input type="text" class="mo2f_table_textbox" style="width:100% !important;" name="query_phone" id="query_phone" value="<?php echo get_user_meta($current_user->ID,'mo2f_user_phone',true); ?>" placeholder="Enter your phone"/>
 							</td>
+
 						</tr>
 						<tr>
 							<td>

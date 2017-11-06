@@ -30,7 +30,7 @@ class Miniorange_User_Register{
 	}
 	
 	function plugin_settings_style() {
-		wp_enqueue_style( 'mo_2_factor_admin_settings_style', plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__));
+		wp_enqueue_style( 'mo_2_factor_admin_settings_style', plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__));
 	}
 	
 	function mo_auth_success_message() {

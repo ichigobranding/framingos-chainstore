@@ -3,7 +3,7 @@
 * Plugin Name: miniOrange 2 Factor Authentication
 * Plugin URI: http://miniorange.com
 * Description: This plugin provides various two-factor authentication methods as an additional layer of security for wordpress login. We Support Phone Call, SMS, Email Verification, QR Code, Push, Soft Token, Google Authenticator, Authy, Security Questions(KBA), Woocommerce front-end login, Shortcodes for custom login pages.
-* Version: 4.5.3
+* Version: 4.5.5
 * Author: miniOrange
 * Author URI: http://miniorange.com
 * License: GPL2
@@ -29,7 +29,6 @@ class Miniorange_Authentication {
 	function __construct() {
 	
 		$mo2f_auth_types = array('OUT OF BAND EMAIL','SMS','PHONE VERIFICATION','SOFT TOKEN','MOBILE AUTHENTICATION','PUSH NOTIFICATIONS','GOOGLE AUTHENTICATOR','SMS AND EMAIL', 'AUTHY 2-FACTOR AUTHENTICATION','KBA');
-		add_action( 'admin_post_nopriv_mo_prefix_initialization', array( $this, 'miniorange_prefix_initializaion'));
 		add_option( 'mo2f_auth_methods_for_users' ,$mo2f_auth_types);
 		add_option( 'mo2f_inline_registration',0);
 		add_option( 'mo2f_enable_mobile_support', 1);
@@ -55,7 +54,6 @@ class Miniorange_Authentication {
 		add_action( 'admin_enqueue_scripts', array( $this, 'plugin_settings_script' ) );
 		remove_action( 'admin_notices', array( $this, 'mo_auth_success_message') );
 		remove_action( 'admin_notices', array( $this, 'mo_auth_error_message') );
-		add_action('wp_logout', array( $this, 'mo_2_factor_endsession'));
 		add_action('admin_notices', array($this,'get_customer_SMS_transactions'));
 		
 		
@@ -122,9 +120,6 @@ class Miniorange_Authentication {
 		}
 	}
 	
-	function miniorange_prefix_initializaion(){
-	}
-	
 	function get_customer_SMS_transactions()
 	{
 	    
@@ -158,13 +153,6 @@ class Miniorange_Authentication {
 	function display_customer_transactions($content)
 	{
 	   echo '<div class="is-dismissible notice notice-warning"> <form name="f" method="post" action=""><input type="hidden" name="option" value="mo_auth_sync_sms_transactions" /><p><b>miniOrange 2-Factor Plugin:</b> You have <b style="color:red">'.$content.' SMS transactions</b> remaining. <input type="submit" name="submit" value="Check Transactions" class="button button-primary button-large" /></form><button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button></div>';
-	}
-	
-	function mo_2_factor_endsession() {
-		update_option('mo2f-login-message','You are now logged out');
-		session_start();
-		$_SESSION = array();
-		session_destroy();
 	}
 	
 	 function mo_auth_deactivate() {
@@ -281,15 +269,15 @@ class Miniorange_Authentication {
 	}
 
 	function mo_2_factor_enable_frontend_style() {
-		wp_enqueue_style( 'mo2f_frontend_login_style', plugins_url('includes/css/front_end_login.css?version=4.5.3', __FILE__));
-		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__));
-		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.5.3', __FILE__));
+		wp_enqueue_style( 'mo2f_frontend_login_style', plugins_url('includes/css/front_end_login.css?version=4.5.5', __FILE__));
+		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__));
+		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.5.5', __FILE__));
 	}
 	
 	function plugin_settings_style() {
-		wp_enqueue_style( 'mo_2_factor_admin_settings_style', plugins_url('includes/css/style_settings.css?version=4.5.3', __FILE__));
-		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.5.3', __FILE__));
-		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.5.3', __FILE__));
+		wp_enqueue_style( 'mo_2_factor_admin_settings_style', plugins_url('includes/css/style_settings.css?version=4.5.5', __FILE__));
+		wp_enqueue_style( 'mo_2_factor_admin_settings_phone_style', plugins_url('includes/css/phone.css?version=4.5.5', __FILE__));
+		wp_enqueue_style( 'bootstrap_style', plugins_url('includes/css/bootstrap.min.css?version=4.5.5', __FILE__));
 	}
 
 	function plugin_settings_script($mo2fa_hook_page) {
