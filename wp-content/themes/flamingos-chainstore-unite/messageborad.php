@@ -8,7 +8,7 @@
                         $wp_query = new WP_Query();
                         $param = array(
                             'posts_per_page' => '15', //表示件数。-1なら全件表示
-                            'post_type' => array('merumaga','newss','infomationame'), //カスタム投稿タイプの名称を入れる
+                            'post_type' => array('merumaga','newss','infomationame','merumaga2'), //カスタム投稿タイプの名称を入れる
                             'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
                             'order' => 'DESC'
                         );
