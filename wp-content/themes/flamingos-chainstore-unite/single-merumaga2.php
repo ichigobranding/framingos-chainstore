@@ -29,7 +29,7 @@ get_header(); ?>
                                                       <div class="ibskinArticleHeader">
                                                           <div class="ibskinArticleTitle">
                                                                 <h1>
-                                                                  <b>「メルマガのタイトルを記入します」配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
+                                                                  <b>「<?php the_title(); ?>」を配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
                                                                 </h1>
                                                           </div>
                                                       </div>
