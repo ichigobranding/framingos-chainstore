@@ -14,7 +14,7 @@
                                                                   <div class="ibarticleDetailArea">
                                                                       <time datetime="2016-08-12" pubdate="pubdate"><?php echo get_the_date(); ?></time><?php get_template_part( 'new' ); ?>
                                                                       <br />
-                                                                        テーマ：<?php echo get_the_term_list( $id,tema, $before, $sep, $after ); ?>
+                                                                        <div class="temablog">テーマ：<?php echo get_the_term_list( $id,tema, $before, $sep, $after ); ?></div>
                                                                   </div>
                                                           <!--記事info-->
                                                                           <?php the_field('blog-nakami'); ?>

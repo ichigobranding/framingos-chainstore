@@ -1,7 +1,7 @@
 <div class="ibskinArticle33">
             <!-- コンサル一覧 -->
               <h2 class="re1511-ttl">
-                <i class="fa fa-calendar"></i> 個別相談情報<em class="re1511-ttlSmall">Consulting</em>
+                <i class="fa fa-calendar"></i> 募集中の個別相談<em class="re1511-ttlSmall">Consulting</em>
                 <br>
               </h2>
                 <div id="topnewsBox-new">
@@ -26,7 +26,6 @@
                                           <?php the_field('consulday'); ?> 開催　
                                         </td>
                                         <td class="daymaga2-new">
-                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                           <span class="topnewsTab <?= $nclass; ?>">
                                                           <!-- 募集終了 -->
                                                             <?php
@@ -41,9 +40,8 @@
                                                             ?>
                                                           <!-- 募集終了 -->
                                           </span>
-                                          
-                                          <!--<a href="<?//php echo esc_url( home_url( '/' ) ); ?>/archives/form/consul" title="<?php the_title(); ?>">-->
-                                          
+                                          <!--<a href="<?//php echo esc_url( home_url( '/' ) ); ?>/archives/form/consul" title="<?//php the_title(); ?>">-->
+                                          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                             <?php echo mb_substr(strip_tags($post-> post_title),0,32).'...'; ?>
                                           </a>
                                           <?php get_template_part( 'new' ); ?>

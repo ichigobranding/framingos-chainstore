@@ -593,6 +593,7 @@ div.container.wf h2.widget-title{
     border: 1px solid #e84331;
     background: #ffffff;
     margin-bottom: 15px;
+    color:#808080f2;
 }
 .ibskinArticle-all {
     padding: 5px 0;
@@ -1537,3 +1538,29 @@ li.children:before {
     background: #ffffff;
     margin-bottom: 15px;
 }
+/**** リンクの下線 ************/
+div.ibskinArticleBody2 a{
+        text-decoration: underline;
+}
+div.temablog a{
+       text-decoration: none;
+       font-weight:100;
+}
+div.ibskinArticleBody2 a:hover{
+            color: #0000ff!important;
+            opacity: 1;
+}
+td.daymaga2-new a{
+        text-decoration: underline;
+}
+td.daymaga2-new a:hover{
+        color: #0000ff!important;
+            opacity: 1;
+}
+/**** 下線 ************/
+
+/**** タイトル水色 ************/
+div.ibskinArticleHeader a{
+color:#0066cc;
+}
+/**** タイトル水色 ************/

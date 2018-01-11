@@ -29,7 +29,7 @@ get_header(); ?>
                                                       <div class="ibskinArticleHeader">
                                                           <div class="ibskinArticleTitle">
                                                                 <h1>
-                                                                  <b>「<?php the_title(); ?>」を配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
+                                                                  <b><!--「--><?php the_title(); ?><!--」を配信しました。(<?//php echo get_the_date('n月j日'); ?>号)</b>-->
                                                                 </h1>
                                                           </div>
                                                       </div>
@@ -69,7 +69,7 @@ get_header(); ?>
                                           </article>
 								 <!--記事全体-->
 		                                <div class="iblistLink">
-		                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>newss">
+		                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>newsslist">
 		                                       新着情報一覧を見る
 		                                        </a>
 		                                </div>

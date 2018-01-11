@@ -70,7 +70,7 @@ get_header(); ?>
                                           </article>
 								 <!--記事全体-->
 		                                <div class="iblistLink">
-		                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>newss">
+		                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>newsslist">
 		                                       新着情報一覧を見る
 		                                        </a>
 		                                </div>
