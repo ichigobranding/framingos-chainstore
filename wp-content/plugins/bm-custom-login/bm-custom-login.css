@@ -8,13 +8,7 @@ body.login {
 }
 
 #login {
-	-webkit-border-radius:5px;
-	-khtml-border-radius:5px;
-	-moz-border-radius:5px;
 	border-radius:5px;
-	-webkit-box-shadow:rgba(0,0,0,0.7) 0 4px 10px -1px;
-	-khtml-box-shadow:rgba(0,0,0,0.7) 0 4px 10px -1px;
-	-moz-box-shadow:rgba(0,0,0,0.7) 0 4px 10px -1px;
 	box-shadow:rgba(0,0,0,0.7) 0 4px 10px -1px;
 	padding:0 0 20px 0;
 	margin:7em auto 0 auto;
@@ -24,13 +18,7 @@ body.login {
 #loginform,
 #lostpasswordform,
 #registerform {
-	-khtml-box-shadow:none;
-	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
 	box-shadow:none;
-	-webkit-border-radius:0;
-	-khtml-border-radius:0;
-	-moz-border-radius:0;
 	border-radius:0;
 	border:none;
 	background:transparent;
@@ -58,8 +46,8 @@ body.login {
 }
 
 .submit #wp-submit {
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3),0 1px 0 rgba(0,0,0,.15);
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.3),0 1px 0 rgba(0,0,0,.15);
+	text-shadow: none;
 }
 
 input[type=checkbox]:checked:before {

@@ -1,9 +1,9 @@
 === Custom Login ===
 Contributors: BinaryMoon
 Tags: customise, customize, login, customisation, customization, admin
-Requires at least: 3.5
-Tested up to: 4.6
-Stable Tag:1.9
+Requires at least: 4.7
+Tested up to: 4.9
+Stable Tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,19 +34,61 @@ This section describes how to install the plugin and get it working.
 
 == Changelog ==
 
-* 2.1 Make translations work properly. Improve coding standards (again :))
-* 2.0 Fix coding standards and improve security
-* 1.9 Update the localization strings so that the new language pack system will be able to translate the plugin
-* 1.8.2 Stop color picker from being loaded on every page in the admin - thanks to mgsisk for the report and code fix
-* 1.8.1 Update CSS Tidy files to latest version
-* 1.8 New Feature: Custom CSS - now you can edit everything! :)
-* 1.7.4 make link colour affect login button to ensure things remain harmonious
-* 1.7.3 improve sanitization/ security throughout
-* 1.7.2 encode footer html properly so that html actually works - and is safe
-* 1.7.1 make plugin path more flexible for people who move wp-content directory
-* 1.7 improve security, and massively improve the admin page
-* 1.6.5 add a shadow colour option, improve login url support, change admin footer text
-* 1.6 Add a background image for the main body of the site
-* 1.5.1 Some tweaks to the login layout
-* 1.5 A total rewrite with a new options screen, and a redesigned page login layout
-* 1.4 Old old old, needs updating
+= 2.2.1 - December 1st 2017 =
+* Remove text shadow on login button so that it's more consistently readable.
+* Make it clearer what the text link colour changes.
+* Change CSS label to match the core customizer label.
+* Remove CSS vendor prefixes that are no longer needed.
+
+= 2.2 - November 30th 2017 =
+* Fix default colour values so that the default button works properly
+* Fix PHP 7 warnings in CSSTidy
+* Sanitize more things for extra security
+
+= 2.1 =
+* Make translations work properly. Improve coding standards (again :))
+
+= 2.0 =
+* Fix coding standards and improve security
+
+= 1.9 =
+* Update the localization strings so that the new language pack system will be able to translate the plugin
+
+= 1.8.2 =
+* Stop color picker from being loaded on every page in the admin - thanks to mgsisk for the report and code fix
+
+= 1.8.1 =
+* Update CSS Tidy files to latest version
+
+= 1.8 =
+* New Feature: Custom CSS - now you can edit everything! :)
+
+= 1.7.4 =
+* make link colour affect login button to ensure things remain harmonious
+
+= 1.7.3 =
+* improve sanitization/ security throughout
+
+= 1.7.2 =
+* encode footer html properly so that html actually works - and is safe
+
+= 1.7.1 =
+* make plugin path more flexible for people who move wp-content directory
+
+= 1.7 =
+* improve security, and massively improve the admin page
+
+= 1.6.5 =
+* add a shadow colour option, improve login url support, change admin footer text
+
+= 1.6 =
+* Add a background image for the main body of the site
+
+= 1.5.1 =
+* Some tweaks to the login layout
+
+= 1.5 =
+* A total rewrite with a new options screen, and a redesigned page login layout
+
+= 1.4 =
+* Old old old, needs updating

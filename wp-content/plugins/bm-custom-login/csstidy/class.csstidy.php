@@ -205,7 +205,6 @@ class csstidy {
 	 */
 	var $from = array();
 	/**
-	/**
 	 * =true if in invalid at-rule
 	 * @var bool
 	 * @access private
@@ -246,7 +245,7 @@ class csstidy {
 	 * @access private
 	 * @version 1.3
 	 */
-	function csstidy() {
+	function __construct() {
 		$this->settings['remove_bslash'] = true;
 		$this->settings['compress_colors'] = true;
 		$this->settings['compress_font-weight'] = true;

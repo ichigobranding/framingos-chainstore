@@ -4,13 +4,14 @@
  * Plugin URI: http://wordpress.org/plugins/bm-custom-login/
  * Description: Display custom images on the WordPress login screen. Useful for branding.
  * Author: BinaryMoon
- * Version: 2.1
+ * Version: 2.2.1
  * Author URI: http://prothemedesign.com/
  * License: GPLv2 or later
  * Text Domain: bm-custom-login
  *
  * @package bm-custom-login
  */
+
 
 /**
  * This program is free software; you can redistribute it and/or
@@ -413,7 +414,7 @@ if ( ! class_exists( 'BMCustomLogin' ) ) {
 				array(
 					'id' => 'cl_backgroundColor',
 					'value' => $vars,
-					'default' => '#eeeeee',
+					'default' => 'eeeeee',
 				)
 			);
 
@@ -485,7 +486,7 @@ if ( ! class_exists( 'BMCustomLogin' ) ) {
 				array(
 					'id' => 'cl_color',
 					'value' => $vars,
-					'default' => '#333333',
+					'default' => '333333',
 				)
 			);
 
@@ -498,26 +499,26 @@ if ( ! class_exists( 'BMCustomLogin' ) ) {
 				array(
 					'id' => 'cl_colorShadow',
 					'value' => $vars,
-					'default' => '#000000',
+					'default' => '000000',
 				)
 			);
 
 			add_settings_field(
 				'cl_linkColor',
-				__( 'Text Link Color:', 'bm-custom-login' ),
+				__( 'Text Link and Button Background Color:', 'bm-custom-login' ),
 				array( $this, 'form_color' ),
 				CL_PAGE,
 				CL_SECTION,
 				array(
 					'id' => 'cl_linkColor',
 					'value' => $vars,
-					'default' => '#21759B',
+					'default' => '21759B',
 				)
 			);
 
 			add_settings_field(
 				'cl_customCSS',
-				__( '<strong>Advanced<strong> - Custom CSS:', 'bm-custom-login' ),
+				__( 'Additional CSS:', 'bm-custom-login' ),
 				array( $this, 'form_textarea' ),
 				CL_PAGE,
 				CL_SECTION,
@@ -592,7 +593,7 @@ if ( ! class_exists( 'BMCustomLogin' ) ) {
 
 			$id = $args['id'];
 ?>
-		<input type="text" id="<?php echo esc_attr( $id ); ?>" name="<?php echo CL_OPTIONS; ?>[<?php echo $id; ?>]" value="<?php echo esc_attr( $value ); ?>" class="regular-text" />
+		<input type="text" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( CL_OPTIONS ); ?>[<?php echo esc_html( $id ); ?>]" value="<?php echo esc_attr( $value ); ?>" class="regular-text" />
 <?php
 			if ( ! empty( $args['description'] ) ) {
 				echo '<br /><span class="description">' . esc_html( $args['description'] ) . '</span>';
@@ -626,7 +627,7 @@ if ( ! class_exists( 'BMCustomLogin' ) ) {
 				echo '<p class="description">' . esc_html( $args['description'] ) . '</p>';
 			}
 ?>
-		<textarea type="text" rows="10" cols="50" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( CL_OPTIONS ); ?>[<?php echo esc_attr( $id ); ?>]" class="large-text code"><?php echo esc_textarea( $value ); ?></textarea>
+		<textarea type="text" rows="10" cols="50" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( CL_OPTIONS ); ?>[<?php echo esc_html( $id ); ?>]" class="large-text code"><?php echo esc_textarea( $value ); ?></textarea>
 <?php
 
 		}
@@ -704,7 +705,7 @@ if ( ! class_exists( 'BMCustomLogin' ) ) {
 			$id = $args['id'];
 
 ?>
-		<input type="text" id="<?php echo $id; ?>" name="<?php echo CL_OPTIONS; ?>[<?php echo esc_attr( $id ); ?>]" value="<?php echo $this->sanitize_hex_color( $value ); ?>" data-default-color="#<?php echo $this->sanitize_hex_color( $args['default'] ); ?>" class="color-picker"/>
+		<input type="text" id="<?php echo esc_attr( $id ); ?>" name="<?php echo esc_attr( CL_OPTIONS ); ?>[<?php echo esc_attr( $id ); ?>]" value="<?php echo $this->sanitize_hex_color( $value ); ?>" data-default-color="<?php echo $this->sanitize_hex_color( $args['default'] ); ?>" class="color-picker"/>
 <?php
 			if ( ! empty( $description ) ) {
 				echo '<br /><span class="description">' . esc_html( $description ) . '</span>';
@@ -740,7 +741,7 @@ if ( ! class_exists( 'BMCustomLogin' ) ) {
 			$id = $args['id'];
 ?>
 			<input class="image-picker" type="text" size="36" name="<?php echo esc_attr( CL_OPTIONS ); ?>[<?php echo esc_attr( $id ); ?>]" value="<?php echo esc_url( $value ); ?>" />
-			<button class="image-picker-button button-secondary"><?php esc_attr_e( 'Upload Image', 'bm-custom-login' ); ?></button>
+			<button class="image-picker-button button-secondary"><?php esc_html_e( 'Upload Image', 'bm-custom-login' ); ?></button>
 <?php
 			if ( ! empty( $description ) ) {
 				echo '<br /><span class="description">' . esc_html( $description ) . '</span>';
