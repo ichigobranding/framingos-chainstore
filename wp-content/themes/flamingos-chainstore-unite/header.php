@@ -84,7 +84,13 @@
 		        ?>
 		    </div>
 		</nav><!-- .site-navigation -->
-
+<!-- パンくずヘッダー -->
+<div id="colophon-topbreadcrumb" role="contentinfo">
+	<div class="container">
+	<?php get_template_part( 'breadcrumb-ib' ); ?>
+	</div>
+</div>
+<!-- パンくずヘッダー -->
 	<div id="content" class="site-content container"><?php
             global $post;
             if( is_singular() && get_post_meta($post->ID, 'site_layout', true) ){

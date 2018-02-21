@@ -1564,3 +1564,29 @@ div.ibskinArticleHeader a{
 color:#0066cc;
 }
 /**** タイトル水色 ************/
+/**** パンくず ************/
+.breadcrumbs{
+    margin:3px 0 3px 0;
+    color:#333;
+    font-size: 12px;
+    padding: 0;
+    line-height: 150%;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.breadcrumb-footer{
+    background-color: red;
+
+}
+#colophon2 {
+    background-color: #f5f5f5;
+    padding: 5px 0 5px 0;
+    margin-top: 20px;
+}
+#colophon-topbreadcrumb {
+    background-color: #f5f5f5;
+    padding: 0px;
+    margin: 0px 0 10px 0;
+}
+/**** パンくず ************/
