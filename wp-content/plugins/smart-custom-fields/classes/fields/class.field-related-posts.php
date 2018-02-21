@@ -82,6 +82,7 @@ class Smart_Custom_Fields_Field_Related_Posts extends Smart_Custom_Fields_Field_
 				'order'     => 'ASC',
 				'orderby'   => 'ID',
 				'posts_per_page' => -1,
+				'post_status'    => 'any',
 			);
 
 			if ( isset( $_POST['click_count'] ) ) {
@@ -137,6 +138,7 @@ class Smart_Custom_Fields_Field_Related_Posts extends Smart_Custom_Fields_Field_
 			'order'          => 'ASC',
 			'orderby'        => 'ID',
 			'posts_per_page' => $posts_per_page,
+			'post_status'    => 'any',
 		) );
 		$choices_li = array();
 		foreach ( $choices_posts as $_post ) {
@@ -144,16 +146,18 @@ class Smart_Custom_Fields_Field_Related_Posts extends Smart_Custom_Fields_Field_
 			if ( empty( $post_title ) ) {
 				$post_title = '&nbsp;';
 			}
-			$choices_li[] = sprintf( '<li data-id="%d">%s</li>', $_post->ID, $post_title );
+			$choices_li[] = sprintf(
+				'<li data-id="%d" data-status="%s">%s</li>',
+				$_post->ID,
+				$_post->post_status,
+				$post_title
+			);
 		}
 
 		// selected
 		$selected_posts = array();
 		if ( !empty( $value ) && is_array( $value ) ) {
 			foreach ( $value as $post_id ) {
-				if ( get_post_status( $post_id ) !== 'publish' ) {
-					continue;
-				}
 				$post_title = get_the_title( $post_id );
 				if ( empty( $post_title ) ) {
 					$post_title = '&nbsp;';
@@ -165,8 +169,9 @@ class Smart_Custom_Fields_Field_Related_Posts extends Smart_Custom_Fields_Field_
 		$hidden = array();
 		foreach ( $selected_posts as $post_id => $post_title ) {
 			$selected_li[] = sprintf(
-				'<li data-id="%d"><span class="%s"></span>%s<span class="relation-remove">-</li></li>',
+				'<li data-id="%d" data-status="%s"><span class="%s"></span>%s<span class="relation-remove">-</li></li>',
 				$post_id,
+				get_post_status( $post_id ),
 				esc_attr( SCF_Config::PREFIX . 'icon-handle dashicons dashicons-menu' ),
 				$post_title
 			);
@@ -282,9 +287,6 @@ class Smart_Custom_Fields_Field_Related_Posts extends Smart_Custom_Fields_Field_
 		if ( $field_type === $this->get_attribute( 'type' ) ) {
 			$validated_value = array();
 			foreach ( $value as $post_id ) {
-				if ( get_post_status( $post_id ) !== 'publish' ) {
-					continue;
-				}
 				$validated_value[] = $post_id;
 			}
 			$value = $validated_value;

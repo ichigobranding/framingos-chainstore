@@ -3,8 +3,8 @@ Contributors: cyberlord92,
 Donate link: https://miniorange.com/
 Tags: google authenticator, two factor authentication, two factor, 2FA, 2 factor authentication, two step verification, 1 google authenticator, login, authy, authy two factor, Clef, 2 Factor, yubico, Two-Factor Authentication, Mobile Authentication, otp, strong authentication, 2 step authentication, smartphone authentication, Multifactor authentication, multi factor authentication, multi factor, no password, passwordless login, security, website security, one time passcode, password, soft token, woocommerce, authenticate, two factor auth, two-factor, duo, QR Code, QR Code Authentication, scan QR Code, wordfence, login security, google authenticator, google , email verification, trusted device, device Id , KBA , knowledge based authentication
 Requires at least: 3.0.1
-Tested up to: 4.8.2
-Stable tag: 4.5.5
+Tested up to: 4.9
+Stable tag: 4.5.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -118,6 +118,15 @@ For support please email us at info@miniorange.com or call us at +1 978 658 9387
 7. Click on Validate
 
 == Frequently Asked Questions ==
+
+= How do I gain access to my website if I get locked out? =
+
+You can obtain access to your website by one of the below options:
+
+1. If you have an additional administrator account whose Two Factor is not enabled yet, you can login with it.
+2. If you had setup KBA questions earlier, you can use them as an alternate method to login to your website.
+3. Rename the plugin from FTP - this disables the 2FA plugin and you will be able to login with your Wordpress username and password.
+4. Go to WordPress Database. Select wp_options, search for mo2f_activate_plugin key and update its value to 0. Two Factor will get disabled.	
 
 = I want to enable Two-Factor( 2FA ) role wise ? =
 
@@ -240,6 +249,12 @@ miniOrange authentication service has 15+ authentication methods.One time passco
 
 
 == Changelog ==
+
+= 4.5.7 =
+* Google Authenticator (2FA) : Minor bug fixes.
+
+= 4.5.6 =
+* Google Authenticator (2FA) : Tested upto Wordpress 4.9.
 
 = 4.5.5 =
 * Google Authenticator (2FA) : 404 bug fixes.
@@ -468,6 +483,12 @@ More descriptive setup messages and UI changes.
 * First version of Two Factor Auth ( 2FA ) plugin supported with mobile auhthentication for admin only.
 
 == Upgrade Notice ==
+
+= 4.5.7 =
+* Google Authenticator (2FA) : Minor bug fixes.
+
+= 4.5.6 =
+* Google Authenticator (2FA) : Tested upto Wordpress 4.9.
 
 = 4.5.5 =
 * Google Authenticator (2FA) : 404 bug fixes.

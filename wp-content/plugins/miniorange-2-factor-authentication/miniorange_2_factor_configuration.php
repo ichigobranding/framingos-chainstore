@@ -201,7 +201,7 @@
 								<td><b><font color="#FF0000">*</font>Company/Organisation:</b></td>
 								<td><input class="mo2f_table_textbox" type="text" name="company"
 									required placeholder="Your company name"
-									value="<?php echo (get_option('mo2f_admin_company') == '') ? site_url() : get_option('mo2f_admin_company');?>" /></td>
+									value="<?php echo (get_option('mo2f_admin_company') == '') ? $_SERVER['SERVER_NAME'] : get_option('mo2f_admin_company');?>" /></td>
 							</tr>
 							<tr>
 								<td><b>First Name:</b></td>
@@ -224,7 +224,7 @@
 							
 							<tr>
 							<td><b><font color="#FF0000">*</font>Password :</b></td>
-							 <td><input class="mo2f_table_textbox" type="password" required name="password" placeholder="Choose your password with minimun 6 characters" /></td>
+							 <td><input class="mo2f_table_textbox" type="password" required name="password" placeholder="Choose your password with minimum 6 characters" /></td>
 							</tr>
 							<tr>
 							<td><b><font color="#FF0000">*</font>Confirm Password :</b></td>
