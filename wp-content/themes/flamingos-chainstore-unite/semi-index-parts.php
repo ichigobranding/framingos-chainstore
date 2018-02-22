@@ -1,10 +1,10 @@
 <!-- セミナースケジュール　-->
 		<div class="semiwaku-index"><!-- semiwaku3-->
-												<div class="menu_title2">
-													<div class="menu_title_en2">
-														<span class="glyphicon glyphicon-list-alt glypad"></span>セミナー・教室一覧<span class="menu_smalltitle">Seminar・Class</span>
-													</div>
-												</div>
+				<div class="menu_title2">
+					<div class="menu_title_en2">
+						<span class="glyphicon glyphicon-list-alt glypad"></span>セミナー・教室一覧<span class="menu_smalltitle">Seminar・Class</span>
+					</div>
+				</div>
 			<div class="ichiranwakuwaku2"><!-- ichiranwakuwaku-->
 								<ul class="sumawaku2">
 									<?php

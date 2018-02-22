@@ -35,7 +35,7 @@ get_header(); ?>
 			<tr class="tabeletitlebg"><th colspan="2">募集概要</th></tr>
 			<tr>
 			<td class="td_nowrap tabletitle" scope="row">募集名</td>
-			<td><?php the_title(); ?><!--<?//php the_field('seminame'); ?>--></td>
+			<td><p><?php the_title(); ?></p><!--<?//php the_field('seminame'); ?>--></td>
 			</tr>
 			<!--<tr>
 			<td class="td_nowrap" scope="row">講師</td>
@@ -45,56 +45,56 @@ get_header(); ?>
 			</tr>-->
 			<tr>
 			<td class="td_nowrap" scope="row">開催日時</td>
-			<td><p><?php the_field('semiday'); ?>　<?php the_field('semitime'); ?><p></td>
+			<td><p><?php the_field('semiday'); ?>　<?php the_field('semitime'); ?></p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">開催場所</td>
-			<td><?php the_field('semiplace'); ?></td>
+			<td><p><?php the_field('semiplace'); ?></p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">住所</td>
 			<td>
-			<?php the_field('semiaddmain'); ?><br>
-			<?php the_field('semiadd'); ?>
+			<p><?php the_field('semiaddmain'); ?></p>
+			<p><?php the_field('semiadd'); ?></p>
 			</td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">料金</td>
-			<td><?php the_field('semimoney'); ?></td>
+			<td><p><?php the_field('semimoney'); ?></p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">お支払方法</td>
-			<td><?php the_field('semipay'); ?></br>
-				  <?php the_field('payshousai'); ?>
-			  </br><?php the_field('semiquestion'); ?>
+			<td><p><?php the_field('semipay'); ?></p>
+				<p><?php the_field('payshousai'); ?></p>
+			    <p><?php the_field('semiquestion'); ?></p>
 			</td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">キャンセルポリシー</td>
-			<td><?php the_field('semican'); ?></td>
+			<td><p><?php the_field('semican'); ?></p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">募集期間</td>
-			<td><?php the_field('semidaykikan'); ?></br>※定員になり次第、募集を締め切らせていただきます</td>
+			<td><p><?php the_field('semidaykikan'); ?></p><p>※定員になり次第、募集を締め切らせていただきます</p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">定員</td>
-			<td><?php the_field('semitei'); ?></td>
+			<td><p><?php the_field('semitei'); ?></p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">主催</td>
-			<td><?php the_field('semisyusai'); ?></td>
+			<td><p><?php the_field('semisyusai'); ?></p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">備考</td>
-			<td><?php the_field('semibiko'); ?></td>
+			<td><p><?php the_field('semibiko'); ?></p></td>
 			</tr>
 			<tr>
 			<td class="td_nowrap" scope="row">注意事項</td>
-			<td><?php the_field('semityuui'); ?><?php the_field('semitest'); ?></td>
+			<td><p><?php the_field('semityuui'); ?><?php the_field('semitest'); ?></p></td>
 			</tr>
 			<tr><td>問い合わせ</td>
-			<td>お電話又は<a href="get_stylesheet_directory_uri()/contact">こちらのメールフォーム</a>にてお問合せ下さい。</td>
+			<td><p>お電話又は<a href="get_stylesheet_directory_uri()/contact">こちらのメールフォーム</a>にてお問合せ下さい。</p></td>
 			<tr class="tabeletitlebg"><th colspan="2"></th></tr>
 			</table>
 
@@ -118,20 +118,18 @@ get_header(); ?>
 				 <!-- <div class="formcss">
 						<div class="naiyou2"><span class="glyphicon glyphicon-pencil icontopp"></span>このセミナーの予約お申込みはこちらからお願いいたします。</div>
 				  </div>-->
-
 						
 		<!-- <div class="right">
 				 <a href="<?//php bloginfo(); ?>/semi"><button type="button" class="btn bottom-shousai">セミナー・講演一覧に戻る</button></a>
 		</div>-->
-
-																<!--記事　中身-->
-															<div class="hensyuu">
-															<p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
-															</div>
-													  </div>
-												</div>
-											  </div>
+													<!--記事　中身-->
+											<div class="hensyuu">
+											<p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
 											</div>
+										  </div>
+									</div>
+								  </div>
+								</div>
 							   <!--記事全体-->
 						</div><!--kiji page-->
 				   </div><!--col-md-8 col-md-push-2-->

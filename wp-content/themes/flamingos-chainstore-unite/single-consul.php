@@ -20,26 +20,26 @@ get_header(); ?>
                         <div class="col-md-8 col-md-push-2">
                           <div class="kiji-page">
                                <!--記事全体-->
-                                            <div class="ibskinArticle">
-                                              <div class="ibskinArticle2">
-                                                <div class="ibskinArticle3">
-                                                      <div class="ibskinArticleHeader-consul">
-                                                          <h2 class="fontW6"><?php the_title(); ?></h2>
-                                                          <div class="※">
-                                                                    <!--記事　中身-->
-                                                           <?php while ( have_posts() ) : the_post(); ?> 
-                                                                <?php get_template_part( 'consul-mainparts' ); ?>
+                                  <div class="ibskinArticle">
+                                    <div class="ibskinArticle2">
+                                      <div class="ibskinArticle3">
+                                        <div class="ibskinArticleHeader-consul">
+                                            <h2 class="fontW6"><?php the_title(); ?></h2>
+                                            <div class="※">
+                                                      <!--記事　中身-->
+                                             <?php while ( have_posts() ) : the_post(); ?> 
+                                                  <?php get_template_part( 'consul-mainparts' ); ?>
 
-                                                                  <?php endwhile; // end of the loop. ?>
-                                                                    <!--記事　中身-->
-                                                                <div class="hensyuu">
-                                                                <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
-                                                                </div>
-                                                          </div>
-                                                      </div>
-                                                </div>
-                                              </div>
+                                                    <?php endwhile; // end of the loop. ?>
+                                                      <!--記事　中身-->
+                                                  <div class="hensyuu">
+                                                  <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
+                                                  </div>
                                             </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                <!--記事全体-->
                         </div><!--kiji page-->
                    </div><!--col-md-8 col-md-push-2-->

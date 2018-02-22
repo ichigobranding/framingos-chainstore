@@ -3,43 +3,43 @@
             <tr class="tabeletitlebg"><th colspan="2">募集概要</th></tr>
             <tr>
             <td class="td_nowrap tabletitle" scope="row">開催日時</td>
-            <td><span class="conday"><?php the_field('consulday'); ?><?php the_field('constart'); ?></span></td>
+            <td><p><span class="conday"><?php the_field('consulday'); ?><?php the_field('constart'); ?></span></p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">開催場所</td>
-            <td><?php the_field('consulplace'); ?></td>
+            <td><p><?php the_field('consulplace'); ?></p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">住所</td>
-            <td><?php the_field('conadd'); ?><?php the_field('semiadd'); ?></td>
+            <td><p><?php the_field('conadd'); ?><?php the_field('semiadd'); ?></p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">料金</td>
-            <td><?php the_field('consulpay'); ?></td>
+            <td><p><?php the_field('consulpay'); ?></p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">お支払方法</td>
-            <td><?php the_field('payway'); ?>
-                  <a href="get_stylesheet_directory_uri()/contact">何かご不明な点、ご質問がありましたらお気軽にお問い合わせください。</a>
+            <td><p><?php the_field('payway'); ?>
+            <p><a href="get_stylesheet_directory_uri()/contact">何かご不明な点、ご質問がありましたらお気軽にお問い合わせください。</p></a>
             </td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">キャンセルポリシー</td>
             <td>
-                  <?php the_field('kpr'); ?>
+                  <p><?php the_field('kpr'); ?></p>
             </td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">定員</td>
-            <td><?php the_field('contei'); ?></td>
+            <td><p><?php the_field('contei'); ?></p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">主催</td>
-            <td><?php the_field('consyusai'); ?></td>
+            <td><p><?php the_field('consyusai'); ?></p></td>
             </tr>
             <tr>
             <td class="td_nowrap" scope="row">備考</td>
-            <td><?php the_field('conbiko'); ?></td>
+            <td><p><?php the_field('conbiko'); ?></p></td>
             </tr>
             <tr><td>お問い合わせ</td>
             <td><a href="get_stylesheet_directory_uri()/contact">こちらのメールフォーム</a>にてお問合せ下さい。</br>

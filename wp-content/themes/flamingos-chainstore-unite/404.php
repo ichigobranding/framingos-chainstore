@@ -21,7 +21,6 @@ get_header(); ?>
 <!-- 新着情報 -->
 <?php get_template_part( 'messageborad' ); ?>
 <!-- 新着情報 -->
-
                 <?php get_template_part( 'blogul' ); ?>
               </div><!-- kiji-page -->
             </div><!-- col-md-6 col-md-push-2 3clumn -->

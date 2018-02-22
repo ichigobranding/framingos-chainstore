@@ -10,10 +10,7 @@
             </div><!-- row -->
 	</div><!-- #content -->
 
-
 <?php get_template_part('mailmag'); ?>
-
-
 
 	<?php // Start the footer area ?>
 	<div id="colophon" class="site-footer" role="contentinfo">

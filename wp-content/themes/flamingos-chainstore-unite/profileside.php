@@ -1,24 +1,24 @@
 <!--プロフィール全体-->
 <div class="ibMenu profdiv">
             <div class="ibMenuHeader">
-                <span class="ibMenuTitle">プロフィール</span>
+                <p><span class="ibMenuTitle">プロフィール</span></p>
             </div>
             <div class="ibMenuBody">
                   <!--プロフィール写真-->
                           <div class="ibProfileImageArea">
                             <div class="ibuserProfileImage">
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">
+                                <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">
                                 <?php echo get_avatar( $id_or_email, 82, $default, $alt, $args ); ?>
-                                </a>
+                                </a></p>
                             </div>
                           </div>
                   <!--プロフィール写真-->
                   <!--プロフィール　ニックネーム-->
                             <div class="ibProfileImageArea-nickname">
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile"><?php the_author_meta( 'nickname' ); ?></a>
+                                <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>profile"><?php the_author_meta( 'nickname' ); ?></a></p>
                             </div>
-                                自己紹介：<?php the_author_meta( 'description' ); ?>
-                                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">続きを見る</a>
+                                <p>自己紹介：<?php the_author_meta( 'description' ); ?>
+                                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">続きを見る</a></p>
                   <!--プロフィール　ニックネーム-->
                   <!--プロフィール　簡易-->
                         <!--<div class="ibprofileDetailArea">

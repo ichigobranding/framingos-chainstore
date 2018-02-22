@@ -19,49 +19,45 @@ get_header(); ?>
 						<div class="col-md-6 col-md-push-3">
 					      <div class="kiji-page">
 						<!-- ブログ一覧 -->
-						
-									 <div class="ibskinArticlelist">
-												<div class="ibskinArticleHeaderall">
-														<b>ブログ一覧</b>
-												</div>
-										<div class="ibskinArticleBody2">
-											<ul class="magawaku2">
-												<?php
-													$paged = get_query_var('paged') ? get_query_var('paged') : 1;
-													$param = array(
-														'posts_per_page' => '20', //表示件数。-1なら全件表示
-														'post_type' =>array('blog-fl'),  //カスタム投稿タイプの名称を入れる
-														'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-														'order' => 'DESC',
-														'paged' => $paged
-													);
-													$wp_query = new WP_Query($param);
-													if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
-												?>
-													
-										                    <li class="magawaku">
-										                                  <table class="magatable">
-										                                    <tbody>
-										                                      <tr>
-										                                        <td class="daymaga"><?php the_time('Y-n-j') ?></td>
-										                                        <td class="daymaga2">
-
-										                                        <a href="<?php the_permalink(); ?>">
-										                                          <?php the_title(); ?>
-										                                        </a>
-										                                        <?php get_template_part( 'new' ); ?>
-										                                      </td>
-										                                      </tr>
-										                                    </tbody>
-										                                  </table>
-										                    </li>
-										        <?php endwhile; endif; ?>
-											</ul>
+							 <div class="ibskinArticlelist">
+								<h2 class="ibskinArticleHeaderall">
+										<b>ブログ一覧</b>
+								</h2>
+									<div class="ibskinArticleBody2">
+										<ul class="magawaku2">
+										<?php
+											$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+											$param = array(
+												'posts_per_page' => '20', //表示件数。-1なら全件表示
+												'post_type' =>array('blog-fl'),  //カスタム投稿タイプの名称を入れる
+												'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+												'order' => 'DESC',
+												'paged' => $paged
+											);
+											$wp_query = new WP_Query($param);
+											if($wp_query->have_posts()): while($wp_query->have_posts()) : $wp_query->the_post();
+										?>
+							                    <li class="magawaku">
+				                                  <table class="magatable">
+				                                    <tbody>
+				                                      <tr>
+				                                        <td class="daymaga"><?php the_time('Y-n-j') ?></td>
+				                                        <td class="daymaga2">
+				                                        <p><a href="<?php the_permalink(); ?>">
+				                                          <?php the_title(); ?>
+				                                        </a>
+				                                        <?php get_template_part( 'new' ); ?></p>
+				                                      </td>
+				                                      </tr>
+				                                    </tbody>
+				                                  </table>
+							                    </li>
+									        <?php endwhile; endif; ?>
+										</ul>
 											
-										</div>
 									</div>
+								</div>
 						<!-- ブログ一覧 -->
-
 								<!-- pager -->
 										<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
 								<!-- /pager	-->
@@ -74,7 +70,6 @@ get_header(); ?>
 						<?php get_sidebar(); ?>
 					</div>
 				</div>
-
       		</main><!-- #main -->
       	</div><!-- #primary -->
       </div><!-- .row -->

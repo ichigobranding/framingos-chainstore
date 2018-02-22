@@ -19,23 +19,22 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-md-10 col-md-push-1">
                           <div class="kiji-page">
-                               <!--記事全体-->
-                                            <div class="ibskinArticle">
-                                              <div class="ibskinArticle2">
-                                                <div class="ibskinArticle3">
-                                                      <div class="ibskinArticleHeader">
-                                                          <div class="ibskinArticleTitle">
-                                                                <h1>
-                                                                <a href="<?php the_permalink(); ?>" class="ibskinArticleTitle" rel="bookmark">
-                                                                  <?php the_title(); ?>
-                                                                </a>
-                                                                </h1>
-                                                          </div>
-                                                      </div>
-                                                      
-                                                      <div class="ibskinArticleBody2">
-                                                                <!--記事　中身-->
-                                                             
+                         <!--記事全体-->
+                          <div class="ibskinArticle">
+                            <div class="ibskinArticle2">
+                              <div class="ibskinArticle3">
+                                    <div class="ibskinArticleHeader">
+                                        <div class="ibskinArticleTitle">
+                                              <h1>
+                                              <a href="<?php the_permalink(); ?>">
+                                                <?php the_title(); ?>
+                                              </a>
+                                              </h1>
+                                        </div>
+                                    </div>
+                                    <div class="ibskinArticleBody2">
+                                              <!--記事　中身-->
+                                           
 
 
 
@@ -44,16 +43,16 @@ get_header(); ?>
 
 
 
-                                                                
-                                                                <!--記事　中身-->
-                                                            <div class="hensyuu">
-                                                            <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
-                                                            </div>
-                                                      </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                               <!--記事全体-->
+                                              
+                                              <!--記事　中身-->
+                                          <div class="hensyuu">
+                                          <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
+                                          </div>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                         <!--記事全体-->
                         </div><!--kiji page-->
                    </div><!--col-md-8 col-md-push-2-->
                 </div> <!--row-->

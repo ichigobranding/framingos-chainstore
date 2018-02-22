@@ -144,7 +144,6 @@
                                                       </div>
                                                 </div>
                                               </div>
-
                                             </div>
                                           </article>
                                <!--記事全体-->

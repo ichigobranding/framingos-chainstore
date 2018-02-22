@@ -20,33 +20,31 @@ get_header(); ?>
                         <div class="col-md-8 col-md-push-2">
                           <div class="kiji-page">
                                <!--記事全体-->
-                                            <div class="ibskinArticle">
-                                                      <div class="ibskinArticleBody2">
-                                                                <!--記事　中身-->
-                                                         <!--記事info-->
-                                                                          <div class="ibarticleDetailArea">
-                                                                           <h2 class="fontW6"><?php the_title(); ?></h2>
-                                                                          </div>
-                                                          <!--記事info-->
-                                                      <?php while ( have_posts() ) : the_post(); ?>
-                                                      <?php the_content(); ?>
-                                                      <?php endwhile; // end of the loop. ?>
-                                                                <!--記事　中身-->
-                                                            <div class="hensyuu">
-                                                            <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
-                                                            </div>
-                                                      </div>                                             
-                                            </div>
-
-                                            <?php get_template_part( 'case-parts-footer' ); ?>                  
+                                <div class="ibskinArticle">
+                                    <div class="ibskinArticleBody2">
+                                              <!--記事　中身-->
+                                       <!--記事info-->
+                                          <div class="ibarticleDetailArea">
+                                           <h2 class="fontW6"><?php the_title(); ?></h2>
+                                          </div>
+                                        <!--記事info-->
+                                    <?php while ( have_posts() ) : the_post(); ?>
+                                    <?php the_content(); ?>
+                                    <?php endwhile; // end of the loop. ?>
+                                              <!--記事　中身-->
+                                          <div class="hensyuu">
+                                          <p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
+                                          </div>
+                                    </div>                                             
+                                </div>
+                                <?php get_template_part( 'case-parts-footer' ); ?>                  
                                <!-- <div class="iblistLink">
-                                        <a href="<?//php echo esc_url( home_url( '/' ) ); ?>case">
+                                        <p><a href="<?//php echo esc_url( home_url( '/' ) ); ?>case">
                                               事例一覧へ
-                                        </a>
+                                        </a><p>
                                 </div>-->
                                <!--記事全体-->
                         </div><!--kiji page-->
-
                    </div><!--col-md-8 col-md-push-2-->
                 </div> <!--row-->
       		</main><!-- #main -->

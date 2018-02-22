@@ -34,7 +34,7 @@
 
 						<div id="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-							<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+							<!--<h4 class="site-description"><?php //bloginfo( 'description' ); ?></h4>>-->
 						</div><!-- end of #logo -->
 
 					<?php endif; // header image was removed ?>
@@ -42,7 +42,7 @@
 					<?php if( !get_header_image() ) : ?>
 
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+						<!--<h4 class="site-description"><?php //bloginfo( 'description' ); ?></h4>-->
 
 					<?php endif; // header image was removed (again) ?>
 				</div>

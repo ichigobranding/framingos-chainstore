@@ -33,36 +33,29 @@ get_header(); ?>
                                                                 </h1>
                                                           </div>
                                                       </div>
-                                                      
                                                             <div class="ibskinArticleBody2">
-
 	                                                      <!--記事　中身-->
 														            <?php while ( have_posts() ) : the_post(); ?>	
-																                                                          <!--記事info-->
-                                                                          <div class="ibarticleDetailArea">
-                                                                              <time datetime="2016-08-12" pubdate="pubdate"><?php echo get_the_date(); ?></time><?php get_template_part( 'new' ); ?>
-                                                                              <br />テーマ：<?php echo get_the_term_list( $id,message, $before, $sep, $after ); ?>
-                                                                          </div>
-                                                          <!--記事info-->
-																	
+												<!--記事info-->
+                                              <div class="ibarticleDetailArea">
+                                                  <p><time datetime="2016-08-12" pubdate="pubdate"><?php echo get_the_date(); ?></time>
+                                                  	<?php get_template_part( 'new' ); ?></p>
+                                                  <p>テーマ：<?php echo get_the_term_list( $id,message, $before, $sep, $after ); ?></p>
+                                              </div>
+                                                <!--記事info-->
+																			<p>
 																			<strong>
 																				<span style="color: #ff0000;">
 																				<?php the_title(); ?>
 																				</span>
-																			</strong><br><br>
-
-																			メルマガを読んでこうなってくださいね。テキストテキストテキスト<br><br>
-
-																			<a href="<?php echo esc_url( home_url( '/' ) ); ?>mailmag">
-																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">まだメルマガにご登録いただいていない方はこちらです。</span></span></strong></a>
-
-
+																			</strong>
+																			</p><br>
+																			<p>メルマガを読んでこうなってくださいね。テキストテキストテキスト</p><br>
+																			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>mailmag">
+																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">まだメルマガにご登録いただいていない方はこちらです。</span></span></strong></a></p>
 																		<?php endwhile; // end of the loop. ?>
-																		<br><br><br><br>
 																		<p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>
-														                                                                      
 	                                                          <!--記事　中身-->
-	                                               
                                                             </div>
                                                 </div>
                                               </div>
@@ -70,20 +63,11 @@ get_header(); ?>
                                           </article>
 								 <!--記事全体-->
 		                                <div class="iblistLink">
-		                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>newsslist">
+		                                        <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>newsslist">
 		                                       新着情報一覧を見る
-		                                        </a>
+		                                        </a></p>
 		                                </div>
-
-
-
 									</div>
-
-
-
-
-
-
 						</div>
 							<div class="col-md-3 col-md-pull-6">
 								<?php get_template_part( 'left-sidebar' ); ?>

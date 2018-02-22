@@ -332,7 +332,7 @@ ul.ibskinSubList-pro {
      margin: 0 0 8px 0;
 }
 .ibarticleDetailArea {
-    padding: 0px 0 10px 0;
+    padding: 0px 0 22px 0;
     font-size: 13px;
 }
 .leftsidebara {
@@ -593,7 +593,7 @@ div.container.wf h2.widget-title{
     border: 1px solid #e84331;
     background: #ffffff;
     margin-bottom: 15px;
-    color:#808080f2;
+    color:#333;
 }
 .ibskinArticle-all {
     padding: 5px 0;
@@ -1077,6 +1077,14 @@ td, th {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
 }
+.semititletop{
+    font-size: 14px;
+}
+.semititletop-2{
+    font-size: 14px;
+    margin: 0;
+    padding:6px 0 3px 0;
+}
 .titleichiran5 {
     color: #00A1E7;
     font-size: 17px;
@@ -1369,16 +1377,23 @@ li.children:before {
    事例紹介
  *****************************/
 .casecss{
-    margin:0 0 10px 0;
+    margin:0px 0 10px 0;
     font-size:13px;
+}
+.casecss-parts{
+    margin:10px 0 10px 0;
+    font-size:13px;
+}
+.casecss-side{
+    margin:10px 0 30px 0;
 }
 .wp-pagenavi {
     margin:30px 0 10px 20px;
 }
-.ibskinArticleBody2 {
+/*.ibskinArticleBody2 {
     margin: 20px 0px 15px 0;
     padding: 0 15px;
-}
+}*/
 .ibskinArticleHeader-case {
     margin: 0 12px;
     padding: 8px 0px;
@@ -1533,7 +1548,7 @@ li.children:before {
     font-size: 12px;
 }
 .ibskinArticleblog{
-    padding: 0px 0 0 0;
+    padding: 15px 0 0 0;
     border: 1px solid #b5a35b;
     background: #ffffff;
     margin-bottom: 15px;

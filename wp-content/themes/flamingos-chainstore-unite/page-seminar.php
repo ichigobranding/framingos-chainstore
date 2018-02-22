@@ -75,20 +75,20 @@ get_header(); ?>
                           <li>
                             <div class="semiwaku">
                               <div class="titleichiran5">
-                                  <a href="<?php the_permalink(); ?>">
+                                  <p><a href="<?php the_permalink(); ?>">
                                         <?php the_title(); ?>
-                                  </a>
+                                  </a></p>
                               </div>
                             </div>
                           </li>
                       <?php get_template_part('semi-parts'); ?>
-                                  <div class="right">
-                                    <div class="btn bottom-shousai">
-                                      <a href="<?php the_permalink(); ?>">
-                                        詳細はこちら
-                                      </a>
-                                    </div>
-                                  </div>
+                            <div class="right">
+                              <div class="btn bottom-shousai">
+                                <a href="<?php the_permalink(); ?>">
+                                  詳細はこちら
+                                </a>
+                              </div>
+                            </div>
                       </div>
                     <?php endwhile; endif; ?>
                 </ul>
