@@ -15,9 +15,9 @@
                   <!--プロフィール写真-->
                   <!--プロフィール　ニックネーム-->
                             <div class="ibProfileImageArea-nickname">
-                                <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">名前名前<!--<?php //the_author_meta( 'nickname' ); ?>--></a></p>
+                                <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>profile"><?php the_author_meta( 'nickname' ); ?></a></p>
                             </div>
-                                <p>自己紹介：テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<!--<?php //the_author_meta( 'description' ); ?>-->
+                                <p>自己紹介：<?php the_author_meta( 'description' ); ?>
                                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>profile">続きを見る</a></p>
                   <!--プロフィール　ニックネーム-->
                   <!--プロフィール　簡易-->
