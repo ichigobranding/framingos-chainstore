@@ -1,0 +1,1373 @@
+/*
+Theme Name: flamingos-chainstore-ryuka
+Template: unite
+Theme URI: http://colorlib.com/wp/unite
+Author: Ichigo Branding 株式会社
+Author URI: hichigo-branding.com
+Version: 2.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: unite
+Domain Path: /languages/
+
+This theme, like WordPress, is licensed under the GPL.
+
+Unite is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+*/
+
+/******************************************  
+
+目次
+sideba
+・ChainStore Base css 
+・ChainStore system Base css 
+・Branding  Base css 
+・etc....
+
+*******************************************/
+
+
+
+
+/******************************************   
+
+	ChainStore Base css 
+
+*******************************************/
+body {
+    font-family: "メイリオ", sans-serif;
+    /* font-family: "Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS PGothic";*/
+    color: #333333;
+    font-size: 15px;
+    /* background:url(images/bg.png);*/
+    background: #fff;
+}
+#primary{
+    margin:0px;
+    padding:0px;
+}
+.site-title-hide{
+    font-size:18px;
+    color:#777;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* div#content.site-content.container {
+    padding: 0px;
+    margin: 0px; 
+}*/
+div.container.conbg{
+    padding: 0px;
+    margin: 0px; 
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div.col-md-3.col-md-pull-6{
+    margin:0;
+    padding:0;
+}
+div.col-md-8.col-md-push-2{
+    margin:0;
+    padding:0;
+}
+div.col-md-3.sidebarpadd{
+    margin:0;
+    padding:0;
+}
+div#sideba{
+    margin:0 0 60px 0;
+    padding:0;
+}
+.sidebarpadd{
+      margin:0 0 60px 0;
+    padding:0;
+}
+#wrapper {
+    overflow: hidden;
+}
+.right {
+    text-align: right;
+    margin: 0 0 20px 0;
+}
+a {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.content-area{
+    margin: 0;
+}
+a:hover, a:focus, a:hover {
+    color: #ff3366;
+}
+p {
+    margin: 1px 0 1px;
+}
+div.site-branding{
+    margin: 12px 0 10px 0;
+    text-align: left;
+}
+div.col-md-5.site-branding2{
+    margin: 5px 0 5px 0;
+}
+.btn {
+margin: 0px 0 10px 0;
+}
+.tbanana{
+    margin: 0 0 25px 0;
+}
+.centerc{
+    margin: 0 0 30px 0;
+}
+.hentry{
+    margin: 0;
+}
+.hensyuulink{
+    margin: 20px 0 0 0;
+}
+/* ヘッダー *******/
+.bname-top {
+    margin: 0 0 5px 0;
+    font-size:14px;
+}
+h4.site-description{
+    font-size: 12px;
+}
+#masthead{
+  margin: 0px;
+  padding: 0px;
+}
+li{
+  list-style: none;
+}
+/* お問い合わせフォーム　必須マーク *******/
+.hissudesu {
+    margin: 4px 0;
+    background-color: #FFB1BB;
+    color: #fff;
+    width: 37px;
+    text-align:center;
+    font-size: 10px;
+    padding: 1px;
+    font-weight: 600;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+/* menu bar *******/
+
+.star-rating{
+    background-color: fff;
+}
+
+.tellwaku {
+    font-size: 17px;
+    padding: 5px 20px;
+    margin: 10px 0 10px 0;
+    background-color: #fff7f7;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.tellwaku-footer {
+    font-size: 17px;
+    padding: 5px 20px;
+    background-color: #fff;
+    margin: 0px 0 10px 0;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+.iblistLink a {
+    font-weight: 200;
+}
+.notfound{
+    margin: 70px 20px;
+}
+span.wpcf7-list-item {
+    display: block;
+    font-size: 16px;
+}
+/* ログイン画面　シャドウなくす *******/
+.wp-core-ui .button-primary{
+        text-shadow: 0 0px 0px #006799,0px 0 0px #006799,0 0px 0px #006798,0px 0 0px #006799!important;
+}
+#login #nav, #login #backtoblog {
+    text-shadow: 0 0px 0px #ffffff;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #fff;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+.site-title{
+    margin:7px 0 0 0;
+}
+/*スマホの場合の中央カラム *******/
+@media only screen and (max-width: 979px) {
+     
+ div.col-md-6.col-md-push-3{margin:0px; padding:0;}
+ 
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+     
+   div.col-md-6.col-md-push-3{margin:0px; padding:0;}
+ 
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) {
+     
+  div.col-md-6.col-md-push-3{margin:0px; padding:0;}
+} /* デバイスの横幅が320px以下の場合 */
+
+
+/* menu bar　モバイル *******/
+.bar-menu{
+	color: #fff;
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+    font-weight:900;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    width: 100%;
+}
+
+.imgbtn a:hover img {
+  opacity: 0.7;
+  filter: imgbtn(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  transition: 0.6s ;
+}
+.imgbtnpad-top{
+    margin: 0px 0 13px 0;
+}
+.imgbtnpad{
+    margin: 13px 0;
+}
+.imgbtn{
+ text-align: center;
+}
+.widget_search {
+    width:90%;
+}
+.widget {
+    margin: 0px 0 20px;
+}
+.syuryo-icon{
+    background-color: red;
+    color: #fff;
+    padding: 5px 5px;
+    font-size: 11px;
+}
+/* side bar *******/
+.ibMenuBody {
+    margin: 5px;
+    padding: 5px;
+    background: #ffffff;
+}
+ul.ibskinSubList {
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+}
+.skinSubHr, .ibskinSubList li {
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #b3b3b3;
+    list-style: none;
+}
+.widget ul  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.widget ul  a{
+    font-weight: 200;
+}
+.widget > ul > li, li.recentcomments {
+    padding: 0px 0px;
+    border-bottom: 1px dotted #b3b3b3;
+    list-style: none;
+    margin: 8px;
+}
+.iblistLink {
+    padding: 5px 0 5px 0;
+    text-align: right;
+    margin-bottom:5px;
+    font-size:12px;
+}
+ul.ibskinSubList-pro {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.profdiv{
+    margin: 0 0 30px 0;
+}
+.ibprofileDetailArea {
+    clear: both;
+    padding: 1px 0;
+    font-size: .94em;
+}
+.ibProfileImageArea {
+    float: left;
+    width: 94px;
+    height: 94px;
+}
+.ibProfileImageArea-nickname{
+     margin: 0 0 8px 0;
+}
+.ibarticleDetailArea {
+    padding: 0px 0 10px 0;
+    font-size: 13px;
+}
+.leftsidebara {
+    font-size: 15px;
+    margin: 0px 0 60px 0;
+}
+#sideba{
+    margin: 0px 0 60px 0;
+    padding:0 10px;
+}
+.skinSubHr, .ibskinSubList li a {
+    font-weight: 200;
+    font-size: 12px;
+}
+.widget > ul > li, li.recentcomments {
+    font-weight: 200;
+    font-size: 12px;
+}
+ul.sidetema {
+    margin-bottom: 0px;
+    font-size:12px;
+}
+ul.children{
+    list-style: none;
+}
+.sidewii{
+    margin: 40px 0 0 0;
+}
+/* page.php タイトル *******/
+.ibskinArticleBody2 .page-header{
+    margin: 0px 0 10px;
+    border-bottom: 0px solid #eee;
+}
+/* page-kiji-temp *******/
+.ibskinArticleHeader h1, .skinDescriptionArea, .skinTitleArea {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* footer *******/
+div.textwidget {
+    color:#333;
+    font-weight: 100;
+    margin: 0px;
+}
+.credits-copyright{
+    color:#fff;
+}
+.credits-copyright a{
+    color:#fff;
+    font-weight: 100;
+}
+.site-credits{
+     margin:0 0 10px 0;
+}
+li.menu-item {
+    margin: 0 0 0 30px;
+    list-style-type: disc;
+    color: #0000ff;
+}
+.cre{
+    margin:13px 0 0 0;  
+}
+.memo{
+    font-size: 15px;
+}
+.cre2{
+    margin:10px 0 0 0;
+}
+.voiceBox p {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 220%;
+}
+#form00 {
+    font-size:18px;
+    margin:50px 0 30px 0;
+}
+
+table#subdata2{
+    /*width: 660px;*/
+    border: 1px #c2b69a solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 25px;
+}
+table#subdata2 th {
+    padding: 5px;
+    border: 1px #c2b69a dotted;
+    border-width: 0 0 1px 1px;
+    background: #F5F5F5;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+
+table#subdata2 .font-nomal{
+ 
+}
+table#subdata2 span{
+    /*background:none;*/
+}
+table#subdata2 .wpcf7-not-valid-tip{
+    color: #fff;
+    background-color: #dd3629;
+    display:block;
+}
+.access table#subdata2{
+    /*width: 670px;*/
+    border: 1px #c2b69a solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 40px;
+    margin: 40px 0 0 0;
+}
+.formNavi{
+    color:#ff0000;
+    font-weight:bold;
+    display: block;
+    margin: 40px 0 30px;
+}
+.wpcf7-form input, .wpcf7-form textarea{
+    margin: 10px 0;
+    padding: 3px;
+    border:1px solid #ccc;
+    background-color:#f5f5f5;
+}
+.registBtn:hover, #submitBtn:hover, #anchorBtn:hover{
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+    color:#fff;
+    cursor:pointer;
+}
+input.form-width{
+    width:100px; /*class:form-width*/
+}
+input.name-width{
+    width:150px; /*class:form-width*/
+}
+.dvdLinkBtn{
+    float:right;
+}
+select{
+    /* display: block; */
+    width: 90%;
+}
+/******************************************  
+
+	Branding  Base css 
+
+*******************************************/
+
+/* Branding  concept color 1 *******/
+
+
+/* 記事内のブランディングカラー *******/
+.navbar.navbar-default {
+    background-color: #FFB1BB;
+}
+.ibMenuHeader {
+    font-weight: bold;
+    padding: 5px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #FFB1BB;
+}
+h2.widget-title {
+    font-weight: bold;
+    padding: 5px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #FFB1BB;
+    font-size: 15px;
+}
+h3.widgettitle {
+    font-weight: bold;
+    padding: 0px 10px 5px 7px;
+    background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
+    background-position: 4px 50%;
+    border-bottom: 2px solid #FFB1BB;
+    font-size: 15px;
+}
+h3 {
+    margin-top: 0px;
+}
+div.container.wf h2.widget-title{
+    color:#333;
+    font-size: 15px;
+    background-color:#f9e5e4;/* Branding  concept color 2  *******/
+    border-bottom:1px solid #e84331;
+    padding: 
+}
+.after-footer{
+    padding: 20px 0;
+    background-color: #FFB1BB;
+}
+.freespace-waku {
+    border: 2px solid #FFB1BB;
+    padding: 10px;
+    margin: 0px 0 15px 0;
+}
+/* 記事枠 *******/
+.ibskinArticle {
+    padding: 5px 0;
+    border: 1px solid #FFB1BB;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.ibskinArticle-all {
+    padding: 5px 0;
+    border: 0px solid #FFB1BB;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+.ibskinArticle2, .ibskinArticle3 {
+    margin-bottom: 15px;
+    overflow: visible!important;
+    zoom: 1;
+}
+.ibskinArticleBody2 {
+    margin: 5px 0px 15px 0;
+    padding: 0 15px;
+}
+.hensyuu {
+    margin: 50px 0px;
+}
+.kiji-page {
+    margin: 0px 0 50px 0;
+}
+.ibskinArticleHeader {
+    margin: 0 12px;
+    padding: 8px 0px;
+    background: url(※) no-repeat;
+    background-position: 0 50%;
+    border: none;
+    border-bottom: 1px solid #FFB1BB;
+    overflow: hidden;
+    zoom: 1;
+}
+.ibskinArticleHeader-consul {
+    margin: 0 12px;
+    padding: 8px 0px;
+    background: url(※) no-repeat;
+    background-position: 0 50%;
+    border: none;
+    overflow: hidden;
+    zoom: 1;
+}
+.fontW6 {
+    border-left: 8px solid #FFB1BB;
+    font-size: 25px;
+    padding-left: 12px;
+    line-height: 1.3;
+    margin: 0 0 30px;
+    font-weight: 600;
+}
+.ibskinArticlelist {
+    padding: 5px 0;
+    border: 1px solid #FFB1BB;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.ibskinArticleHeaderall {
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    font-size: 16px;
+    zoom: 1;
+    margin: 0px 8px 10px;
+    padding: 8px 0px;
+    background: url(※) 0px 50% no-repeat;
+    background-position: 0px 50%;
+    border-style: none none solid;
+    border-image: initial;
+    border-bottom: 1px solid #FFB1BB;
+    overflow: hidden;
+}
+/* サイトタイトル *******/
+h1.site-title a{
+    color:#FFB1BB;
+}
+
+/* page-fullwidth *******/
+.entry-title {
+    font-size: 32px;
+    font-weight: 100;
+    color: #FFB1BB;
+}
+/* page.php *******/
+.ibskinArticleBody2 h1.entry-title{
+    margin: 0 0px;
+    padding: 4px 0px 8px 0;
+    background: url(※) no-repeat;
+    background-position: 0 50%;
+    border: none;
+    border-bottom: 1px solid #FFB1BB;
+    overflow: hidden;
+    zoom: 1;
+    font-size: 15px;
+    color: #333;
+    font-weight: 800;
+}
+/* コンタクトフォームのボタン *******/
+#submitBtn{
+    background-color: #FFB1BB;
+    box-shadow: 0 6px #f9e5e4;/* Branding  concept color 3 */
+    width: 70%;
+    height: 60px;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    color:#fff;
+    margin: 50px auto 20px;
+    border: 0;
+    font-size:24px;
+    cursor:pointer;
+}
+
+
+/*スマホ対応 お問い合わせフォーム *******/
+@media only screen and (max-width: 979px) {
+    table#subdata2 .td_ttl{
+    width:30%;
+    background-color:#fff7f7;/* Branding  concept color 1 */
+    font-weight:bold;}
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+table#subdata2 .td_ttl{
+    width:30%;
+    background-color:#fff7f7;/* Branding  concept color 1 */
+    font-weight:bold;}
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) { 
+    table#subdata2 .td_ttl{
+    width:10%;
+    background-color:#fff7f7;/* Branding  concept color 1 */
+    }
+} /* デバイスの横幅が320px以下の場合 */
+
+
+table#subdata2 td {
+    padding:5px 13px 8px 13px;
+    border: 1px #c2b69a dotted;
+    border-width: 0 0 1px 1px;
+}
+
+.td_ttl{
+    background-color:#fff7f7;/* Branding  concept color 1 */
+    width:30%;
+    font-weight:bold;
+}
+
+.wpcf7-form input, .wpcf7-form textarea{
+    margin: 10px 0;
+    padding: 3px;
+    border:1px solid #ccc;
+    background-color:#f5f5f5;
+}
+select{
+    /* display: block; */
+    /*width: 90%;*/
+}
+/* フォームの枠 *******/
+.formwaku {
+    /* border: 1px solid #e84331;
+    margin: 40px 0 20px 0;
+    padding: 20px 10px 10px 20px;*/
+    margin: 15px auto 0 auto;
+}
+/* フォーム 送信ボタン *******/
+@media screen and (max-width: 767px) {
+   table#subdata2 { width: 100%; }
+   input[type="text"], input[type="email"], input[type="url"], input[type="password"] {width: 100%;}
+  .wpcf7-form textarea{ width: 100%; }
+  .namehaba{width: 70% !important;}
+  .yubin{width: 40% !important;}
+  .yubin2{width: 40% !important;}
+  #submitBtn3 {
+    background-color: #FFB1BB;/* Branding  concept color 1  *******/
+    box-shadow: 0 6px #f8e2e3;/* Branding  concept color 2  *******/
+    width: 100% !important;
+    height: 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color: #fff;
+    margin: 13px auto 31px;
+    border: 0;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+}
+#submitBtn3{
+    background-color:  #FFB1BB; /* Branding  concept color 1  *******/
+    box-shadow: 0 6px #f8e2e3; /* Branding  concept color 2  *******/
+    width: 80% !important;
+    height: 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color: #fff;
+    margin: 13px auto 31px;
+    border: 0;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+/* MessageBoard *******/
+.skinMessageBoard-widgetcss {
+    border: 1px dotted #FFB1BB;/* Branding  concept color 1 color 2*/
+    margin: 0px 0 15px 0;
+    padding: 0px 15px;
+    font-size: 12px;
+
+}
+.skinMessageBoard {
+    border: 1px dotted #FFB1BB;/* Branding  concept color 1 color 2*/
+    margin: 0px 0 20px 0;
+    padding: 20px 10px 10px 7px;
+    font-size: 12px;
+    background:url(images/info.png) no-repeat left top;
+}
+/* Branding  concept color 2 濃いピンク　#FFB1BB *******/
+/* ヘッダー右の連絡のアイコン *******/
+.telcon{
+    margin: 0 5px 0 0;
+    color:#FFB1BB;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #7b5741;
+    background-color: #FFB1BB;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px 3px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #FFB1BB;/* スマホ　メニュー　背景　concept color 2 *******/
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/* Branding  concept color 3 薄いピンク *******/
+#colophon {
+    background-color: #f9e5e4;
+    padding: 10px 0 0px 0;
+    margin-top: 20px;
+}
+h1.site-title a:hover{
+    color: #FFB1BB;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #826060;
+    border-right: 1px solid #f9e5e4;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
+}
+/******************************************  
+
+    ChainStore system Base css 
+
+*******************************************/
+/* 新着　メッセージボード *******/
+
+.skinMessageBoard2 {
+    border: 1px dotted #c41840;
+    margin: 10px 0 20px 0;
+    padding: 20px 10px 10px 7px;
+    font-size: 12px;
+    background:url(images/info.png) no-repeat left top;
+    overflow:auto;
+}
+.skinMessageBoard3 {
+    border: 1px dotted #d7d7d7;
+    margin: 18px 0 5px 0;
+    padding: 0px 10px 10px 7px;
+    font-size: 12px;
+    height:200px; /* åˆæœŸ250 */
+    overflow:auto;
+}
+
+.skinMessageBoard3-widgetcss {
+    font-size: 15px;
+    overflow:auto;
+}
+
+.skinMessageBoard3-widgetcss .textwidget{
+    padding: 0 10px;
+}
+.skinMessageBoard3-widgetcss h2.widget-title{
+    margin:  5px 0;
+    padding: 0 0 10px 10px;
+    font-size: 15px;
+}
+
+.skinMessageBoard3-widgetcss .widget{
+    margin:  10px 0 15px 0;
+}
+.skinMessageBoard3-widgetcss .textwidget{
+    padding: 5px 13px 0px 13px
+}
+
+.magawaku {
+    list-style-type: none;
+    margin: 0px 0 0 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px dotted #b3b3b3;
+    font-size: 12px;
+}
+.magawaku2 {
+    margin-bottom: 3px;
+    padding: 3px;
+    font-size: 12px;
+}
+.daymaga {
+    width: 75px;
+    padding: 3px;
+    font-size: 10px;
+}
+.daymaga2 {
+    padding: 3px;
+    font-size: 14px;
+}
+.meru {
+    background-color: #e84331;/* 新着メルマガ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.meru a {
+    color: #fff;
+}
+.nnnew {
+    background-color: #d9d45f;/* 新着お知らせ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.nnnew a {
+    color: #fff;
+}
+.ameneww {
+    background-color: #2d8c3c;/* 新着アメブロ */
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    padding: 3px;
+    margin: 0 7px 0 0;
+}
+.ameneww a {
+    color: #fff;
+}　　　　　　
+table {
+    word-break: break-all;
+}
+
+.new-icon {
+    color: #e84331;
+    font-size: 12px;
+    padding: 2px;
+    margin: 0 2px 0 0;
+    font-weight: 300;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* セミナー募集＆コンサル募集 *******/
+.re1511-ttl {
+    margin: 10px 13px !important;
+    font-size: 17px !important;
+    line-height: 90% !important;
+    color: #333;
+    padding: 0px 0px 10px 5px;
+    border-bottom: 1px dotted #e84331;
+    font-weight: 600;
+}
+.re1511-ttlSmall{
+    color:#e84331;/* Branding  concept color 1  *******/
+}
+.ibskinArticle33 {
+    padding: 5px 0;
+    border: 1px dotted #e84331;
+    background: #ffffff;
+    margin-bottom: 15px;
+}
+.skinMessageBoard3-s {
+    border: 1px dotted #d7d7d7;/* 変更しない　外枠の線 *******/
+    margin: 10px 0 5px 0;
+    padding: 0px 10px 10px 7px;
+    font-size: 12px;
+    /*height: 115px;
+    overflow: auto;*/
+}
+
+#topnewsBox-new {
+    padding: 0 12px;
+}
+.iblistLink2 {
+    padding: 6px 10px 2px 0;
+    text-align: right;
+    font-size: 12px;
+}
+.daymaga-new {
+    width: 27%;
+    padding: 10px 3px;
+    font-size: 12px;
+}
+.daymaga2-new{
+    padding: 3px;
+    font-size: 14px;
+}
+.magatable {
+    padding: 0;
+    margin: :0;
+}
+#topnewsBox-new ul li {
+    list-style: none;
+    padding-left: 0;
+    border-bottom: dashed 1px #ccc;
+    vertical-align: bottom;
+}
+td, th {
+    padding: 8px;
+    font-size: 14px;
+}
+.manseki{
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+.semiwaku2 {
+    margin: 0px 0px 0 0;
+}
+.sumawaku {
+    margin: 0 0px 30px 0px;
+}
+.semiwaku3 {
+    border: 1px solid: #288fcf;
+    margin: 0 0 30px 0;
+    padding: 20px 20px 5px 20px;
+    list-style-type: none;
+    background-color: #f9e5e4;/* concept color 3****/
+    font-size: 14px;
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+.titleichiran5 {
+    color: #00A1E7;
+    font-size: 17px;
+    border-bottom: 1px solid #e84331;/* concept color****/
+    padding: 0px 0 10px 5px;
+    margin: 0px 0 10px 0;
+}
+.semipa{
+    padding: 10px;
+    font-size: 15px;
+}
+.bottom-shousai a {
+    color: #fff;
+}
+.bottom-shousai {
+    margin: 6px 0px 0 0;
+    padding: 6px 6px;
+    background-color: #e84331;/* concept color****/
+    font-weight: 600;
+}
+.tabeletitlebg {
+    background-color: #e84331;/* concept color****/
+    color: #fff;
+    font-size: 18px;
+}
+.table-bosyuu>thead>tr>th, .table-bosyuu>tbody>tr>th, .table-bosyuu>tfoot>tr>th, .table-bosyuu>thead>tr>td, .table-bosyuu>tbody>tr>td, .table-bosyuu>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    word-break: break-all;
+}
+.table-bosyuu>thead>tr>th, .table-bosyuu>tbody>tr>th, .table-bosyuutfoot>tr>th, .table-bosyuu>thead>tr>td, .table-bosyuu>tbody>tr>td, .table-bosyuu>tfoot>tr>td {
+    border: 1px solid #ddd;
+    word-break: break-word;
+    word-wrap: break-all;
+}
+.tabletitle {
+    width: 30%;
+}
+.table-bosyuu {
+    margin: 40px 0 60px 0!important;
+    width:100%;
+}
+/* フッター　メルマガ登録 *******/
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    width: 50%;
+    background-color: #FFB1BB;/* concept color****/
+    color: #fff;
+    margin: 10px 0;
+    padding: 5px 0;
+    font-weight: 600;
+    border-style: none;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"] {
+    padding: 10px;
+    width: 100%!important;
+}
+.OM_table{width:100%;border-collapse:collapse;border:1px solid #FFB1BB;
+ background-color:#FFB1BB;}/* concept color****/
+.OM_table tr td{text-align:center;}
+.bizfom{margin: 10px 0 0 0;}
+.bizfom2{margin: 10px 0 13px 0;}
+.bizfom3{color: #fff;font-size: 17px;padding: 10px 5px;}
+.mailmagpadding{
+    margin:50px 0 0 0;
+}
+.mailmagfom{
+    padding: 0 10px 0 0;
+}
+/* woocommerce *******/
+.woocommerce .star-rating{
+color: #e2c242;/* 星のマーク*******/
+margin: 0 0 3px 0;
+}
+.woocommerce-info {
+    border-top-color: #e84331;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #e86a57;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+.woocommerce ul.cart_list, .woocommerce ul.product_list_widget {
+    padding: 0 10px;
+}
+.woocommerce ul.products li.product .price {
+    color: #e84331;
+    display: block;
+    font-weight: 400;
+    margin-bottom: .5em;
+    font-size: 17px;
+}
+.woocommerce ul.products li.product h3 {
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/******************************************  
+
+	etc....
+
+*******************************************/
+/*****************************
+
+   メニューバー   中央寄せ
+
+ *****************************/
+
+.cenmenu > li > a {
+    color: #fff;
+}
+.cenmenu > li > a:hover {
+    color: #79543e;
+}
+/*.cenmenu>li>a {
+    padding: 13px 15px;
+}*/
+
+.nav-justified li+ li{ 
+  border-left: 0;
+  border-right: 1px solid #fff;
+}
+
+.nav-justified li{
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.navbar {
+    border-radius: 0px;
+    min-height: 0px;
+}
+
+/*スマホの場合の中央カラム *******/
+@media only screen and (max-width: 979px) {
+
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+.nav-justified>li>a {
+    margin-bottom: 5px;
+    text-align: left;}
+.cenmenu > li > a {
+    color: #fff;
+    border-right: 0px solid #e86a57;
+    box-shadow: 0px 0 0 rgba(255, 255, 255, 0.10);}
+    .cenmenu > li > a:hover {
+    background: #FFB1BB;/* Branding  concept color 2  *******/
+}
+.nav-justified li+ li{ 
+  border-left: 0;
+  border-right: 0px solid #fff;}
+.nav-justified li{
+  border-left: 0px solid #fff;
+  border-right: 0px solid #fff;}
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) { 
+.nav-justified>li>a {
+    margin-bottom: 5px;
+    text-align: left;}
+.cenmenu > li > a {
+    color: #79543e;
+    border-right: 0px solid #e86a57;
+    box-shadow: 0px 0 0 rgba(255, 255, 255, 0.10);}
+.cenmenu > li > a:hover {
+    color: #333
+}
+} /* デバイスの横幅が320px以下の場合 */
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #FFB1BB;/* Branding  concept color 2  *******/
+}
+.nav>li>a:focus, .nav>li>a:hover {
+color:#7b5741;
+background: #FFB1BB;/* Branding  concept color 2  *******/
+    }
+/*****************************
+
+   メニューバー   中央寄せ 終了
+
+ *****************************/
+
+
+/*スマホ対応 *******/
+@media only screen and (max-width: 979px) {
+
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) { 
+
+} /* デバイスの横幅が320px以下の場合 */
+/*****************************
+
+   特定商取引
+
+ *****************************/
+
+#data th{
+background:#FFB1BB;/* Branding  concept color 1  *******/
+color: #FFFFFF;
+font-size: 16px;
+}
+
+#data th,#data td{
+    border: 1px dotted #FFB1BB;　/* 枠線　 *//* Branding  concept color 1  *******/
+    padding: 6px 18px 6px 15px!important;
+    text-align: left;min-width: 100px;
+}
+/************************************
+** 特定商取引等の フッターメニュー
+************************************/
+#footer-menu{
+  margin:0 0 0 15px; 
+}
+#footer-menu {
+  color: #fff;
+}
+#footer-menu a{
+  color: #fff;
+  font-weight: 100;
+}
+
+#footer-menu ul{
+  margin: 10px 0;
+}
+ 
+#footer-menu ul li {
+  display: inline;
+  margin:0 0 0 0px;
+}
+ 
+#footer-menu ul li::before {
+    content: "|";
+    padding: 0 0.2em;  color: #fff;
+}
+ 
+#footer-menu ul li:first-child::before{
+  content: "";
+  padding: 0;
+}
+ 
+#footer-menu ul .sub-menu{
+  display: none;
+}
+/************************************
+** 商品ページ
+************************************/
+.productstable{
+    width: 100%;
+}
+.productwaku{
+    border:2px solid #FFB1BB;
+    margin:40px 0;
+    padding: 10px 10px 10px 10px;
+}
+.productwaku-top{
+    border:2px solid #FFB1BB;
+    margin:50px 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.product-title-top{
+    border-bottom: 2px solid #FFB1BB;
+    padding: 12px 0 10px 15px;
+    margin: 0px 0 20px 0;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #FFB1BB;
+}
+.product-title-top2{
+    border-bottom: 2px solid #FFB1BB;
+    padding: 12px 0 10px 15px;
+    margin: 0px 0 20px 0;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #FFB1BB;
+}
+.product-title{
+    border-bottom: 2px solid #FFB1BB;
+    padding: 0px 0 10px 0px;
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+#data2{
+    margin:10px 0 0 0;
+}
+#data2 th{
+background:#ffdadf;/* Branding  concept color 1  *******/
+color: #000;
+font-size: 16px;
+}
+
+#data2 th,#data2 td{
+    border: 1px dotted #FFB1BB;　/* 枠線　 *//* Branding  concept color 1  *******/
+    padding: 6px 18px 6px 15px!important;
+    text-align: left;min-width: 100px;
+}
+/************************************
+** 商品ページ
+************************************/
+/*****************************
+
+   商品ページ写真
+
+*****************************/
+
+img.productimg{
+    width:300px!important;
+}
+ /*スマホの場合の中央カラム *******/
+@media only screen and (max-width: 979px) {
+     
+  img.productimg{
+    width:300px!important;
+}
+ 
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    img.productimg{
+    width:300px !important;
+}
+ 
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) {
+    img.productimg{
+    width:200px!important;
+}
+} /* デバイスの横幅が320px以下の場合 */
+/*****************************
+
+      商品ページ写真
+
+*****************************/
+
+/*****************************
+     ヘッダー画像が飛び出る
+*****************************/
+.side-pull-right #primary{
+    float: none!important;
+}
+/*****************************
+     ヘッダー画像が飛び出る
+*****************************/
+/* バナー幅 */
+.banapadding{
+    margin: 0 0 15px 0;
+}
+.center{
+  text-align: center;
+}
+/* バナー幅 */

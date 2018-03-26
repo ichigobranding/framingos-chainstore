@@ -1610,7 +1610,7 @@ msgstr "Twitter でフォロー:"
 msgid "%s version %s by %s"
 msgstr "%s バージョン %s 作成者: %s"
 
-#. #-#-#-#-#  custom-post-type-ui-code.pot (Custom Post Type UI 1.5.5) 
+#. #-#-#-#-#  custom-post-type-ui-code.pot (Custom Post Type UI 1.5.4) 
 #. #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: inc/about.php:34 inc/utility.php:103

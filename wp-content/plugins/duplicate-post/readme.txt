@@ -19,13 +19,13 @@ How it works:
 
 1. In 'Edit Posts'/'Edit Pages', you can click on 'Clone' link below the post/page title: this will immediately create a copy and return to the list.
 
-2. NEW! In 'Edit Posts'/'Edit Pages', you can select one or more items, then choose 'Clone' in the 'Bulk Actions' dropdown to copy them all at once.
+2. In 'Edit Posts'/'Edit Pages', you can select one or more items, then choose 'Clone' in the 'Bulk Actions' dropdown to copy them all at once.
 
 3. In 'Edit Posts'/'Edit Pages', you can click on 'New Draft' link below the post/page title.
 
 4. On the post edit screen, you can click on 'Copy to a new draft' above "Cancel"/"Move to trash". 
 
-5. While viewing a post as a logged in user, you can click on 'Copy to a new draft' as a dropdown link under "Edit Post" in the admin bar.
+5. While viewing a post as a logged in user, you can click on 'Copy to a new draft' in the admin bar.
 
 3, 4 and 5 will lead to the edit page for the new draft: change what you want, click on 'Publish' and you're done.
 
@@ -300,4 +300,3 @@ If you find this useful and if you want to contribute, there are three ways:
    1. You can [write me](https://duplicate-post.lopo.it/contact) and submit your bug reports, suggestions and requests for features;
    2. If you want to translate it to your language (there are just a few lines of text), you can use the [translation project](https://translate.wordpress.org/projects/wp-plugins/duplicate-post);
    3. Using the plugin is free, but if you want you can support my efforts by donating with PayPal [here](https://duplicate-post.lopo.it/donate)
-
