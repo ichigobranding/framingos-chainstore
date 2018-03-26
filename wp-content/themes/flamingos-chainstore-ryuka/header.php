@@ -26,13 +26,13 @@
 		<?php do_action( 'before' ); ?>
 		<header id="masthead" class="site-header col-sm-12" role="banner">
 
-				<div class="site-branding col-md-3">
-					
+				<div class="site-branding col-md-8">
+					<h1 class="site-title-hide"><?php bloginfo( 'name' ); ?></h1>
 					<?php if( get_header_image() != '' ) : ?>
 
 						<div id="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
-							
+							<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
 						</div><!-- end of #logo -->
 
 					<?php endif; // header image was removed ?>
@@ -44,10 +44,7 @@
 
 					<?php endif; // header image was removed (again) ?>
 				</div>
-<div class="col-md-5 site-branding2">
-	<h1 class="site-title-hide"><?php bloginfo( 'name' ); ?></h1>
-	<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
-</div>
+
 			<div class="col-md-4"><!-- col-md-offset-2 -->
 				<?php get_template_part( 'tellmail' ); ?>
 			</div>
