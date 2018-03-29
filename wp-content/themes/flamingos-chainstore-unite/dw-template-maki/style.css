@@ -265,7 +265,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin: 0px 0 20px;
 }
 .syuryo-icon{
-    background-color: red;
+    background-color: #EF9086;
     color: #fff;
     padding: 5px 5px;
     font-size: 11px;
@@ -370,14 +370,14 @@ div.textwidget {
     font-weight: 100;
     margin: 0px;
 }
-.credits-copyright{
+.c#EF9086its-copyright{
     color:#fff;
 }
-.credits-copyright a{
+.c#EF9086its-copyright a{
     color:#fff;
     font-weight: 100;
 }
-.site-credits{
+.site-c#EF9086its{
      margin:0 0 10px 0;
 }
 li.menu-item {
@@ -1013,7 +1013,7 @@ td, th {
     font-size: 14px;
 }
 .manseki{
-    background-color: red;
+    background-color: #EF9086;
     color: #fff;
     padding: 20px;
     font-size: 25px;
@@ -1550,7 +1550,7 @@ color:#0066cc;
     margin-bottom: 0px;
 }
 .breadcrumb-footer{
-    background-color: red;
+    background-color: #EF9086;
 
 }
 #colophon2 {
@@ -1690,9 +1690,9 @@ h3.ibMenuTitle{
     border: #c41840 1px solid;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-    background-color: red;
+    background-color: #EF9086;
     font-weight: 800;
-    border: red 1px solid;
+    border: #EF9086 1px solid;
 }
 /**** 詳しいプロフィール *****/
 /**** インフォメーション   *****/
@@ -1816,12 +1816,12 @@ td.daymaga2-new a {
         padding: 18px 10px 14px 7px;
     background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
     background-position: 4px 50%;
-    border-bottom: 2px solid rgb(196, 24, 64);
-    border-top: 2px solid rgb(196, 24, 64); 
+    border-bottom: 2px solid #e84331;
+    border-top: 2px solid #e84331; 
     font-size: 15px;
     margin: 5px 0 18px 0;
  }
-div#site-credits{
+div#site-c#EF9086its{
     text-align:center; 
 }
 ul.footercli{
@@ -1856,7 +1856,9 @@ div.container.wf{
 div.ibskinArticleBody2 a{
         text-decoration: none;
 }
-
+.kabu {
+    font-size: 16px;
+}
 /**** big-bana ************/
 .bana-big0{
     margin: 25px 0 25px 0;
@@ -1919,7 +1921,7 @@ flex-wrap: wrap!important;
   background: gradient(linear, center top, center bottom, from(#ee757b), to(#c80507));
 }
 .badge-new {
-  background-color: red;
+  background-color: #EF9086;
 }
 .casecss2{
     margin:7px 2px;
@@ -2006,9 +2008,9 @@ h1.profiletitle{
     font-weight: 800;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-    background-color: red;
+    background-color: #EF9086;
     font-weight: 800;
-    border: red 1px solid;
+    border: #EF9086 1px solid;
 }
 .clearfix:after{
     content: "";
@@ -2022,11 +2024,11 @@ h1.profiletitle{
     text-align: center;
 }
 .buttonfont{
-    color: red;
+    color: #EF9086;
     font-weight: 500;
     margin: 0px 3px 5px 0;
     font-size:14px;
-    border: red 1px solid;
+    border: #EF9086 1px solid;
 }
 /**** メルマガ登録 ************/
  .panelmeru{
@@ -2082,3 +2084,12 @@ h1.profiletitle{
     zoom: 1;
 }
 /**** DW　終了 ******************************/
+/**** DW　追加 ******************************/
+.container>.navbar-header {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.sitelili{
+    margin: 0 0 10px;
+    padding: 0;
+}

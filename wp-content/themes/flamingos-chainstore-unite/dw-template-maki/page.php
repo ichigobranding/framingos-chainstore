@@ -17,15 +17,15 @@ get_header(); ?>
           <main id="main" class="site-main" role="main">
 
         <div class="row">
-            <div class="col-md-6 col-md-push-3">
+            <div class="col-md-8">
 
                 <?php get_template_part( 'page-kiji-temp' ); ?>
 
             </div>
-              <div class="col-md-3 col-md-pull-6">
-                <?php get_template_part( 'left-sidebar' ); ?>
-              </div>
-          <div class="col-md-3 sidebarpadd">
+              <!--<div class="col-md-3 col-md-pull-6">
+                <?php //get_template_part( 'left-sidebar' ); ?>
+              </div>-->
+          <div class="col-md-4 sidebarpadd">
             <?php get_sidebar(); ?>
           </div>
         </div>

@@ -51,7 +51,7 @@ get_header(); ?>
 																			</strong>
 																			</p><br>
 																			<p>私のメルマガが、あなたの「もっとステキな女性になりたい！」という想いをカタチにする第一歩となれば嬉しいです！</p><br>
-																			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>mailmag">
+																			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>merumaga">
 																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">無料メルマガのご登録は、こちらです！</span></span></strong></a></p>
 																				<div class="kasegupad">
 																				<?php get_template_part( 'kasegu-merumaga' ); ?>
