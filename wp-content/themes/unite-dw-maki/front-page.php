@@ -11,8 +11,6 @@
 		            	</div>
 		        </div>
 		    			<!-- topbana -->
-
-		    			<h1>テンプレートを保存しておく</h1>
 				<div class="row">
 						<div class="col-md-8">
 							<div class="content-dw clearfix">

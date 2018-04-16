@@ -34,7 +34,7 @@ get_header(); ?>
 	  <table class="table-bosyuu">
 			<tr class="tabeletitlebg"><th colspan="2">募集概要</th></tr>
 			<tr>
-			<td class="td_nowrap tabletitle" scope="row">募集名</td>
+			<td class="td_nowrap tabletitle" scope="row">セミナー名</td>
 			<td><p><?php the_title(); ?></p><!--<?//php the_field('seminame'); ?>--></td>
 			</tr>
 			<!--<tr>

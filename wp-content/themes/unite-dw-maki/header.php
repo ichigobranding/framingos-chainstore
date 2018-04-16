@@ -28,7 +28,7 @@
 
 				<div class="site-branding col-md-6">
 					<div class="bname-top">
-						<h1 class="site-title-hide"><?php bloginfo( 'name' ); ?></h1>
+						<span class="site-title-hide"><?php bloginfo( 'name' ); ?></span>
 					</div>
 					<?php if( get_header_image() != '' ) : ?>
 
@@ -49,6 +49,7 @@
 
 			<div class="col-md-4 col-md-offset-2">
 				<!-- スマホ telmail -->
+				<h1 class="site-title-hide">SEO h1タイトル</h1>
 					<?php if (wp_is_mobile()) :?>
 					<?php else: ?>
 						<?php get_template_part( 'tellmail' ); ?>

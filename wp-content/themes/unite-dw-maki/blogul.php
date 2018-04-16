@@ -18,7 +18,7 @@
             <div class="ibskinArticle3">
                   <div class="ibskinArticleHeader">
                       <div class="ibskinArticleTitle">
-                            <h1>
+                            <h1 class="entry-title">
                             <a href="<?php the_permalink(); ?>" class="ibskinArticleTitle" rel="bookmark">
                               <?php the_title(); ?>
                             </a>
