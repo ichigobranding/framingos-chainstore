@@ -2167,3 +2167,11 @@ h1.entry-title {
     font-weight:600;
     color:#000
 }
+/**** メルマガフォーム埋め込み ************/
+.bizfom2-2{
+   margin:10px 0;
+}
+td.mailmagfomtitle{
+   height:50px;
+}
+/**** メルマガフォーム埋め込み ************/
