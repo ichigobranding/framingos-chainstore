@@ -28,7 +28,7 @@ get_header(); ?>
                                                 <div class="ibskinArticle3">
                                                       <div class="ibskinArticleHeader">
                                                           <div class="ibskinArticleTitle">
-                                                                <h1>
+                                                                <h1 class="fontW6-2">
                                                                   <b>「メルマガのタイトルを記入します」配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
                                                                 </h1>
                                                           </div>
@@ -51,7 +51,7 @@ get_header(); ?>
 																			</strong>
 																			</p><br>
 																			<p>メルマガを読んでこうなってくださいね。テキストテキストテキスト</p><br>
-																			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>mailmag">
+																			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>merumaga">
 																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">まだメルマガにご登録いただいていない方はこちらです。</span></span></strong></a></p>
 																		<?php endwhile; // end of the loop. ?>
 																		<p style="text-align: right;"><?php edit_post_link( $link, $before, $after, $id ); ?></p>

@@ -667,7 +667,9 @@ div.container.wf h2.widget-title{
     border-bottom: 1px solid #e84331;
     overflow: hidden;
 }
-
+.ibskinArticleHeaderall a{
+     color: #000;
+}
 /* サイトタイトル *******/
 h1.site-title a{
     color:#e84331;
