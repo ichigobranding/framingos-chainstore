@@ -53,6 +53,13 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.site-title-hide2{
+    font-size:12px;
+    color:#000;
+    padding:0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 /* div#content.site-content.container {
     padding: 0px;
     margin: 0px; 
@@ -168,7 +175,7 @@ li{
     font-size: 12px;
     padding: 5px 20px;
     background-color: #fff;
-    margin: 20px 0 10px 0;
+    margin: 10px 0 10px 0;
     background-color: #f5f5f5;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
@@ -1143,9 +1150,6 @@ input[type="submit"] {
     font-weight: 600;
     border-style: none;
 }
-input[type="text"], input[type="email"], input[type="url"], input[type="password"] {
-    padding: 10px;
-    width: 100%!important;
 }
 .OM_table{width:100%;border-collapse:collapse;border:1px solid #e84331;background-color:#e84331;}/* concept color****/
 .OM_table tr td{text-align:center;}
@@ -1615,3 +1619,17 @@ td.mailmagfomtitle{
    height:50px;
 }
 /**** メルマガフォーム埋め込み ************/
+/*****************************
+  フォームが枠を突き抜けるのを排除
+*****************************/
+button, input, optgroup, select, textarea {
+     font: 14px!important;
+}
+button, input, select, textarea {
+    font-family:/*'メイリオ','Meiryo', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','sans-serif' !important*/;
+    font-size: 12px!important;
+    line-height: 2em!important;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"] {
+    padding: 10px;
+    /*width: 100%!important;*/
