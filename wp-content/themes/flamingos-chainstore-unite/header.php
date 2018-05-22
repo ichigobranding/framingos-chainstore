@@ -28,7 +28,7 @@
 
 				<div class="site-branding col-md-6">
 					<div class="bname-top">
-						<h1 class="site-title-hide"><?php bloginfo( 'name' ); ?></h1>
+						<h2 class="site-title-hide"><?php bloginfo( 'name' ); ?></h2>
 					</div>
 					<?php if( get_header_image() != '' ) : ?>
 
@@ -41,15 +41,17 @@
 
 					<?php if( !get_header_image() ) : ?>
 
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<h2 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
 						<!--<h4 class="site-description"><?php //bloginfo( 'description' ); ?></h4>-->
 
 					<?php endif; // header image was removed (again) ?>
 				</div>
 
 			<div class="col-md-4 col-md-offset-2">
+				<h1 class="site-title-hide2">H1テキストテキストテキスト</h1>
 				<!-- スマホ telmail -->
 					<?php if (wp_is_mobile()) :?>
+						<?php get_template_part( 'tellmail' ); ?>
 					<?php else: ?>
 						<?php get_template_part( 'tellmail' ); ?>
 					<?php endif; ?>
