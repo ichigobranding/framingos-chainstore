@@ -73,6 +73,7 @@ get_header(); ?>
 										<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
 								<!-- /pager	-->
 							</div><!-- kiji-page -->
+              <?php get_template_part( 'kasegu-merumaga' ); ?>
 						</div><!-- col-md-6 col-md-push-2 3clumn -->
               <!--<div class="col-md-3 col-md-pull-6">
                 <?php //get_template_part( 'left-sidebar' ); ?>

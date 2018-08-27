@@ -24,9 +24,9 @@ get_header(); ?>
                                               <div class="ibskinArticle2">
                                                 <div class="ibskinArticle3">
                                                      <div class="ibskinArticleBody2">
-                                                              <h1 class="fontW6">
+                                                              <h1 class="entry-title">
                                                                   <?php the_title(); ?>
-                                                              </h1>
+                                                              </h1><br>
                                                                 <!--記事　中身-->
                                                                   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                                                                   <?php the_content('詳細はこちら'); ?>
