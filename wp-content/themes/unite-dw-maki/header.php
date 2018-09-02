@@ -48,12 +48,13 @@
 				</div>
 
 			<div class="col-md-4 col-md-offset-2">
-				<!-- スマホ telmail -->
 				<h1 class="site-title-hide">SEO h1タイトル</h1>
-					<?php if (wp_is_mobile()) :?>
-					<?php else: ?>
-						<?php get_template_part( 'tellmail' ); ?>
-					<?php endif; ?>
+				<?php get_template_part( 'tellmail' ); ?>
+				<!-- スマホ telmail -->
+				<!--<?php //if (wp_is_mobile()) :?>
+					<?php //else: ?>
+						<?php //get_template_part( 'tellmail' ); ?>
+					<?php //endif; ?>-->
 				<!-- スマホ telmail -->
 			</div>
 
