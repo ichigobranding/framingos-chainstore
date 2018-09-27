@@ -14,6 +14,9 @@
 				<div class="row">
 						<div class="col-md-8">
 							<div class="content-dw clearfix">
+							<span class="big-font">
+							<b>タイトル</b>
+							</span><br><br>
 									<p>テキストテキストテキストテキストテキスト</p><br>
 									<p><b>テキストテキストテキストテキストテキスト</b></p><br>
 									<p>テキストテキストテキストテキストテキスト</p><br>
@@ -31,9 +34,12 @@
 									<p>テキストテキストテキストテキストテキスト</p><br>
 									<p>テキストテキストテキストテキストテキスト</p><br>
 									<p>テキストテキストテキストテキストテキスト</p><br>
-								<h3 class="bana-big0-1">
-								タイトル３
-								</h3>
+								<!--<h3 class="bana-big0-1">
+								タイトル３da
+								</h3>-->
+									<div class="name-hand">
+										<img src="<?php echo get_stylesheet_directory_uri() ?>/images/tegaki-namae.png" alt="※" width=270px/>
+									</div>
 								<?php get_template_part( 'ap-bana-big-wide' ); ?>
 								<?php get_template_part( 'kasegu-merumaga' ); ?>
 							</div><!--content-dw">-->

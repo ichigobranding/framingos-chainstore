@@ -1327,12 +1327,14 @@ font-size: 16px;
  *****************************/
 li.children{
     padding:0 0 0 0px;
-    margin:0 0 0 10px;
+    margin:0 0 0 25px;
+    list-style-image: url(./images/l-moji.png);
+    /*background-image: url(./images/favicon.png);*/
 }
 li.children:before {
     display: inline;
     white-space: pre;
-    content: "└ ";
+    /*content: "└ ";*/
 }
  /****************************/
 /*****************************
@@ -1515,6 +1517,7 @@ li.children:before {
     background: #ffffff;
     margin-bottom: 15px;
 }
+
 /**** リンクの下線 ************/
 div.temablog a{
        text-decoration: none;
@@ -1573,7 +1576,7 @@ color:#0066cc;
     border: 1px solid #c41840;
     background: #fff;
     margin:0px 0 34px 0; 
-    padding: 13px 13px 0px 13px;
+    padding: 22px 13px 0px 13px;
 }
 .h2del{
     margin: 0;
@@ -1681,7 +1684,6 @@ h3.ibMenuTitle{
     width: 100%;
     background-color: #c41840;
     font-weight: 900;
-    margin: 0px 0px 0px 0;
     font-size:16px;
     border: #c41840 1px solid;
 }
@@ -1689,6 +1691,9 @@ h3.ibMenuTitle{
     background-color: #EF9086;
     font-weight: 800;
     border: #EF9086 1px solid;
+}
+.profileb{
+    margin: 0px 0 17px 0!important;
 }
 /**** 詳しいプロフィール *****/
 /**** インフォメーション   *****/
@@ -1996,9 +2001,6 @@ div.casecss2 a:hover{
     color: #fff!important;
     font-weight: 900;
 }
-.profileb{
-    margin: 0px 0 17px 0;
-}
 h1.profiletitle{
     font-size: 20px;
     font-weight: 800;
@@ -2175,3 +2177,18 @@ td.mailmagfomtitle{
    height:50px;
 }
 /**** メルマガフォーム埋め込み ************/
+/**** セミナー日程　コンセプトカラー ************/
+.timepad3{
+    color: #c41840;
+}
+/**** セミナー日程　コンセプトカラー ************/
+/**** 想いタイトル***********/
+.big-font{
+    font-size: 25px;
+}
+/**** 名前手書き　***********/
+.name-hand{
+    text-align: right;
+    padding: 0 20px 0 0;
+    margin: 10px 0 45px 0;
+}

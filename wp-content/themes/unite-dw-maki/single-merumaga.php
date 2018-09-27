@@ -29,7 +29,7 @@ get_header(); ?>
                                                       <div class="ibskinArticleHeader">
                                                           <div class="ibskinArticleTitle2">
                                                                 <h1 class="fontW6">
-                                                                  <b>「ファッションで、毎日ステキなわたしになる無料メルマガ」配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
+                                                                  <b>「●●メルマガタイトル」配信しました。(<?php echo get_the_date('n月j日'); ?>号)</b>
                                                                 </h1>
                                                           </div>
                                                       </div>
@@ -50,7 +50,7 @@ get_header(); ?>
 																				</span>
 																			</strong>
 																			</p><br>
-																			<p>私のメルマガが、あなたの「もっとステキな女性になりたい！」という想いをカタチにする第一歩となれば嬉しいです！</p><br>
+																			<p>●●メルマガを読むことで... </p><br>
 																			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>merumaga">
 																				<strong><span style="color: #0000ff;"><span style="color: #0000ff;">無料メルマガのご登録は、こちらです！</span></span></strong></a></p>
 																				<div class="kasegupad">

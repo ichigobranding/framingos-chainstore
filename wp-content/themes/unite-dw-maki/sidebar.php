@@ -6,5 +6,6 @@
           <?php get_template_part( 'messageborad-amelink2' ); ?>
           <?php get_template_part( 'shouhinul-lis2' ); ?>
           <?php get_template_part( 'blogul-lis2' ); ?>
+          <?php get_template_part( 'temaside' ); ?>
       </div>
 </div><!-- #secondary　最後 -->

@@ -1,5 +1,6 @@
 <div class="row mailmagpadding">
-  <div class="col-xs-12 col-md-12">
+  <div class="col-xs-12 col-md-10 col-md-offset-1">
+  <!--<div class="col-xs-12 col-md-12">-->
 <!-- メルマガURL -->
 <form action="https://24auto.biz/ichigo-branding/planmail.php" method="post" enctype="multipart/form-data">
 <!-- メルマガURL -->
