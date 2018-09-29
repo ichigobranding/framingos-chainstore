@@ -3,7 +3,7 @@
  * Version    : 1.1.0
  * Author     : inc2734
  * Created    : September 23, 2014
- * Modified   : March 10, 2015
+ * Modified   : July 14, 2018
  * License    : GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
@@ -78,11 +78,12 @@ jQuery( function( $ ) {
 					} );
 				} );
 			} else {
-				var label = table.find( '.smart-cf-field-label' ).val();
-				var name = $( '<small>' ).text( '[ ' + table.find('.smart-cf-field-name').val() + ' ]' );
+				var field_options = table.find( '.smart-cf-field-options:visible' );
+				var label = field_options.find( '.smart-cf-field-label' ).val();
+				var name = $( '<small>' ).text( '[ ' + field_options.find('.smart-cf-field-name').val() + ' ]' );
 
 				if ( !label ) {
-					label = table.find( '.smart-cf-field-name' ).val();
+					label = field_options.find( '.smart-cf-field-name' ).val();
 				}
 				table.fadeOut( 'fast', function() {
 					$( this ).addClass( 'hide' );
@@ -207,15 +208,125 @@ jQuery( function( $ ) {
 		} );
 
 		/**
+		 * Convert string to slug
+		 * https://gist.github.com/codeguy/6684588
+		 */
+		function string_to_slug(str) {
+			str = str.replace(/^\s+|\s+$/g, ""); // trim
+			str = str.toLowerCase();
+		
+			// remove accents, swap ñ for n, etc
+			var from = "åàáãäâèéëêìíïîòóöôùúüûñç·/-,:;";
+			var to = "aaaaaaeeeeiiiioooouuuunc______";
+		
+			for (var i = 0, l = from.length; i < l; i++) {
+				str = str.replace(new RegExp(from.charAt(i), "g"), to.charAt(i));
+			}
+		
+			str = str
+				.replace(/[^a-z0-9 -]/g, "") // remove invalid chars
+				.replace(/\s+/g, "_") // collapse whitespace and replace by -
+				.replace(/-+/g, "_"); // collapse dashes
+		
+			return str;
+		}
+
+		/**
 		 * フィールド名入力ボックス
 		 */
-		wrapper.find( '.smart-cf-field-label' ).focus( function() {
-			var field     = $( this ).parents( '.smart-cf-field' );
-			var name_val  = field.find( '.smart-cf-field-name' ).val();
-			var label_val = $( this ).val();
-			if ( name_val && !label_val ) {
-				$( this ).val( name_val );
+		wrapper.find( '.smart-cf-field-name' ).focus( function() {
+			var field     = $( this ).parents( '.smart-cf-field-options' );
+			var label_val  = field.find( '.smart-cf-field-label' ).val();
+			var name_val = $( this ).val();
+			if ( label_val && !name_val) {
+				$( this ).val( string_to_slug(label_val) );
 			}
 		} );
 	} );
+		
+	/**
+	 * Add autocomplete (selectivity plguin) in posts condition field
+	 * https://github.com/arendjr/selectivity
+	 */
+	$('#smart-cf-autocomplete-condition-post').selectivity({
+		data: smart_cf_saved_posts,
+		multiple: true,
+		placeholder: smart_cf_settings.autocomplete_placeholder,
+		ajax: {
+			url: smart_cf_settings.rest_api_url,
+			quietMillis:200
+		},
+		templates: {
+			multipleSelectInput: function(options) {
+				return (
+							'<div class="selectivity-multiple-input-container">' +
+							(options.enabled ?
+								'<input type="text" autocomplete="off" autocorrect="off" ' +
+								'autocapitalize="off" class="selectivity-multiple-input">' :
+								'<div class="selectivity-multiple-input ' + 'selectivity-placeholder"></div>') +
+							'<div class="selectivity-clearfix"></div>' +
+							'</div>'
+						);
+			},
+			multipleSelectedItem: function(options) {
+				var extraClass = options.highlighted ? ' highlighted' : '';
+						return (
+							'<span class="selectivity-multiple-selected-item button button-primary' +
+							extraClass +
+							'" ' +
+							'data-item-id="' +
+							options.id +
+							'">' +
+							(options.removable ?
+								'<a class="selectivity-multiple-selected-item-remove">' +
+								'x' +
+								'</a>' :
+								'') +
+							options.id +
+							'</span>'
+						); //options.text
+			},
+			dropdown: function(options) {
+				var extraClass = options.dropdownCssClass ? ' ' + options.dropdownCssClass : '',
+				searchInput = '';
+						if (options.showSearchInput) {
+					extraClass += ' has-search-input';
+							var placeholder = options.searchInputPlaceholder;
+							searchInput =
+								'<div class="selectivity-search-input-container">' +
+								'<input type="text" class="selectivity-search-input"' +
+								(placeholder ? ' placeholder="' + escape(placeholder) + '"' : '') +
+								'>' +
+								'</div>';
+				}
+				
+				return (
+							'<div class="selectivity-dropdown' +
+							extraClass +
+							'">' +
+							searchInput +
+							'<div class="selectivity-results-container"></div>' +
+							'</div>'
+						);
+			},
+			loading: function() {
+					return '<div class="selectivity-loading">' + smart_cf_settings.loading + '</div>';
+			},
+			loadMore: function() {
+					return '<div class="selectivity-load-more">' + smart_cf_settings.load_more + '</div>';
+			},
+		}
+	});		
+	$('#smart-cf-autocomplete-condition-post').on('change', function() {
+		var data = $(this).selectivity('value');
+		$('[name="smart-cf-condition-post-ids"]').val(data);
+	});	
+	
+	/**
+	 * Add IOS style for checkboxes
+	 */
+	$('.smart-cf-group .smart-cf-group-repeat label, #smart-cf-meta-box-condition-post, #smart-cf-meta-box-condition-profile, #smart-cf-meta-box-condition-taxonomy, #smart-cf-meta-box-condition-options-page')
+		.find('input[type=checkbox]')
+		.iosCheckbox();
+		
 } );

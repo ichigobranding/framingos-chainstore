@@ -3,11 +3,9 @@
  * Plugin name: Smart Custom Fields
  * Plugin URI: https://github.com/inc2734/smart-custom-fields/
  * Description: Smart Custom Fields is a simple plugin that management custom fields.
- * Version: 3.1.6
+ * Version: 4.1.1
  * Author: inc2734
  * Author URI: https://2inc.org
- * Created: October 9, 2014
- * Modified: January 9, 2018
  * Text Domain: smart-custom-fields
  * Domain Path: /languages
  * License: GPLv2 or later
@@ -20,8 +18,11 @@ class Smart_Custom_Fields {
 	 */
 	public function __construct() {
 		require_once plugin_dir_path( __FILE__ ) . 'classes/class.config.php';
+		require_once plugin_dir_path( __FILE__ ) . 'classes/class.rest-api.php';
 		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) );
 		register_uninstall_hook( __FILE__, array( __CLASS__, 'uninstall' ) );
+
+		new Smart_Custom_Fields_Rest_API();
 	}
 
 	/**
@@ -45,6 +46,11 @@ class Smart_Custom_Fields {
 		require_once plugin_dir_path( __FILE__ ) . 'classes/models/class.cache.php';
 		require_once plugin_dir_path( __FILE__ ) . 'classes/class.scf.php';
 		new Smart_Custom_Fields_Revisions();
+
+		if ( function_exists( 'wpseo_init' ) ) {
+			require_once plugin_dir_path( __FILE__ ) . 'classes/models/class.yoast-seo-analysis.php';
+			new Smart_Custom_Fields_Yoast_SEO_Analysis();
+		}
 
 		foreach ( glob( plugin_dir_path( __FILE__ ) . 'classes/fields/*.php' ) as $form_item ) {
 			include_once $form_item;

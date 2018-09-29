@@ -1,10 +1,10 @@
 === Smart Custom Fields ===
-Contributors: inc2734, toro_unit, mimosafa, hideokamoto, hisako-isaka, kurudrive, hanamura, justinticktock, designhehe, mayukojpn, hogetan
+Contributors: inc2734, toro_unit, mimosafa, hideokamoto, hisako-isaka, kurudrive, hanamura, justinticktock, designhehe, mayukojpn, hogetan, robssanches, mirucon
 Donate link: http://www.amazon.co.jp/registry/wishlist/39ANKRNSTNW40
 Tags: plugin, custom field, custom, field, meta, meta field, repeat, repeatable
 Requires at least: 3.9
-Tested up to: 4.9.1
-Stable tag: 3.1.6
+Tested up to: 4.9.8
+Stable tag: 4.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,7 +36,9 @@ https://www.youtube.com/watch?v=WxPZurn0yvI
 * Related Terms
 * Color picker
 * Date picker
+* Datetime picker
 * Boolean
+* Message
 
 = How to get meta data ? =
 
@@ -127,6 +129,22 @@ You can translate this plugin into your language by using [GlotPress](https://tr
 
 == Changelog ==
 
+= 4.1.0 =
+* feat: Implement new field datetime picker
+* feat: Add filters for related posts fields with name and post types
+
+= 4.0.2 =
+* Some updates by [@robssanches](https://github.com/robssanches)
+
+= 4.0.0 =
+* Add message field. #64 (by [@robssanches](https://github.com/robssanches))
+* Fix boolean field bug with `smart-cf-register-fields` filter hook.
+* Refactoring displaying options process of each fields.
+
+= 3.1.7 =
+* Fixing issues and adding support for the Brazilian Portuguese language #63 (by [@robssanches](https://github.com/robssanches))
+* Spelling fixes in Readme #62 (by [@garrett-eclipse](https://github.com/garrett-eclipse))
+
 = 3.1.6 =
 * Set any on related post status. #60 (by [@mayukojpn](https://github.com/mayukojpn))
 * Changed that file names can be known when uploading files. #58 (by [@shodoi](https://github.com/shodoi))
@@ -178,7 +196,7 @@ You can translate this plugin into your language by using [GlotPress](https://tr
 
 = 2.1.1 =
 * Fix revision lines duplication (by [@hanamura](https://github.com/hanamura))
-* Fixed a bug that relation felds don't work in options page.
+* Fixed a bug that relation fields don't work on the options page.
 
 = 2.1.0 =
 * Support separated key and value in select, checkbox, radio.
@@ -263,7 +281,7 @@ You can translate this plugin into your language by using [GlotPress](https://tr
 
 = 1.2.2 =
 * Fixed a bug that can not get the correct data when the posts use post id filtering.
-* Changed that original the_content filter does not apply to wisywig field.
+* Changed that original the_content filter does not apply to wysiwyg field.
 * Add post_id attribute to smart-cf-register-fields.
 
 = 1.2.1 =
@@ -271,7 +289,7 @@ You can translate this plugin into your language by using [GlotPress](https://tr
 
 = 1.2.0 =
 * refactoring. A lot of changes in all.
-* Renewd the Smart_Custom_Fields_Field_Base.
+* Renewed the Smart_Custom_Fields_Field_Base.
 * Add filter hook smart-cf-register-fields. If You use this hook, you can define custom fields by the code.
 * Add action hook smart-cf-before-editor-enqueue-scripts
 * Add action hook smart-cf-after-editor-enqueue-scripts

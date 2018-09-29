@@ -1,7 +1,7 @@
 === Jetpack by WordPress.com ===
-Contributors: automattic, adamkheckler, aduth, akirk, allendav, alternatekev, andy, annezazu, apeatling, azaozz, batmoo, barry, beaulebens, blobaugh, cainm, cena, cfinke, chaselivingston, chellycat, clickysteve, csonnek, danielbachhuber, davoraltman, daniloercoli, designsimply, dllh, drawmyface, dsmart, dzver, ebinnion, eliorivero, enej, eoigal, erania-pinnera, ethitter, gcorne, georgestephanis, gibrown, goldsounds, hew, hugobaeta, hypertextranch, iammattthomas, iandunn, jblz, jeherve, jenhooks, jenia, jgs, jkudish, jmdodd, Joen, johnjamesjacoby, jshreve, koke, kraftbj, lancewillett, lschuyler, macmanx, martinremy, matt, matveb, mattwiebe, maverick3x6, mcsf, mdawaffe, michael-arestad, migueluy, mikeyarce, mkaz, nancythanki, nickmomrik, obenland, oskosk, pento, professor44, rachelsquirrel, rdcoll, ryancowles, richardmuscat, richardmtl, roccotripaldi, samhotchkiss, scarstocea, sdquirk, stephdau, tmoorewp, tyxla, Viper007Bond, westi, yoavf, zinigor
+Contributors: automattic, adamkheckler, aduth, akirk, allendav, alternatekev, andy, annezazu, apeatling, azaozz, batmoo, barry, beaulebens, blobaugh, cainm, cena, cfinke, chaselivingston, chellycat, clickysteve, csonnek, danielbachhuber, davoraltman, daniloercoli, designsimply, dllh, drawmyface, dsmart, dzver, ebinnion, eliorivero, enej, eoigal, erania-pinnera, ethitter, gcorne, georgestephanis, gibrown, goldsounds, hew, hugobaeta, hypertextranch, iammattthomas, iandunn, jblz, jasmussen, jeffgolenski, jeherve, jenhooks, jenia, jessefriedman, jgs, jkudish, jmdodd, joanrho, johnjamesjacoby, jshreve, keoshi, koke, kraftbj, lancewillett, lschuyler, macmanx, martinremy, matt, matveb, mattwiebe, maverick3x6, mcsf, mdawaffe, MichaelArestad, migueluy, mikeyarce, mkaz, nancythanki, nickmomrik, obenland, oskosk, pento, professor44, rachelsquirrel, rdcoll, ryancowles, richardmuscat, richardmtl, roccotripaldi, samhotchkiss, scarstocea, sdquirk, stephdau, tmoorewp, tyxla, Viper007Bond, westi, yoavf, zinigor
 Tags: Jetpack, WordPress.com, backup, security, related posts, CDN, speed, anti-spam, social sharing, SEO, video, stats
-Stable tag: 6.1.1
+Stable tag: 6.5
 Requires at least: 4.7
 Tested up to: 4.9
 
@@ -21,7 +21,7 @@ Create and customize your WordPress site from start to finish. Jetpack helps you
 * Integration with the official WordPress mobile apps
 
 = Marketing Services =
-Measure, promote, and earn moment from your site. Jetpack helps you with:
+Measure, promote, and earn money from your site. Jetpack helps you with:
 
 * Site stats and analytics
 * Automated social media posting and scheduling in advance
@@ -98,25 +98,39 @@ There are opportunities for developers at all levels to contribute. [Learn more 
 
 == Changelog ==
 
-= 6.1.1 =
+= 6.5 =
 
-* Release date: May 22, 2018
-* Release post: https://wp.me/p1moTy-85t
+* Release date: September 4, 2018
+* Release post: https://wp.me/p1moTy-a7U
+
+**Major Enhancements**
+
+* WordAds: Added ability to include custom ads.txt entries in the ads module.
 
 **Enhancements**
 
-* Ads: Added new setting for Banner consent expiration. Added new filter jetpack_disable_eu_cookie_law_widget, which can be used to disable the banner.
-* Ads: Added a new personalized-ads-consent cookie for ads-enabled sites.
-* Ads: Added requirement and notice, and button-click opt-in for ads module users.
-* Ads: When a user site has a Privacy Policy page set (introduced in 4.9.6), we now default to using that privacy policy as a custom policy URL.
-* GDPR: A new warning is displayed while configuring an instance of the EU Cookie Law widget: "Caution: The default policy URL only covers cookies set by Jetpack. If you're running other plugins, custom cookies, or third-party tracking technologies, you should create and link to your own cookie statement."
-* GDPR: Added Feedback data (i.e., Contact Form Submissions) to the Personal Data exported and/or erased by the latest version of WordPress core.
+* Admin Page: Added ability to disable backups UI by filter when VaultPress is not activated.
+* Comments: Moved the Subscription checkboxes on a comment form from after the submit button to before the submit button.
+* General: Removed the outdated "Site Verification Services" card in Tools.
+* General: Removed jetpack_enable_site_verification filter. We recommend filtering access to verification tools using jetpack_get_available_modules instead.
+* General: Simplified the logic of Jetpack's signed HTTP requests code.
+* Lazy Images: Updated lazy images to use a default base64 encoded transparent to reduce a network request.
+
+**Improved compatibility**
+
+* Geo Location: Fixed a compatibility issue with other plugins that added meta attributes to site feeds with the `rss2_ns`, `atom_ns` or `rdf_ns` filters.
 
 **Bug fixes**
 
-* Ads: We updated Ads behaviour to not show unless the visitor is on the main query within the loop.
-* General: We fixed a bug that resulted in an alert box showing for sites set to languages deriving from main ones.
-* Lazy Images: Fixed a bug where images would disappear when scrolling.
-* Sharing: make sure JS files can be loaded on development sites.
-* Sharing: Added check for validating Akismet key before allowing sharing by email.
-* WooCommerce Analytics: Fixed PHP warning when attemping to get a list of plugins.
+* AMP: Fix PHP notice when rendering AMP images with unknown width and height.
+* Contact Forms: We fixed an issue where personal data eraser requests didn't erase all requested feedback.
+* General: Improves compatibility with the upcoming PHP 7.3.
+* General: Updated input validation for meta tags given in site verification.
+* Lazy Images: Deprecated jetpack_lazy_images_skip_image_with_atttributes filter in favor of jetpack_lazy_images_skip_image_with_attributes to address typo.
+* Sharing: Fixed duplicate rel tags on Sharing links.
+* Search: Fixed an issue where a CSS and JavaScript file could be enqueued unnecessarily if the Search module was activated and if the site was using the Query Monitor plugin.
+* Shortcodes: Updated Wufoo Shortcode to always load over https and use async form embed.
+* Widgets: Fixed excessive logging issue with Twitter Timeline widget.
+* Widgets: Removed cutoff date check for Twitter Timeline widget as it is no longer necessary.
+* Widgets: Added decimal precision validator to Simple Payments Widget price field on the Customizer for supporting Japanese Yen.
+

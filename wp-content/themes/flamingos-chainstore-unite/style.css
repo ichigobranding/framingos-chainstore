@@ -1371,12 +1371,14 @@ font-size: 16px;
  *****************************/
 li.children{
     padding:0 0 0 0px;
-    margin:0 0 0 10px;
+    margin:0 0 0 25px;
+    list-style-image: url(./images/l-moji.png);
+    /*background-image: url(./images/favicon.png);*/
 }
 li.children:before {
     display: inline;
     white-space: pre;
-    content: "└ ";
+    /*content: "└ ";*/
 }
  /****************************/
 /*****************************
