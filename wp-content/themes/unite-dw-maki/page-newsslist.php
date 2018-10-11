@@ -51,9 +51,18 @@ get_header(); ?>
                                             <td class="daymaga"><?php the_time('Y-n-j') ?></td>
                                             <td class="daymaga2">
                                               <p><?php get_template_part( 'icon' ); ?>
-                                              <a href="<?php the_permalink(); ?>">
-                                              <?php the_title(); ?>
-                                            </a>
+                                              <!-- アメブロ直リンク -->
+                                                <?php $post_type = get_post_type();
+                                                if($post_type === 'infomationame'){ ?>
+                                                  <a href="<?php the_field('ame-new-url'); ?>" target="_blank">
+                                                        <?php the_title(); ?>
+                                                  </a>
+                                                <?PHP }else{ ?>
+                                                  <a href="<?php the_permalink(); ?>">
+                                                    <?php the_title(); ?>
+                                                  </a>
+                                                <?php } ?>
+                                                <!-- アメブロ直リンク -->
                                              <?php get_template_part( 'new' ); ?></p>
                                           </td>
                                           </tr>

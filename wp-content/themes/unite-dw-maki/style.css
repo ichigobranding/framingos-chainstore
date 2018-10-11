@@ -39,7 +39,7 @@ body {
     /*font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
     font-family:'メイリオ','Meiryo', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','sans-serif' !important;
     color: #000;
-    font-size: 15px;
+    font-size: 17px;
    /* background:url(images/bg.png);*/
    background: #fff;
    -webkit-font-smoothing: antialiased;/*メイリオ太字*/
@@ -1987,19 +1987,6 @@ div.casecss2 a:hover{
  }
  .casecss{
     margin:0px 0px 10px 0px;
-}
-.buttonfont2{
-    color: #fff!important;
-    width: 100%;
-    background-color: #c41840;
-    font-weight: 900;
-    margin: 0px 0px 0px 0;
-    font-size:16px;
-    border: #c41840 1px solid;
-}
-.buttonfont2 a{
-    color: #fff!important;
-    font-weight: 900;
 }
 h1.profiletitle{
     font-size: 20px;
