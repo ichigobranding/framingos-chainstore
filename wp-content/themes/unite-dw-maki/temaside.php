@@ -1,8 +1,8 @@
 <!-- テーマ -->
   <div class="ibMenu">
       <div class="ibMenu2">
-                <div class="ibMenuHeader">
-                    <span class="ibMenuTitle">テーマ</span>
+                <div class="ibMenuHeader1-1">
+                    <h3 class="ibMenuTitle">テーマ</h3>
                 </div>
 
                <div class="ibMenuBody ibskinSubList">
