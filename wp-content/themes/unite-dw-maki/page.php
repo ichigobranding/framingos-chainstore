@@ -25,7 +25,7 @@ get_header(); ?>
               <!--<div class="col-md-3 col-md-pull-6">
                 <?php //get_template_part( 'left-sidebar' ); ?>
               </div>-->
-          <div class="col-md-4 sidebarpadd">
+          <div class="col-md-4">
             <?php get_sidebar(); ?>
           </div>
         </div>
