@@ -17,10 +17,5 @@
                   </div>
                 </div>
               </div>
-  <div class="iblistLink">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>bloglist">
-                ブログ一覧へ
-          </a>
-  </div>
   <!--記事全体-->
 </div>
