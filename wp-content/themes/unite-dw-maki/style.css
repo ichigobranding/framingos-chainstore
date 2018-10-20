@@ -544,7 +544,7 @@ h2.widget-title {
     background: url(※) 4px 50% no-repeat rgb(255, 255, 255);
     background-position: 4px 50%;
     border-bottom: 2px solid #e84331;
-    font-size: 15px;
+    font-size: 18px;
 }
 h3.widgettitle {
     font-weight: bold;
@@ -807,7 +807,7 @@ h1.site-title a:hover{
 *******************************************/
 /* 新着　メッセージボード *******/
 .skinMessageBoard2 {
-    border: 1px dotted #c41840;
+    border: 1px dotted #e84331;
     margin: 10px 0 20px 0;
     padding: 20px 10px 10px 7px;
     font-size: 12px;
@@ -1573,7 +1573,7 @@ color:#0066cc;
 /**** DW　スタート ******************************/
 /**** DW　トップ ************/
 .content-dw{
-    border: 1px solid #c41840;
+    border: 1px solid #e84331;
     background: #fff;
     margin:0px 0 34px 0; 
     padding: 22px 13px 0px 13px;
@@ -1594,7 +1594,7 @@ h3.bana-big0{
     font-weight: 800;
     padding: 10px 5px 10px 10px;
     border: 1px solid #ccc;
-    border-left: 8px solid #c41840;
+    border-left: 8px solid #e84331;
     font-size: 20px;
     background: #e0e0e0;
 }
@@ -1605,7 +1605,7 @@ h3.bana-big0-1{
     font-weight: 800;
     padding: 10px 5px 10px 10px;
     border: 1px solid #ccc;
-    border-left: 8px solid #c41840;
+    border-left: 8px solid #e84331;
     font-size: 20px;
     background: #e0e0e0;
 }
@@ -1620,8 +1620,8 @@ h3.bana-big0-1{
     background: #ffffff url(Ã¢â‚¬Â») no-repeat;
     background-position: 4px 50%;
     padding-left: 7px;
-    border-bottom: 2px solid #c41840;
-    border-top: 2px solid #c41840;
+    border-bottom: 2px solid #e84331;
+    border-top: 2px solid #e84331;
     /*font-weight: bold;*/
 }
 .ibMenuHeader0 {
@@ -1631,8 +1631,8 @@ h3.bana-big0-1{
     margin: 0 0 4px 0;
     background-position: 4px 50%;
     padding-left: 7px;
-    border-bottom: 2px solid #c41840;
-    border-top: 2px solid #c41840;
+    border-bottom: 2px solid #e84331;
+    border-top: 2px solid #e84331;
     margin: 0 0 18px 0;
     /*font-weight: bold;*/
 }
@@ -1642,8 +1642,8 @@ h3.bana-big0-1{
     background: #ffffff url(Ã¢â‚¬Â») no-repeat;
     background-position: 4px 50%;
     padding-left: 7px;
-    border-bottom: 2px solid #c41840;
-    border-top: 2px solid #c41840;
+    border-bottom: 2px solid #e84331;
+    border-top: 2px solid #e84331;
     margin: 20px 0 6px 0;/*ä¸Š20+11*/
     /*font-weight: bold;*/
 }
@@ -1653,8 +1653,8 @@ h3.bana-big0-1{
     background: #ffffff url(Ã¢â‚¬Â») no-repeat;
     background-position: 4px 50%;
     padding-left: 7px;
-    border-bottom: 2px solid #c41840;
-    border-top: 2px solid #c41840;
+    border-bottom: 2px solid #e84331;
+    border-top: 2px solid #e84331;
     margin: 38px 0 6px 0;/*ä¸Š20+11*/
     /*font-weight: bold;*/
 }
@@ -1682,10 +1682,10 @@ h3.ibMenuTitle{
 .buttonfont2{
     color: #fff!important;
     width: 100%;
-    background-color: #c41840;
+    background-color: #e84331;
     font-weight: 900;
     font-size:16px;
-    border: #c41840 1px solid;
+    border: #e84331 1px solid;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
     background-color: #EF9086;
@@ -1819,7 +1819,7 @@ td.daymaga2-new a {
     background-position: 4px 50%;
     border-bottom: 2px solid #e84331;
     border-top: 2px solid #e84331; 
-    font-size: 15px;
+    font-size: 18px;
     margin: 5px 0 18px 0;
  }
 div#site-c#EF9086its{
@@ -1858,7 +1858,8 @@ div.ibskinArticleBody2 a{
         text-decoration: none;
 }
 .kabu {
-    font-size: 16px;
+    margin: 12px 5px 8px 5px;
+    font-size: 18px;
 }
 /**** big-bana ************/
 .bana-big0{
@@ -1867,7 +1868,7 @@ div.ibskinArticleBody2 a{
     font-weight: 800;
     padding: 5px 5px 5px 10px;
     border: 1px solid #ccc;
-    border-left: 8px solid #c41840;
+    border-left: 8px solid #e84331;
     font-size: 20px;
     background: #e0e0e0;
 }
@@ -1877,7 +1878,7 @@ div.ibskinArticleBody2 a{
     font-weight: 800;
     padding: 5px 5px 5px 10px;
     border: 1px solid #ccc;
-    border-left: 8px solid #c41840;
+    border-left: 8px solid #e84331;
     font-size: 20px;
     background: #e0e0e0;
 }
@@ -1887,7 +1888,7 @@ div.ibskinArticleBody2 a{
     font-weight: 800;
     padding: 5px 5px 5px 10px;
     border: 1px solid #ccc;
-    border-left: 8px solid #c41840;
+    border-left: 8px solid #e84331;
     font-size: 20px;
     background: #e0e0e0;
 }
@@ -1902,7 +1903,7 @@ flex-wrap: wrap!important;
     font-weight: 800;
     padding: 5px 5px 2px 10px;
     border: 1px solid #ccc;
-    border-left: 8px solid #c41840;
+    border-left: 8px solid #e84331;
     font-size: 20px;
     background: #e0e0e0;
 }
@@ -2166,7 +2167,8 @@ td.mailmagfomtitle{
 /**** メルマガフォーム埋め込み ************/
 /**** セミナー日程　コンセプトカラー ************/
 .timepad3{
-    color: #c41840;
+    color: #058721;
+    font-weight:900;
 }
 /**** セミナー日程　コンセプトカラー ************/
 /**** 想いタイトル***********/
@@ -2179,3 +2181,38 @@ td.mailmagfomtitle{
     padding: 0 20px 0 0;
     margin: 10px 0 45px 0;
 }
+/*****************************
+ 会社概要
+*****************************/
+td.td01-2{
+    color: #e84331;
+    font-weight: 800;
+    width: 30%;
+    padding: 20px 10px;
+    border-bottom: dashed 1px #ccc;
+    font-size: 14px;
+}
+.td01-2{
+    color: #e84331;
+    font-weight: 800;
+    padding: 20px 10px 0 10px;
+}
+td.td02-2{
+    border-bottom: dashed 1px #ccc;
+    padding: 20px 0;
+    line-height: 2em;
+    font-size: 14px;
+}
+#table-01-2{
+width:100%;
+}
+li.ull{
+    line-height: 2em;
+}
+.rinen{
+    line-height: 2em;
+}
+.rinen-2{
+    line-height: 2em;
+}
+.td01-2{padding:10px 10px 0 15px;}
