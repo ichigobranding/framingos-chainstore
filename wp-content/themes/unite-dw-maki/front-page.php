@@ -7,7 +7,9 @@
       			<!-- topbana -->
       			<div class="row">
 			           <div class="tbanana imgbtn col-md-12">
+			           		<a href="<?php echo esc_url( home_url( '/' ) ); ?>/merumaga">
 			                <h2 class="h2del"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/top-bana.png" alt="※"/></h2>
+			                </a>
 		            	</div>
 		        </div>
 		    			<!-- topbana -->
