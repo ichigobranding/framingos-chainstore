@@ -33,7 +33,11 @@
 					<?php if( get_header_image() != '' ) : ?>
 
 						<div id="logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
+							 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+							 	<img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>"/>
+							 	<!--<img src="<?php //header_image(); ?>"  height="<?php //echo get_custom_header()->height; ?>" width="<?php //echo get_custom_header()->width; ?>" alt="<?php //bloginfo( 'name' ); ?>"/>-->
+							 		
+							 </a> 
 							<!--<h4 class="site-description"><?php //bloginfo( 'description' ); ?></h4>>-->
 						</div><!-- end of #logo -->
 
