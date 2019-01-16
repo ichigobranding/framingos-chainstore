@@ -1176,11 +1176,13 @@ margin: 0 0 3px 0;
 .nav-justified li+ li{ 
   border-left: 0;
   border-right: 1px solid #fff;
+  vertical-align: middle;
 }
 
 .nav-justified li{
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
+  vertical-align: middle;
 }
 
 .navbar {
@@ -1233,7 +1235,8 @@ margin: 0 0 3px 0;
 .nav>li>a:focus, .nav>li>a:hover {
 color:#fff;
 background: #EF9086;/* Branding  concept color 2  *******/
-    }
+}
+
 /*****************************
 
    メニューバー   中央寄せ 終了
@@ -2216,3 +2219,7 @@ li.ull{
     line-height: 2em;
 }
 .td01-2{padding:10px 10px 0 15px;}
+/*メニューバーの両端のpadding削除*/
+.cenmenu > li > a {
+    padding:10px 3px;
+}
