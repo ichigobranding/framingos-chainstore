@@ -509,7 +509,7 @@ class A8C_WPCOM_Masterbar {
 				'class' => 'mb-icon user-info-item',
 			),
 		) );
-		
+
 		$help_link = 'https://jetpack.com/support/';
 
 		if ( jetpack_is_atomic_site() ) {
@@ -660,7 +660,7 @@ class A8C_WPCOM_Masterbar {
 		if ( is_user_member_of_blog( $current_user->ID ) ) {
 			$plans_url = 'https://wordpress.com/plans/' . esc_attr( $this->primary_site_slug );
 			$label = esc_html__( 'Plan', 'jetpack' );
-			$plan = Jetpack::get_active_plan();
+			$plan = Jetpack_Plan::get();
 
 			$plan_title = $this->create_menu_item_pair(
 				array(
@@ -1030,7 +1030,7 @@ class A8C_WPCOM_Masterbar {
 			/**
 			 * Fires when menu items are added to the masterbar "My Sites" menu.
 			 *
-			 * @since 5.4
+			 * @since 5.4.0
 			 */
 			do_action( 'jetpack_masterbar' );
 		}

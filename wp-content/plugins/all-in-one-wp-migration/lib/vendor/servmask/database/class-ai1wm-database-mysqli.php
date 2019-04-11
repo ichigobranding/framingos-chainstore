@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2014-2018 ServMask Inc.
+ * Copyright (C) 2014-2019 ServMask Inc.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,6 +22,10 @@
  * ███████║███████╗██║  ██║ ╚████╔╝ ██║ ╚═╝ ██║██║  ██║███████║██║  ██╗
  * ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Kangaroos cannot jump here' );
+}
 
 class Ai1wm_Database_Mysqli extends Ai1wm_Database {
 
@@ -90,6 +94,16 @@ class Ai1wm_Database_Mysqli extends Ai1wm_Database {
 	 */
 	public function fetch_row( $result ) {
 		return mysqli_fetch_row( $result );
+	}
+
+	/**
+	 * Return the field from MySQL query as row
+	 *
+	 * @param  resource $result MySQL resource
+	 * @return object
+	 */
+	public function fetch_field( $result ) {
+		return mysqli_fetch_field( $result );
 	}
 
 	/**
